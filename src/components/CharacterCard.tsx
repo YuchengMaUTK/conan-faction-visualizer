@@ -33,6 +33,7 @@ export default function CharacterCard({
 
   const isDead = status === 'DEAD';
   const isLeft = status === 'LEFT';
+  const avatarSrc = avatar.startsWith('/') ? `${import.meta.env.BASE_URL}${avatar.slice(1)}` : avatar;
   const isValidAvatar = avatar.startsWith('http') || avatar.startsWith('/avatars/');
 
   const cardStyle: React.CSSProperties = {
@@ -100,7 +101,7 @@ export default function CharacterCard({
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onClick?.(); }}>
       <div style={avatarContainerStyle}>
         {isValidAvatar && !imgError ? (
-          <img src={avatar} alt={name} style={imgStyle}
+          <img src={avatarSrc} alt={name} style={imgStyle}
             onError={() => setImgError(true)} loading="lazy" />
         ) : (
           <div style={fallbackStyle}>{name.charAt(0)}</div>
