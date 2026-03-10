@@ -2,225 +2,16 @@
   "$schema": "./conan-data-schema.json",
   "metadata": {
     "version": "1.0.0",
-    "lastUpdated": "2026-03-09",
+    "lastUpdated": "2026-03-10",
     "totalEpisodes": 1150,
-    "totalChapters": 1130
+    "totalChapters": 1130,
+    "totalCharacters": 119
   },
   "characters": [
     {
-      "id": "shinichi",
-      "name": "工藤新一",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3b/Shinichi_Kudo_Profile.jpg/275px-Shinichi_Kudo_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 200,
-        "mentionCount": 274
-      },
-      "isDualIdentity": false,
-      "nameEn": "Shinichi Kudo"
-    },
-    {
-      "id": "ran",
-      "name": "毛利兰",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/92/Ran_Mouri_Profile.jpg/275px-Ran_Mouri_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 809,
-        "mentionCount": 817
-      },
-      "isDualIdentity": false,
-      "nameEn": "Ran Mouri"
-    },
-    {
-      "id": "conan",
-      "name": "江户川柯南",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/00/Conan_Edogawa_Profile.png/275px-Conan_Edogawa_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 1189,
-        "mentionCount": 1140
-      },
-      "isDualIdentity": false,
-      "nameEn": "Conan Edogawa"
-    },
-    {
-      "id": "heiji",
-      "name": "服部平次",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2c/Heiji_Hattori_Profile.png/275px-Heiji_Hattori_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 112,
-        "mentionCount": 217
-      },
-      "isDualIdentity": false,
-      "nameEn": "Heiji Hattori"
-    },
-    {
-      "id": "kazuha",
-      "name": "远山和叶",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/77/Kazuha_Toyama_Profile.jpg/275px-Kazuha_Toyama_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 94,
-        "mentionCount": 175
-      },
-      "isDualIdentity": false,
-      "nameEn": "Kazuha Toyama"
-    },
-    {
-      "id": "akai",
-      "name": "赤井秀一",
-      "codename": "Rye",
-      "faction": "RED",
-      "subFaction": "FBI",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/83/Shuichi_Akai_Profile.jpg/275px-Shuichi_Akai_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 82,
-        "mentionCount": 99
-      },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "BLACK",
-        "secondaryName": "诸星大",
-        "secondaryCodename": "Rye"
-      },
-      "nameEn": "Shuichi Akai"
-    },
-    {
-      "id": "amuro",
-      "name": "安室透",
-      "codename": "Bourbon",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/86/Rei_Furuya_Profile.jpg/275px-Rei_Furuya_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 71,
-        "mentionCount": 103
-      },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "RED",
-        "secondaryName": "降谷零",
-        "secondaryCodename": "公安零"
-      },
-      "nameEn": "Toru Amuro"
-    },
-    {
-      "id": "gin",
-      "name": "琴酒",
-      "codename": "Gin",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/89/S6-Gin.png/275px-S6-Gin.png",
-      "appearanceCount": {
-        "episodeCount": 70,
-        "mentionCount": 108
-      },
-      "isDualIdentity": false,
-      "nameEn": "Gin"
-    },
-    {
-      "id": "vodka",
-      "name": "伏特加",
-      "codename": "Vodka",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/22/Vodka_Profile.jpg/275px-Vodka_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 65,
-        "mentionCount": 103
-      },
-      "isDualIdentity": false,
-      "nameEn": "Vodka"
-    },
-    {
-      "id": "vermouth",
-      "name": "贝尔摩德",
-      "codename": "Vermouth",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/9a/M26_Vermouth.jpg/275px-M26_Vermouth.jpg",
-      "appearanceCount": {
-        "episodeCount": 78,
-        "mentionCount": 114
-      },
-      "isDualIdentity": false,
-      "nameEn": "Vermouth"
-    },
-    {
-      "id": "haibara",
-      "name": "灰原哀",
-      "codename": "Sherry",
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4f/Ai_Haibara_Profile.png/275px-Ai_Haibara_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 403,
-        "mentionCount": 412
-      },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "BLACK",
-        "secondaryName": "宫野志保",
-        "secondaryCodename": "Sherry"
-      },
-      "nameEn": "Ai Haibara"
-    },
-    {
-      "id": "jodie",
-      "name": "朱蒂·斯泰琳",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "FBI",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5d/Jodie_Starling_Profile.png/275px-Jodie_Starling_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 54,
-        "mentionCount": 89
-      },
-      "isDualIdentity": false,
-      "nameEn": "Jodie Starling"
-    },
-    {
-      "id": "sato",
-      "name": "佐藤美和子",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/45/Miwako_Sato_Profile.png/275px-Miwako_Sato_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 137,
-        "mentionCount": 127
-      },
-      "isDualIdentity": false,
-      "nameEn": "Miwako Sato"
-    },
-    {
-      "id": "takagi",
-      "name": "高木涉",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/be/Wataru_Takagi_Profile2.png/275px-Wataru_Takagi_Profile2.png",
-      "appearanceCount": {
-        "episodeCount": 581,
-        "mentionCount": 339
-      },
-      "isDualIdentity": false,
-      "nameEn": "Wataru Takagi"
-    },
-    {
-      "id": "miyano_akemi",
-      "name": "宫野明美",
+      "id": "akemi_miyano",
+      "name": "Akemi Miyano",
+      "nameEn": "Akemi Miyano",
       "codename": null,
       "faction": "BLACK",
       "subFaction": "BO_OUTER",
@@ -229,82 +20,320 @@
         "episodeCount": 23,
         "mentionCount": 25
       },
-      "isDualIdentity": false,
-      "nameEn": "Akemi Miyano"
+      "isDualIdentity": false
     },
     {
-      "id": "rum",
-      "name": "脇田兼則",
-      "codename": "Rum",
+      "id": "tequila",
+      "name": "Tequila",
+      "nameEn": "Tequila",
+      "codename": "Tequila",
       "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a6/Rum_Profile.jpg/200px-Rum_Profile.jpg",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/00/Tequila_Profile.jpg/275px-Tequila_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 30,
-        "mentionCount": 41
+        "episodeCount": 4,
+        "mentionCount": 8
       },
-      "isDualIdentity": false,
-      "nameEn": "Rum"
+      "isDualIdentity": false
     },
     {
-      "id": "hakuba",
-      "name": "白马探",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/df/Saguru_Hakuba_Profile.jpg/275px-Saguru_Hakuba_Profile.jpg",
+      "id": "pisco",
+      "name": "Pisco",
+      "nameEn": "Pisco",
+      "codename": "Pisco",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/e/e4/Pisco_Profile.jpg/275px-Pisco_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 7,
-        "mentionCount": 13
+        "episodeCount": 5,
+        "mentionCount": 8
       },
-      "isDualIdentity": false,
-      "nameEn": "Saguru Hakuba"
+      "isDualIdentity": false
     },
     {
-      "id": "aoko",
-      "name": "中森青子",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4c/Aoko_Nakomori_Profile.jpg/275px-Aoko_Nakomori_Profile.jpg",
+      "id": "calvados",
+      "name": "Calvados",
+      "nameEn": "Calvados",
+      "codename": "Calvados",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/02/Calvados_Profile.jpg/275px-Calvados_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 24,
-        "mentionCount": 37
+        "episodeCount": 2,
+        "mentionCount": 3
       },
-      "isDualIdentity": false,
-      "nameEn": "Aoko Nakamori"
+      "isDualIdentity": false
     },
     {
-      "id": "matsuda",
-      "name": "松田阵平",
+      "id": "rikumichi_kusuda",
+      "name": "Rikumichi Kusuda",
+      "nameEn": "Rikumichi Kusuda",
       "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c5/Jinpei_Matsuda_Profile.png/275px-Jinpei_Matsuda_Profile.png",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/6/6d/Rikumichi_Kusuda_Profile.jpg/275px-Rikumichi_Kusuda_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 13,
+        "episodeCount": 6,
+        "mentionCount": 10
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ethan_hondou",
+      "name": "Ethan Hondou",
+      "nameEn": "Ethan Hondou",
+      "codename": null,
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b2/Ethan_Hondou_Profile.jpg/275px-Ethan_Hondou_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 6,
+        "mentionCount": 6
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "scotch",
+      "name": "Scotch",
+      "nameEn": "Scotch",
+      "codename": "Scotch",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/59/Scotch_Profile.jpg/275px-Scotch_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 12,
+        "mentionCount": 14
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sherry",
+      "name": "Sherry",
+      "nameEn": "Sherry",
+      "codename": "Sherry",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/bc/Shiho_Miyano_Profile.jpg/275px-Shiho_Miyano_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 20,
         "mentionCount": 22
       },
-      "isDualIdentity": false,
-      "nameEn": "Jinpei Matsuda"
+      "isDualIdentity": false
     },
     {
-      "id": "hagiwara",
-      "name": "萩原研二",
+      "id": "ai_haibara",
+      "name": "Ai Haibara",
+      "nameEn": "Ai Haibara",
+      "codename": "Sherry",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4f/Ai_Haibara_Profile.png/275px-Ai_Haibara_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 403,
+        "mentionCount": 412
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "rye",
+      "name": "Rye",
+      "nameEn": "Rye",
+      "codename": "Rye",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/83/Shuichi_Akai_Profile.jpg/275px-Shuichi_Akai_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 82,
+        "mentionCount": 99
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "shuichi_akai",
+      "name": "Shuichi Akai",
+      "nameEn": "Shuichi Akai",
+      "codename": "Rye",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/83/Shuichi_Akai_Profile.jpg/275px-Shuichi_Akai_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 82,
+        "mentionCount": 99
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ki_27ichiro_numabuchi",
+      "name": "Ki'ichiro Numabuchi",
+      "nameEn": "Kiichiro Numabuchi",
+      "codename": null,
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b2/Kiichiro_Numabuchi_Profile.png/275px-Kiichiro_Numabuchi_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 4,
+        "mentionCount": 7
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "hidemi_hondou",
+      "name": "Kir",
+      "nameEn": "Hidemi Hondou",
+      "codename": "Kir",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/55/Hidemi_Hondou_Profile.jpg/275px-Hidemi_Hondou_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 40,
+        "mentionCount": 59
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "rei_furuya",
+      "name": "Bourbon",
+      "nameEn": "Rei Furuya",
+      "codename": "Bourbon",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/86/Rei_Furuya_Profile.jpg/275px-Rei_Furuya_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 71,
+        "mentionCount": 103
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "renya_karasuma",
+      "name": "Renya Karasuma",
+      "nameEn": "Renya Karasuma",
+      "codename": null,
+      "faction": "BLACK",
+      "subFaction": "BO_BOSS",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/1/16/Renya_Karasuma_Profile.jpg/275px-Renya_Karasuma_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 7,
+        "mentionCount": 5
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "gin",
+      "name": "Gin",
+      "nameEn": "Gin",
+      "codename": "Gin",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/89/S6-Gin.png/275px-S6-Gin.png",
+      "appearanceCount": {
+        "episodeCount": 70,
+        "mentionCount": 108
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "vodka",
+      "name": "Vodka",
+      "nameEn": "Vodka",
+      "codename": "Vodka",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/22/Vodka_Profile.jpg/275px-Vodka_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 65,
+        "mentionCount": 103
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "shinichi_kudo",
+      "name": "Shinichi Kudo",
+      "nameEn": "Shinichi Kudo",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3b/Shinichi_Kudo_Profile.jpg/275px-Shinichi_Kudo_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 200,
+        "mentionCount": 274
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "conan_edogawa",
+      "name": "Conan Edogawa",
+      "nameEn": "Conan Edogawa",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/00/Conan_Edogawa_Profile.png/275px-Conan_Edogawa_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 1189,
+        "mentionCount": 1140
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "juzo_megure",
+      "name": "Juzo Megure",
+      "nameEn": "Juzo Megure",
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/ac/Kenji_Hagiwara_Profile.jpg/275px-Kenji_Hagiwara_Profile.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/6/66/Juzo_Megure_Profile2.png/275px-Juzo_Megure_Profile2.png",
       "appearanceCount": {
-        "episodeCount": 9,
-        "mentionCount": 13
+        "episodeCount": 564,
+        "mentionCount": 344
       },
-      "isDualIdentity": false,
-      "nameEn": "Kenji Hagiwara"
+      "isDualIdentity": false
     },
     {
-      "id": "chiba",
-      "name": "千叶和伸",
+      "id": "wataru_takagi",
+      "name": "Wataru Takagi",
+      "nameEn": "Wataru Takagi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/be/Wataru_Takagi_Profile2.png/275px-Wataru_Takagi_Profile2.png",
+      "appearanceCount": {
+        "episodeCount": 581,
+        "mentionCount": 339
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "miwako_sato",
+      "name": "Miwako Sato",
+      "nameEn": "Miwako Sato",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/45/Miwako_Sato_Profile.png/275px-Miwako_Sato_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 137,
+        "mentionCount": 127
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ninzaburo_shiratori",
+      "name": "Ninzaburo Shiratori",
+      "nameEn": "Ninzaburo Shiratori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5e/Ninzaburo_Shiratori_Profile.png/275px-Ninzaburo_Shiratori_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 57,
+        "mentionCount": 67
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kazunobu_chiba",
+      "name": "Kazunobu Chiba",
+      "nameEn": "Kazunobu Chiba",
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
@@ -313,54 +342,403 @@
         "episodeCount": 242,
         "mentionCount": 104
       },
-      "isDualIdentity": false,
-      "nameEn": "Kazunobu Chiba"
+      "isDualIdentity": false
     },
     {
-      "id": "miike",
-      "name": "三池苗子",
+      "id": "kiyonaga_matsumoto",
+      "name": "Kiyonaga Matsumoto",
+      "nameEn": "Kiyonaga Matsumoto",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a0/Kiyonaga_Matsumoto_Profile.jpg/275px-Kiyonaga_Matsumoto_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 16,
+        "mentionCount": 22
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "hyoue_kuroda",
+      "name": "Hyoue Kuroda",
+      "nameEn": "Hyoue Kuroda",
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b5/Naeko_Miike_child.jpg/200px-Naeko_Miike_child.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/91/Hyoue_Kuroda_Profile.png/275px-Hyoue_Kuroda_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 21,
+        "mentionCount": 29
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "manabu_fujimaki",
+      "name": "Manabu Fujimaki",
+      "nameEn": "Manabu Fujimaki",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/6/61/Manabu_Fujimaki_Profile.jpg/270px-Manabu_Fujimaki_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 10,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "inspector_yuminaga",
+      "name": "Yuminaga",
+      "nameEn": "Inspector Yuminaga",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/e/e4/Inspector_Yuminaga_profile.jpg/275px-Inspector_Yuminaga_profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 13,
+        "mentionCount": 14
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ginzo_nakamori",
+      "name": "Ginzo Nakamori",
+      "nameEn": "Ginzo Nakamori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/23/Ginzo_Nakamori_Profile.png/356px-Ginzo_Nakamori_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 29,
+        "mentionCount": 49
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "shintaro_chaki",
+      "name": "Shintaro Chaki",
+      "nameEn": "Shintaro Chaki",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/28/Shintaro_Chaki_Profile.jpg/275px-Shintaro_Chaki_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 6,
+        "mentionCount": 10
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "inspector_momose",
+      "name": "Momose",
+      "nameEn": "Inspector Momose",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2d/Inspector_Momose_profile.png/275px-Inspector_Momose_profile.png",
+      "appearanceCount": {
+        "episodeCount": 3,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "yumi_miyamoto",
+      "name": "Yumi Miyamoto",
+      "nameEn": "Yumi Miyamoto",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2c/Yumi_Miyamoto_Profile.png/275px-Yumi_Miyamoto_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 55,
+        "mentionCount": 65
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "naeko_miike",
+      "name": "Naeko Miike",
+      "nameEn": "Naeko Miike",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/72/Naeko.png/275px-Naeko.png",
       "appearanceCount": {
         "episodeCount": 24,
         "mentionCount": 28
       },
-      "isDualIdentity": false,
-      "nameEn": "Naeko Miike"
+      "isDualIdentity": false
     },
     {
-      "id": "sera",
-      "name": "世良真纯",
+      "id": "hachizo_onizuka",
+      "name": "Hachizo Onizuka",
+      "nameEn": "Hachizo Onizuka",
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/84/Masumi_Sera_Profile.jpg/275px-Masumi_Sera_Profile.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/07/Hachizo_Onizuka_profile.jpg/275px-Hachizo_Onizuka_profile.jpg",
       "appearanceCount": {
-        "episodeCount": 75,
-        "mentionCount": 115
+        "episodeCount": 4,
+        "mentionCount": 11
       },
-      "isDualIdentity": false,
-      "nameEn": "Masumi Sera"
+      "isDualIdentity": false
     },
     {
-      "id": "subaru",
-      "name": "冲矢昴",
+      "id": "officer_tome",
+      "name": "Officer Tome",
+      "nameEn": "Officer Tome",
       "codename": null,
       "faction": "RED",
-      "subFaction": "FBI",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/ce/Subaru_Okiya_Profile.png/275px-Subaru_Okiya_Profile.png",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/02/Officer_Tome_Profile.jpg/275px-Officer_Tome_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 62,
-        "mentionCount": 78
+        "episodeCount": 41,
+        "mentionCount": 0
       },
-      "isDualIdentity": false,
-      "nameEn": "Subaru Okiya"
+      "isDualIdentity": false
     },
     {
-      "id": "kogoro",
-      "name": "毛利小五郎",
+      "id": "female_forensics_member",
+      "name": "Female forensics member",
+      "nameEn": "Female forensics member",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/f/f6/Female_Forensic_Member_Profile.jpg/275px-Female_Forensic_Member_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 18,
+        "mentionCount": 0
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_kobayashi",
+      "name": "Detective Kobayashi",
+      "nameEn": "Detective Kobayashi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/0d/EP181-Kobayashi.jpg/275px-EP181-Kobayashi.jpg",
+      "appearanceCount": {
+        "episodeCount": 12,
+        "mentionCount": 0
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_takikawa",
+      "name": "Detective Takikawa",
+      "nameEn": "Detective Takikawa",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5f/Detective_Takigawa_Profile.jpg/270px-Detective_Takigawa_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 18,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_nakamura",
+      "name": "Detective Nakamura",
+      "nameEn": "Detective Nakamura",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3b/Nakamura_Profile.jpg/275px-Nakamura_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 20,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_fukui",
+      "name": "Detective Fukui",
+      "nameEn": "Detective Fukui",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/0f/Ep449-Fukui.jpg/275px-Ep449-Fukui.jpg",
+      "appearanceCount": {
+        "episodeCount": 24,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_kawanaka",
+      "name": "Detective Kawanaka",
+      "nameEn": "Detective Kawanaka",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/7e/Detective_Kawanaka_Profile.jpg/275px-Detective_Kawanaka_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 10,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_saitoh",
+      "name": "Detective Saitoh",
+      "nameEn": "Detective Saitoh",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/0a/Detective_Saitoh_Profile.jpg/275px-Detective_Saitoh_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 17,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_horita",
+      "name": "Detective Horita",
+      "nameEn": "Detective Horita",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/45/Detective_Horita_Profile.jpg/267px-Detective_Horita_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 24,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_sogawa",
+      "name": "Detective Sogawa",
+      "nameEn": "Detective Sogawa",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/ba/Detective_Sogawa_Profile.jpg/267px-Detective_Sogawa_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 22,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_sugita",
+      "name": "Detective Sugita",
+      "nameEn": "Detective Sugita",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/07/Detective_Sugita_Profile.jpg/356px-Detective_Sugita_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 23,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_okumura",
+      "name": "Detective Okumura",
+      "nameEn": "Detective Okumura",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/49/Detective_Okumura_Profile.jpg/356px-Detective_Okumura_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 22,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "detective_hirota",
+      "name": "Detective Hirota",
+      "nameEn": "Detective Hirota",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2c/Detective_Hirota_Profile.jpg/275px-Detective_Hirota_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 16,
+        "mentionCount": 0
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "jinpei_matsuda",
+      "name": "Jinpei Matsuda",
+      "nameEn": "Jinpei Matsuda",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c5/Jinpei_Matsuda_Profile.png/275px-Jinpei_Matsuda_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 13,
+        "mentionCount": 22
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kenji_hagiwara",
+      "name": "Kenji Hagiwara",
+      "nameEn": "Kenji Hagiwara",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/ac/Kenji_Hagiwara_Profile.jpg/275px-Kenji_Hagiwara_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 9,
+        "mentionCount": 13
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "masayoshi_sato",
+      "name": "Masayoshi Sato",
+      "nameEn": "Masayoshi Sato",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/cf/Masayoshi_Sato_Profile.jpg/275px-Masayoshi_Sato_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 5,
+        "mentionCount": 5
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "wataru_date",
+      "name": "Wataru Date",
+      "nameEn": "Wataru Date",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d0/Wataru_Date_Profile.jpg/275px-Wataru_Date_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 10,
+        "mentionCount": 13
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "hiromitsu_morofushi",
+      "name": "Hiromitsu Morofushi",
+      "nameEn": "Hiromitsu Morofushi",
+      "codename": "Scotch",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/59/Scotch_Profile.jpg/275px-Scotch_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 12,
+        "mentionCount": 14
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kogoro_mouri",
+      "name": "Kogoro Mouri",
       "nameEn": "Kogoro Mouri",
       "codename": null,
       "faction": "RED",
@@ -373,26 +751,348 @@
       "isDualIdentity": false
     },
     {
-      "id": "agasa",
-      "name": "阿笠博士",
-      "nameEn": "Hiroshi Agasa",
+      "id": "yuya_kazami",
+      "name": "Yuya Kazami",
+      "nameEn": "Yuya Kazami",
       "codename": null,
       "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d5/Hiroshi_Agasa_Profile.jpg/275px-Hiroshi_Agasa_Profile.jpg",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/90/Yuya_Kazami_Profile2.png/275px-Yuya_Kazami_Profile2.png",
       "appearanceCount": {
-        "episodeCount": 265,
-        "mentionCount": 299
+        "episodeCount": 7,
+        "mentionCount": 31
       },
       "isDualIdentity": false
     },
     {
-      "id": "ayumi",
-      "name": "吉田步美",
+      "id": "detective_kojima",
+      "name": "Detective Kojima",
+      "nameEn": "Detective Kojima",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3d/Detective_Kojima_Profile.jpg/275px-Detective_Kojima_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 19,
+        "mentionCount": 0
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "heizo_hattori",
+      "name": "Heizo Hattori",
+      "nameEn": "Heizo Hattori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/8a/Heizo_Hattori_Profile.jpg/275px-Heizo_Hattori_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 10,
+        "mentionCount": 14
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ginshiro_toyama",
+      "name": "Ginshiro Toyama",
+      "nameEn": "Ginshiro Toyama",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/da/Ginshiro_Toyama_Profile.jpg/275px-Ginshiro_Toyama_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 6,
+        "mentionCount": 10
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "goro_otaki",
+      "name": "Goro Otaki",
+      "nameEn": "Goro Otaki",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/8b/Goro_Otaki_Profile.jpg/275px-Goro_Otaki_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 19,
+        "mentionCount": 30
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kansuke_yamato",
+      "name": "Kansuke Yamato",
+      "nameEn": "Kansuke Yamato",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/cf/Kansuke_Yamato_Profile.jpg/275px-Kansuke_Yamato_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 21,
+        "mentionCount": 35
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "yui_uehara",
+      "name": "Yui Uehara",
+      "nameEn": "Yui Uehara",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/47/Yui_Uehara_Profile.jpg/275px-Yui_Uehara_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 22,
+        "mentionCount": 36
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "taka_27aki_morofushi",
+      "name": "Taka'aki Morofushi (Komei)",
+      "nameEn": "Takaaki Morofushi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5f/Taka%27aki_Morofushi_Profile.png/275px-Taka%27aki_Morofushi_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 19,
+        "mentionCount": 29
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "jugo_yokomizo",
+      "name": "Jugo Yokomizo",
+      "nameEn": "Jugo Yokomizo",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/e/e6/Jugo_Yokomizo_Profile.jpg/275px-Jugo_Yokomizo_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 24,
+        "mentionCount": 26
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "chihaya_hagiwara",
+      "name": "Chihaya Hagiwara",
+      "nameEn": "Chihaya Hagiwara",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/35/Chihaya_Hagiwara_Profile.jpg/275px-Chihaya_Hagiwara_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 7,
+        "mentionCount": 12
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "fumimaro_ayanokoji",
+      "name": "Fumimaro Ayanokoji",
+      "nameEn": "Fumimaro Ayanokoji",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/9e/Fumimaro_Ayanokoji_Profile.jpg/275px-Fumimaro_Ayanokoji_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 13,
+        "mentionCount": 6
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sango_yokomizo",
+      "name": "Sango Yokomizo",
+      "nameEn": "Sango Yokomizo",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/88/Sango_Yokomizo_Profile.jpg/275px-Sango_Yokomizo_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 46,
+        "mentionCount": 38
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "misao_yamamura",
+      "name": "Misao Yamamura",
+      "nameEn": "Misao Yamamura",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/e/ea/Misao_Yamamura_Profile.jpg/275px-Misao_Yamamura_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 47,
+        "mentionCount": 57
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "jodie_starling",
+      "name": "Jodie Starling",
+      "nameEn": "Jodie Starling",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5d/Jodie_Starling_Profile.png/275px-Jodie_Starling_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 54,
+        "mentionCount": 89
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "james_black",
+      "name": "James Black",
+      "nameEn": "James Black",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a2/James_Black_Profile.png/275px-James_Black_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 31,
+        "mentionCount": 42
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "andre_camel",
+      "name": "Andre Camel",
+      "nameEn": "Andre Camel",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/22/Andre_Camel_Profile.png/275px-Andre_Camel_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 30,
+        "mentionCount": 48
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "subaru_okiya",
+      "name": "Subaru Okiya",
+      "nameEn": "Subaru Okiya",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/ce/Subaru_Okiya_Profile.png/275px-Subaru_Okiya_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 62,
+        "mentionCount": 78
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "shiho_miyano",
+      "name": "Shiho Miyano",
+      "nameEn": "Shiho Miyano",
+      "codename": "Sherry",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/bc/Shiho_Miyano_Profile.jpg/275px-Shiho_Miyano_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 20,
+        "mentionCount": 22
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "amanda_hughes",
+      "name": "Amanda Hughes",
+      "nameEn": "Amanda Hughes",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4b/Amanda_Hughes_Profile.png/275px-Amanda_Hughes_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 6,
+        "mentionCount": 8
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "tsutomu_akai",
+      "name": "Tsutomu Akai",
+      "nameEn": "Tsutomu Akai",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/0e/Tsutomu_Akai_Profile.jpg/275px-Tsutomu_Akai_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 7,
+        "mentionCount": 7
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "scar_akai",
+      "name": "Scar Akai",
+      "nameEn": "Scar Akai",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/90/Scar_Akai_Profile.png/275px-Scar_Akai_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 12,
+        "mentionCount": 19
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kaitou_kid",
+      "name": "Kaitou Kid",
+      "nameEn": "Kaitou Kid",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d1/Kaitou_Kid_Profile.png/275px-Kaitou_Kid_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 46,
+        "mentionCount": 78
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kaito_kuroba",
+      "name": "Kaito Kuroba",
+      "nameEn": "Kaito Kuroba",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/96/Kaito_Kuroba_Profile.jpg/275px-Kaito_Kuroba_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 24,
+        "mentionCount": 39
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ran_mouri",
+      "name": "Ran Mouri",
+      "nameEn": "Ran Mouri",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/92/Ran_Mouri_Profile.jpg/275px-Ran_Mouri_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 809,
+        "mentionCount": 817
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ayumi_yoshida",
+      "name": "Ayumi Yoshida",
       "nameEn": "Ayumi Yoshida",
       "codename": null,
       "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
+      "subFaction": "POLICE",
       "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/74/Ayumi_Yoshida_Profile.jpg/275px-Ayumi_Yoshida_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 444,
@@ -401,8 +1101,8 @@
       "isDualIdentity": false
     },
     {
-      "id": "mitsuhiko",
-      "name": "圆谷光彦",
+      "id": "mitsuhiko_tsuburaya",
+      "name": "Mitsuhiko Tsuburaya",
       "nameEn": "Mitsuhiko Tsuburaya",
       "codename": null,
       "faction": "RED",
@@ -415,8 +1115,8 @@
       "isDualIdentity": false
     },
     {
-      "id": "genta",
-      "name": "小岛元太",
+      "id": "genta_kojima",
+      "name": "Genta Kojima",
       "nameEn": "Genta Kojima",
       "codename": null,
       "faction": "RED",
@@ -429,27 +1129,237 @@
       "isDualIdentity": false
     },
     {
-      "id": "chianti",
-      "name": "基安蒂",
-      "nameEn": "Chianti",
-      "codename": "Chianti",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/af/Chianti_Profile.jpg/275px-Chianti_Profile.jpg",
+      "id": "hiroshi_agasa",
+      "name": "Hiroshi Agasa",
+      "nameEn": "Hiroshi Agasa",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d5/Hiroshi_Agasa_Profile.jpg/275px-Hiroshi_Agasa_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 15,
-        "mentionCount": 26
+        "episodeCount": 265,
+        "mentionCount": 299
       },
       "isDualIdentity": false
     },
     {
-      "id": "korn",
-      "name": "科恩",
-      "nameEn": "Korn",
-      "codename": "Korn",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2b/Korn_Profile.jpg/275px-Korn_Profile.jpg",
+      "id": "sonoko_suzuki",
+      "name": "Sonoko Suzuki",
+      "nameEn": "Sonoko Suzuki",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/95/Sonoko_Suzuki_Profile.jpg/275px-Sonoko_Suzuki_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 222,
+        "mentionCount": 267
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "eri_kisaki",
+      "name": "Eri Kisaki",
+      "nameEn": "Eri Kisaki",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/f/f3/Eri_Kisaki_Profile.png/275px-Eri_Kisaki_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 64,
+        "mentionCount": 63
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "yusaku_kudo",
+      "name": "Yusaku Kudo",
+      "nameEn": "Yusaku Kudo",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d4/Yusaku_Kudo_Profile.png/275px-Yusaku_Kudo_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 39,
+        "mentionCount": 60
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "yukiko_kudo",
+      "name": "Yukiko Kudo",
+      "nameEn": "Yukiko Kudo",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/f/f9/Yukiko_Kudo_Profile.png/275px-Yukiko_Kudo_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 57,
+        "mentionCount": 93
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "heiji_hattori",
+      "name": "Heiji Hattori",
+      "nameEn": "Heiji Hattori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2c/Heiji_Hattori_Profile.png/275px-Heiji_Hattori_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 112,
+        "mentionCount": 217
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kazuha_toyama",
+      "name": "Kazuha Toyama",
+      "nameEn": "Kazuha Toyama",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/77/Kazuha_Toyama_Profile.jpg/275px-Kazuha_Toyama_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 94,
+        "mentionCount": 175
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "masumi_sera",
+      "name": "Masumi Sera",
+      "nameEn": "Masumi Sera",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/84/Masumi_Sera_Profile.jpg/275px-Masumi_Sera_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 75,
+        "mentionCount": 115
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "rumi_wakasa",
+      "name": "Rumi Wakasa",
+      "nameEn": "Rumi Wakasa",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/ad/Rumi_Wakasa_Profile.png/275px-Rumi_Wakasa_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 26,
+        "mentionCount": 40
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "makoto_kyogoku",
+      "name": "Makoto Kyogoku",
+      "nameEn": "Makoto Kyogoku",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/92/Makoto_Kyogoku_Profile.png/275px-Makoto_Kyogoku_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 32,
+        "mentionCount": 37
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "yoko_okino",
+      "name": "Yoko Okino",
+      "nameEn": "Yoko Okino",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/bd/Yoko_Okino_Profile.jpg/275px-Yoko_Okino_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 59,
+        "mentionCount": 51
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sumiko_kobayashi",
+      "name": "Sumiko Kobayashi",
+      "nameEn": "Sumiko Kobayashi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b8/Sumiko_Kobayashi_Profile.jpg/275px-Sumiko_Kobayashi_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 53,
+        "mentionCount": 62
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "jirokichi_suzuki",
+      "name": "Jirokichi Suzuki",
+      "nameEn": "Jirokichi Suzuki",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/06/Jirokichi_Suzuki_Profile.png/275px-Jirokichi_Suzuki_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 26,
+        "mentionCount": 44
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "azusa_enomoto",
+      "name": "Azusa Enomoto",
+      "nameEn": "Azusa Enomoto",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4a/Azusa_Enomoto_Profile.png/275px-Azusa_Enomoto_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 34,
+        "mentionCount": 45
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "shukichi_haneda",
+      "name": "Shukichi Haneda",
+      "nameEn": "Shukichi Haneda",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a6/Shukichi_Haneda_Profile.jpg/275px-Shukichi_Haneda_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 23,
+        "mentionCount": 30
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "momiji_ooka",
+      "name": "Momiji Ooka",
+      "nameEn": "Momiji Ooka",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/55/Momiji_Ooka_Profile.png/275px-Momiji_Ooka_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 15,
+        "mentionCount": 25
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "muga_iori",
+      "name": "Muga Iori",
+      "nameEn": "Muga Iori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3b/Iori_Muga_Profile.png/275px-Iori_Muga_Profile.png",
       "appearanceCount": {
         "episodeCount": 14,
         "mentionCount": 24
@@ -457,29 +1367,318 @@
       "isDualIdentity": false
     },
     {
-      "id": "kir",
-      "name": "水无怜奈",
-      "nameEn": "Hidemi Hondou",
-      "codename": "Kir",
+      "id": "tomoaki_araide",
+      "name": "Tomoaki Araide",
+      "nameEn": "Tomoaki Araide",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/09/Tomoaki_Araide_Profile.png/275px-Tomoaki_Araide_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 17,
+        "mentionCount": 29
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "eisuke_hondou",
+      "name": "Eisuke Hondou",
+      "nameEn": "Eisuke Hondou",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/f/f3/Eisuke_Hondou_Profile.jpg/275px-Eisuke_Hondou_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 27,
+        "mentionCount": 33
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sakurako_yonehara",
+      "name": "Sakurako Yonehara",
+      "nameEn": "Sakurako Yonehara",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/99/Sakurako_Yonehara_Profile.jpg/275px-Sakurako_Yonehara_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 8,
+        "mentionCount": 12
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "shizuka_hattori",
+      "name": "Shizuka Hattori",
+      "nameEn": "Shizuka Hattori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b5/Shizuka_Hattori_Profile2.png/275px-Shizuka_Hattori_Profile2.png",
+      "appearanceCount": {
+        "episodeCount": 5,
+        "mentionCount": 11
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "mary_sera",
+      "name": "Mary Sera",
+      "nameEn": "Mary Sera",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/f/f4/Mary_Sera_Profile.jpg/275px-Mary_Sera_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 27,
+        "mentionCount": 39
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sharon_vineyard",
+      "name": "Sharon Vineyard",
+      "nameEn": "Sharon Vineyard",
+      "codename": "Vermouth",
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/9a/M26_Vermouth.jpg/275px-M26_Vermouth.jpg",
+      "appearanceCount": {
+        "episodeCount": 78,
+        "mentionCount": 114
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "elena_miyano",
+      "name": "Elena Miyano",
+      "nameEn": "Elena Miyano",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/77/Elena_Miyano_Profile.png/275px-Elena_Miyano_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 8,
+        "mentionCount": 7
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "atsushi_miyano",
+      "name": "Atsushi Miyano",
+      "nameEn": "Atsushi Miyano",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/0a/Atsushi_Miyano_Profile.png/275px-Atsushi_Miyano_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 4,
+        "mentionCount": 2
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kohji_haneda",
+      "name": "Kohji Haneda",
+      "nameEn": "Kohji Haneda",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/42/Kohji_Haneda_profile.jpg/275px-Kohji_Haneda_profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 14,
+        "mentionCount": 20
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ryusuke_higo",
+      "name": "Ryusuke Higo",
+      "nameEn": "Ryusuke Higo",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/de/Ryusuke_Higo_Profile2.png/275px-Ryusuke_Higo_Profile2.png",
+      "appearanceCount": {
+        "episodeCount": 15,
+        "mentionCount": 17
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "hideo_akagi",
+      "name": "Hideo Akagi",
+      "nameEn": "Hideo Akagi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/be/Hideo_Akagi_Profile.png/275px-Hideo_Akagi_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 13,
+        "mentionCount": 15
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "aoko_nakamori",
+      "name": "Aoko Nakamori",
+      "nameEn": "Aoko Nakamori",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4c/Aoko_Nakomori_Profile.jpg/275px-Aoko_Nakomori_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 24,
+        "mentionCount": 37
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "toichi_kuroba",
+      "name": "Toichi Kuroba",
+      "nameEn": "Toichi Kuroba",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c9/Toichi_Kuroba_Profile.jpg/275px-Toichi_Kuroba_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 13,
+        "mentionCount": 12
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "chikage_kuroba",
+      "name": "Chikage Kuroba",
+      "nameEn": "Chikage Kuroba",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/36/Chikage_Kuroba_Profile.jpg/275px-Chikage_Kuroba_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 8,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "konosuke_jii",
+      "name": "Konosuke Jii",
+      "nameEn": "Konosuke Jii",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/02/Kaito_Kuroba.jpg/60px-Kaito_Kuroba.jpg",
+      "appearanceCount": {
+        "episodeCount": 16,
+        "mentionCount": 11
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kaitou_corbeau",
+      "name": "Kaitou Corbeau",
+      "nameEn": "Kaitou Corbeau",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/f/f3/Kaitou_Corbeau_profile.jpg/275px-Kaitou_Corbeau_profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 3,
+        "mentionCount": 3
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "akako_koizumi",
+      "name": "Akako Koizumi",
+      "nameEn": "Akako Koizumi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/e/e2/Akako_Koizumi_Profile.jpg/275px-Akako_Koizumi_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 14,
+        "mentionCount": 0
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "saguru_hakuba",
+      "name": "Saguru Hakuba",
+      "nameEn": "Saguru Hakuba",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/df/Saguru_Hakuba_Profile.jpg/275px-Saguru_Hakuba_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 7,
+        "mentionCount": 13
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kanenori_wakita",
+      "name": "Rum",
+      "nameEn": "Kanenori Wakita",
+      "codename": "Rum",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/55/Hidemi_Hondou_Profile.jpg/275px-Hidemi_Hondou_Profile.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a6/Rum_Profile.jpg/200px-Rum_Profile.jpg",
       "appearanceCount": {
-        "episodeCount": 40,
-        "mentionCount": 59
+        "episodeCount": 30,
+        "mentionCount": 41
       },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "RED",
-        "secondaryName": "本堂瑛海",
-        "secondaryCodename": "CIA"
-      }
+      "isDualIdentity": false
+    },
+    {
+      "id": "keiko_momoi",
+      "name": "Keiko Momoi",
+      "nameEn": "Keiko Momoi",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a3/Keiko_Momoi_Profile.jpg/275px-Keiko_Momoi_Profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 11,
+        "mentionCount": 12
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "takahiro_sanada",
+      "name": "Takahiro Sanada",
+      "nameEn": "Takahiro Sanada",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/6/6e/Takahiro_Sanada_Profile.png/275px-Takahiro_Sanada_Profile.png",
+      "appearanceCount": {
+        "episodeCount": 6,
+        "mentionCount": 4
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kamen_yaiba",
+      "name": "Kamen Yaiba",
+      "nameEn": "Kamen Yaiba",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/9a/Kamen_Yaiba_profile.jpg/275px-Kamen_Yaiba_profile.jpg",
+      "appearanceCount": {
+        "episodeCount": 55,
+        "mentionCount": 19
+      },
+      "isDualIdentity": false
     }
   ],
   "characterEvents": [
     {
       "id": "evt-001",
-      "characterId": "shinichi",
+      "characterId": "shinichi_kudo",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -487,7 +1686,7 @@
     },
     {
       "id": "evt-002",
-      "characterId": "ran",
+      "characterId": "ran_mouri",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -511,7 +1710,7 @@
     },
     {
       "id": "evt-005",
-      "characterId": "conan",
+      "characterId": "conan_edogawa",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -519,7 +1718,7 @@
     },
     {
       "id": "evt-006",
-      "characterId": "haibara",
+      "characterId": "ai_haibara",
       "type": "JOIN",
       "episodeIndex": 129,
       "chapterIndex": 176,
@@ -527,7 +1726,7 @@
     },
     {
       "id": "evt-007",
-      "characterId": "akai",
+      "characterId": "shuichi_akai",
       "type": "JOIN",
       "episodeIndex": 230,
       "chapterIndex": 287,
@@ -535,7 +1734,7 @@
     },
     {
       "id": "evt-008",
-      "characterId": "miyano_akemi",
+      "characterId": "akemi_miyano",
       "type": "DEATH",
       "episodeIndex": 128,
       "chapterIndex": 176,
@@ -543,7 +1742,7 @@
     },
     {
       "id": "evt-009",
-      "characterId": "vermouth",
+      "characterId": "sharon_vineyard",
       "type": "JOIN",
       "episodeIndex": 176,
       "chapterIndex": 238,
@@ -551,7 +1750,7 @@
     },
     {
       "id": "evt-010",
-      "characterId": "amuro",
+      "characterId": "rei_furuya",
       "type": "JOIN",
       "episodeIndex": 667,
       "chapterIndex": 793,
@@ -559,7 +1758,7 @@
     },
     {
       "id": "evt-011",
-      "characterId": "amuro",
+      "characterId": "rei_furuya",
       "type": "EXPOSED",
       "episodeIndex": 779,
       "chapterIndex": 894,
@@ -567,7 +1766,7 @@
     },
     {
       "id": "evt-012",
-      "characterId": "akai",
+      "characterId": "shuichi_akai",
       "type": "EXPOSED",
       "episodeIndex": 783,
       "chapterIndex": 898,
@@ -575,7 +1774,7 @@
     },
     {
       "id": "evt-013",
-      "characterId": "sera",
+      "characterId": "masumi_sera",
       "type": "JOIN",
       "episodeIndex": 646,
       "chapterIndex": 768,
@@ -583,7 +1782,7 @@
     },
     {
       "id": "evt-014",
-      "characterId": "heiji",
+      "characterId": "heiji_hattori",
       "type": "JOIN",
       "episodeIndex": 48,
       "chapterIndex": 92,
@@ -591,7 +1790,7 @@
     },
     {
       "id": "evt-015",
-      "characterId": "matsuda",
+      "characterId": "jinpei_matsuda",
       "type": "DEATH",
       "episodeIndex": 304,
       "chapterIndex": 358,
@@ -599,23 +1798,15 @@
     },
     {
       "id": "evt-016",
-      "characterId": "hagiwara",
+      "characterId": "kenji_hagiwara",
       "type": "DEATH",
       "episodeIndex": 304,
       "chapterIndex": 358,
       "description": "萩原研二在爆炸事件中殉职（回忆）"
     },
     {
-      "id": "evt-017",
-      "characterId": "rum",
-      "type": "JOIN",
-      "episodeIndex": 941,
-      "chapterIndex": 1008,
-      "description": "朗姆篇开始，朗姆身份之谜浮出水面"
-    },
-    {
       "id": "evt-018",
-      "characterId": "jodie",
+      "characterId": "jodie_starling",
       "type": "JOIN",
       "episodeIndex": 170,
       "chapterIndex": 230,
@@ -623,7 +1814,7 @@
     },
     {
       "id": "evt-019",
-      "characterId": "sato",
+      "characterId": "miwako_sato",
       "type": "JOIN",
       "episodeIndex": 130,
       "chapterIndex": 180,
@@ -631,7 +1822,7 @@
     },
     {
       "id": "evt-020",
-      "characterId": "takagi",
+      "characterId": "wataru_takagi",
       "type": "JOIN",
       "episodeIndex": 130,
       "chapterIndex": 180,
@@ -639,7 +1830,7 @@
     },
     {
       "id": "evt-021",
-      "characterId": "kogoro",
+      "characterId": "kogoro_mouri",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -647,7 +1838,7 @@
     },
     {
       "id": "evt-022",
-      "characterId": "agasa",
+      "characterId": "hiroshi_agasa",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -655,7 +1846,7 @@
     },
     {
       "id": "evt-023",
-      "characterId": "ayumi",
+      "characterId": "ayumi_yoshida",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -663,7 +1854,7 @@
     },
     {
       "id": "evt-024",
-      "characterId": "mitsuhiko",
+      "characterId": "mitsuhiko_tsuburaya",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -671,31 +1862,15 @@
     },
     {
       "id": "evt-025",
-      "characterId": "genta",
+      "characterId": "genta_kojima",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
       "description": "小岛元太首次登场"
     },
     {
-      "id": "evt-026",
-      "characterId": "chianti",
-      "type": "JOIN",
-      "episodeIndex": 425,
-      "chapterIndex": 499,
-      "description": "基安蒂首次登场"
-    },
-    {
-      "id": "evt-027",
-      "characterId": "korn",
-      "type": "JOIN",
-      "episodeIndex": 425,
-      "chapterIndex": 499,
-      "description": "科恩首次登场"
-    },
-    {
       "id": "evt-028",
-      "characterId": "kir",
+      "characterId": "hidemi_hondou",
       "type": "JOIN",
       "episodeIndex": 425,
       "chapterIndex": 499,
@@ -705,59 +1880,43 @@
   "relationships": [
     {
       "id": "rel-001",
-      "character1Id": "shinichi",
-      "character2Id": "ran",
+      "character1Id": "shinichi_kudo",
+      "character2Id": "ran_mouri",
       "type": "CHILDHOOD_SWEETHEART",
       "initialStatus": "UNCONFESSED",
       "description": "青梅竹马，两小无猜"
     },
     {
       "id": "rel-002",
-      "character1Id": "heiji",
-      "character2Id": "kazuha",
+      "character1Id": "heiji_hattori",
+      "character2Id": "kazuha_toyama",
       "type": "CHILDHOOD_SWEETHEART",
       "initialStatus": "UNCONFESSED",
       "description": "大阪的青梅竹马组合"
     },
     {
       "id": "rel-003",
-      "character1Id": "sato",
-      "character2Id": "takagi",
+      "character1Id": "miwako_sato",
+      "character2Id": "wataru_takagi",
       "type": "LOVE",
       "initialStatus": "UNCONFESSED",
       "description": "警视厅恋人"
     },
     {
-      "id": "rel-004",
-      "character1Id": "hakuba",
-      "character2Id": "aoko",
-      "type": "CHILDHOOD_SWEETHEART",
-      "initialStatus": "UNCONFESSED",
-      "description": "白马探与中森青子"
-    },
-    {
       "id": "rel-005",
-      "character1Id": "akai",
-      "character2Id": "miyano_akemi",
+      "character1Id": "shuichi_akai",
+      "character2Id": "akemi_miyano",
       "type": "LOVE",
       "initialStatus": "DATING",
       "description": "赤井秀一与宫野明美，跨越阵营的悲恋"
     },
     {
       "id": "rel-006",
-      "character1Id": "matsuda",
-      "character2Id": "hagiwara",
+      "character1Id": "jinpei_matsuda",
+      "character2Id": "kenji_hagiwara",
       "type": "AMBIGUOUS",
       "initialStatus": "CONFIRMED",
       "description": "松田阵平与萩原研二，警校组挚友"
-    },
-    {
-      "id": "rel-007",
-      "character1Id": "chiba",
-      "character2Id": "miike",
-      "type": "LOVE",
-      "initialStatus": "UNCONFESSED",
-      "description": "千叶和伸与三池苗子"
     }
   ],
   "relationshipEvents": [

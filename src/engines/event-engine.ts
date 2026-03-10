@@ -129,10 +129,8 @@ export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSna
       )
     );
 
-    // If no events at all, character hasn't appeared yet — skip
-    if (relevantEvents.length === 0) continue;
-
     // Compute cumulative status by applying events in order
+    // Default status is ACTIVE if no events exist
     let status: CharacterState['status'] = 'ACTIVE';
     for (const event of relevantEvents) {
       status = statusFromEventType(event.type);

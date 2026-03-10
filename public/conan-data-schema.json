@@ -36,6 +36,11 @@
           "type": "integer",
           "description": "漫画总话数 / Total manga chapters",
           "minimum": 0
+        },
+        "totalCharacters": {
+          "type": "integer",
+          "description": "角色总数 / Total number of characters",
+          "minimum": 0
         }
       }
     },
