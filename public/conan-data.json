@@ -899,58 +899,116 @@
   "storyArcs": [
     {
       "id": "arc-001",
-      "name": "红茶谈话",
-      "description": "赤井秀一与安室透在咖啡厅的关键对话，揭示两人的过往恩怨",
-      "startEpisodeIndex": 781,
-      "startChapterIndex": 898,
-      "endEpisodeIndex": 783,
-      "endChapterIndex": 902
+      "name": "组织初登场",
+      "description": "工藤新一在热带乐园被灌下APTX4869变小为柯南",
+      "startEpisodeIndex": 1,
+      "startChapterIndex": 1,
+      "endEpisodeIndex": 1,
+      "endChapterIndex": 5
     },
     {
       "id": "arc-002",
-      "name": "波本篇",
-      "description": "安室透（波本）的真实身份逐步揭露，公安零的秘密浮出水面",
-      "startEpisodeIndex": 667,
-      "startChapterIndex": 793
+      "name": "宫野明美事件",
+      "description": "宫野明美（灰原哀之姐）被琴酒杀害",
+      "startEpisodeIndex": 128,
+      "startChapterIndex": 176,
+      "endEpisodeIndex": 128,
+      "endChapterIndex": 179
     },
     {
       "id": "arc-003",
-      "name": "朗姆篇",
-      "description": "黑衣组织二号人物朗姆的身份之谜，多个嫌疑人逐一登场",
-      "startEpisodeIndex": 941,
-      "startChapterIndex": 1008
+      "name": "灰原哀登场",
+      "description": "灰原哀逃离组织，服下APTX4869变小后转入帝丹小学",
+      "startEpisodeIndex": 129,
+      "startChapterIndex": 176,
+      "endEpisodeIndex": 130,
+      "endChapterIndex": 181
     },
     {
       "id": "arc-004",
-      "name": "伦敦篇",
-      "description": "工藤新一向毛利兰表白的经典篇章",
-      "startEpisodeIndex": 616,
-      "startChapterIndex": 743,
-      "endEpisodeIndex": 621,
-      "endChapterIndex": 752
+      "name": "贝尔摩德篇",
+      "description": "贝尔摩德伪装成新出医生潜入，与FBI展开对决",
+      "startEpisodeIndex": 176,
+      "startChapterIndex": 238,
+      "endEpisodeIndex": 345,
+      "endChapterIndex": 434
     },
     {
       "id": "arc-005",
+      "name": "赤与黑的碰撞",
+      "description": "CIA水无怜奈回归组织，赤井秀一假死",
+      "startEpisodeIndex": 491,
+      "startChapterIndex": 595,
+      "endEpisodeIndex": 504,
+      "endChapterIndex": 609
+    },
+    {
+      "id": "arc-006",
+      "name": "波本篇",
+      "description": "安室透以波本身份登场，三重身份逐步揭露",
+      "startEpisodeIndex": 667,
+      "startChapterIndex": 793,
+      "endEpisodeIndex": 783,
+      "endChapterIndex": 898
+    },
+    {
+      "id": "arc-007",
       "name": "绯色篇",
-      "description": "赤井秀一假死真相大白，世良真纯的身份揭露",
+      "description": "赤井秀一假死真相大白，安室透公安身份揭露",
       "startEpisodeIndex": 779,
       "startChapterIndex": 894,
       "endEpisodeIndex": 783,
       "endChapterIndex": 898
     },
     {
-      "id": "arc-006",
-      "name": "黑铁的鱼影",
-      "description": "剧场版M26，灰原哀身份危机，组织与正义方的全面对决",
-      "startEpisodeIndex": 1077,
-      "startChapterIndex": 1105
+      "id": "arc-008",
+      "name": "伦敦篇",
+      "description": "新一向小兰表白",
+      "startEpisodeIndex": 616,
+      "startChapterIndex": 743,
+      "endEpisodeIndex": 621,
+      "endChapterIndex": 752
     },
     {
-      "id": "arc-007",
-      "name": "组织篇",
-      "description": "涉及黑衣组织核心剧情的总篇章",
-      "startEpisodeIndex": 54,
-      "startChapterIndex": 114
+      "id": "arc-009",
+      "name": "修学旅行篇",
+      "description": "新一短暂恢复原貌，与小兰正式交往",
+      "startEpisodeIndex": 927,
+      "startChapterIndex": 1000,
+      "endEpisodeIndex": 928,
+      "endChapterIndex": 1005
+    },
+    {
+      "id": "arc-010",
+      "name": "朗姆篇",
+      "description": "组织二号人物Rum身份之谜",
+      "startEpisodeIndex": 894,
+      "startChapterIndex": 975
+    },
+    {
+      "id": "arc-011",
+      "name": "警察学校篇",
+      "description": "降谷零、松田阵平、萩原研二等人的警校时代回忆",
+      "startEpisodeIndex": 1027,
+      "startChapterIndex": 1061,
+      "endEpisodeIndex": 1031,
+      "endChapterIndex": 1066
+    },
+    {
+      "id": "arc-012",
+      "name": "FBI连续杀害事件",
+      "description": "FBI成员遭组织连续袭击，赤井秀一与朗姆正面对峙",
+      "startEpisodeIndex": 1077,
+      "startChapterIndex": 1062,
+      "endEpisodeIndex": 1079,
+      "endChapterIndex": 1066
+    },
+    {
+      "id": "arc-013",
+      "name": "混沌篇",
+      "description": "朗姆身份最终揭露，组织与正义方的决战序幕",
+      "startEpisodeIndex": 1144,
+      "startChapterIndex": 1144
     }
   ]
 }
