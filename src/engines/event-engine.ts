@@ -147,6 +147,7 @@ export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSna
     const primaryState: CharacterState = {
       characterId: character.id,
       name: character.name,
+      nameEn: character.nameEn,
       codename: character.codename ?? undefined,
       avatar: character.avatar,
       status,
@@ -171,6 +172,7 @@ export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSna
       const secondaryState: CharacterState = {
         characterId: character.id,
         name: dualInfo.secondaryName ?? character.name,
+        nameEn: character.nameEn,
         codename: dualInfo.secondaryCodename ?? character.codename ?? undefined,
         avatar: character.avatar,
         status,

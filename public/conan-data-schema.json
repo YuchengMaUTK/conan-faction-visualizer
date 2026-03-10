@@ -126,6 +126,10 @@
           "description": "角色姓名 / Character name",
           "minLength": 1
         },
+        "nameEn": {
+          "type": "string",
+          "description": "角色英文名（wiki标准） / Character English name (wiki standard)"
+        },
         "codename": {
           "type": ["string", "null"],
           "description": "角色代号（如 Gin、Vodka，无代号时为 null） / Character codename (null if none)"

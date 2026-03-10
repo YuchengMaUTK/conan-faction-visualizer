@@ -27,6 +27,7 @@ export type SubFaction =
 export interface Character {
   id: string;
   name: string;
+  nameEn?: string;
   codename?: string | null;
   faction: 'RED' | 'BLACK';
   subFaction?: SubFaction;
@@ -153,6 +154,7 @@ export interface AIUpdate {
 export interface CharacterState {
   characterId: string;
   name: string;
+  nameEn?: string;
   codename?: string;
   avatar: string;
   status: 'ACTIVE' | 'LEFT' | 'DEAD' | 'EXPOSED';

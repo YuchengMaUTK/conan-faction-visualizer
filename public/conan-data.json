@@ -18,7 +18,8 @@
         "episodeCount": 800,
         "mentionCount": 200
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Shinichi Kudo"
     },
     {
       "id": "ran",
@@ -31,7 +32,8 @@
         "episodeCount": 750,
         "mentionCount": 100
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Ran Mouri"
     },
     {
       "id": "conan",
@@ -44,7 +46,8 @@
         "episodeCount": 1100,
         "mentionCount": 300
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Conan Edogawa"
     },
     {
       "id": "heiji",
@@ -57,7 +60,8 @@
         "episodeCount": 200,
         "mentionCount": 80
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Heiji Hattori"
     },
     {
       "id": "kazuha",
@@ -70,7 +74,8 @@
         "episodeCount": 150,
         "mentionCount": 50
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Kazuha Toyama"
     },
     {
       "id": "akai",
@@ -88,7 +93,8 @@
         "secondaryFaction": "BLACK",
         "secondaryName": "诸星大",
         "secondaryCodename": "Rye"
-      }
+      },
+      "nameEn": "Shuichi Akai"
     },
     {
       "id": "amuro",
@@ -106,7 +112,8 @@
         "secondaryFaction": "RED",
         "secondaryName": "降谷零",
         "secondaryCodename": "公安零"
-      }
+      },
+      "nameEn": "Toru Amuro"
     },
     {
       "id": "gin",
@@ -119,7 +126,8 @@
         "episodeCount": 120,
         "mentionCount": 150
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Gin"
     },
     {
       "id": "vodka",
@@ -132,7 +140,8 @@
         "episodeCount": 100,
         "mentionCount": 80
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Vodka"
     },
     {
       "id": "vermouth",
@@ -145,7 +154,8 @@
         "episodeCount": 90,
         "mentionCount": 100
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Vermouth"
     },
     {
       "id": "haibara",
@@ -163,7 +173,8 @@
         "secondaryFaction": "BLACK",
         "secondaryName": "宫野志保",
         "secondaryCodename": "Sherry"
-      }
+      },
+      "nameEn": "Ai Haibara"
     },
     {
       "id": "jodie",
@@ -176,7 +187,8 @@
         "episodeCount": 80,
         "mentionCount": 40
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Jodie Starling"
     },
     {
       "id": "sato",
@@ -189,7 +201,8 @@
         "episodeCount": 120,
         "mentionCount": 60
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Miwako Sato"
     },
     {
       "id": "takagi",
@@ -202,7 +215,8 @@
         "episodeCount": 110,
         "mentionCount": 50
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Wataru Takagi"
     },
     {
       "id": "miyano_akemi",
@@ -215,7 +229,8 @@
         "episodeCount": 15,
         "mentionCount": 40
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Akemi Miyano"
     },
     {
       "id": "rum",
@@ -228,7 +243,8 @@
         "episodeCount": 60,
         "mentionCount": 90
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Rum"
     },
     {
       "id": "hakuba",
@@ -241,7 +257,8 @@
         "episodeCount": 20,
         "mentionCount": 15
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Saguru Hakuba"
     },
     {
       "id": "aoko",
@@ -254,7 +271,8 @@
         "episodeCount": 15,
         "mentionCount": 10
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Aoko Nakamori"
     },
     {
       "id": "matsuda",
@@ -267,7 +285,8 @@
         "episodeCount": 25,
         "mentionCount": 40
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Jinpei Matsuda"
     },
     {
       "id": "hagiwara",
@@ -280,7 +299,8 @@
         "episodeCount": 15,
         "mentionCount": 30
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Kenji Hagiwara"
     },
     {
       "id": "chiba",
@@ -293,7 +313,8 @@
         "episodeCount": 60,
         "mentionCount": 20
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Kazunobu Chiba"
     },
     {
       "id": "miike",
@@ -306,7 +327,8 @@
         "episodeCount": 30,
         "mentionCount": 15
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Naeko Miike"
     },
     {
       "id": "sera",
@@ -319,7 +341,8 @@
         "episodeCount": 100,
         "mentionCount": 50
       },
-      "isDualIdentity": false
+      "isDualIdentity": false,
+      "nameEn": "Masumi Sera"
     },
     {
       "id": "subaru",
@@ -332,7 +355,125 @@
         "episodeCount": 80,
         "mentionCount": 40
       },
+      "isDualIdentity": false,
+      "nameEn": "Subaru Okiya"
+    },
+    {
+      "id": "kogoro",
+      "name": "毛利小五郎",
+      "nameEn": "Kogoro Mouri",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 700,
+        "mentionCount": 100
+      },
       "isDualIdentity": false
+    },
+    {
+      "id": "agasa",
+      "name": "阿笠博士",
+      "nameEn": "Hiroshi Agasa",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 500,
+        "mentionCount": 80
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ayumi",
+      "name": "吉田步美",
+      "nameEn": "Ayumi Yoshida",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 400,
+        "mentionCount": 50
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "mitsuhiko",
+      "name": "圆谷光彦",
+      "nameEn": "Mitsuhiko Tsuburaya",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 380,
+        "mentionCount": 45
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "genta",
+      "name": "小岛元太",
+      "nameEn": "Genta Kojima",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 380,
+        "mentionCount": 45
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "chianti",
+      "name": "基安蒂",
+      "nameEn": "Chianti",
+      "codename": "Chianti",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 25,
+        "mentionCount": 15
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "korn",
+      "name": "科恩",
+      "nameEn": "Korn",
+      "codename": "Korn",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 25,
+        "mentionCount": 15
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kir",
+      "name": "水无怜奈",
+      "nameEn": "Hidemi Hondou",
+      "codename": "Kir",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/default.png",
+      "appearanceCount": {
+        "episodeCount": 50,
+        "mentionCount": 30
+      },
+      "isDualIdentity": true,
+      "dualIdentityInfo": {
+        "secondaryFaction": "RED",
+        "secondaryName": "本堂瑛海",
+        "secondaryCodename": "CIA"
+      }
     }
   ],
   "characterEvents": [
@@ -495,6 +636,70 @@
       "episodeIndex": 130,
       "chapterIndex": 180,
       "description": "高木涉首次登场"
+    },
+    {
+      "id": "evt-021",
+      "characterId": "kogoro",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "毛利小五郎首次登场"
+    },
+    {
+      "id": "evt-022",
+      "characterId": "agasa",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "阿笠博士首次登场"
+    },
+    {
+      "id": "evt-023",
+      "characterId": "ayumi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "吉田步美首次登场"
+    },
+    {
+      "id": "evt-024",
+      "characterId": "mitsuhiko",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "圆谷光彦首次登场"
+    },
+    {
+      "id": "evt-025",
+      "characterId": "genta",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "小岛元太首次登场"
+    },
+    {
+      "id": "evt-026",
+      "characterId": "chianti",
+      "type": "JOIN",
+      "episodeIndex": 425,
+      "chapterIndex": 499,
+      "description": "基安蒂首次登场"
+    },
+    {
+      "id": "evt-027",
+      "characterId": "korn",
+      "type": "JOIN",
+      "episodeIndex": 425,
+      "chapterIndex": 499,
+      "description": "科恩首次登场"
+    },
+    {
+      "id": "evt-028",
+      "characterId": "kir",
+      "type": "JOIN",
+      "episodeIndex": 425,
+      "chapterIndex": 499,
+      "description": "水无怜奈（Kir）首次登场"
     }
   ],
   "relationships": [
