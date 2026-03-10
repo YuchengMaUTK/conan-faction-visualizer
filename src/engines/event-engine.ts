@@ -6,7 +6,6 @@ import type {
   CharacterEvent,
   CharacterEventType,
   KeyEvent,
-  Character,
   AppearanceCount,
 } from '../types';
 

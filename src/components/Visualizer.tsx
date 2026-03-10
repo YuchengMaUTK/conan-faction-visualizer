@@ -1,5 +1,6 @@
 import { useEffect, useMemo } from 'react';
 import { useStore } from '../store';
+import type { FactionSnapshot, RelationshipState, SubFaction } from '../types';
 import FactionPanel from './FactionPanel';
 import CPPair from './CPPair';
 import TimelineSlider from './TimelineSlider';
@@ -180,15 +181,15 @@ function PanelContainerWithOverlay({
   searchResults,
   subFactionFilter,
   showRelationships,
-  hasCrossFactionRelationships,
+  hasCrossFactionRelationships: _hasCrossFactionRelationships,
   selectCharacter,
 }: {
-  factionSnapshot: NonNullable<ReturnType<typeof useStore>['factionSnapshot']>;
-  relationshipStates: ReturnType<typeof useStore>['relationshipStates'];
-  highlightedCharacterIds: ReturnType<typeof useStore>['highlightedCharacterIds'];
+  factionSnapshot: FactionSnapshot;
+  relationshipStates: RelationshipState[];
+  highlightedCharacterIds: Set<string>;
   searchQuery: string;
   searchResults: string[];
-  subFactionFilter: ReturnType<typeof useStore>['subFactionFilter'];
+  subFactionFilter: SubFaction | null;
   showRelationships: boolean;
   hasCrossFactionRelationships: boolean;
   selectCharacter: (id: string | null) => void;

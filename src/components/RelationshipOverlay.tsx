@@ -1,5 +1,5 @@
 import { useEffect, useState, useCallback, useRef } from 'react';
-import type { RelationshipState, CharacterState, FactionSnapshot } from '../types';
+import type { RelationshipState, FactionSnapshot } from '../types';
 import RelationshipLine from './RelationshipLine';
 
 interface RelationshipOverlayProps {
