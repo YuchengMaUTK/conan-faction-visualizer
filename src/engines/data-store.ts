@@ -18,7 +18,7 @@ let cachedSchema: object | null = null;
 
 async function loadSchema(): Promise<object> {
   if (cachedSchema) return cachedSchema;
-  const resp = await fetch('/conan-data-schema.json');
+  const resp = await fetch(`${import.meta.env.BASE_URL}conan-data-schema.json`);
   cachedSchema = await resp.json();
   return cachedSchema!;
 }

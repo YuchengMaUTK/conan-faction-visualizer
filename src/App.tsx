@@ -10,7 +10,7 @@ function App() {
         <p style={styles.tagline}>真相只有一个</p>
       </div>
 
-      <Visualizer dataUrl="/conan-data.json" />
+      <Visualizer dataUrl={`${import.meta.env.BASE_URL}conan-data.json`} />
 
       {/* Pulsing dot animation */}
       <style>{`
