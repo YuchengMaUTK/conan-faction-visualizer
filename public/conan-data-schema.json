@@ -1,0 +1,341 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "conan-data-schema.json",
+  "title": "名侦探柯南红黑阵营数据集 / Detective Conan Faction Dataset",
+  "description": "名侦探柯南红黑阵营可视化工具的完整数据集定义，包含角色、事件、情感关系、集数映射和剧情篇章。",
+  "type": "object",
+  "required": ["metadata", "characters", "characterEvents", "relationships", "relationshipEvents", "episodeChapterMappings", "storyArcs"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema 引用路径"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "数据集元信息 / Dataset metadata",
+      "required": ["version", "lastUpdated", "totalEpisodes", "totalChapters"],
+      "additionalProperties": false,
+      "properties": {
+        "version": {
+          "type": "string",
+          "description": "数据集版本号 / Dataset version (semver format)",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+        },
+        "lastUpdated": {
+          "type": "string",
+          "description": "最后更新日期 / Last updated date (YYYY-MM-DD format)",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+        },
+        "totalEpisodes": {
+          "type": "integer",
+          "description": "动画总集数 / Total anime episodes",
+          "minimum": 0
+        },
+        "totalChapters": {
+          "type": "integer",
+          "description": "漫画总话数 / Total manga chapters",
+          "minimum": 0
+        }
+      }
+    },
+    "characters": {
+      "type": "array",
+      "description": "角色列表 / Character list",
+      "items": { "$ref": "#/definitions/Character" }
+    },
+    "characterEvents": {
+      "type": "array",
+      "description": "角色事件列表 / Character event list",
+      "items": { "$ref": "#/definitions/CharacterEvent" }
+    },
+    "relationships": {
+      "type": "array",
+      "description": "情感关系列表 / Romantic relationship list",
+      "items": { "$ref": "#/definitions/RomanticRelationship" }
+    },
+    "relationshipEvents": {
+      "type": "array",
+      "description": "关系事件列表 / Relationship event list",
+      "items": { "$ref": "#/definitions/RelationshipEvent" }
+    },
+    "episodeChapterMappings": {
+      "type": "array",
+      "description": "集数-话数映射列表（含发行日期） / Episode-chapter mapping list with publication dates",
+      "items": { "$ref": "#/definitions/EpisodeChapterMapping" }
+    },
+    "storyArcs": {
+      "type": "array",
+      "description": "剧情篇章列表 / Story arc list",
+      "items": { "$ref": "#/definitions/StoryArc" }
+    }
+  },
+  "definitions": {
+    "AppearanceCount": {
+      "type": "object",
+      "description": "出场/提及次数，用于衡量角色重要性 / Appearance and mention counts for importance ranking",
+      "required": ["episodeCount", "mentionCount"],
+      "additionalProperties": false,
+      "properties": {
+        "episodeCount": {
+          "type": "integer",
+          "description": "出场次数 / Number of episode appearances",
+          "minimum": 0
+        },
+        "mentionCount": {
+          "type": "integer",
+          "description": "被提及次数 / Number of mentions by other characters",
+          "minimum": 0
+        }
+      }
+    },
+    "DualIdentityInfo": {
+      "type": "object",
+      "description": "双重身份信息（卧底角色在另一阵营的身份） / Dual identity info for undercover characters",
+      "required": ["secondaryFaction"],
+      "additionalProperties": false,
+      "properties": {
+        "secondaryFaction": {
+          "type": "string",
+          "enum": ["RED", "BLACK"],
+          "description": "第二阵营 / Secondary faction"
+        },
+        "secondaryName": {
+          "type": "string",
+          "description": "在另一阵营使用的姓名 / Name used in secondary faction"
+        },
+        "secondaryCodename": {
+          "type": "string",
+          "description": "在另一阵营使用的代号 / Codename used in secondary faction"
+        }
+      }
+    },
+    "Character": {
+      "type": "object",
+      "description": "角色基本信息 / Character basic information",
+      "required": ["id", "name", "faction", "avatar", "appearanceCount", "isDualIdentity"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "角色唯一标识符 / Unique character identifier",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "description": "角色姓名 / Character name",
+          "minLength": 1
+        },
+        "codename": {
+          "type": ["string", "null"],
+          "description": "角色代号（如 Gin、Vodka，无代号时为 null） / Character codename (null if none)"
+        },
+        "faction": {
+          "type": "string",
+          "enum": ["RED", "BLACK"],
+          "description": "主要所属阵营：RED=正义方，BLACK=黑衣组织 / Primary faction: RED=Justice, BLACK=Black Organization"
+        },
+        "subFaction": {
+          "type": "string",
+          "description": "阵营子分类（FBI、CIA、PSB、DETECTIVE、POLICE、DETECTIVE_BOYS、BO_CORE、BO_OUTER 等） / Sub-faction category"
+        },
+        "avatar": {
+          "type": "string",
+          "description": "头像标识（文件名或 URL） / Avatar identifier (filename or URL)",
+          "minLength": 1
+        },
+        "appearanceCount": {
+          "$ref": "#/definitions/AppearanceCount",
+          "description": "出场/提及次数 / Appearance and mention counts"
+        },
+        "isDualIdentity": {
+          "type": "boolean",
+          "description": "是否拥有双重身份（如卧底） / Whether character has dual identity (e.g. undercover)"
+        },
+        "dualIdentityInfo": {
+          "$ref": "#/definitions/DualIdentityInfo",
+          "description": "双重身份详细信息（仅当 isDualIdentity 为 true 时有效） / Dual identity details (only when isDualIdentity is true)"
+        }
+      }
+    },
+    "CharacterEvent": {
+      "type": "object",
+      "description": "角色事件，记录角色状态变化 / Character event recording status changes",
+      "required": ["id", "characterId", "type", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "事件唯一标识符 / Unique event identifier",
+          "minLength": 1
+        },
+        "characterId": {
+          "type": "string",
+          "description": "关联角色 ID / Associated character ID",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": ["JOIN", "LEAVE", "DEATH", "EXPOSED", "DEFECT"],
+          "description": "事件类型：JOIN=加入，LEAVE=离开，DEATH=牺牲，EXPOSED=身份暴露，DEFECT=叛变 / Event type"
+        },
+        "episodeIndex": {
+          "type": "integer",
+          "description": "关联动画集数 / Associated anime episode index",
+          "minimum": 1
+        },
+        "chapterIndex": {
+          "type": "integer",
+          "description": "关联漫画话数 / Associated manga chapter index",
+          "minimum": 1
+        },
+        "description": {
+          "type": "string",
+          "description": "事件描述（中文） / Event description (Chinese)",
+          "minLength": 1
+        }
+      }
+    },
+    "RomanticRelationship": {
+      "type": "object",
+      "description": "情感关系，记录两个角色之间的情感联系 / Romantic relationship between two characters",
+      "required": ["id", "character1Id", "character2Id", "type", "initialStatus"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "关系唯一标识符 / Unique relationship identifier",
+          "minLength": 1
+        },
+        "character1Id": {
+          "type": "string",
+          "description": "关系中第一个角色的 ID / First character ID in relationship",
+          "minLength": 1
+        },
+        "character2Id": {
+          "type": "string",
+          "description": "关系中第二个角色的 ID / Second character ID in relationship",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "enum": ["LOVE", "CRUSH", "CHILDHOOD_SWEETHEART", "MARRIED", "AMBIGUOUS"],
+          "description": "关系类型：LOVE=恋爱，CRUSH=暗恋，CHILDHOOD_SWEETHEART=青梅竹马，MARRIED=已婚，AMBIGUOUS=暧昧 / Relationship type"
+        },
+        "initialStatus": {
+          "type": "string",
+          "enum": ["UNCONFESSED", "CONFESSED", "DATING", "CONFIRMED", "SEPARATED"],
+          "description": "初始关系状态：UNCONFESSED=未表白，CONFESSED=已表白，DATING=交往中，CONFIRMED=已确认，SEPARATED=已分离 / Initial relationship status"
+        },
+        "description": {
+          "type": "string",
+          "description": "关系描述 / Relationship description"
+        }
+      }
+    },
+    "RelationshipEvent": {
+      "type": "object",
+      "description": "关系事件，记录情感关系状态变化 / Relationship event recording status changes",
+      "required": ["id", "relationshipId", "newStatus", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "事件唯一标识符 / Unique event identifier",
+          "minLength": 1
+        },
+        "relationshipId": {
+          "type": "string",
+          "description": "关联关系 ID / Associated relationship ID",
+          "minLength": 1
+        },
+        "episodeIndex": {
+          "type": "integer",
+          "description": "关联动画集数 / Associated anime episode index",
+          "minimum": 1
+        },
+        "chapterIndex": {
+          "type": "integer",
+          "description": "关联漫画话数 / Associated manga chapter index",
+          "minimum": 1
+        },
+        "newStatus": {
+          "type": "string",
+          "enum": ["UNCONFESSED", "CONFESSED", "DATING", "CONFIRMED", "SEPARATED"],
+          "description": "变更后的关系状态 / New relationship status after change"
+        },
+        "description": {
+          "type": "string",
+          "description": "事件描述（如'工藤新一向毛利兰表白——伦敦篇'） / Event description",
+          "minLength": 1
+        }
+      }
+    },
+    "EpisodeChapterMapping": {
+      "type": "object",
+      "description": "集数-话数映射，含漫画发行日期 / Episode-chapter mapping with publication date",
+      "required": ["episodeIndex", "chapterIndex", "publicationDate"],
+      "additionalProperties": false,
+      "properties": {
+        "episodeIndex": {
+          "type": "integer",
+          "description": "动画集数编号 / Anime episode index",
+          "minimum": 1
+        },
+        "chapterIndex": {
+          "type": "integer",
+          "description": "漫画话数编号 / Manga chapter index",
+          "minimum": 1
+        },
+        "publicationDate": {
+          "type": "string",
+          "description": "漫画发行日期（YYYY-MM 格式） / Manga publication date (YYYY-MM format)",
+          "pattern": "^\\d{4}-\\d{2}$"
+        }
+      }
+    },
+    "StoryArc": {
+      "type": "object",
+      "description": "剧情篇章，柯南中的重大剧情篇章 / Story arc, major plot arcs in Detective Conan",
+      "required": ["id", "name", "description", "startEpisodeIndex", "startChapterIndex"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "篇章唯一标识符 / Unique arc identifier",
+          "minLength": 1
+        },
+        "name": {
+          "type": "string",
+          "description": "篇章名称（如'波本篇'） / Arc name",
+          "minLength": 1
+        },
+        "description": {
+          "type": "string",
+          "description": "篇章简要描述 / Arc brief description",
+          "minLength": 1
+        },
+        "startEpisodeIndex": {
+          "type": "integer",
+          "description": "起始动画集数 / Starting anime episode index",
+          "minimum": 1
+        },
+        "startChapterIndex": {
+          "type": "integer",
+          "description": "起始漫画话数 / Starting manga chapter index",
+          "minimum": 1
+        },
+        "endEpisodeIndex": {
+          "type": "integer",
+          "description": "结束动画集数（可选，进行中的篇章无结束） / Ending anime episode index (optional)",
+          "minimum": 1
+        },
+        "endChapterIndex": {
+          "type": "integer",
+          "description": "结束漫画话数（可选） / Ending manga chapter index (optional)",
+          "minimum": 1
+        }
+      }
+    }
+  }
+}

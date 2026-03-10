@@ -1,0 +1,751 @@
+{
+  "$schema": "./conan-data-schema.json",
+  "metadata": {
+    "version": "1.0.0",
+    "lastUpdated": "2026-03-09",
+    "totalEpisodes": 1150,
+    "totalChapters": 1130
+  },
+  "characters": [
+    {
+      "id": "shinichi",
+      "name": "工藤新一",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/shinichi.jpg",
+      "appearanceCount": {
+        "episodeCount": 800,
+        "mentionCount": 200
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "ran",
+      "name": "毛利兰",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/ran.jpg",
+      "appearanceCount": {
+        "episodeCount": 750,
+        "mentionCount": 100
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "conan",
+      "name": "江户川柯南",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "/avatars/conan.png",
+      "appearanceCount": {
+        "episodeCount": 1100,
+        "mentionCount": 300
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "heiji",
+      "name": "服部平次",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/heiji.png",
+      "appearanceCount": {
+        "episodeCount": 200,
+        "mentionCount": 80
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "kazuha",
+      "name": "远山和叶",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/kazuha.jpg",
+      "appearanceCount": {
+        "episodeCount": 150,
+        "mentionCount": 50
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "akai",
+      "name": "赤井秀一",
+      "codename": "Rye",
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "/avatars/akai.jpg",
+      "appearanceCount": {
+        "episodeCount": 180,
+        "mentionCount": 120
+      },
+      "isDualIdentity": true,
+      "dualIdentityInfo": {
+        "secondaryFaction": "BLACK",
+        "secondaryName": "诸星大",
+        "secondaryCodename": "Rye"
+      }
+    },
+    {
+      "id": "amuro",
+      "name": "安室透",
+      "codename": "Bourbon",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/amuro.jpg",
+      "appearanceCount": {
+        "episodeCount": 150,
+        "mentionCount": 80
+      },
+      "isDualIdentity": true,
+      "dualIdentityInfo": {
+        "secondaryFaction": "RED",
+        "secondaryName": "降谷零",
+        "secondaryCodename": "公安零"
+      }
+    },
+    {
+      "id": "gin",
+      "name": "琴酒",
+      "codename": "Gin",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/gin.png",
+      "appearanceCount": {
+        "episodeCount": 120,
+        "mentionCount": 150
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "vodka",
+      "name": "伏特加",
+      "codename": "Vodka",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/vodka.jpg",
+      "appearanceCount": {
+        "episodeCount": 100,
+        "mentionCount": 80
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "vermouth",
+      "name": "贝尔摩德",
+      "codename": "Vermouth",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/vermouth.jpg",
+      "appearanceCount": {
+        "episodeCount": 90,
+        "mentionCount": 100
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "haibara",
+      "name": "灰原哀",
+      "codename": "Sherry",
+      "faction": "RED",
+      "subFaction": "DETECTIVE_BOYS",
+      "avatar": "/avatars/haibara.png",
+      "appearanceCount": {
+        "episodeCount": 600,
+        "mentionCount": 150
+      },
+      "isDualIdentity": true,
+      "dualIdentityInfo": {
+        "secondaryFaction": "BLACK",
+        "secondaryName": "宫野志保",
+        "secondaryCodename": "Sherry"
+      }
+    },
+    {
+      "id": "jodie",
+      "name": "朱蒂·斯泰琳",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "/avatars/jodie.png",
+      "appearanceCount": {
+        "episodeCount": 80,
+        "mentionCount": 40
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sato",
+      "name": "佐藤美和子",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "/avatars/sato.png",
+      "appearanceCount": {
+        "episodeCount": 120,
+        "mentionCount": 60
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "takagi",
+      "name": "高木涉",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "/avatars/takagi.png",
+      "appearanceCount": {
+        "episodeCount": 110,
+        "mentionCount": 50
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "miyano_akemi",
+      "name": "宫野明美",
+      "codename": null,
+      "faction": "BLACK",
+      "subFaction": "BO_OUTER",
+      "avatar": "/avatars/miyano_akemi.jpg",
+      "appearanceCount": {
+        "episodeCount": 15,
+        "mentionCount": 40
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "rum",
+      "name": "脇田兼則",
+      "codename": "Rum",
+      "faction": "BLACK",
+      "subFaction": "BO_CORE",
+      "avatar": "/avatars/rum.png",
+      "appearanceCount": {
+        "episodeCount": 60,
+        "mentionCount": 90
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "hakuba",
+      "name": "白马探",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/hakuba.jpg",
+      "appearanceCount": {
+        "episodeCount": 20,
+        "mentionCount": 15
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "aoko",
+      "name": "中森青子",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/aoko.jpg",
+      "appearanceCount": {
+        "episodeCount": 15,
+        "mentionCount": 10
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "matsuda",
+      "name": "松田阵平",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "/avatars/matsuda.png",
+      "appearanceCount": {
+        "episodeCount": 25,
+        "mentionCount": 40
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "hagiwara",
+      "name": "萩原研二",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "/avatars/hagiwara.jpg",
+      "appearanceCount": {
+        "episodeCount": 15,
+        "mentionCount": 30
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "chiba",
+      "name": "千叶和伸",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "/avatars/chiba.jpg",
+      "appearanceCount": {
+        "episodeCount": 60,
+        "mentionCount": 20
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "miike",
+      "name": "三池苗子",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "POLICE",
+      "avatar": "/avatars/miike.png",
+      "appearanceCount": {
+        "episodeCount": 30,
+        "mentionCount": 15
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "sera",
+      "name": "世良真纯",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "DETECTIVE",
+      "avatar": "/avatars/sera.jpg",
+      "appearanceCount": {
+        "episodeCount": 100,
+        "mentionCount": 50
+      },
+      "isDualIdentity": false
+    },
+    {
+      "id": "subaru",
+      "name": "冲矢昴",
+      "codename": null,
+      "faction": "RED",
+      "subFaction": "FBI",
+      "avatar": "/avatars/subaru.png",
+      "appearanceCount": {
+        "episodeCount": 80,
+        "mentionCount": 40
+      },
+      "isDualIdentity": false
+    }
+  ],
+  "characterEvents": [
+    {
+      "id": "evt-001",
+      "characterId": "shinichi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "工藤新一首次登场"
+    },
+    {
+      "id": "evt-002",
+      "characterId": "ran",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "毛利兰首次登场"
+    },
+    {
+      "id": "evt-003",
+      "characterId": "gin",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "琴酒首次登场，在热带乐园给工藤新一灌下APTX4869"
+    },
+    {
+      "id": "evt-004",
+      "characterId": "vodka",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "伏特加首次登场"
+    },
+    {
+      "id": "evt-005",
+      "characterId": "conan",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "工藤新一变小为江户川柯南"
+    },
+    {
+      "id": "evt-006",
+      "characterId": "haibara",
+      "type": "JOIN",
+      "episodeIndex": 129,
+      "chapterIndex": 176,
+      "description": "灰原哀逃离组织，服下APTX4869变小后转学"
+    },
+    {
+      "id": "evt-007",
+      "characterId": "akai",
+      "type": "JOIN",
+      "episodeIndex": 230,
+      "chapterIndex": 287,
+      "description": "赤井秀一首次登场"
+    },
+    {
+      "id": "evt-008",
+      "characterId": "miyano_akemi",
+      "type": "DEATH",
+      "episodeIndex": 128,
+      "chapterIndex": 176,
+      "description": "宫野明美被琴酒杀害"
+    },
+    {
+      "id": "evt-009",
+      "characterId": "vermouth",
+      "type": "JOIN",
+      "episodeIndex": 176,
+      "chapterIndex": 238,
+      "description": "贝尔摩德首次登场"
+    },
+    {
+      "id": "evt-010",
+      "characterId": "amuro",
+      "type": "JOIN",
+      "episodeIndex": 667,
+      "chapterIndex": 793,
+      "description": "安室透（波本）首次登场"
+    },
+    {
+      "id": "evt-011",
+      "characterId": "amuro",
+      "type": "EXPOSED",
+      "episodeIndex": 779,
+      "chapterIndex": 894,
+      "description": "安室透的公安身份（降谷零）被揭露——绯色篇"
+    },
+    {
+      "id": "evt-012",
+      "characterId": "akai",
+      "type": "EXPOSED",
+      "episodeIndex": 783,
+      "chapterIndex": 898,
+      "description": "赤井秀一假死真相大白——绯色篇"
+    },
+    {
+      "id": "evt-013",
+      "characterId": "sera",
+      "type": "JOIN",
+      "episodeIndex": 646,
+      "chapterIndex": 768,
+      "description": "世良真纯首次登场"
+    },
+    {
+      "id": "evt-014",
+      "characterId": "heiji",
+      "type": "JOIN",
+      "episodeIndex": 48,
+      "chapterIndex": 92,
+      "description": "服部平次首次登场"
+    },
+    {
+      "id": "evt-015",
+      "characterId": "matsuda",
+      "type": "DEATH",
+      "episodeIndex": 304,
+      "chapterIndex": 358,
+      "description": "松田阵平在拆弹任务中殉职"
+    },
+    {
+      "id": "evt-016",
+      "characterId": "hagiwara",
+      "type": "DEATH",
+      "episodeIndex": 304,
+      "chapterIndex": 358,
+      "description": "萩原研二在爆炸事件中殉职（回忆）"
+    },
+    {
+      "id": "evt-017",
+      "characterId": "rum",
+      "type": "JOIN",
+      "episodeIndex": 941,
+      "chapterIndex": 1008,
+      "description": "朗姆篇开始，朗姆身份之谜浮出水面"
+    },
+    {
+      "id": "evt-018",
+      "characterId": "jodie",
+      "type": "JOIN",
+      "episodeIndex": 170,
+      "chapterIndex": 230,
+      "description": "朱蒂老师首次登场"
+    },
+    {
+      "id": "evt-019",
+      "characterId": "sato",
+      "type": "JOIN",
+      "episodeIndex": 130,
+      "chapterIndex": 180,
+      "description": "佐藤美和子首次登场"
+    },
+    {
+      "id": "evt-020",
+      "characterId": "takagi",
+      "type": "JOIN",
+      "episodeIndex": 130,
+      "chapterIndex": 180,
+      "description": "高木涉首次登场"
+    }
+  ],
+  "relationships": [
+    {
+      "id": "rel-001",
+      "character1Id": "shinichi",
+      "character2Id": "ran",
+      "type": "CHILDHOOD_SWEETHEART",
+      "initialStatus": "UNCONFESSED",
+      "description": "青梅竹马，两小无猜"
+    },
+    {
+      "id": "rel-002",
+      "character1Id": "heiji",
+      "character2Id": "kazuha",
+      "type": "CHILDHOOD_SWEETHEART",
+      "initialStatus": "UNCONFESSED",
+      "description": "大阪的青梅竹马组合"
+    },
+    {
+      "id": "rel-003",
+      "character1Id": "sato",
+      "character2Id": "takagi",
+      "type": "LOVE",
+      "initialStatus": "UNCONFESSED",
+      "description": "警视厅恋人"
+    },
+    {
+      "id": "rel-004",
+      "character1Id": "hakuba",
+      "character2Id": "aoko",
+      "type": "CHILDHOOD_SWEETHEART",
+      "initialStatus": "UNCONFESSED",
+      "description": "白马探与中森青子"
+    },
+    {
+      "id": "rel-005",
+      "character1Id": "akai",
+      "character2Id": "miyano_akemi",
+      "type": "LOVE",
+      "initialStatus": "DATING",
+      "description": "赤井秀一与宫野明美，跨越阵营的悲恋"
+    },
+    {
+      "id": "rel-006",
+      "character1Id": "matsuda",
+      "character2Id": "hagiwara",
+      "type": "AMBIGUOUS",
+      "initialStatus": "CONFIRMED",
+      "description": "松田阵平与萩原研二，警校组挚友"
+    },
+    {
+      "id": "rel-007",
+      "character1Id": "chiba",
+      "character2Id": "miike",
+      "type": "LOVE",
+      "initialStatus": "UNCONFESSED",
+      "description": "千叶和伸与三池苗子"
+    }
+  ],
+  "relationshipEvents": [
+    {
+      "id": "revt-001",
+      "relationshipId": "rel-001",
+      "episodeIndex": 621,
+      "chapterIndex": 743,
+      "newStatus": "CONFESSED",
+      "description": "工藤新一向毛利兰表白——伦敦篇"
+    },
+    {
+      "id": "revt-002",
+      "relationshipId": "rel-003",
+      "episodeIndex": 301,
+      "chapterIndex": 355,
+      "newStatus": "CONFESSED",
+      "description": "佐藤美和子与高木涉确认心意"
+    },
+    {
+      "id": "revt-003",
+      "relationshipId": "rel-003",
+      "episodeIndex": 535,
+      "chapterIndex": 638,
+      "newStatus": "DATING",
+      "description": "佐藤与高木正式交往"
+    },
+    {
+      "id": "revt-004",
+      "relationshipId": "rel-005",
+      "episodeIndex": 128,
+      "chapterIndex": 176,
+      "newStatus": "SEPARATED",
+      "description": "宫野明美被杀害，赤井秀一与明美永别"
+    }
+  ],
+  "episodeChapterMappings": [
+    {
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "publicationDate": "1994-01"
+    },
+    {
+      "episodeIndex": 48,
+      "chapterIndex": 92,
+      "publicationDate": "1996-09"
+    },
+    {
+      "episodeIndex": 128,
+      "chapterIndex": 176,
+      "publicationDate": "1998-06"
+    },
+    {
+      "episodeIndex": 129,
+      "chapterIndex": 176,
+      "publicationDate": "1998-06"
+    },
+    {
+      "episodeIndex": 130,
+      "chapterIndex": 180,
+      "publicationDate": "1998-07"
+    },
+    {
+      "episodeIndex": 170,
+      "chapterIndex": 230,
+      "publicationDate": "1999-10"
+    },
+    {
+      "episodeIndex": 176,
+      "chapterIndex": 238,
+      "publicationDate": "2000-01"
+    },
+    {
+      "episodeIndex": 230,
+      "chapterIndex": 287,
+      "publicationDate": "2001-03"
+    },
+    {
+      "episodeIndex": 301,
+      "chapterIndex": 355,
+      "publicationDate": "2002-11"
+    },
+    {
+      "episodeIndex": 304,
+      "chapterIndex": 358,
+      "publicationDate": "2003-01"
+    },
+    {
+      "episodeIndex": 535,
+      "chapterIndex": 638,
+      "publicationDate": "2008-10"
+    },
+    {
+      "episodeIndex": 616,
+      "chapterIndex": 743,
+      "publicationDate": "2011-03"
+    },
+    {
+      "episodeIndex": 621,
+      "chapterIndex": 752,
+      "publicationDate": "2011-06"
+    },
+    {
+      "episodeIndex": 646,
+      "chapterIndex": 768,
+      "publicationDate": "2012-01"
+    },
+    {
+      "episodeIndex": 667,
+      "chapterIndex": 793,
+      "publicationDate": "2012-10"
+    },
+    {
+      "episodeIndex": 779,
+      "chapterIndex": 894,
+      "publicationDate": "2015-03"
+    },
+    {
+      "episodeIndex": 783,
+      "chapterIndex": 898,
+      "publicationDate": "2015-05"
+    },
+    {
+      "episodeIndex": 781,
+      "chapterIndex": 898,
+      "publicationDate": "2015-04"
+    },
+    {
+      "episodeIndex": 941,
+      "chapterIndex": 1008,
+      "publicationDate": "2019-01"
+    },
+    {
+      "episodeIndex": 1077,
+      "chapterIndex": 1105,
+      "publicationDate": "2023-04"
+    }
+  ],
+  "storyArcs": [
+    {
+      "id": "arc-001",
+      "name": "红茶谈话",
+      "description": "赤井秀一与安室透在咖啡厅的关键对话，揭示两人的过往恩怨",
+      "startEpisodeIndex": 781,
+      "startChapterIndex": 898,
+      "endEpisodeIndex": 783,
+      "endChapterIndex": 902
+    },
+    {
+      "id": "arc-002",
+      "name": "波本篇",
+      "description": "安室透（波本）的真实身份逐步揭露，公安零的秘密浮出水面",
+      "startEpisodeIndex": 667,
+      "startChapterIndex": 793
+    },
+    {
+      "id": "arc-003",
+      "name": "朗姆篇",
+      "description": "黑衣组织二号人物朗姆的身份之谜，多个嫌疑人逐一登场",
+      "startEpisodeIndex": 941,
+      "startChapterIndex": 1008
+    },
+    {
+      "id": "arc-004",
+      "name": "伦敦篇",
+      "description": "工藤新一向毛利兰表白的经典篇章",
+      "startEpisodeIndex": 616,
+      "startChapterIndex": 743,
+      "endEpisodeIndex": 621,
+      "endChapterIndex": 752
+    },
+    {
+      "id": "arc-005",
+      "name": "绯色篇",
+      "description": "赤井秀一假死真相大白，世良真纯的身份揭露",
+      "startEpisodeIndex": 779,
+      "startChapterIndex": 894,
+      "endEpisodeIndex": 783,
+      "endChapterIndex": 898
+    },
+    {
+      "id": "arc-006",
+      "name": "黑铁的鱼影",
+      "description": "剧场版M26，灰原哀身份危机，组织与正义方的全面对决",
+      "startEpisodeIndex": 1077,
+      "startChapterIndex": 1105
+    },
+    {
+      "id": "arc-007",
+      "name": "组织篇",
+      "description": "涉及黑衣组织核心剧情的总篇章",
+      "startEpisodeIndex": 54,
+      "startChapterIndex": 114
+    }
+  ]
+}
