@@ -155,30 +155,71 @@ export default function TimelineSlider({
           appearance: none;
           width: 100%;
           height: 6px;
-          background: linear-gradient(90deg, rgba(201,168,76,0.3), rgba(201,168,76,0.6));
+          background: linear-gradient(90deg, rgba(201,168,76,0.2), rgba(201,168,76,0.4));
           border-radius: 3px;
           outline: none;
           cursor: pointer;
+          margin: 6px 0;
         }
         input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb {
           -webkit-appearance: none;
           appearance: none;
-          width: 24px;
-          height: 12px;
-          border-radius: 6px;
-          background: linear-gradient(135deg, #c9a84c, #b8942e);
-          border: 1px solid rgba(255,255,255,0.3);
-          box-shadow: 0 2px 6px rgba(201,168,76,0.5);
+          width: 32px;
+          height: 16px;
+          border-radius: 8px;
+          background: linear-gradient(90deg, #dc2626 0%, #dc2626 47%, #d1d5db 50%, #ffffff 53%, #ffffff 100%);
+          border: 2px solid #374151;
+          box-shadow: 
+            0 3px 8px rgba(220, 38, 38, 0.4),
+            inset 0 1px 0 rgba(255,255,255,0.3),
+            inset 14px 0 0 rgba(0,0,0,0.03);
           cursor: pointer;
+          transition: all 0.2s ease;
+          margin-top: -5px;
+        }
+        input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb:hover {
+          transform: scale(1.1);
+          box-shadow: 
+            0 4px 12px rgba(220, 38, 38, 0.6),
+            inset 0 1px 0 rgba(255,255,255,0.4),
+            inset 14px 0 0 rgba(0,0,0,0.03);
+        }
+        input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb:active {
+          transform: scale(1.05);
+          box-shadow: 
+            0 2px 6px rgba(220, 38, 38, 0.8),
+            inset 0 1px 0 rgba(255,255,255,0.2),
+            inset 14px 0 0 rgba(0,0,0,0.05);
         }
         input[type="range"][data-testid="timeline-range"]::-moz-range-thumb {
-          width: 24px;
-          height: 12px;
-          border-radius: 6px;
-          background: linear-gradient(135deg, #c9a84c, #b8942e);
-          border: 1px solid rgba(255,255,255,0.3);
-          box-shadow: 0 2px 6px rgba(201,168,76,0.5);
+          width: 32px;
+          height: 16px;
+          border-radius: 8px;
+          background: linear-gradient(90deg, #dc2626 0%, #dc2626 47%, #d1d5db 50%, #ffffff 53%, #ffffff 100%);
+          border: 2px solid #374151;
+          box-shadow: 
+            0 3px 8px rgba(220, 38, 38, 0.4),
+            inset 0 1px 0 rgba(255,255,255,0.3);
           cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        input[type="range"][data-testid="timeline-range"]::-moz-range-thumb:hover {
+          transform: scale(1.1);
+          box-shadow: 
+            0 4px 12px rgba(220, 38, 38, 0.6),
+            inset 0 1px 0 rgba(255,255,255,0.4);
+        }
+        /* Track styling for better visual alignment */
+        input[type="range"][data-testid="timeline-range"]::-webkit-slider-runnable-track {
+          background: linear-gradient(90deg, rgba(220, 38, 38, 0.1), rgba(201, 168, 76, 0.3));
+          height: 6px;
+          border-radius: 3px;
+        }
+        input[type="range"][data-testid="timeline-range"]::-moz-range-track {
+          background: linear-gradient(90deg, rgba(220, 38, 38, 0.1), rgba(201, 168, 76, 0.3));
+          height: 6px;
+          border-radius: 3px;
+          border: none;
         }
       `}</style>
       <div style={styles.modeBar}>
@@ -210,7 +251,16 @@ export default function TimelineSlider({
             <div style={styles.tooltipDesc}>{hoveredMarker.description}</div>
           </div>
         )}
-        <input type="range" min={min} max={max} value={sliderValue} onChange={handleSliderChange} style={styles.slider} data-testid="timeline-range" />
+        <input 
+          type="range" 
+          min={min} 
+          max={max} 
+          value={sliderValue} 
+          onChange={handleSliderChange} 
+          style={styles.slider} 
+          data-testid="timeline-range"
+          title="APTX-4869 时间胶囊 - 拖动改变时间点"
+        />
       </div>
     </div>
   );

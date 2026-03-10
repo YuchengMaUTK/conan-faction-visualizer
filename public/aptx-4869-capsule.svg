@@ -1,0 +1,33 @@
+<svg width="32" height="16" viewBox="0 0 32 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="redSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#dc2626;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b91c1c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="whiteSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f3f4f6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="capsuleShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  
+  <!-- Capsule body -->
+  <rect x="1" y="1" width="30" height="14" rx="7" ry="7" fill="url(#redSide)" stroke="#1e293b" stroke-width="1" filter="url(#capsuleShadow)"/>
+  
+  <!-- White half -->
+  <rect x="16" y="1" width="15" height="14" rx="7" ry="7" fill="url(#whiteSide)" stroke="#1e293b" stroke-width="1"/>
+  
+  <!-- Center divider line -->
+  <line x1="16" y1="2" x2="16" y2="14" stroke="#1e293b" stroke-width="0.5" opacity="0.5"/>
+  
+  <!-- Highlight on red side -->
+  <ellipse cx="8" cy="5" rx="3" ry="1.5" fill="rgba(255,255,255,0.3)"/>
+  
+  <!-- Highlight on white side -->
+  <ellipse cx="24" cy="5" rx="3" ry="1.5" fill="rgba(255,255,255,0.6)"/>
+  
+  <!-- APTX text (very small) -->
+  <text x="16" y="10" text-anchor="middle" font-family="Arial, sans-serif" font-size="3" fill="#666666" opacity="0.7">APTX</text>
+</svg>
