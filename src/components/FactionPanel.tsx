@@ -100,7 +100,19 @@ export default function FactionPanel({
   return (
     <div style={panelStyle} data-testid={`faction-panel-${faction}`}>
       <div style={accentBorderStyle} />
-      <div style={titleStyle}>{isRed ? '🔴 正义阵营' : '⚫ 黑衣组织'}</div>
+      <div style={titleStyle}>
+        <span style={{
+          display: 'inline-block',
+          width: 12,
+          height: 12,
+          borderRadius: '50%',
+          background: isRed ? '#ef4444' : '#475569',
+          marginRight: 8,
+          verticalAlign: 'middle',
+          boxShadow: isRed ? '0 0 8px rgba(239,68,68,0.5)' : '0 0 8px rgba(71,85,105,0.5)',
+        }} />
+        {isRed ? '正义阵营' : '黑衣组织'}
+      </div>
 
       {/* CP Pairs section */}
       {pairs.length > 0 && (

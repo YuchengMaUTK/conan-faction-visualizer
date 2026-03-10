@@ -97,18 +97,18 @@ export default function TimelineSlider({
     for (const evt of keyEvents) {
       const val = getEventValue(evt.timePoint, mode, mappings);
       if (val === null) continue;
-      result.push({ position: getPositionPercent(val, min, max), icon: '⭐', label: evt.title, description: evt.description, timePoint: evt.timePoint, kind: 'character' });
+      result.push({ position: getPositionPercent(val, min, max), icon: '★', label: evt.title, description: evt.description, timePoint: evt.timePoint, kind: 'character' });
     }
     for (const evt of relationshipEvents) {
       const val = getEventValue(evt.timePoint, mode, mappings);
       if (val === null) continue;
-      result.push({ position: getPositionPercent(val, min, max), icon: '❤️', label: evt.title, description: evt.description, timePoint: evt.timePoint, kind: 'relationship' });
+      result.push({ position: getPositionPercent(val, min, max), icon: '♥', label: evt.title, description: evt.description, timePoint: evt.timePoint, kind: 'relationship' });
     }
     for (const arc of storyArcs) {
       const tp: TimePoint = { episodeIndex: arc.startEpisodeIndex, chapterIndex: arc.startChapterIndex };
       const val = getEventValue(tp, mode, mappings);
       if (val === null) continue;
-      result.push({ position: getPositionPercent(val, min, max), icon: '🚩', label: arc.name, description: arc.description, timePoint: tp, kind: 'arc' });
+      result.push({ position: getPositionPercent(val, min, max), icon: '●', label: arc.name, description: arc.description, timePoint: tp, kind: 'arc' });
     }
     return result;
   }, [keyEvents, relationshipEvents, storyArcs, mode, min, max, mappings]);
@@ -149,6 +149,38 @@ export default function TimelineSlider({
 
   return (
     <div style={styles.root} data-testid="timeline-slider">
+      <style>{`
+        input[type="range"][data-testid="timeline-range"] {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 100%;
+          height: 6px;
+          background: linear-gradient(90deg, rgba(201,168,76,0.3), rgba(201,168,76,0.6));
+          border-radius: 3px;
+          outline: none;
+          cursor: pointer;
+        }
+        input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 24px;
+          height: 12px;
+          border-radius: 6px;
+          background: linear-gradient(135deg, #c9a84c, #b8942e);
+          border: 1px solid rgba(255,255,255,0.3);
+          box-shadow: 0 2px 6px rgba(201,168,76,0.5);
+          cursor: pointer;
+        }
+        input[type="range"][data-testid="timeline-range"]::-moz-range-thumb {
+          width: 24px;
+          height: 12px;
+          border-radius: 6px;
+          background: linear-gradient(135deg, #c9a84c, #b8942e);
+          border: 1px solid rgba(255,255,255,0.3);
+          box-shadow: 0 2px 6px rgba(201,168,76,0.5);
+          cursor: pointer;
+        }
+      `}</style>
       <div style={styles.modeBar}>
         {(['episode', 'chapter', 'date'] as const).map((m) => (
           <button key={m} data-testid={`mode-btn-${m}`}
@@ -169,12 +201,12 @@ export default function TimelineSlider({
           <div key={`marker-${i}`} style={{ ...styles.marker, left: `${Math.max(0, Math.min(100, marker.position))}%` }}
             onMouseEnter={() => setHoveredMarker(marker)} onMouseLeave={() => setHoveredMarker(null)}
             onClick={() => handleMarkerClick(marker)} data-testid={`marker-${marker.kind}`} title={marker.label}>
-            <span style={styles.markerIcon}>{marker.icon}</span>
+            <span style={{ ...styles.markerIcon, color: marker.kind === 'character' ? '#f5d680' : marker.kind === 'relationship' ? '#f472b6' : '#c9a84c' }}>{marker.icon}</span>
           </div>
         ))}
         {hoveredMarker && (
           <div style={{ ...styles.tooltip, left: `${Math.max(5, Math.min(85, hoveredMarker.position))}%` }} data-testid="marker-tooltip">
-            <div style={styles.tooltipTitle}>{hoveredMarker.icon} {hoveredMarker.label}</div>
+            <div style={styles.tooltipTitle}><span style={{ color: hoveredMarker.kind === 'character' ? '#f5d680' : hoveredMarker.kind === 'relationship' ? '#f472b6' : '#c9a84c' }}>{hoveredMarker.icon}</span> {hoveredMarker.label}</div>
             <div style={styles.tooltipDesc}>{hoveredMarker.description}</div>
           </div>
         )}
