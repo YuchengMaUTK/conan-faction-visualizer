@@ -10,7 +10,7 @@ import { parseData } from '../engines/data-store';
 import { computeSnapshot } from '../engines/event-engine';
 import { computeRelationships } from '../engines/relationship-engine';
 import { convertTimePoint } from '../engines/timeline-utils';
-import { search, filterBySubFaction } from '../engines/search-engine';
+import { search } from '../engines/search-engine';
 
 /**
  * Clamp a TimePoint to the valid range defined by the DataSet.
