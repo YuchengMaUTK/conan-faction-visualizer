@@ -5,12 +5,12 @@ import { parseDataSync } from '../../engines/data-store';
 // We use a permissive schema here; the real schema is tested via the full integration path
 const minimalSchema = {
   type: 'object',
-  required: ['metadata', 'characters', 'characterEvents', 'relationships', 'relationshipEvents', 'episodeChapterMappings', 'storyArcs'],
+  required: ['metadata', 'entities', 'characterEvents', 'links', 'relationshipEvents', 'episodeChapterMappings', 'storyArcs'],
   properties: {
     metadata: { type: 'object' },
-    characters: { type: 'array' },
+    entities: { type: 'array' },
     characterEvents: { type: 'array' },
-    relationships: { type: 'array' },
+    links: { type: 'array' },
     relationshipEvents: { type: 'array' },
     episodeChapterMappings: { type: 'array' },
     storyArcs: { type: 'array' },
@@ -19,15 +19,31 @@ const minimalSchema = {
 
 const validDataSet = {
   metadata: { version: '1.0.0', lastUpdated: '2026-01-01', totalEpisodes: 100, totalChapters: 100 },
-  characters: [
-    { id: 'c1', name: 'Test', faction: 'RED', avatar: 'test.png', appearanceCount: { episodeCount: 10, mentionCount: 5 }, isDualIdentity: false },
-    { id: 'c2', name: 'Test2', faction: 'BLACK', avatar: 'test2.png', appearanceCount: { episodeCount: 8, mentionCount: 3 }, isDualIdentity: false },
+  entities: [
+    {
+      entity_id: 'e_test1',
+      true_name: { en: 'Test One', zh: '测试一' },
+      status: 'alive',
+      base_appearances: 10,
+      personas: [
+        { persona_id: 'p_test1', name: { en: 'Test One' }, faction: 'RED', avatar: 'test.png', is_default_display: true },
+      ],
+    },
+    {
+      entity_id: 'e_test2',
+      true_name: { en: 'Test Two', zh: '测试二' },
+      status: 'alive',
+      base_appearances: 8,
+      personas: [
+        { persona_id: 'p_test2', name: { en: 'Test Two' }, faction: 'BLACK', sub_faction: 'BO_CORE', avatar: 'test2.png', is_default_display: true },
+      ],
+    },
   ],
   characterEvents: [
-    { id: 'e1', characterId: 'c1', type: 'JOIN', episodeIndex: 1, chapterIndex: 1, description: 'Joined' },
+    { id: 'e1', entity_id: 'e_test1', type: 'JOIN', episodeIndex: 1, chapterIndex: 1, description: 'Joined' },
   ],
-  relationships: [
-    { id: 'r1', character1Id: 'c1', character2Id: 'c2', type: 'LOVE', initialStatus: 'UNCONFESSED' },
+  links: [
+    { source_persona_id: 'p_test1', target_persona_id: 'p_test2', type: 'rivalry', label: { en: 'Rivals' } },
   ],
   relationshipEvents: [],
   episodeChapterMappings: [{ episodeIndex: 1, chapterIndex: 1, publicationDate: '2020-01' }],
@@ -42,9 +58,9 @@ describe('Data layer: parseDataSync', () => {
     expect(result.ok).toBe(true);
     if (!result.ok) return;
 
-    expect(result.value.characters.length).toBe(2);
+    expect(result.value.entities.length).toBe(2);
     expect(result.value.characterEvents.length).toBe(1);
-    expect(result.value.relationships.length).toBe(1);
+    expect(result.value.links.length).toBe(1);
     expect(result.value.storyArcs.length).toBe(1);
   });
 
@@ -63,12 +79,12 @@ describe('Data layer: parseDataSync', () => {
     expect(result.error.length).toBeGreaterThan(0);
   });
 
-  it('should skip character events referencing non-existent characters', () => {
+  it('should skip character events referencing non-existent entities', () => {
     const dataWithBadRef = {
       ...validDataSet,
       characterEvents: [
-        { id: 'e1', characterId: 'c1', type: 'JOIN', episodeIndex: 1, chapterIndex: 1, description: 'OK' },
-        { id: 'e2', characterId: 'nonexistent', type: 'JOIN', episodeIndex: 2, chapterIndex: 2, description: 'Bad ref' },
+        { id: 'e1', entity_id: 'e_test1', type: 'JOIN', episodeIndex: 1, chapterIndex: 1, description: 'OK' },
+        { id: 'e2', entity_id: 'e_nonexistent', type: 'JOIN', episodeIndex: 2, chapterIndex: 2, description: 'Bad ref' },
       ],
     };
     const result = parseDataSync(JSON.stringify(dataWithBadRef), minimalSchema);

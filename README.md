@@ -6,14 +6,17 @@ A comprehensive visualization tool for tracking character factions, relationship
 
 ## 🎯 Features
 
+- **ECharts Force-Directed Graph**: Interactive network visualization of character relationships using ECharts
+- **Circular Avatar Nodes**: Character avatars displayed as circular nodes with faction-colored borders (red for Justice, gray for Organization)
 - **Character Faction Tracking**: Visualize RED (Justice) vs BLACK (Organization) faction members
-- **Dual Identity Support**: Track undercover agents and their multiple identities
-- **Relationship Mapping**: Explore romantic relationships between characters
+- **Dual Identity Support**: Track undercover agents and their multiple identities (Surface Mode / God Eye Mode)
+- **Faction Filter Sidebar**: Toggle visibility of factions and sub-factions
+- **Relationship Mapping**: Explore romantic, rivalry, friendship, and other relationships between characters
 - **APTX-4869 Timeline Slider**: Navigate through time with an iconic capsule-shaped slider
 - **Timeline Navigation**: Navigate through episodes, manga chapters, and publication dates
 - **Story Arc Visualization**: See major plot developments across different arcs
 - **Interactive Interface**: Search, filter, and explore character connections
-- **Cross-faction Relationships**: Visualize relationships that span both factions
+- **Adjacency Highlight**: Hover a node to spotlight its direct connections
 
 ## 🚀 Live Demo
 
@@ -85,13 +88,15 @@ See `public/conan-data-schema.json` for the complete data schema.
 - `npm run preview` - Preview production build
 - `npm run test` - Run tests
 - `npm run test:watch` - Run tests in watch mode
+- `npx tsx scripts/download-avatars.ts` - Re-download character avatars from wiki
 
 ### Tech Stack
 
 - **Frontend**: React 18 + TypeScript
+- **Visualization**: ECharts 6 (Force-Directed Graph)
 - **Build Tool**: Vite
 - **State Management**: Zustand
-- **Testing**: Vitest + Testing Library
+- **Testing**: Vitest + Testing Library + fast-check
 - **Validation**: AJV (JSON Schema)
 
 ### Project Structure
@@ -99,18 +104,24 @@ See `public/conan-data-schema.json` for the complete data schema.
 ```
 src/
 ├── components/          # React components
-│   ├── Visualizer.tsx   # Main visualization component
+│   ├── Visualizer.tsx   # Main visualization orchestrator
+│   ├── ForceGraph.tsx   # ECharts force-directed graph with circular avatars
+│   ├── FactionFilterSidebar.tsx  # Faction/sub-faction toggle filters
+│   ├── GodEyeToggle.tsx # Surface / God Eye mode switch
 │   ├── CharacterCard.tsx
-│   ├── RelationshipOverlay.tsx
 │   └── ...
 ├── engines/             # Core logic engines
-│   ├── data-store.ts    # Data management
+│   ├── data-store.ts    # Data loading & validation
+│   ├── graph-adapter.ts # ECharts graph data adapter
 │   ├── relationship-engine.ts
 │   ├── search-engine.ts
 │   └── ...
-├── store/               # State management
+├── store/               # Zustand state management
 ├── types/               # TypeScript definitions
 └── __tests__/           # Test files
+scripts/
+├── download-avatars.ts  # Download & localize character avatars
+└── ...
 ```
 
 ## 📝 Data Sources

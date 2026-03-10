@@ -1,493 +1,878 @@
 {
   "$schema": "./conan-data-schema.json",
   "metadata": {
-    "version": "1.0.0",
-    "lastUpdated": "2026-03-09",
+    "version": "2.0.0",
+    "lastUpdated": "2026-03-10",
     "totalEpisodes": 1150,
     "totalChapters": 1130
   },
-  "characters": [
+  "entities": [
     {
-      "id": "shinichi",
-      "name": "工藤新一",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3b/Shinichi_Kudo_Profile.jpg/275px-Shinichi_Kudo_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 200,
-        "mentionCount": 274
+      "entity_id": "e_shinichi",
+      "true_name": {
+        "en": "Shinichi Kudo",
+        "ja": "工藤新一",
+        "ja_romaji": "Kudō Shin'ichi",
+        "zh": "工藤新一"
       },
-      "isDualIdentity": false,
-      "nameEn": "Shinichi Kudo"
+      "status": "shrunk",
+      "base_appearances": 200,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shinichi_Kudo",
+      "nicknames": [
+        {
+          "en": "Heisei Holmes",
+          "ja": "平成のホームズ",
+          "zh": "平成的福尔摩斯"
+        },
+        {
+          "en": "Detective of the East",
+          "ja": "東の高校生探偵",
+          "zh": "东方的高中生侦探"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 1,
+        "anime_episode": 1
+      },
+      "voice_actors": {
+        "ja": "山口勝平",
+        "en": "Jerry Jewell"
+      },
+      "gender": "male",
+      "age": 17,
+      "personas": [
+        {
+          "persona_id": "p_shinichi",
+          "name": {
+            "en": "Shinichi Kudo",
+            "ja": "工藤新一",
+            "ja_romaji": "Kudō Shin'ichi",
+            "zh": "工藤新一"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_shinichi.jpg",
+          "codename": null,
+          "is_default_display": false,
+          "description": {
+            "en": "High school detective",
+            "zh": "高中生侦探",
+            "ja": "高校生探偵"
+          }
+        },
+        {
+          "persona_id": "p_conan",
+          "name": {
+            "en": "Conan Edogawa",
+            "ja": "江戸川コナン",
+            "ja_romaji": "Edogawa Konan",
+            "zh": "江户川柯南"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE_BOYS",
+          "avatar": "avatars/p_conan.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "Shrunken child identity",
+            "zh": "缩小后的身份",
+            "ja": "小さくなった姿"
+          }
+        }
+      ]
     },
     {
-      "id": "ran",
-      "name": "毛利兰",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/92/Ran_Mouri_Profile.jpg/275px-Ran_Mouri_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 809,
-        "mentionCount": 817
+      "entity_id": "e_akai",
+      "true_name": {
+        "en": "Shuichi Akai",
+        "ja": "赤井秀一",
+        "ja_romaji": "Akai Shūichi",
+        "zh": "赤井秀一"
       },
-      "isDualIdentity": false,
-      "nameEn": "Ran Mouri"
+      "status": "alive",
+      "base_appearances": 150,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shuichi_Akai",
+      "nicknames": [
+        {
+          "en": "Shu",
+          "ja": "シュウ",
+          "zh": "秀"
+        },
+        {
+          "en": "Silver Bullet",
+          "ja": "シルバー・ブレット",
+          "zh": "银色子弹"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 287,
+        "anime_episode": 230
+      },
+      "voice_actors": {
+        "ja": "池田秀一",
+        "en": "Andrew Chandler"
+      },
+      "gender": "male",
+      "age": 32,
+      "relatives": [
+        {
+          "entity_id": "e_akemi",
+          "relation": "spouse"
+        }
+      ],
+      "personas": [
+        {
+          "persona_id": "p_akai_fbi",
+          "name": {
+            "en": "Shuichi Akai",
+            "ja": "赤井秀一",
+            "ja_romaji": "Akai Shūichi",
+            "zh": "赤井秀一"
+          },
+          "faction": "RED",
+          "sub_faction": "FBI",
+          "avatar": "avatars/p_akai_fbi.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "FBI Agent",
+            "zh": "FBI探员",
+            "ja": "FBI捜査官"
+          }
+        },
+        {
+          "persona_id": "p_akai_bo",
+          "name": {
+            "en": "Dai Moroboshi",
+            "ja": "諸星大",
+            "ja_romaji": "Moroboshi Dai",
+            "zh": "诸星大"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_OUTER",
+          "avatar": "avatars/p_akai_bo.jpg",
+          "codename": "Rye",
+          "is_default_display": false,
+          "description": {
+            "en": "BO infiltrator",
+            "zh": "组织卧底",
+            "ja": "組織への潜入捜査官"
+          }
+        },
+        {
+          "persona_id": "p_akai_okiya",
+          "name": {
+            "en": "Subaru Okiya",
+            "ja": "沖矢昴",
+            "ja_romaji": "Okiya Subaru",
+            "zh": "冲矢昴"
+          },
+          "faction": "RED",
+          "avatar": "avatars/p_akai_okiya.jpg",
+          "codename": null,
+          "is_default_display": false,
+          "description": {
+            "en": "Civilian disguise",
+            "zh": "民间伪装身份",
+            "ja": "民間人の変装"
+          }
+        }
+      ]
     },
     {
-      "id": "conan",
-      "name": "江户川柯南",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/00/Conan_Edogawa_Profile.png/275px-Conan_Edogawa_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 1189,
-        "mentionCount": 1140
+      "entity_id": "e_furuya",
+      "true_name": {
+        "en": "Rei Furuya",
+        "ja": "降谷零",
+        "ja_romaji": "Furuya Rei",
+        "zh": "降谷零"
       },
-      "isDualIdentity": false,
-      "nameEn": "Conan Edogawa"
+      "status": "alive",
+      "base_appearances": 103,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Rei_Furuya",
+      "nicknames": [
+        {
+          "en": "Zero",
+          "ja": "ゼロ",
+          "zh": "零"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 793,
+        "anime_episode": 667
+      },
+      "voice_actors": {
+        "ja": "古谷徹",
+        "en": "Brandon McInnis"
+      },
+      "gender": "male",
+      "age": 29,
+      "personas": [
+        {
+          "persona_id": "p_furuya_psb",
+          "name": {
+            "en": "Rei Furuya",
+            "ja": "降谷零",
+            "ja_romaji": "Furuya Rei",
+            "zh": "降谷零"
+          },
+          "faction": "RED",
+          "sub_faction": "PSB",
+          "avatar": "avatars/p_furuya_psb.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "PSB Agent",
+            "zh": "公安警察",
+            "ja": "公安警察官"
+          }
+        },
+        {
+          "persona_id": "p_furuya_amuro",
+          "name": {
+            "en": "Tooru Amuro",
+            "ja": "安室透",
+            "ja_romaji": "Amuro Tōru",
+            "zh": "安室透"
+          },
+          "faction": "RED",
+          "avatar": "avatars/p_furuya_amuro.jpg",
+          "codename": null,
+          "is_default_display": false,
+          "description": {
+            "en": "Civilian / Detective apprentice",
+            "zh": "民间身份/侦探学徒",
+            "ja": "探偵の弟子"
+          }
+        },
+        {
+          "persona_id": "p_furuya_bourbon",
+          "name": {
+            "en": "Bourbon",
+            "ja": "バーボン",
+            "zh": "波本"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_OUTER",
+          "avatar": "avatars/p_furuya_bourbon.jpg",
+          "codename": "Bourbon",
+          "is_default_display": false,
+          "description": {
+            "en": "BO member (infiltrator)",
+            "zh": "组织成员（卧底）",
+            "ja": "組織のメンバー（潜入）"
+          }
+        }
+      ]
     },
     {
-      "id": "heiji",
-      "name": "服部平次",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2c/Heiji_Hattori_Profile.png/275px-Heiji_Hattori_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 112,
-        "mentionCount": 217
+      "entity_id": "e_miyano_shiho",
+      "true_name": {
+        "en": "Shiho Miyano",
+        "ja": "宮野志保",
+        "ja_romaji": "Miyano Shiho",
+        "zh": "宫野志保"
       },
-      "isDualIdentity": false,
-      "nameEn": "Heiji Hattori"
+      "status": "shrunk",
+      "base_appearances": 412,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shiho_Miyano",
+      "nicknames": [
+        {
+          "en": "Little Scientist",
+          "zh": "小科学家"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 176,
+        "anime_episode": 129
+      },
+      "voice_actors": {
+        "ja": "林原めぐみ",
+        "en": "Brina Palencia"
+      },
+      "gender": "female",
+      "age": 18,
+      "relatives": [
+        {
+          "entity_id": "e_akemi",
+          "relation": "sibling"
+        }
+      ],
+      "personas": [
+        {
+          "persona_id": "p_miyano_shiho",
+          "name": {
+            "en": "Shiho Miyano",
+            "ja": "宮野志保",
+            "ja_romaji": "Miyano Shiho",
+            "zh": "宫野志保"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_miyano_shiho.jpg",
+          "codename": "Sherry",
+          "is_default_display": false,
+          "description": {
+            "en": "BO scientist, APTX4869 developer",
+            "zh": "组织科学家，APTX4869开发者",
+            "ja": "組織の科学者"
+          }
+        },
+        {
+          "persona_id": "p_haibara",
+          "name": {
+            "en": "Ai Haibara",
+            "ja": "灰原哀",
+            "ja_romaji": "Haibara Ai",
+            "zh": "灰原哀"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE_BOYS",
+          "avatar": "avatars/p_haibara.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "Shrunken child identity",
+            "zh": "缩小后的身份",
+            "ja": "小さくなった姿"
+          }
+        }
+      ]
     },
     {
-      "id": "kazuha",
-      "name": "远山和叶",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/77/Kazuha_Toyama_Profile.jpg/275px-Kazuha_Toyama_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 94,
-        "mentionCount": 175
+      "entity_id": "e_hondou",
+      "true_name": {
+        "en": "Hidemi Hondou",
+        "ja": "本堂瑛海",
+        "ja_romaji": "Hondō Hidemi",
+        "zh": "本堂瑛海"
       },
-      "isDualIdentity": false,
-      "nameEn": "Kazuha Toyama"
+      "status": "alive",
+      "base_appearances": 59,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Hidemi_Hondou",
+      "first_appearance": {
+        "manga_file": 499,
+        "anime_episode": 425
+      },
+      "voice_actors": {
+        "ja": "三石琴乃",
+        "en": "Anastasia Muñoz"
+      },
+      "gender": "female",
+      "personas": [
+        {
+          "persona_id": "p_hondou",
+          "name": {
+            "en": "Hidemi Hondou",
+            "ja": "本堂瑛海",
+            "ja_romaji": "Hondō Hidemi",
+            "zh": "本堂瑛海"
+          },
+          "faction": "RED",
+          "sub_faction": "CIA",
+          "avatar": "avatars/p_hondou.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "CIA Agent",
+            "zh": "CIA探员",
+            "ja": "CIA捜査官"
+          }
+        },
+        {
+          "persona_id": "p_kir",
+          "name": {
+            "en": "Rena Mizunashi",
+            "ja": "水無怜奈",
+            "ja_romaji": "Mizunashi Rena",
+            "zh": "水无怜奈"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_OUTER",
+          "avatar": "avatars/p_kir.jpg",
+          "codename": "Kir",
+          "is_default_display": false,
+          "description": {
+            "en": "BO infiltrator / News anchor",
+            "zh": "组织卧底/新闻主播",
+            "ja": "組織への潜入/ニュースキャスター"
+          }
+        }
+      ]
     },
     {
-      "id": "akai",
-      "name": "赤井秀一",
-      "codename": "Rye",
-      "faction": "RED",
-      "subFaction": "FBI",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/83/Shuichi_Akai_Profile.jpg/275px-Shuichi_Akai_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 82,
-        "mentionCount": 99
+      "entity_id": "e_ran",
+      "true_name": {
+        "en": "Ran Mouri",
+        "ja": "毛利蘭",
+        "ja_romaji": "Mōri Ran",
+        "zh": "毛利兰"
       },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "BLACK",
-        "secondaryName": "诸星大",
-        "secondaryCodename": "Rye"
+      "status": "alive",
+      "base_appearances": 817,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ran_Mouri",
+      "nicknames": [
+        {
+          "en": "Angel",
+          "ja": "エンジェル",
+          "zh": "天使"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 1,
+        "anime_episode": 1
       },
-      "nameEn": "Shuichi Akai"
+      "voice_actors": {
+        "ja": "山崎和佳奈",
+        "en": "Colleen Clinkenbeard"
+      },
+      "gender": "female",
+      "age": 17,
+      "personas": [
+        {
+          "persona_id": "p_ran",
+          "name": {
+            "en": "Ran Mouri",
+            "ja": "毛利蘭",
+            "ja_romaji": "Mōri Ran",
+            "zh": "毛利兰"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_ran.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "High school student, karate champion",
+            "zh": "高中生，空手道冠军",
+            "ja": "高校生、空手道チャンピオン"
+          }
+        }
+      ]
     },
     {
-      "id": "amuro",
-      "name": "安室透",
-      "codename": "Bourbon",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/86/Rei_Furuya_Profile.jpg/275px-Rei_Furuya_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 71,
-        "mentionCount": 103
+      "entity_id": "e_kogoro",
+      "true_name": {
+        "en": "Kogoro Mouri",
+        "ja": "毛利小五郎",
+        "ja_romaji": "Mōri Kogorō",
+        "zh": "毛利小五郎"
       },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "RED",
-        "secondaryName": "降谷零",
-        "secondaryCodename": "公安零"
+      "status": "alive",
+      "base_appearances": 779,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kogoro_Mouri",
+      "nicknames": [
+        {
+          "en": "Sleeping Kogoro",
+          "ja": "眠りの小五郎",
+          "zh": "沉睡的小五郎"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 1,
+        "anime_episode": 1
       },
-      "nameEn": "Toru Amuro"
+      "voice_actors": {
+        "ja": "小山力也",
+        "en": "R. Bruce Elliott"
+      },
+      "gender": "male",
+      "age": 38,
+      "personas": [
+        {
+          "persona_id": "p_kogoro",
+          "name": {
+            "en": "Kogoro Mouri",
+            "ja": "毛利小五郎",
+            "ja_romaji": "Mōri Kogorō",
+            "zh": "毛利小五郎"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_kogoro.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "Private detective",
+            "zh": "私家侦探",
+            "ja": "私立探偵"
+          }
+        }
+      ]
     },
     {
-      "id": "gin",
-      "name": "琴酒",
-      "codename": "Gin",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/89/S6-Gin.png/275px-S6-Gin.png",
-      "appearanceCount": {
-        "episodeCount": 70,
-        "mentionCount": 108
+      "entity_id": "e_heiji",
+      "true_name": {
+        "en": "Heiji Hattori",
+        "ja": "服部平次",
+        "ja_romaji": "Hattori Heiji",
+        "zh": "服部平次"
       },
-      "isDualIdentity": false,
-      "nameEn": "Gin"
+      "status": "alive",
+      "base_appearances": 217,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Heiji_Hattori",
+      "nicknames": [
+        {
+          "en": "Detective of the West",
+          "ja": "西の高校生探偵",
+          "zh": "西方的高中生侦探"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 92,
+        "anime_episode": 48
+      },
+      "voice_actors": {
+        "ja": "堀川りょう",
+        "en": "Kevin M. Connolly"
+      },
+      "gender": "male",
+      "age": 17,
+      "personas": [
+        {
+          "persona_id": "p_heiji",
+          "name": {
+            "en": "Heiji Hattori",
+            "ja": "服部平次",
+            "ja_romaji": "Hattori Heiji",
+            "zh": "服部平次"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_heiji.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "High school detective from Osaka",
+            "zh": "大阪的高中生侦探",
+            "ja": "大阪の高校生探偵"
+          }
+        }
+      ]
     },
     {
-      "id": "vodka",
-      "name": "伏特加",
-      "codename": "Vodka",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/22/Vodka_Profile.jpg/275px-Vodka_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 65,
-        "mentionCount": 103
+      "entity_id": "e_gin",
+      "true_name": {
+        "en": "Gin",
+        "ja": "ジン",
+        "zh": "琴酒"
       },
-      "isDualIdentity": false,
-      "nameEn": "Vodka"
+      "status": "alive",
+      "base_appearances": 108,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Gin",
+      "first_appearance": {
+        "manga_file": 1,
+        "anime_episode": 1
+      },
+      "voice_actors": {
+        "ja": "堀之紀",
+        "en": "Troy Baker"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_gin",
+          "name": {
+            "en": "Gin",
+            "ja": "ジン",
+            "zh": "琴酒"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_gin.jpg",
+          "codename": "Gin",
+          "is_default_display": true,
+          "description": {
+            "en": "BO executive member",
+            "zh": "组织核心干部",
+            "ja": "組織の幹部"
+          }
+        }
+      ]
     },
     {
-      "id": "vermouth",
-      "name": "贝尔摩德",
-      "codename": "Vermouth",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/9a/M26_Vermouth.jpg/275px-M26_Vermouth.jpg",
-      "appearanceCount": {
-        "episodeCount": 78,
-        "mentionCount": 114
+      "entity_id": "e_vodka",
+      "true_name": {
+        "en": "Vodka",
+        "ja": "ウォッカ",
+        "zh": "伏特加"
       },
-      "isDualIdentity": false,
-      "nameEn": "Vermouth"
+      "status": "alive",
+      "base_appearances": 103,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Vodka",
+      "first_appearance": {
+        "manga_file": 1,
+        "anime_episode": 1
+      },
+      "voice_actors": {
+        "ja": "立木文彦",
+        "en": "Mike McFarland"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_vodka",
+          "name": {
+            "en": "Vodka",
+            "ja": "ウォッカ",
+            "zh": "伏特加"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_vodka.jpg",
+          "codename": "Vodka",
+          "is_default_display": true,
+          "description": {
+            "en": "BO member, Gin's partner",
+            "zh": "组织成员，琴酒的搭档",
+            "ja": "組織のメンバー、ジンの相棒"
+          }
+        }
+      ]
     },
     {
-      "id": "haibara",
-      "name": "灰原哀",
-      "codename": "Sherry",
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4f/Ai_Haibara_Profile.png/275px-Ai_Haibara_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 403,
-        "mentionCount": 412
+      "entity_id": "e_vermouth",
+      "true_name": {
+        "en": "Vermouth",
+        "ja": "ベルモット",
+        "zh": "贝尔摩德"
       },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "BLACK",
-        "secondaryName": "宫野志保",
-        "secondaryCodename": "Sherry"
+      "status": "alive",
+      "base_appearances": 114,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Vermouth",
+      "nicknames": [
+        {
+          "en": "Chris Vineyard",
+          "ja": "クリス・ヴィンヤード",
+          "zh": "克莉丝·温亚德"
+        },
+        {
+          "en": "Sharon Vineyard",
+          "ja": "シャロン・ヴィンヤード",
+          "zh": "雪莉·温亚德"
+        }
+      ],
+      "first_appearance": {
+        "manga_file": 238,
+        "anime_episode": 176
       },
-      "nameEn": "Ai Haibara"
+      "voice_actors": {
+        "ja": "小山茉美",
+        "en": "Laura Bailey"
+      },
+      "gender": "female",
+      "personas": [
+        {
+          "persona_id": "p_vermouth",
+          "name": {
+            "en": "Vermouth",
+            "ja": "ベルモット",
+            "zh": "贝尔摩德"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_vermouth.jpg",
+          "codename": "Vermouth",
+          "is_default_display": true,
+          "description": {
+            "en": "BO core member, master of disguise",
+            "zh": "组织核心成员，变装大师",
+            "ja": "組織の幹部、変装の達人"
+          }
+        }
+      ]
     },
     {
-      "id": "jodie",
-      "name": "朱蒂·斯泰琳",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "FBI",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5d/Jodie_Starling_Profile.png/275px-Jodie_Starling_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 54,
-        "mentionCount": 89
+      "entity_id": "e_jodie",
+      "true_name": {
+        "en": "Jodie Starling",
+        "ja": "ジョディ・スターリング",
+        "ja_romaji": "Jodi Sutāringu",
+        "zh": "朱蒂·斯泰琳"
       },
-      "isDualIdentity": false,
-      "nameEn": "Jodie Starling"
+      "status": "alive",
+      "base_appearances": 89,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Jodie_Starling",
+      "first_appearance": {
+        "manga_file": 230,
+        "anime_episode": 170
+      },
+      "voice_actors": {
+        "ja": "一城みゆ希",
+        "en": "Lydia Mackay"
+      },
+      "gender": "female",
+      "personas": [
+        {
+          "persona_id": "p_jodie",
+          "name": {
+            "en": "Jodie Starling",
+            "ja": "ジョディ・スターリング",
+            "ja_romaji": "Jodi Sutāringu",
+            "zh": "朱蒂·斯泰琳"
+          },
+          "faction": "RED",
+          "sub_faction": "FBI",
+          "avatar": "avatars/p_jodie.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "FBI Agent",
+            "zh": "FBI探员",
+            "ja": "FBI捜査官"
+          }
+        }
+      ]
     },
     {
-      "id": "sato",
-      "name": "佐藤美和子",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/45/Miwako_Sato_Profile.png/275px-Miwako_Sato_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 137,
-        "mentionCount": 127
+      "entity_id": "e_sato",
+      "true_name": {
+        "en": "Miwako Sato",
+        "ja": "佐藤美和子",
+        "ja_romaji": "Satō Miwako",
+        "zh": "佐藤美和子"
       },
-      "isDualIdentity": false,
-      "nameEn": "Miwako Sato"
+      "status": "alive",
+      "base_appearances": 137,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Miwako_Sato",
+      "first_appearance": {
+        "manga_file": 180,
+        "anime_episode": 130
+      },
+      "voice_actors": {
+        "ja": "湯屋敦子",
+        "en": "Leah Clark"
+      },
+      "gender": "female",
+      "personas": [
+        {
+          "persona_id": "p_sato",
+          "name": {
+            "en": "Miwako Sato",
+            "ja": "佐藤美和子",
+            "ja_romaji": "Satō Miwako",
+            "zh": "佐藤美和子"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_sato.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "Tokyo MPD Detective",
+            "zh": "警视厅刑警",
+            "ja": "警視庁刑事"
+          }
+        }
+      ]
     },
     {
-      "id": "takagi",
-      "name": "高木涉",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/be/Wataru_Takagi_Profile2.png/275px-Wataru_Takagi_Profile2.png",
-      "appearanceCount": {
-        "episodeCount": 581,
-        "mentionCount": 339
+      "entity_id": "e_takagi",
+      "true_name": {
+        "en": "Wataru Takagi",
+        "ja": "高木渉",
+        "ja_romaji": "Takagi Wataru",
+        "zh": "高木涉"
       },
-      "isDualIdentity": false,
-      "nameEn": "Wataru Takagi"
+      "status": "alive",
+      "base_appearances": 581,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Wataru_Takagi",
+      "first_appearance": {
+        "manga_file": 180,
+        "anime_episode": 130
+      },
+      "voice_actors": {
+        "ja": "高木渉",
+        "en": "Adam Gibbs"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_takagi",
+          "name": {
+            "en": "Wataru Takagi",
+            "ja": "高木渉",
+            "ja_romaji": "Takagi Wataru",
+            "zh": "高木涉"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_takagi.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "Tokyo MPD Detective",
+            "zh": "警视厅刑警",
+            "ja": "警視庁刑事"
+          }
+        }
+      ]
     },
     {
-      "id": "miyano_akemi",
-      "name": "宫野明美",
-      "codename": null,
-      "faction": "BLACK",
-      "subFaction": "BO_OUTER",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/af/Akemi_Miyano_Profile.jpg/275px-Akemi_Miyano_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 23,
-        "mentionCount": 25
+      "entity_id": "e_akemi",
+      "true_name": {
+        "en": "Akemi Miyano",
+        "ja": "宮野明美",
+        "ja_romaji": "Miyano Akemi",
+        "zh": "宫野明美"
       },
-      "isDualIdentity": false,
-      "nameEn": "Akemi Miyano"
-    },
-    {
-      "id": "rum",
-      "name": "脇田兼則",
-      "codename": "Rum",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a6/Rum_Profile.jpg/200px-Rum_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 30,
-        "mentionCount": 41
+      "status": "dead",
+      "base_appearances": 25,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Akemi_Miyano",
+      "first_appearance": {
+        "manga_file": 13,
+        "anime_episode": 13
       },
-      "isDualIdentity": false,
-      "nameEn": "Rum"
-    },
-    {
-      "id": "hakuba",
-      "name": "白马探",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/df/Saguru_Hakuba_Profile.jpg/275px-Saguru_Hakuba_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 7,
-        "mentionCount": 13
+      "voice_actors": {
+        "ja": "玉川砂記子",
+        "en": "Laura Bailey"
       },
-      "isDualIdentity": false,
-      "nameEn": "Saguru Hakuba"
-    },
-    {
-      "id": "aoko",
-      "name": "中森青子",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4c/Aoko_Nakomori_Profile.jpg/275px-Aoko_Nakomori_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 24,
-        "mentionCount": 37
-      },
-      "isDualIdentity": false,
-      "nameEn": "Aoko Nakamori"
-    },
-    {
-      "id": "matsuda",
-      "name": "松田阵平",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c5/Jinpei_Matsuda_Profile.png/275px-Jinpei_Matsuda_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 13,
-        "mentionCount": 22
-      },
-      "isDualIdentity": false,
-      "nameEn": "Jinpei Matsuda"
-    },
-    {
-      "id": "hagiwara",
-      "name": "萩原研二",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/ac/Kenji_Hagiwara_Profile.jpg/275px-Kenji_Hagiwara_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 9,
-        "mentionCount": 13
-      },
-      "isDualIdentity": false,
-      "nameEn": "Kenji Hagiwara"
-    },
-    {
-      "id": "chiba",
-      "name": "千叶和伸",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/6/60/Kazunobu_Chiba_Profile.jpg/275px-Kazunobu_Chiba_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 242,
-        "mentionCount": 104
-      },
-      "isDualIdentity": false,
-      "nameEn": "Kazunobu Chiba"
-    },
-    {
-      "id": "miike",
-      "name": "三池苗子",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "POLICE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b5/Naeko_Miike_child.jpg/200px-Naeko_Miike_child.jpg",
-      "appearanceCount": {
-        "episodeCount": 24,
-        "mentionCount": 28
-      },
-      "isDualIdentity": false,
-      "nameEn": "Naeko Miike"
-    },
-    {
-      "id": "sera",
-      "name": "世良真纯",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/84/Masumi_Sera_Profile.jpg/275px-Masumi_Sera_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 75,
-        "mentionCount": 115
-      },
-      "isDualIdentity": false,
-      "nameEn": "Masumi Sera"
-    },
-    {
-      "id": "subaru",
-      "name": "冲矢昴",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "FBI",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/ce/Subaru_Okiya_Profile.png/275px-Subaru_Okiya_Profile.png",
-      "appearanceCount": {
-        "episodeCount": 62,
-        "mentionCount": 78
-      },
-      "isDualIdentity": false,
-      "nameEn": "Subaru Okiya"
-    },
-    {
-      "id": "kogoro",
-      "name": "毛利小五郎",
-      "nameEn": "Kogoro Mouri",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c5/Kogoro_Mouri_Profile2.png/355px-Kogoro_Mouri_Profile2.png",
-      "appearanceCount": {
-        "episodeCount": 779,
-        "mentionCount": 626
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "agasa",
-      "name": "阿笠博士",
-      "nameEn": "Hiroshi Agasa",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d5/Hiroshi_Agasa_Profile.jpg/275px-Hiroshi_Agasa_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 265,
-        "mentionCount": 299
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "ayumi",
-      "name": "吉田步美",
-      "nameEn": "Ayumi Yoshida",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/74/Ayumi_Yoshida_Profile.jpg/275px-Ayumi_Yoshida_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 444,
-        "mentionCount": 372
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "mitsuhiko",
-      "name": "圆谷光彦",
-      "nameEn": "Mitsuhiko Tsuburaya",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/7e/Mitsuhiko_Tsuburaya_Profile.jpg/275px-Mitsuhiko_Tsuburaya_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 437,
-        "mentionCount": 367
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "genta",
-      "name": "小岛元太",
-      "nameEn": "Genta Kojima",
-      "codename": null,
-      "faction": "RED",
-      "subFaction": "DETECTIVE_BOYS",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a9/Genta_Kojima_Profile2.jpg/275px-Genta_Kojima_Profile2.jpg",
-      "appearanceCount": {
-        "episodeCount": 438,
-        "mentionCount": 367
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "chianti",
-      "name": "基安蒂",
-      "nameEn": "Chianti",
-      "codename": "Chianti",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/af/Chianti_Profile.jpg/275px-Chianti_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 15,
-        "mentionCount": 26
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "korn",
-      "name": "科恩",
-      "nameEn": "Korn",
-      "codename": "Korn",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2b/Korn_Profile.jpg/275px-Korn_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 14,
-        "mentionCount": 24
-      },
-      "isDualIdentity": false
-    },
-    {
-      "id": "kir",
-      "name": "水无怜奈",
-      "nameEn": "Hidemi Hondou",
-      "codename": "Kir",
-      "faction": "BLACK",
-      "subFaction": "BO_CORE",
-      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/55/Hidemi_Hondou_Profile.jpg/275px-Hidemi_Hondou_Profile.jpg",
-      "appearanceCount": {
-        "episodeCount": 40,
-        "mentionCount": 59
-      },
-      "isDualIdentity": true,
-      "dualIdentityInfo": {
-        "secondaryFaction": "RED",
-        "secondaryName": "本堂瑛海",
-        "secondaryCodename": "CIA"
-      }
+      "gender": "female",
+      "relatives": [
+        {
+          "entity_id": "e_miyano_shiho",
+          "relation": "sibling"
+        },
+        {
+          "entity_id": "e_akai",
+          "relation": "spouse"
+        }
+      ],
+      "personas": [
+        {
+          "persona_id": "p_akemi",
+          "name": {
+            "en": "Akemi Miyano",
+            "ja": "宮野明美",
+            "ja_romaji": "Miyano Akemi",
+            "zh": "宫野明美"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_OUTER",
+          "avatar": "avatars/p_akemi.jpg",
+          "codename": null,
+          "is_default_display": true,
+          "description": {
+            "en": "BO low-ranking member",
+            "zh": "组织末端成员",
+            "ja": "組織の末端構成員"
+          }
+        }
+      ]
     }
   ],
   "characterEvents": [
     {
       "id": "evt-001",
-      "characterId": "shinichi",
+      "entity_id": "e_shinichi",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
-      "description": "工藤新一首次登场"
+      "description": "工藤新一首次登场，在热带乐园被灌下APTX4869变小为柯南"
     },
     {
       "id": "evt-002",
-      "characterId": "ran",
+      "entity_id": "e_ran",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
@@ -495,47 +880,47 @@
     },
     {
       "id": "evt-003",
-      "characterId": "gin",
+      "entity_id": "e_kogoro",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "毛利小五郎首次登场"
+    },
+    {
+      "id": "evt-004",
+      "entity_id": "e_gin",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
       "description": "琴酒首次登场，在热带乐园给工藤新一灌下APTX4869"
     },
     {
-      "id": "evt-004",
-      "characterId": "vodka",
+      "id": "evt-005",
+      "entity_id": "e_vodka",
       "type": "JOIN",
       "episodeIndex": 1,
       "chapterIndex": 1,
       "description": "伏特加首次登场"
     },
     {
-      "id": "evt-005",
-      "characterId": "conan",
-      "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
-      "description": "工藤新一变小为江户川柯南"
-    },
-    {
       "id": "evt-006",
-      "characterId": "haibara",
+      "entity_id": "e_akemi",
       "type": "JOIN",
-      "episodeIndex": 129,
-      "chapterIndex": 176,
-      "description": "灰原哀逃离组织，服下APTX4869变小后转学"
+      "episodeIndex": 13,
+      "chapterIndex": 13,
+      "description": "宫野明美首次登场"
     },
     {
       "id": "evt-007",
-      "characterId": "akai",
+      "entity_id": "e_heiji",
       "type": "JOIN",
-      "episodeIndex": 230,
-      "chapterIndex": 287,
-      "description": "赤井秀一首次登场"
+      "episodeIndex": 48,
+      "chapterIndex": 92,
+      "description": "服部平次首次登场"
     },
     {
       "id": "evt-008",
-      "characterId": "miyano_akemi",
+      "entity_id": "e_akemi",
       "type": "DEATH",
       "episodeIndex": 128,
       "chapterIndex": 176,
@@ -543,255 +928,194 @@
     },
     {
       "id": "evt-009",
-      "characterId": "vermouth",
+      "entity_id": "e_miyano_shiho",
       "type": "JOIN",
-      "episodeIndex": 176,
-      "chapterIndex": 238,
-      "description": "贝尔摩德首次登场"
+      "episodeIndex": 129,
+      "chapterIndex": 176,
+      "description": "灰原哀逃离组织，服下APTX4869变小后转学"
     },
     {
       "id": "evt-010",
-      "characterId": "amuro",
-      "type": "JOIN",
-      "episodeIndex": 667,
-      "chapterIndex": 793,
-      "description": "安室透（波本）首次登场"
-    },
-    {
-      "id": "evt-011",
-      "characterId": "amuro",
-      "type": "EXPOSED",
-      "episodeIndex": 779,
-      "chapterIndex": 894,
-      "description": "安室透的公安身份（降谷零）被揭露——绯色篇"
-    },
-    {
-      "id": "evt-012",
-      "characterId": "akai",
-      "type": "EXPOSED",
-      "episodeIndex": 783,
-      "chapterIndex": 898,
-      "description": "赤井秀一假死真相大白——绯色篇"
-    },
-    {
-      "id": "evt-013",
-      "characterId": "sera",
-      "type": "JOIN",
-      "episodeIndex": 646,
-      "chapterIndex": 768,
-      "description": "世良真纯首次登场"
-    },
-    {
-      "id": "evt-014",
-      "characterId": "heiji",
-      "type": "JOIN",
-      "episodeIndex": 48,
-      "chapterIndex": 92,
-      "description": "服部平次首次登场"
-    },
-    {
-      "id": "evt-015",
-      "characterId": "matsuda",
-      "type": "DEATH",
-      "episodeIndex": 304,
-      "chapterIndex": 358,
-      "description": "松田阵平在拆弹任务中殉职"
-    },
-    {
-      "id": "evt-016",
-      "characterId": "hagiwara",
-      "type": "DEATH",
-      "episodeIndex": 304,
-      "chapterIndex": 358,
-      "description": "萩原研二在爆炸事件中殉职（回忆）"
-    },
-    {
-      "id": "evt-017",
-      "characterId": "rum",
-      "type": "JOIN",
-      "episodeIndex": 941,
-      "chapterIndex": 1008,
-      "description": "朗姆篇开始，朗姆身份之谜浮出水面"
-    },
-    {
-      "id": "evt-018",
-      "characterId": "jodie",
-      "type": "JOIN",
-      "episodeIndex": 170,
-      "chapterIndex": 230,
-      "description": "朱蒂老师首次登场"
-    },
-    {
-      "id": "evt-019",
-      "characterId": "sato",
+      "entity_id": "e_sato",
       "type": "JOIN",
       "episodeIndex": 130,
       "chapterIndex": 180,
       "description": "佐藤美和子首次登场"
     },
     {
-      "id": "evt-020",
-      "characterId": "takagi",
+      "id": "evt-011",
+      "entity_id": "e_takagi",
       "type": "JOIN",
       "episodeIndex": 130,
       "chapterIndex": 180,
       "description": "高木涉首次登场"
     },
     {
-      "id": "evt-021",
-      "characterId": "kogoro",
+      "id": "evt-012",
+      "entity_id": "e_jodie",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
-      "description": "毛利小五郎首次登场"
+      "episodeIndex": 170,
+      "chapterIndex": 230,
+      "description": "朱蒂老师首次登场"
     },
     {
-      "id": "evt-022",
-      "characterId": "agasa",
+      "id": "evt-013",
+      "entity_id": "e_vermouth",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
-      "description": "阿笠博士首次登场"
+      "episodeIndex": 176,
+      "chapterIndex": 238,
+      "description": "贝尔摩德首次登场"
     },
     {
-      "id": "evt-023",
-      "characterId": "ayumi",
+      "id": "evt-014",
+      "entity_id": "e_akai",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
-      "description": "吉田步美首次登场"
+      "episodeIndex": 230,
+      "chapterIndex": 287,
+      "description": "赤井秀一首次登场"
     },
     {
-      "id": "evt-024",
-      "characterId": "mitsuhiko",
-      "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
-      "description": "圆谷光彦首次登场"
-    },
-    {
-      "id": "evt-025",
-      "characterId": "genta",
-      "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
-      "description": "小岛元太首次登场"
-    },
-    {
-      "id": "evt-026",
-      "characterId": "chianti",
-      "type": "JOIN",
-      "episodeIndex": 425,
-      "chapterIndex": 499,
-      "description": "基安蒂首次登场"
-    },
-    {
-      "id": "evt-027",
-      "characterId": "korn",
-      "type": "JOIN",
-      "episodeIndex": 425,
-      "chapterIndex": 499,
-      "description": "科恩首次登场"
-    },
-    {
-      "id": "evt-028",
-      "characterId": "kir",
+      "id": "evt-015",
+      "entity_id": "e_hondou",
       "type": "JOIN",
       "episodeIndex": 425,
       "chapterIndex": 499,
       "description": "水无怜奈（Kir）首次登场"
+    },
+    {
+      "id": "evt-016",
+      "entity_id": "e_akai",
+      "type": "JOIN",
+      "episodeIndex": 509,
+      "chapterIndex": 609,
+      "description": "冲矢昴身份首次登场"
+    },
+    {
+      "id": "evt-017",
+      "entity_id": "e_furuya",
+      "type": "JOIN",
+      "episodeIndex": 667,
+      "chapterIndex": 793,
+      "description": "安室透（波本）首次登场"
+    },
+    {
+      "id": "evt-018",
+      "entity_id": "e_furuya",
+      "type": "EXPOSED",
+      "episodeIndex": 783,
+      "chapterIndex": 898,
+      "description": "降谷零的公安身份被揭露——绯色篇"
     }
   ],
-  "relationships": [
+  "links": [
     {
-      "id": "rel-001",
-      "character1Id": "shinichi",
-      "character2Id": "ran",
-      "type": "CHILDHOOD_SWEETHEART",
-      "initialStatus": "UNCONFESSED",
-      "description": "青梅竹马，两小无猜"
+      "source_persona_id": "p_shinichi",
+      "target_persona_id": "p_ran",
+      "type": "romantic",
+      "label": {
+        "en": "Childhood sweethearts",
+        "zh": "青梅竹马",
+        "ja": "幼馴染"
+      }
     },
     {
-      "id": "rel-002",
-      "character1Id": "heiji",
-      "character2Id": "kazuha",
-      "type": "CHILDHOOD_SWEETHEART",
-      "initialStatus": "UNCONFESSED",
-      "description": "大阪的青梅竹马组合"
+      "source_persona_id": "p_sato",
+      "target_persona_id": "p_takagi",
+      "type": "romantic",
+      "label": {
+        "en": "Lovers",
+        "zh": "恋人",
+        "ja": "恋人"
+      }
     },
     {
-      "id": "rel-003",
-      "character1Id": "sato",
-      "character2Id": "takagi",
-      "type": "LOVE",
-      "initialStatus": "UNCONFESSED",
-      "description": "警视厅恋人"
+      "source_persona_id": "p_akai_bo",
+      "target_persona_id": "p_akemi",
+      "type": "romantic",
+      "label": {
+        "en": "Lovers (separated)",
+        "zh": "恋人（已分离）",
+        "ja": "恋人（離別）"
+      },
+      "status": "SEPARATED"
     },
     {
-      "id": "rel-004",
-      "character1Id": "hakuba",
-      "character2Id": "aoko",
-      "type": "CHILDHOOD_SWEETHEART",
-      "initialStatus": "UNCONFESSED",
-      "description": "白马探与中森青子"
+      "source_persona_id": "p_akai_fbi",
+      "target_persona_id": "p_jodie",
+      "type": "romantic",
+      "label": {
+        "en": "Ex-lovers",
+        "zh": "前恋人",
+        "ja": "元恋人"
+      }
     },
     {
-      "id": "rel-005",
-      "character1Id": "akai",
-      "character2Id": "miyano_akemi",
-      "type": "LOVE",
-      "initialStatus": "DATING",
-      "description": "赤井秀一与宫野明美，跨越阵营的悲恋"
+      "source_persona_id": "p_furuya_amuro",
+      "target_persona_id": "p_kogoro",
+      "type": "master_apprentice",
+      "label": {
+        "en": "Master-apprentice",
+        "zh": "师徒",
+        "ja": "師弟"
+      }
     },
     {
-      "id": "rel-006",
-      "character1Id": "matsuda",
-      "character2Id": "hagiwara",
-      "type": "AMBIGUOUS",
-      "initialStatus": "CONFIRMED",
-      "description": "松田阵平与萩原研二，警校组挚友"
+      "source_persona_id": "p_furuya_bourbon",
+      "target_persona_id": "p_gin",
+      "type": "colleague",
+      "label": {
+        "en": "Colleagues",
+        "zh": "同伙",
+        "ja": "同僚"
+      }
     },
     {
-      "id": "rel-007",
-      "character1Id": "chiba",
-      "character2Id": "miike",
-      "type": "LOVE",
-      "initialStatus": "UNCONFESSED",
-      "description": "千叶和伸与三池苗子"
+      "source_persona_id": "p_akai_bo",
+      "target_persona_id": "p_gin",
+      "type": "rivalry",
+      "label": {
+        "en": "Arch-enemies",
+        "zh": "宿敌",
+        "ja": "宿敵"
+      }
+    },
+    {
+      "source_persona_id": "p_akai_fbi",
+      "target_persona_id": "p_conan",
+      "type": "friendship",
+      "label": {
+        "en": "Partners",
+        "zh": "搭档",
+        "ja": "パートナー"
+      }
+    },
+    {
+      "source_persona_id": "p_furuya_psb",
+      "target_persona_id": "p_akai_fbi",
+      "type": "rivalry",
+      "label": {
+        "en": "Rivals",
+        "zh": "对手",
+        "ja": "ライバル"
+      }
     }
   ],
   "relationshipEvents": [
     {
       "id": "revt-001",
-      "relationshipId": "rel-001",
+      "relationshipId": "rel-shinichi-ran",
       "episodeIndex": 621,
-      "chapterIndex": 743,
+      "chapterIndex": 752,
       "newStatus": "CONFESSED",
       "description": "工藤新一向毛利兰表白——伦敦篇"
     },
     {
       "id": "revt-002",
-      "relationshipId": "rel-003",
-      "episodeIndex": 301,
-      "chapterIndex": 355,
-      "newStatus": "CONFESSED",
-      "description": "佐藤美和子与高木涉确认心意"
-    },
-    {
-      "id": "revt-003",
-      "relationshipId": "rel-003",
-      "episodeIndex": 535,
-      "chapterIndex": 638,
+      "relationshipId": "rel-sato-takagi",
+      "episodeIndex": 358,
+      "chapterIndex": 422,
       "newStatus": "DATING",
-      "description": "佐藤与高木正式交往"
-    },
-    {
-      "id": "revt-004",
-      "relationshipId": "rel-005",
-      "episodeIndex": 128,
-      "chapterIndex": 176,
-      "newStatus": "SEPARATED",
-      "description": "宫野明美被杀害，赤井秀一与明美永别"
+      "description": "佐藤美和子与高木涉开始交往"
     }
   ],
   "episodeChapterMappings": [
@@ -799,6 +1123,11 @@
       "episodeIndex": 1,
       "chapterIndex": 1,
       "publicationDate": "1994-01"
+    },
+    {
+      "episodeIndex": 13,
+      "chapterIndex": 13,
+      "publicationDate": "1994-06"
     },
     {
       "episodeIndex": 48,
@@ -836,34 +1165,29 @@
       "publicationDate": "2001-03"
     },
     {
-      "episodeIndex": 301,
-      "chapterIndex": 355,
-      "publicationDate": "2002-11"
+      "episodeIndex": 345,
+      "chapterIndex": 434,
+      "publicationDate": "2003-12"
     },
     {
-      "episodeIndex": 304,
-      "chapterIndex": 358,
-      "publicationDate": "2003-01"
+      "episodeIndex": 425,
+      "chapterIndex": 499,
+      "publicationDate": "2005-11"
     },
     {
-      "episodeIndex": 535,
-      "chapterIndex": 638,
-      "publicationDate": "2008-10"
+      "episodeIndex": 491,
+      "chapterIndex": 595,
+      "publicationDate": "2007-10"
     },
     {
-      "episodeIndex": 616,
-      "chapterIndex": 743,
-      "publicationDate": "2011-03"
+      "episodeIndex": 509,
+      "chapterIndex": 609,
+      "publicationDate": "2008-04"
     },
     {
       "episodeIndex": 621,
       "chapterIndex": 752,
       "publicationDate": "2011-06"
-    },
-    {
-      "episodeIndex": 646,
-      "chapterIndex": 768,
-      "publicationDate": "2012-01"
     },
     {
       "episodeIndex": 667,
@@ -881,9 +1205,9 @@
       "publicationDate": "2015-05"
     },
     {
-      "episodeIndex": 781,
-      "chapterIndex": 898,
-      "publicationDate": "2015-04"
+      "episodeIndex": 927,
+      "chapterIndex": 1000,
+      "publicationDate": "2018-06"
     },
     {
       "episodeIndex": 941,

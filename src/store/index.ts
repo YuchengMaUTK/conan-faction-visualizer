@@ -3,12 +3,11 @@ import type {
   DataSet,
   TimePoint,
   FactionSnapshot,
-  RelationshipState,
-  SubFaction,
+  Link,
 } from '../types';
 import { parseData } from '../engines/data-store';
 import { computeSnapshot } from '../engines/event-engine';
-import { computeRelationships } from '../engines/relationship-engine';
+import { computeLinks } from '../engines/relationship-engine';
 import { convertTimePoint } from '../engines/timeline-utils';
 import { search } from '../engines/search-engine';
 
@@ -62,29 +61,32 @@ export interface AppState {
 
   // Computed snapshots
   factionSnapshot: FactionSnapshot | null;
-  relationshipStates: RelationshipState[];
+  links: (Link & { isCrossFaction: boolean })[];
 
   // UI state
   searchQuery: string;
-  searchResults: string[];
-  subFactionFilter: SubFaction | null;
-  showRelationships: boolean;
+  searchResults: string[]; // flattened persona IDs from SearchResult[]
   selectedCharacterId: string | null;
   selectedCPId: string | null;
   highlightedCharacterIds: Set<string>;
   selectedArcId: string | null;
+
+  // Graph state
+  godEyeMode: boolean;
+  graphFactionFilters: Record<string, boolean>;
 
   // Actions
   loadData: (url: string) => Promise<void>;
   setTimePoint: (point: TimePoint) => void;
   setTimelineMode: (mode: 'episode' | 'chapter' | 'date') => void;
   setSearchQuery: (query: string) => void;
-  setSubFactionFilter: (filter: SubFaction | null) => void;
-  toggleRelationships: () => void;
   selectCharacter: (id: string | null) => void;
   selectCP: (id: string | null) => void;
   selectArc: (arcId: string | null) => void;
+  toggleGodEyeMode: () => void;
+  setGraphFactionFilter: (key: string, value: boolean) => void;
 }
+
 
 export const useStore = create<AppState>((set, get) => ({
   // Data
@@ -98,17 +100,36 @@ export const useStore = create<AppState>((set, get) => ({
 
   // Computed snapshots
   factionSnapshot: null,
-  relationshipStates: [],
+  links: [],
 
   // UI state
   searchQuery: '',
   searchResults: [],
-  subFactionFilter: null,
-  showRelationships: false,
   selectedCharacterId: null,
   selectedCPId: null,
   highlightedCharacterIds: new Set<string>(),
   selectedArcId: null,
+
+  // Graph state
+  godEyeMode: false,
+  graphFactionFilters: {
+    RED: true,
+    BLACK: true,
+    OTHER: true,
+    FBI: true,
+    CIA: true,
+    MI6: true,
+    PSB: true,
+    TOKYO_MPD: true,
+    OSAKA_PD: true,
+    NAGANO_PD: true,
+    OTHER_PD: true,
+    DETECTIVE_BOYS: true,
+    DETECTIVE: true,
+    BO_CORE: true,
+    BO_OUTER: true,
+    MAGIC_KAITO: true,
+  },
 
   loadData: async (url: string) => {
     set({ loadingState: 'loading', loadError: undefined });
@@ -131,14 +152,14 @@ export const useStore = create<AppState>((set, get) => ({
       };
 
       const snapshot = computeSnapshot(data, latestTimePoint);
-      const relationships = computeRelationships(data, latestTimePoint);
+      const computedLinks = computeLinks(data, latestTimePoint);
 
       set({
         dataSet: data,
         loadingState: 'loaded',
         currentTimePoint: latestTimePoint,
         factionSnapshot: snapshot,
-        relationshipStates: relationships,
+        links: computedLinks,
       });
     } catch (err) {
       set({
@@ -152,31 +173,28 @@ export const useStore = create<AppState>((set, get) => ({
     const { dataSet } = get();
     if (!dataSet) return;
 
-    // Clamp time point to valid range
     const clamped = clampTimePoint(point, dataSet);
 
-    // If the point only has publicationDate, convert to episodeIndex for snapshot computation
-    // because computeSnapshot compares by episodeIndex/chapterIndex
     let snapshotPoint = clamped;
     if (clamped.publicationDate && !clamped.episodeIndex && !clamped.chapterIndex) {
       snapshotPoint = convertTimePoint(clamped, 'episode', dataSet.episodeChapterMappings);
     }
 
     const snapshot = computeSnapshot(dataSet, snapshotPoint);
-    const relationships = computeRelationships(dataSet, snapshotPoint);
+    const computedLinks = computeLinks(dataSet, snapshotPoint);
 
     // Re-apply search if active
     const { searchQuery } = get();
     let searchResults: string[] = [];
     if (searchQuery) {
-      const allChars = [...snapshot.redFaction, ...snapshot.blackFaction];
-      searchResults = search(allChars, searchQuery);
+      const results = search(dataSet.entities, searchQuery);
+      searchResults = results.flatMap((r) => r.matched_persona_ids);
     }
 
     set({
       currentTimePoint: clamped,
       factionSnapshot: snapshot,
-      relationshipStates: relationships,
+      links: computedLinks,
       searchResults,
     });
   },
@@ -194,46 +212,33 @@ export const useStore = create<AppState>((set, get) => ({
       dataSet.episodeChapterMappings
     );
 
-    // For snapshot computation, always need episodeIndex or chapterIndex
     let snapshotPoint = converted;
     if (converted.publicationDate && !converted.episodeIndex && !converted.chapterIndex) {
       snapshotPoint = convertTimePoint(converted, 'episode', dataSet.episodeChapterMappings);
     }
 
-    // Recompute snapshots at the converted time point
     const snapshot = computeSnapshot(dataSet, snapshotPoint);
-    const relationships = computeRelationships(dataSet, snapshotPoint);
+    const computedLinks = computeLinks(dataSet, snapshotPoint);
 
     set({
       timelineMode: mode,
       currentTimePoint: converted,
       factionSnapshot: snapshot,
-      relationshipStates: relationships,
+      links: computedLinks,
     });
   },
 
   setSearchQuery: (query: string) => {
-    const { factionSnapshot } = get();
-    if (!factionSnapshot) {
+    const { dataSet } = get();
+    if (!dataSet) {
       set({ searchQuery: query, searchResults: [] });
       return;
     }
 
-    const allChars = [
-      ...factionSnapshot.redFaction,
-      ...factionSnapshot.blackFaction,
-    ];
-    const results = search(allChars, query);
+    const results = search(dataSet.entities, query);
+    const searchResults = results.flatMap((r) => r.matched_persona_ids);
 
-    set({ searchQuery: query, searchResults: results });
-  },
-
-  setSubFactionFilter: (filter: SubFaction | null) => {
-    set({ subFactionFilter: filter });
-  },
-
-  toggleRelationships: () => {
-    set((state) => ({ showRelationships: !state.showRelationships }));
+    set({ searchQuery: query, searchResults });
   },
 
   selectCharacter: (id: string | null) => {
@@ -252,11 +257,13 @@ export const useStore = create<AppState>((set, get) => ({
       return;
     }
 
-    // Find the relationship to highlight both characters
+    // Find the link to highlight both personas
     const { dataSet } = get();
-    const rel = dataSet?.relationships.find((r) => r.id === id);
-    const highlighted = rel
-      ? new Set([rel.character1Id, rel.character2Id])
+    const link = dataSet?.links.find(
+      (l) => `${l.source_persona_id}--${l.target_persona_id}` === id
+    );
+    const highlighted = link
+      ? new Set([link.source_persona_id, link.target_persona_id])
       : new Set<string>();
 
     set({
@@ -278,13 +285,11 @@ export const useStore = create<AppState>((set, get) => ({
       return;
     }
 
-    // Jump to the arc's start time point based on current timeline mode
     const { timelineMode } = get();
     let point: TimePoint;
     if (timelineMode === 'chapter') {
       point = { chapterIndex: arc.startChapterIndex };
     } else if (timelineMode === 'date') {
-      // Convert the arc's start episode to a date via mappings
       const converted = convertTimePoint(
         { episodeIndex: arc.startEpisodeIndex },
         'date',
@@ -295,18 +300,28 @@ export const useStore = create<AppState>((set, get) => ({
       point = { episodeIndex: arc.startEpisodeIndex };
     }
 
-    const snapshot = computeSnapshot(dataSet, point.publicationDate && !point.episodeIndex && !point.chapterIndex
+    const snapshotPoint = point.publicationDate && !point.episodeIndex && !point.chapterIndex
       ? convertTimePoint(point, 'episode', dataSet.episodeChapterMappings)
-      : point);
-    const relationships = computeRelationships(dataSet, point.publicationDate && !point.episodeIndex && !point.chapterIndex
-      ? convertTimePoint(point, 'episode', dataSet.episodeChapterMappings)
-      : point);
+      : point;
+
+    const snapshot = computeSnapshot(dataSet, snapshotPoint);
+    const computedLinks = computeLinks(dataSet, snapshotPoint);
 
     set({
       selectedArcId: arcId,
       currentTimePoint: point,
       factionSnapshot: snapshot,
-      relationshipStates: relationships,
+      links: computedLinks,
     });
+  },
+
+  toggleGodEyeMode: () => {
+    set((state) => ({ godEyeMode: !state.godEyeMode }));
+  },
+
+  setGraphFactionFilter: (key: string, value: boolean) => {
+    set((state) => ({
+      graphFactionFilters: { ...state.graphFactionFilters, [key]: value },
+    }));
   },
 }));

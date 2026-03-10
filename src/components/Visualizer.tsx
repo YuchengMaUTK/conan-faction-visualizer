@@ -1,8 +1,8 @@
 import { useEffect, useMemo } from 'react';
 import { useStore } from '../store';
-import type { FactionSnapshot, RelationshipState, SubFaction } from '../types';
-import FactionPanel from './FactionPanel';
-import CPPair from './CPPair';
+import ForceGraph from './ForceGraph';
+import FactionFilterSidebar from './FactionFilterSidebar';
+import GodEyeToggle from './GodEyeToggle';
 import TimelineSlider from './TimelineSlider';
 import ArcBookmarkBar from './ArcBookmarkBar';
 import SearchBar from './SearchBar';
@@ -11,6 +11,7 @@ import CharacterDetail from './CharacterDetail';
 import ErrorBoundary from './ErrorBoundary';
 import { getKeyEvents } from '../engines/event-engine';
 import { getRelationshipKeyEvents } from '../engines/relationship-engine';
+import { buildGraphData } from '../engines/graph-adapter';
 
 interface VisualizerProps {
   dataUrl: string;
@@ -24,26 +25,25 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
     loadError,
     dataSet,
     factionSnapshot,
-    relationshipStates,
-    highlightedCharacterIds,
+    links,
     searchQuery,
     searchResults,
-    subFactionFilter,
-    showRelationships,
     selectedCharacterId,
     selectedCPId,
     timelineMode,
     currentTimePoint,
     selectedArcId,
+    godEyeMode,
+    graphFactionFilters,
     loadData,
     selectCharacter,
     selectCP,
     setTimePoint,
     setTimelineMode,
     setSearchQuery,
-    setSubFactionFilter,
     selectArc,
-    toggleRelationships,
+    toggleGodEyeMode,
+    setGraphFactionFilter,
   } = useStore();
 
   useEffect(() => {
@@ -58,6 +58,24 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
   const relKeyEvents = useMemo(
     () => (dataSet ? getRelationshipKeyEvents(dataSet) : []),
     [dataSet]
+  );
+
+  // Compute graph data from snapshot + links
+  const graphData = useMemo(() => {
+    if (!factionSnapshot || !dataSet) return null;
+    return buildGraphData(
+      factionSnapshot,
+      links,
+      dataSet.entities,
+      godEyeMode,
+      graphFactionFilters
+    );
+  }, [factionSnapshot, links, dataSet, godEyeMode, graphFactionFilters]);
+
+  // Check if all faction filters are off
+  const allFiltersOff = useMemo(
+    () => Object.values(graphFactionFilters).every((v) => !v),
+    [graphFactionFilters]
   );
 
   if (loadingState === 'loading') {
@@ -80,11 +98,6 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
     return null;
   }
 
-  // Check if there are cross-faction relationships to adjust spacing
-  const hasCrossFactionRelationships =
-    showRelationships &&
-    relationshipStates.some((r) => r.isCrossFaction);
-
   return (
     <div style={styles.root}>
       {/* Arc Bookmark Bar */}
@@ -96,40 +109,52 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
         />
       </ErrorBoundary>
 
-      {/* Search Bar + Relationship Toggle */}
+      {/* Search Bar (simplified — just the search input) */}
       <div style={styles.toolBar}>
         <ErrorBoundary>
           <SearchBar
             searchQuery={searchQuery}
-            subFactionFilter={subFactionFilter}
             onSearchChange={setSearchQuery}
-            onFilterChange={setSubFactionFilter}
           />
         </ErrorBoundary>
-        <button
-          data-testid="relationship-toggle"
-          style={{
-            ...styles.relToggle,
-            ...(showRelationships ? styles.relToggleActive : {}),
-          }}
-          onClick={toggleRelationships}
-        >
-          {showRelationships ? '隐藏情感关系' : '显示情感关系'}
-        </button>
       </div>
 
-      {/* Faction Panels with Relationship Overlay */}
-      <PanelContainerWithOverlay
-        factionSnapshot={factionSnapshot}
-        relationshipStates={relationshipStates}
-        highlightedCharacterIds={highlightedCharacterIds}
-        searchQuery={searchQuery}
-        searchResults={searchResults}
-        subFactionFilter={subFactionFilter}
-        showRelationships={showRelationships}
-        hasCrossFactionRelationships={hasCrossFactionRelationships}
-        selectCharacter={selectCharacter}
-      />
+      {/* Main content: Sidebar + ForceGraph */}
+      <div style={styles.mainContent}>
+        {/* Left sidebar: FactionFilter + GodEyeToggle */}
+        <div style={styles.sidebar}>
+          <ErrorBoundary>
+            <FactionFilterSidebar
+              filters={graphFactionFilters}
+              onFilterChange={setGraphFactionFilter}
+            />
+          </ErrorBoundary>
+          <ErrorBoundary>
+            <GodEyeToggle
+              godEyeMode={godEyeMode}
+              onToggle={toggleGodEyeMode}
+            />
+          </ErrorBoundary>
+        </div>
+
+        {/* Right: ForceGraph or empty state */}
+        <div style={styles.graphArea}>
+          {allFiltersOff ? (
+            <div style={styles.emptyState} data-testid="filters-empty-state">
+              <p style={styles.emptyStateText}>请至少选择一个阵营</p>
+            </div>
+          ) : graphData ? (
+            <ErrorBoundary>
+              <ForceGraph
+                graphData={graphData}
+                searchResults={searchResults}
+                searchQuery={searchQuery}
+                onNodeClick={(id) => selectCharacter(id)}
+              />
+            </ErrorBoundary>
+          ) : null}
+        </div>
+      </div>
 
       {/* Timeline Slider */}
       <ErrorBoundary>
@@ -150,7 +175,7 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
       {/* CP Panel */}
       <ErrorBoundary>
         <CPPanel
-          relationshipStates={relationshipStates}
+          links={links}
           dataSet={dataSet}
           selectedCPId={selectedCPId}
           onCPSelect={selectCP}
@@ -164,82 +189,6 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
           dataSet={dataSet}
           onClose={() => selectCharacter(null)}
         />
-      )}
-    </div>
-  );
-}
-
-/**
- * Extracted panel container with ref for RelationshipOverlay positioning.
- * When cross-faction relationships are shown, increases gap between panels.
- */
-function PanelContainerWithOverlay({
-  factionSnapshot,
-  relationshipStates,
-  highlightedCharacterIds,
-  searchQuery,
-  searchResults,
-  subFactionFilter,
-  showRelationships,
-  hasCrossFactionRelationships: _hasCrossFactionRelationships,
-  selectCharacter,
-}: {
-  factionSnapshot: FactionSnapshot;
-  relationshipStates: RelationshipState[];
-  highlightedCharacterIds: Set<string>;
-  searchQuery: string;
-  searchResults: string[];
-  subFactionFilter: SubFaction | null;
-  showRelationships: boolean;
-  hasCrossFactionRelationships: boolean;
-  selectCharacter: (id: string | null) => void;
-}) {
-  // Build character lookup for cross-faction pairs
-  const allChars = [...factionSnapshot.redFaction, ...factionSnapshot.blackFaction];
-  const charMap = new Map(allChars.map(c => [c.characterId, c]));
-  const searchSet = searchQuery ? new Set(searchResults) : null;
-
-  // Find cross-faction CP pairs
-  const crossFactionPairs = showRelationships
-    ? relationshipStates
-        .filter(r => r.isCrossFaction)
-        .map(rel => ({
-          rel,
-          c1: charMap.get(rel.character1Id),
-          c2: charMap.get(rel.character2Id),
-        }))
-        .filter((p): p is { rel: typeof p.rel; c1: NonNullable<typeof p.c1>; c2: NonNullable<typeof p.c2> } => !!p.c1 && !!p.c2)
-    : [];
-
-  return (
-    <div data-testid="panel-container">
-      <div style={{ ...styles.panelContainer, position: 'relative' }}>
-        <ErrorBoundary>
-          <FactionPanel faction="red" characters={factionSnapshot.redFaction}
-            relationships={relationshipStates} highlightedIds={highlightedCharacterIds}
-            searchResults={searchQuery ? searchResults : undefined} subFactionFilter={subFactionFilter}
-            showRelationships={showRelationships} onCharacterClick={(id) => selectCharacter(id)} />
-        </ErrorBoundary>
-        <ErrorBoundary>
-          <FactionPanel faction="black" characters={factionSnapshot.blackFaction}
-            relationships={relationshipStates} highlightedIds={highlightedCharacterIds}
-            searchResults={searchQuery ? searchResults : undefined} subFactionFilter={subFactionFilter}
-            showRelationships={showRelationships} onCharacterClick={(id) => selectCharacter(id)} />
-        </ErrorBoundary>
-      </div>
-
-      {/* Cross-faction CP pairs */}
-      {crossFactionPairs.length > 0 && (
-        <div style={styles.crossFactionSection}>
-          <div style={styles.crossFactionTitle}>跨阵营情感关系</div>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 20 }}>
-            {crossFactionPairs.map(({ rel, c1, c2 }) => (
-              <CPPair key={rel.relationshipId} char1={c1} char2={c2} relationship={rel}
-                allCharacters={allChars} highlightedIds={highlightedCharacterIds} searchSet={searchSet}
-                onCharacterClick={(id) => selectCharacter(id)} />
-            ))}
-          </div>
-        </div>
       )}
     </div>
   );
@@ -290,42 +239,33 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
     gap: 12,
   },
-  relToggle: {
-    padding: '6px 16px',
-    borderRadius: 8,
-    border: '1px solid #e2e8f0',
-    background: '#fff',
-    fontSize: 13,
-    fontWeight: 500,
-    cursor: 'pointer',
-    color: '#64748b',
-    whiteSpace: 'nowrap' as const,
-    transition: 'all 0.15s',
-  },
-  relToggleActive: {
-    background: '#fdf2f8',
-    borderColor: '#f9a8d4',
-    color: '#be185d',
-  },
-  panelContainer: {
+  mainContent: {
     display: 'flex',
-    gap: 24,
-    flexWrap: 'wrap',
+    gap: 16,
+    minHeight: 500,
   },
-  crossFactionSection: {
-    marginTop: 16,
-    padding: '16px 20px',
+  sidebar: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: 12,
+    flexShrink: 0,
+  },
+  graphArea: {
+    flex: 1,
+    minWidth: 0,
+  },
+  emptyState: {
+    width: '100%',
+    height: '100%',
+    minHeight: 500,
+    background: '#0f172a',
     borderRadius: 12,
-    background: 'linear-gradient(135deg, #fef2f2 0%, #f0f0ff 50%, #1a1a2e08 100%)',
-    border: '1px dashed #d946ef',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
-  crossFactionTitle: {
-    textAlign: 'center',
-    fontSize: 14,
-    fontWeight: 600,
-    color: '#a855f7',
-    marginBottom: 12,
+  emptyStateText: {
+    color: '#64748b',
+    fontSize: 16,
   },
 };
-
-// (placeholder styles removed - real components now used)
