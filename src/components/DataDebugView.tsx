@@ -64,15 +64,15 @@ export default function DataDebugView({ dataUrl }: DataDebugViewProps) {
       <h2 style={styles.title}>📊 数据层调试视图</h2>
 
       <p style={styles.stats} data-testid="data-stats">
-        已加载 {data.characters.length} 个角色、
+        已加载 {data.entities.length} 个角色、
         {data.characterEvents.length} 个事件、
-        {data.relationships.length} 对 CP、
+        {data.links.length} 个关系、
         {data.storyArcs.length} 个篇章
       </p>
 
       <h3 style={styles.subtitle}>前 5 个角色（JSON 预览）</h3>
       <pre style={styles.jsonPre} data-testid="json-preview">
-        {JSON.stringify(data.characters.slice(0, 5), null, 2)}
+        {JSON.stringify(data.entities.slice(0, 5), null, 2)}
       </pre>
     </div>
   );

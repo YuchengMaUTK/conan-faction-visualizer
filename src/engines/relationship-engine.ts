@@ -8,26 +8,6 @@ import type {
 } from '../types';
 
 /**
- * Check if a RelationshipEvent occurs at or before the given timePoint.
- * Uses episodeIndex first, falls back to chapterIndex.
- */
-function isRelEventBeforeOrAt(event: RelationshipEvent, timePoint: TimePoint): boolean {
-  if (timePoint.episodeIndex !== undefined && event.episodeIndex !== undefined) {
-    return event.episodeIndex <= timePoint.episodeIndex;
-  }
-  if (timePoint.chapterIndex !== undefined && event.chapterIndex !== undefined) {
-    return event.chapterIndex <= timePoint.chapterIndex;
-  }
-  if (timePoint.episodeIndex !== undefined && event.chapterIndex !== undefined) {
-    return false;
-  }
-  if (timePoint.chapterIndex !== undefined && event.episodeIndex !== undefined) {
-    return false;
-  }
-  return false;
-}
-
-/**
  * Sort relationship events in chronological order by episodeIndex, then chapterIndex.
  */
 function sortRelEventsChronologically(events: RelationshipEvent[]): RelationshipEvent[] {
@@ -78,20 +58,11 @@ function checkCrossFaction(
  */
 export function computeLinks(
   data: DataSet,
-  timePoint: TimePoint
+  _timePoint: TimePoint
 ): (Link & { isCrossFaction: boolean })[] {
   return data.links.map((link: Link) => {
-    // Get all relationship events that reference this link's personas and are before timePoint
-    // RelationshipEvents still use relationshipId — find events matching by relationship
-    const relevantEvents = sortRelEventsChronologically(
-      data.relationshipEvents.filter(
-        (e) => isRelEventBeforeOrAt(e, timePoint)
-      )
-    );
-
-    // The link's status field is the baseline; relationship events may further update it
-    // but since Links don't have a unique ID for event matching, we return the link as-is
-    // with cross-faction annotation
+    // The link's status field is the baseline
+    // Cross-faction annotation added below
     return {
       ...link,
       isCrossFaction: checkCrossFaction(
