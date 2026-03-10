@@ -13,7 +13,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/shinichi.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/3/3b/Shinichi_Kudo_Profile.jpg/275px-Shinichi_Kudo_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 200,
         "mentionCount": 274
@@ -27,7 +27,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/ran.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/92/Ran_Mouri_Profile.jpg/275px-Ran_Mouri_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 809,
         "mentionCount": 817
@@ -41,7 +41,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE_BOYS",
-      "avatar": "/avatars/conan.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/0/00/Conan_Edogawa_Profile.png/275px-Conan_Edogawa_Profile.png",
       "appearanceCount": {
         "episodeCount": 1189,
         "mentionCount": 1140
@@ -55,7 +55,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/heiji.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2c/Heiji_Hattori_Profile.png/275px-Heiji_Hattori_Profile.png",
       "appearanceCount": {
         "episodeCount": 112,
         "mentionCount": 217
@@ -69,7 +69,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/kazuha.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/77/Kazuha_Toyama_Profile.jpg/275px-Kazuha_Toyama_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 94,
         "mentionCount": 175
@@ -83,7 +83,7 @@
       "codename": "Rye",
       "faction": "RED",
       "subFaction": "FBI",
-      "avatar": "/avatars/akai.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/83/Shuichi_Akai_Profile.jpg/275px-Shuichi_Akai_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 82,
         "mentionCount": 99
@@ -102,7 +102,7 @@
       "codename": "Bourbon",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/amuro.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/86/Rei_Furuya_Profile.jpg/275px-Rei_Furuya_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 71,
         "mentionCount": 103
@@ -121,7 +121,7 @@
       "codename": "Gin",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/gin.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/89/S6-Gin.png/275px-S6-Gin.png",
       "appearanceCount": {
         "episodeCount": 70,
         "mentionCount": 108
@@ -135,7 +135,7 @@
       "codename": "Vodka",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/vodka.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/22/Vodka_Profile.jpg/275px-Vodka_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 65,
         "mentionCount": 103
@@ -149,7 +149,7 @@
       "codename": "Vermouth",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/vermouth.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/9/9a/M26_Vermouth.jpg/275px-M26_Vermouth.jpg",
       "appearanceCount": {
         "episodeCount": 78,
         "mentionCount": 114
@@ -163,7 +163,7 @@
       "codename": "Sherry",
       "faction": "RED",
       "subFaction": "DETECTIVE_BOYS",
-      "avatar": "/avatars/haibara.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4f/Ai_Haibara_Profile.png/275px-Ai_Haibara_Profile.png",
       "appearanceCount": {
         "episodeCount": 403,
         "mentionCount": 412
@@ -182,7 +182,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "FBI",
-      "avatar": "/avatars/jodie.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/5d/Jodie_Starling_Profile.png/275px-Jodie_Starling_Profile.png",
       "appearanceCount": {
         "episodeCount": 54,
         "mentionCount": 89
@@ -196,7 +196,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "/avatars/sato.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/45/Miwako_Sato_Profile.png/275px-Miwako_Sato_Profile.png",
       "appearanceCount": {
         "episodeCount": 137,
         "mentionCount": 127
@@ -210,7 +210,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "/avatars/takagi.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/be/Wataru_Takagi_Profile2.png/275px-Wataru_Takagi_Profile2.png",
       "appearanceCount": {
         "episodeCount": 581,
         "mentionCount": 339
@@ -224,7 +224,7 @@
       "codename": null,
       "faction": "BLACK",
       "subFaction": "BO_OUTER",
-      "avatar": "/avatars/miyano_akemi.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/af/Akemi_Miyano_Profile.jpg/275px-Akemi_Miyano_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 23,
         "mentionCount": 25
@@ -238,7 +238,7 @@
       "codename": "Rum",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/rum.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a6/Rum_Profile.jpg/200px-Rum_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 30,
         "mentionCount": 41
@@ -252,7 +252,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/hakuba.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/df/Saguru_Hakuba_Profile.jpg/275px-Saguru_Hakuba_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 7,
         "mentionCount": 13
@@ -266,7 +266,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/aoko.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/4/4c/Aoko_Nakomori_Profile.jpg/275px-Aoko_Nakomori_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 24,
         "mentionCount": 37
@@ -280,7 +280,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "/avatars/matsuda.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c5/Jinpei_Matsuda_Profile.png/275px-Jinpei_Matsuda_Profile.png",
       "appearanceCount": {
         "episodeCount": 13,
         "mentionCount": 22
@@ -294,7 +294,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "/avatars/hagiwara.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/ac/Kenji_Hagiwara_Profile.jpg/275px-Kenji_Hagiwara_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 9,
         "mentionCount": 13
@@ -308,7 +308,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "/avatars/chiba.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/6/60/Kazunobu_Chiba_Profile.jpg/275px-Kazunobu_Chiba_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 242,
         "mentionCount": 104
@@ -322,7 +322,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "POLICE",
-      "avatar": "/avatars/miike.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/b/b5/Naeko_Miike_child.jpg/200px-Naeko_Miike_child.jpg",
       "appearanceCount": {
         "episodeCount": 24,
         "mentionCount": 28
@@ -336,7 +336,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/sera.jpg",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/8/84/Masumi_Sera_Profile.jpg/275px-Masumi_Sera_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 75,
         "mentionCount": 115
@@ -350,7 +350,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "FBI",
-      "avatar": "/avatars/subaru.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/ce/Subaru_Okiya_Profile.png/275px-Subaru_Okiya_Profile.png",
       "appearanceCount": {
         "episodeCount": 62,
         "mentionCount": 78
@@ -365,7 +365,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/c/c5/Kogoro_Mouri_Profile2.png/355px-Kogoro_Mouri_Profile2.png",
       "appearanceCount": {
         "episodeCount": 779,
         "mentionCount": 626
@@ -379,7 +379,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE_BOYS",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/d/d5/Hiroshi_Agasa_Profile.jpg/275px-Hiroshi_Agasa_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 265,
         "mentionCount": 299
@@ -393,7 +393,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE_BOYS",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/74/Ayumi_Yoshida_Profile.jpg/275px-Ayumi_Yoshida_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 444,
         "mentionCount": 372
@@ -407,7 +407,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE_BOYS",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/7/7e/Mitsuhiko_Tsuburaya_Profile.jpg/275px-Mitsuhiko_Tsuburaya_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 437,
         "mentionCount": 367
@@ -421,7 +421,7 @@
       "codename": null,
       "faction": "RED",
       "subFaction": "DETECTIVE_BOYS",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/a9/Genta_Kojima_Profile2.jpg/275px-Genta_Kojima_Profile2.jpg",
       "appearanceCount": {
         "episodeCount": 438,
         "mentionCount": 367
@@ -435,7 +435,7 @@
       "codename": "Chianti",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/a/af/Chianti_Profile.jpg/275px-Chianti_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 15,
         "mentionCount": 26
@@ -449,7 +449,7 @@
       "codename": "Korn",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/2/2b/Korn_Profile.jpg/275px-Korn_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 14,
         "mentionCount": 24
@@ -463,7 +463,7 @@
       "codename": "Kir",
       "faction": "BLACK",
       "subFaction": "BO_CORE",
-      "avatar": "/avatars/default.png",
+      "avatar": "https://www.detectiveconanworld.com/wiki/images/thumb/5/55/Hidemi_Hondou_Profile.jpg/275px-Hidemi_Hondou_Profile.jpg",
       "appearanceCount": {
         "episodeCount": 40,
         "mentionCount": 59
