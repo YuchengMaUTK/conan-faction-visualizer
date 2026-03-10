@@ -21,12 +21,22 @@ export default function ArcBookmarkBar({
 
   if (storyArcs.length === 0) return null;
 
+  // Classify arcs by theme for dot color
+  const getArcDotColor = (name: string): string => {
+    const orgKeywords = ['组织', '贝尔摩德', '赤与黑', '波本', '朗姆', 'FBI', '混沌'];
+    const loveKeywords = ['伦敦', '修学旅行'];
+    if (orgKeywords.some(k => name.includes(k))) return '#475569';
+    if (loveKeywords.some(k => name.includes(k))) return '#f472b6';
+    return '#ef4444';
+  };
+
   return (
     <div style={styles.root} data-testid="arc-bookmark-bar">
-      <span style={styles.label}>🚩 篇章书签</span>
+      <span style={styles.label}>主线篇章</span>
       <div style={styles.chipContainer}>
         {storyArcs.map((arc) => {
           const isSelected = arc.id === selectedArcId;
+          const dotColor = getArcDotColor(arc.name);
           return (
             <button
               key={arc.id}
@@ -38,6 +48,7 @@ export default function ArcBookmarkBar({
               onClick={() => handleClick(arc.id)}
               title={arc.description}
             >
+              <span style={{ ...styles.dot, background: isSelected ? '#0f172a' : dotColor }} />
               {arc.name}
             </button>
           );
@@ -72,6 +83,9 @@ const styles: Record<string, React.CSSProperties> = {
     flexWrap: 'wrap',
   },
   chip: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: 6,
     padding: '5px 14px',
     borderRadius: 20,
     border: '1px solid rgba(201, 168, 76, 0.4)',
@@ -89,5 +103,11 @@ const styles: Record<string, React.CSSProperties> = {
     color: '#0f172a',
     borderColor: '#c9a84c',
     boxShadow: '0 2px 8px rgba(201, 168, 76, 0.4)',
+  },
+  dot: {
+    width: 6,
+    height: 6,
+    borderRadius: '50%',
+    flexShrink: 0,
   },
 };

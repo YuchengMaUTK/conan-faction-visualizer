@@ -114,7 +114,7 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
           }}
           onClick={toggleRelationships}
         >
-          {showRelationships ? '❤️ 隐藏情感关系' : '🤍 显示情感关系'}
+          {showRelationships ? '隐藏情感关系' : '显示情感关系'}
         </button>
       </div>
 
@@ -231,7 +231,7 @@ function PanelContainerWithOverlay({
       {/* Cross-faction CP pairs */}
       {crossFactionPairs.length > 0 && (
         <div style={styles.crossFactionSection}>
-          <div style={styles.crossFactionTitle}>💔 跨阵营情感关系</div>
+          <div style={styles.crossFactionTitle}>跨阵营情感关系</div>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: 20 }}>
             {crossFactionPairs.map(({ rel, c1, c2 }) => (
               <CPPair key={rel.relationshipId} char1={c1} char2={c2} relationship={rel}
