@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { CharacterState } from '../types';
+import type { CharacterState, I18nName } from '../types';
 
 interface CharacterCardProps {
   character: CharacterState;
@@ -22,19 +22,25 @@ const STATUS_COLORS: Record<CharacterState['status'], string> = {
   EXPOSED: '#f59e0b',
 };
 
+/** Get display name from I18nName: prefer zh, fallback to en */
+function getDisplayName(name: I18nName): string {
+  return name.zh || name.en;
+}
+
 export default function CharacterCard({
   character,
   scale,
   isHighlighted = false,
   onClick,
 }: CharacterCardProps) {
-  const { name, codename, status, isDualIdentity, avatar, hasCurrentEvent } = character;
+  const displayName = getDisplayName(character.name);
+  const { codename, status, avatar, hasCurrentEvent, faction } = character;
   const [imgError, setImgError] = useState(false);
 
   const isDead = status === 'DEAD';
   const isLeft = status === 'LEFT';
-  const avatarSrc = avatar.startsWith('/') ? `${import.meta.env.BASE_URL}${avatar.slice(1)}` : avatar;
-  const isValidAvatar = avatar.startsWith('http') || avatar.startsWith('/avatars/');
+  const avatarSrc = avatar.startsWith('http') ? avatar : `${import.meta.env.BASE_URL}${avatar}`;
+  const isValidAvatar = !!avatar;
 
   const cardStyle: React.CSSProperties = {
     display: 'flex',
@@ -42,19 +48,15 @@ export default function CharacterCard({
     alignItems: 'center',
     padding: `${10 * scale}px`,
     borderRadius: 14,
-    background: isDualIdentity
-      ? 'linear-gradient(135deg, #f3eeff, #eef2ff)'
-      : 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(241,245,249,0.95))',
+    background: 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(241,245,249,0.95))',
     boxShadow: isHighlighted
       ? '0 0 0 3px #fbbf24, 0 4px 16px rgba(251,191,36,0.3)'
-      : isDualIdentity
-        ? '0 0 0 2px #7c3aed, 0 0 0 3px #3b82f6, 0 4px 12px rgba(124,58,237,0.25)'
-        : '0 2px 10px rgba(0,0,0,0.1)',
+      : '0 2px 10px rgba(0,0,0,0.1)',
     cursor: onClick ? 'pointer' : 'default',
     transform: `scale(${scale})`,
     transformOrigin: 'center center',
     transition: 'transform 0.25s ease, box-shadow 0.25s ease, opacity 0.25s ease',
-    border: isDualIdentity ? 'none' : '1px solid rgba(226,232,240,0.5)',
+    border: '1px solid rgba(226,232,240,0.5)',
     opacity: isLeft ? 0.5 : 1,
     filter: isDead ? 'grayscale(100%)' : 'none',
     position: 'relative',
@@ -70,7 +72,7 @@ export default function CharacterCard({
     marginBottom: 6,
     position: 'relative',
     boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-    border: isDualIdentity ? '2px solid #7c3aed' : '2px solid rgba(255,255,255,0.8)',
+    border: `2px solid ${faction === 'RED' ? '#dc2626' : faction === 'BLACK' ? '#475569' : '#6b7280'}`,
     background: '#e2e8f0',
     flexShrink: 0,
   };
@@ -96,15 +98,15 @@ export default function CharacterCard({
 
   return (
     <div style={cardStyle} onClick={onClick}
-      data-testid={`character-card-${character.characterId}`}
+      data-testid={`character-card-${character.persona_id}`}
       role="button" tabIndex={0}
       onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') onClick?.(); }}>
       <div style={avatarContainerStyle}>
         {isValidAvatar && !imgError ? (
-          <img src={avatarSrc} alt={name} style={imgStyle}
+          <img src={avatarSrc} alt={displayName} style={imgStyle}
             onError={() => setImgError(true)} loading="lazy" />
         ) : (
-          <div style={fallbackStyle}>{name.charAt(0)}</div>
+          <div style={fallbackStyle}>{displayName.charAt(0)}</div>
         )}
         {hasCurrentEvent && (
           <span style={{ position: 'absolute', top: 1, right: 1, width: 10, height: 10,
@@ -112,7 +114,7 @@ export default function CharacterCard({
         )}
       </div>
       <div style={{ fontSize: 12, fontWeight: 700, textAlign: 'center', lineHeight: 1.3,
-        color: '#1f2937', marginBottom: codename ? 1 : 3 }}>{name}</div>
+        color: '#1f2937', marginBottom: codename ? 1 : 3 }}>{displayName}</div>
       {codename && <div style={{ fontSize: 10, color: '#6b7280', textAlign: 'center',
         marginBottom: 3, fontStyle: 'italic' }}>{codename}</div>}
       <span style={{ fontSize: 9, padding: '2px 8px', borderRadius: 9999,
@@ -120,11 +122,6 @@ export default function CharacterCard({
         fontWeight: 700, border: `1px solid ${STATUS_COLORS[status]}30` }}>
         {STATUS_LABELS[status]}
       </span>
-      {isDualIdentity && (
-        <span style={{ fontSize: 8, color: '#7c3aed', marginTop: 3, fontWeight: 600 }}>
-          双重身份
-        </span>
-      )}
     </div>
   );
 }

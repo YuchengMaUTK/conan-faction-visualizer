@@ -1,45 +1,58 @@
 import { useState } from 'react';
-import type { RelationshipState, RelationshipEvent, RelationshipType, RelationshipStatus, DataSet } from '../types';
+import type { Link, RelationshipEvent, DataSet, I18nName, LinkType } from '../types';
 import { getCPHistory } from '../engines/relationship-engine';
 
 interface CPPanelProps {
-  relationshipStates: RelationshipState[];
+  links: (Link & { isCrossFaction: boolean })[];
   dataSet: DataSet;
   selectedCPId: string | null;
   onCPSelect: (id: string | null) => void;
 }
 
-const TYPE_ICONS: Record<RelationshipType, string> = {
-  LOVE: '❤️',
-  CRUSH: '💭',
-  MARRIED: '💍',
-  CHILDHOOD_SWEETHEART: '🌸',
-  AMBIGUOUS: '❓',
+const LINK_TYPE_ICONS: Record<LinkType, string> = {
+  romantic: '❤️',
+  family: '👨‍👩‍👧',
+  master_apprentice: '🎓',
+  colleague: '🤝',
+  rivalry: '⚔️',
+  friendship: '🫂',
+  superior_subordinate: '📋',
 };
 
-const STATUS_LABELS: Record<RelationshipStatus, string> = {
-  UNCONFESSED: '未表白',
-  CONFESSED: '已表白',
-  DATING: '交往中',
-  CONFIRMED: '已确认',
-  SEPARATED: '已分离',
+const LINK_TYPE_LABELS: Record<LinkType, string> = {
+  romantic: '恋爱',
+  family: '家人',
+  master_apprentice: '师徒',
+  colleague: '同事',
+  rivalry: '对手',
+  friendship: '友情',
+  superior_subordinate: '上下级',
 };
 
-const STATUS_COLORS: Record<RelationshipStatus, string> = {
-  DATING: '#ec4899',
-  CONFIRMED: '#ec4899',
-  UNCONFESSED: '#9ca3af',
-  CONFESSED: '#ef4444',
-  SEPARATED: '#4b5563',
-};
+/** Get display name from I18nName: prefer zh, fallback to en */
+function getDisplayName(name: I18nName): string {
+  return name.zh || name.en;
+}
 
-function getCharacterName(dataSet: DataSet, charId: string): string {
-  const char = dataSet.characters.find((c) => c.id === charId);
-  return char?.name ?? charId;
+/** Look up a persona's display name from entities */
+function getPersonaName(dataSet: DataSet, personaId: string): string {
+  for (const entity of dataSet.entities) {
+    for (const persona of entity.personas) {
+      if (persona.persona_id === personaId) {
+        return getDisplayName(persona.name);
+      }
+    }
+  }
+  return personaId;
+}
+
+/** Generate a stable ID for a link (links don't have explicit IDs) */
+function linkId(link: Link): string {
+  return `${link.source_persona_id}--${link.target_persona_id}`;
 }
 
 export default function CPPanel({
-  relationshipStates,
+  links,
   dataSet,
   selectedCPId,
   onCPSelect,
@@ -55,61 +68,56 @@ export default function CPPanel({
     return getCPHistory(dataSet, relationshipId);
   };
 
-  if (relationshipStates.length === 0) {
+  if (links.length === 0) {
     return (
       <div style={styles.container} data-testid="cp-panel">
-        <div style={styles.title}>💕 CP 面板</div>
-        <div style={styles.empty}>暂无情感关系数据</div>
+        <div style={styles.title}>💕 关系面板</div>
+        <div style={styles.empty}>暂无关系数据</div>
       </div>
     );
   }
 
   return (
     <div style={styles.container} data-testid="cp-panel">
-      <div style={styles.title}>💕 CP 面板</div>
+      <div style={styles.title}>💕 关系面板</div>
       <div style={styles.list}>
-        {relationshipStates.map((rel) => {
-          const isSelected = selectedCPId === rel.relationshipId;
-          const isExpanded = expandedCPId === rel.relationshipId;
-          const name1 = getCharacterName(dataSet, rel.character1Id);
-          const name2 = getCharacterName(dataSet, rel.character2Id);
-          const statusColor = STATUS_COLORS[rel.status];
+        {links.map((link) => {
+          const id = linkId(link);
+          const isSelected = selectedCPId === id;
+          const isExpanded = expandedCPId === id;
+          const name1 = getPersonaName(dataSet, link.source_persona_id);
+          const name2 = getPersonaName(dataSet, link.target_persona_id);
+          const typeLabel = LINK_TYPE_LABELS[link.type] ?? link.type;
+          const typeIcon = LINK_TYPE_ICONS[link.type] ?? '🔗';
 
           return (
-            <div key={rel.relationshipId}>
+            <div key={id}>
               <div
                 style={{
                   ...styles.cpItem,
                   ...(isSelected ? styles.cpItemSelected : {}),
                 }}
-                onClick={() => handleCPClick(rel.relationshipId)}
-                data-testid={`cp-item-${rel.relationshipId}`}
+                onClick={() => handleCPClick(id)}
+                data-testid={`cp-item-${id}`}
                 role="button"
                 tabIndex={0}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') handleCPClick(rel.relationshipId);
+                  if (e.key === 'Enter' || e.key === ' ') handleCPClick(id);
                 }}
               >
                 <div style={styles.cpNames}>
-                  <span style={styles.typeIcon}>{TYPE_ICONS[rel.type]}</span>
+                  <span style={styles.typeIcon}>{typeIcon}</span>
                   <span style={styles.nameText}>{name1}</span>
                   <span style={styles.cross}>×</span>
                   <span style={styles.nameText}>{name2}</span>
                 </div>
-                <span
-                  style={{
-                    ...styles.statusBadge,
-                    backgroundColor: statusColor + '20',
-                    color: statusColor,
-                    borderColor: statusColor + '40',
-                  }}
-                >
-                  {STATUS_LABELS[rel.status]}
+                <span style={styles.typeBadge}>
+                  {typeLabel}
                 </span>
               </div>
 
               {isExpanded && (
-                <CPEventHistory events={getHistory(rel.relationshipId)} />
+                <CPEventHistory events={getHistory(id)} />
               )}
             </div>
           );
@@ -136,12 +144,6 @@ function CPEventHistory({ events }: { events: RelationshipEvent[] }) {
             <div style={styles.historyMeta}>
               {evt.episodeIndex != null && <span>第{evt.episodeIndex}集</span>}
               {evt.chapterIndex != null && <span>第{evt.chapterIndex}话</span>}
-              <span style={{
-                ...styles.historyStatus,
-                color: STATUS_COLORS[evt.newStatus],
-              }}>
-                → {STATUS_LABELS[evt.newStatus]}
-              </span>
             </div>
           </div>
         </div>
@@ -215,13 +217,15 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 800,
     fontSize: 13,
   },
-  statusBadge: {
+  typeBadge: {
     fontSize: 10,
     padding: '3px 10px',
     borderRadius: 9999,
     fontWeight: 700,
     whiteSpace: 'nowrap' as const,
-    border: '1px solid',
+    border: '1px solid rgba(249, 168, 212, 0.4)',
+    backgroundColor: 'rgba(249, 168, 212, 0.15)',
+    color: '#f9a8d4',
     letterSpacing: 0.5,
   },
   historyContainer: {
@@ -262,8 +266,5 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 11,
     color: '#94a3b8',
     marginTop: 3,
-  },
-  historyStatus: {
-    fontWeight: 700,
   },
 };

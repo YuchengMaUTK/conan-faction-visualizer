@@ -6,7 +6,6 @@ import type {
   CharacterEvent,
   CharacterEventType,
   KeyEvent,
-  AppearanceCount,
 } from '../types';
 
 /**
@@ -21,11 +20,7 @@ function isEventBeforeOrAt(event: CharacterEvent, timePoint: TimePoint): boolean
   if (timePoint.chapterIndex !== undefined && event.chapterIndex !== undefined) {
     return event.chapterIndex <= timePoint.chapterIndex;
   }
-  // If timePoint uses publicationDate, we need to resolve via episodeIndex or chapterIndex
-  // For publicationDate mode, caller should convert to episode/chapter first
-  // Fallback: if event has episodeIndex and timePoint has chapterIndex (or vice versa), try the available one
   if (timePoint.episodeIndex !== undefined && event.chapterIndex !== undefined) {
-    // Can't directly compare, but if event has no episodeIndex, skip it conservatively
     return false;
   }
   if (timePoint.chapterIndex !== undefined && event.episodeIndex !== undefined) {
@@ -76,29 +71,20 @@ function statusFromEventType(eventType: CharacterEventType): CharacterState['sta
 }
 
 /**
- * Compute the total appearance count (episodeCount + mentionCount).
- */
-function totalAppearance(ac: AppearanceCount): number {
-  return ac.episodeCount + ac.mentionCount;
-}
-
-/**
  * Compute importance ranks within a faction list.
- * Higher appearance count = lower rank number (rank 1 = most important).
+ * Higher base_appearances = lower rank number (rank 1 = most important).
  */
 function assignImportanceRanks(states: CharacterState[]): void {
-  // Sort by total appearance descending
   const sorted = [...states].sort(
-    (a, b) => totalAppearance(b.appearanceCount) - totalAppearance(a.appearanceCount)
+    (a, b) => b.base_appearances - a.base_appearances
   );
-  // Assign ranks (1-based, ties get same rank)
   let currentRank = 1;
   for (let i = 0; i < sorted.length; i++) {
-    if (i > 0 && totalAppearance(sorted[i].appearanceCount) < totalAppearance(sorted[i - 1].appearanceCount)) {
+    if (i > 0 && sorted[i].base_appearances < sorted[i - 1].base_appearances) {
       currentRank = i + 1;
     }
-    // Find the original entry and set its rank
-    const target = states.find(s => s.characterId === sorted[i].characterId);
+    // Find the original entry by persona_id (unique per CharacterState)
+    const target = states.find(s => s.persona_id === sorted[i].persona_id);
     if (target) {
       target.importanceRank = currentRank;
     }
@@ -108,28 +94,30 @@ function assignImportanceRanks(states: CharacterState[]): void {
 /**
  * Compute a FactionSnapshot at the given timePoint.
  *
- * For each character:
- * 1. Apply all CharacterEvents before (inclusive) the timePoint in chronological order
- * 2. Determine cumulative status
- * 3. For isDualIdentity characters, create entries in BOTH factions
- * 4. Compute importanceRank within each faction
- * 5. Set hasCurrentEvent if the character has an event at exactly the timePoint
+ * For each Entity:
+ * 1. Gather all CharacterEvents for this entity (via entity_id)
+ * 2. Filter to events at or before the timePoint, sort chronologically
+ * 3. Compute cumulative status from events
+ * 4. For each Persona of the Entity, create a CharacterState sharing the same status
+ * 5. Assign each CharacterState to redFaction/blackFaction/otherFaction based on Persona's faction
+ * 6. Compute importanceRank within each faction
  *
- * Requirements: 3.1, 3.2, 4.1, 4.4
+ * Requirements: 6.1-6.4
  */
 export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSnapshot {
   const redFaction: CharacterState[] = [];
   const blackFaction: CharacterState[] = [];
+  const otherFaction: CharacterState[] = [];
 
-  for (const character of data.characters) {
-    // Get all events for this character that are at or before the timePoint
+  for (const entity of data.entities) {
+    // Get all events for this entity that are at or before the timePoint
     const relevantEvents = sortEventsChronologically(
       data.characterEvents.filter(
-        (e) => e.characterId === character.id && isEventBeforeOrAt(e, timePoint)
+        (e) => e.entity_id === entity.entity_id && isEventBeforeOrAt(e, timePoint)
       )
     );
 
-    // If no events at all, character hasn't appeared yet — skip
+    // If no events at all, entity hasn't appeared yet — skip
     if (relevantEvents.length === 0) continue;
 
     // Compute cumulative status by applying events in order
@@ -143,50 +131,31 @@ export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSna
     const hasCurrentEvent = currentEvents.length > 0;
     const currentEvent = hasCurrentEvent ? currentEvents[currentEvents.length - 1] : undefined;
 
-    // Build the primary CharacterState
-    const primaryState: CharacterState = {
-      characterId: character.id,
-      name: character.name,
-      nameEn: character.nameEn,
-      codename: character.codename ?? undefined,
-      avatar: character.avatar,
-      status,
-      isDualIdentity: character.isDualIdentity,
-      subFaction: character.subFaction,
-      appearanceCount: { ...character.appearanceCount },
-      importanceRank: 0, // will be assigned later
-      hasCurrentEvent,
-      currentEvent,
-    };
-
-    // Place in primary faction
-    if (character.faction === 'RED') {
-      redFaction.push(primaryState);
-    } else {
-      blackFaction.push(primaryState);
-    }
-
-    // Handle dual identity: create a secondary entry in the other faction
-    if (character.isDualIdentity && character.dualIdentityInfo) {
-      const dualInfo = character.dualIdentityInfo;
-      const secondaryState: CharacterState = {
-        characterId: character.id,
-        name: dualInfo.secondaryName ?? character.name,
-        nameEn: character.nameEn,
-        codename: dualInfo.secondaryCodename ?? character.codename ?? undefined,
-        avatar: character.avatar,
+    // For each Persona of this Entity, create a CharacterState
+    // All Personas share the same event status (status sync)
+    for (const persona of entity.personas) {
+      const characterState: CharacterState = {
+        entity_id: entity.entity_id,
+        persona_id: persona.persona_id,
+        name: persona.name,
+        codename: persona.codename ?? undefined,
+        avatar: persona.avatar,
         status,
-        isDualIdentity: true,
-        appearanceCount: { ...character.appearanceCount },
+        faction: persona.faction,
+        sub_faction: persona.sub_faction,
+        base_appearances: entity.base_appearances,
         importanceRank: 0, // will be assigned later
         hasCurrentEvent,
         currentEvent,
       };
 
-      if (dualInfo.secondaryFaction === 'RED') {
-        redFaction.push(secondaryState);
+      // Assign to the correct faction list based on Persona's faction
+      if (persona.faction === 'RED') {
+        redFaction.push(characterState);
+      } else if (persona.faction === 'BLACK') {
+        blackFaction.push(characterState);
       } else {
-        blackFaction.push(secondaryState);
+        otherFaction.push(characterState);
       }
     }
   }
@@ -194,25 +163,26 @@ export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSna
   // Assign importance ranks within each faction
   assignImportanceRanks(redFaction);
   assignImportanceRanks(blackFaction);
+  assignImportanceRanks(otherFaction);
 
-  return { redFaction, blackFaction };
+  return { redFaction, blackFaction, otherFaction };
 }
 
 /**
- * Get the complete event history for a specific character, in chronological order.
- * No duplicates, no omissions.
+ * Get the complete event history for a specific entity, in chronological order.
+ * Uses entity_id instead of characterId.
  *
  * Requirements: 3.5
  */
-export function getCharacterHistory(data: DataSet, characterId: string): CharacterEvent[] {
-  const events = data.characterEvents.filter((e) => e.characterId === characterId);
+export function getCharacterHistory(data: DataSet, entityId: string): CharacterEvent[] {
+  const events = data.characterEvents.filter((e) => e.entity_id === entityId);
   return sortEventsChronologically(events);
 }
 
 /**
  * Get key events for the timeline.
- * A key event is a timePoint where multiple character state changes occur,
- * or any significant character event that should be marked on the timeline.
+ * Groups character events by their time point and generates KeyEvent entries.
+ * Uses entity_id for grouping involved characters.
  *
  * Requirements: 7.1
  */
@@ -221,7 +191,6 @@ export function getKeyEvents(data: DataSet): KeyEvent[] {
   const timePointMap = new Map<string, CharacterEvent[]>();
 
   for (const event of data.characterEvents) {
-    // Create a key from the time coordinates
     const key = `ep:${event.episodeIndex ?? 'none'}_ch:${event.chapterIndex ?? 'none'}`;
     const existing = timePointMap.get(key) ?? [];
     existing.push(event);
@@ -231,10 +200,9 @@ export function getKeyEvents(data: DataSet): KeyEvent[] {
   const keyEvents: KeyEvent[] = [];
 
   for (const [, events] of timePointMap) {
-    // Mark as major event if multiple characters are involved
-    const involvedCharacterIds = [...new Set(events.map((e) => e.characterId))];
+    // Use entity_id for involved character IDs
+    const involvedCharacterIds = [...new Set(events.map((e) => e.entity_id))];
 
-    // Build a descriptive title
     const title =
       events.length > 1
         ? `${events.length} 个角色事件`
