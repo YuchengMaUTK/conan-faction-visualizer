@@ -43,7 +43,7 @@ export default function CharacterCard({
     padding: `${10 * scale}px`,
     borderRadius: 14,
     background: isDualIdentity
-      ? 'linear-gradient(135deg, rgba(124,58,237,0.06), rgba(59,130,246,0.06))'
+      ? 'linear-gradient(135deg, #f3eeff, #eef2ff)'
       : 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(241,245,249,0.95))',
     boxShadow: isHighlighted
       ? '0 0 0 3px #fbbf24, 0 4px 16px rgba(251,191,36,0.3)'
