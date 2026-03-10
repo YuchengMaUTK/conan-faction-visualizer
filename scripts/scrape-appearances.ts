@@ -1,16 +1,18 @@
 /**
  * Scrape character appearance counts from Detective Conan Wiki.
+ * Fetches the main character page and extracts chapter/episode counts
+ * from the Statistics infobox (e.g. "Chapters: 41", "Episodes: 30").
  *
  * Usage:  npx tsx scripts/scrape-appearances.ts
- *
- * For each character whose wiki page name is known, fetches the
- * "{Name}_Appearances" page and extracts Manga chapter count and
- * Anime episode count, then patches conan-data.json in-place.
  */
 
+import { readFileSync, writeFileSync } from 'fs';
+import { resolve, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const WIKI = 'https://www.detectiveconanworld.com/wiki';
 
-/** Map character id → wiki page name (used to build Appearances URL) */
 const WIKI_NAMES: Record<string, string> = {
   shinichi: 'Shinichi_Kudo',
   ran: 'Ran_Mouri',
@@ -27,7 +29,7 @@ const WIKI_NAMES: Record<string, string> = {
   sato: 'Miwako_Sato',
   takagi: 'Wataru_Takagi',
   miyano_akemi: 'Akemi_Miyano',
-  rum: 'Rum',
+  rum: 'Kanenori_Wakita',
   hakuba: 'Saguru_Hakuba',
   aoko: 'Aoko_Nakamori',
   matsuda: 'Jinpei_Matsuda',
@@ -36,7 +38,6 @@ const WIKI_NAMES: Record<string, string> = {
   miike: 'Naeko_Miike',
   sera: 'Masumi_Sera',
   subaru: 'Subaru_Okiya',
-  // New characters
   kogoro: 'Kogoro_Mouri',
   agasa: 'Hiroshi_Agasa',
   ayumi: 'Ayumi_Yoshida',
@@ -47,39 +48,39 @@ const WIKI_NAMES: Record<string, string> = {
   kir: 'Kir',
 };
 
-interface Counts {
-  manga: number | null;
-  anime: number | null;
-}
+interface Counts { chapters: number | null; episodes: number | null; }
 
-async function fetchAppearances(wikiName: string): Promise<Counts> {
-  const url = `${WIKI}/${wikiName}_Appearances`;
+async function fetchFromMainPage(wikiName: string): Promise<Counts> {
+  const url = `${WIKI}/${wikiName}`;
   try {
     const res = await fetch(url);
-    if (!res.ok) return { manga: null, anime: null };
+    if (!res.ok) return { chapters: null, episodes: null };
     const html = await res.text();
 
-    // Extract "Total number of appearances: **N**" per section
-    // Manga section comes first, then Anime
-    const totals = [...html.matchAll(/Total number of appearances:\s*<b>(\d+)<\/b>/g)];
+    // Look for "Appearances:" section in the infobox, then extract
+    // "Chapters: <a>N</a>" and "Episodes: <a>N</a>"
+    // Pattern: Chapters:\s*<a[^>]*>(\d+)</a>
+    const chapterMatches = [...html.matchAll(/Chapters:\s*<a[^>]*>(\d+)<\/a>/g)];
+    const episodeMatches = [...html.matchAll(/Episodes:\s*<a[^>]*>(\d+)<\/a>/g)];
 
-    // The page structure: first total = Manga, second total = Anime
-    const manga = totals[0] ? parseInt(totals[0][1]) : null;
-    const anime = totals[1] ? parseInt(totals[1][1]) : null;
+    // Take the first (largest) chapter count and first episode count
+    const chapters = chapterMatches.length > 0
+      ? Math.max(...chapterMatches.map(m => parseInt(m[1])))
+      : null;
+    const episodes = episodeMatches.length > 0
+      ? Math.max(...episodeMatches.map(m => parseInt(m[1])))
+      : null;
 
-    return { manga, anime };
+    return { chapters, episodes };
   } catch {
     console.error(`  Failed to fetch ${url}`);
-    return { manga: null, anime: null };
+    return { chapters: null, episodes: null };
   }
 }
 
 async function main() {
-  const fs = await import('fs');
-  const path = await import('path');
-
-  const dataPath = path.resolve(__dirname, '../public/conan-data.json');
-  const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
+  const dataPath = resolve(__dirname, '../public/conan-data.json');
+  const data = JSON.parse(readFileSync(dataPath, 'utf-8'));
 
   console.log('Scraping appearance counts from Detective Conan Wiki...\n');
 
@@ -91,22 +92,26 @@ async function main() {
     }
 
     console.log(`  Fetching ${char.name} (${wikiName})...`);
-    const counts = await fetchAppearances(wikiName);
+    const counts = await fetchFromMainPage(wikiName);
 
-    if (counts.anime !== null) {
-      console.log(`    Episodes: ${char.appearanceCount.episodeCount} → ${counts.anime}`);
-      char.appearanceCount.episodeCount = counts.anime;
+    if (counts.episodes !== null) {
+      console.log(`    Episodes: ${char.appearanceCount.episodeCount} → ${counts.episodes}`);
+      char.appearanceCount.episodeCount = counts.episodes;
+    } else {
+      console.log(`    Episodes: not found, keeping ${char.appearanceCount.episodeCount}`);
     }
-    if (counts.manga !== null) {
-      console.log(`    Chapters (as mentionCount): ${char.appearanceCount.mentionCount} → ${counts.manga}`);
-      char.appearanceCount.mentionCount = counts.manga;
+    if (counts.chapters !== null) {
+      console.log(`    Chapters: ${char.appearanceCount.mentionCount} → ${counts.chapters}`);
+      char.appearanceCount.mentionCount = counts.chapters;
+    } else {
+      console.log(`    Chapters: not found, keeping ${char.appearanceCount.mentionCount}`);
     }
 
-    // Rate limit: be polite to the wiki
+    // Rate limit
     await new Promise(r => setTimeout(r, 500));
   }
 
-  fs.writeFileSync(dataPath, JSON.stringify(data, null, 2) + '\n');
+  writeFileSync(dataPath, JSON.stringify(data, null, 2) + '\n');
   console.log('\n✅ Updated conan-data.json');
 }
 

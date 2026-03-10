@@ -15,8 +15,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/shinichi.jpg",
       "appearanceCount": {
-        "episodeCount": 800,
-        "mentionCount": 200
+        "episodeCount": 200,
+        "mentionCount": 274
       },
       "isDualIdentity": false,
       "nameEn": "Shinichi Kudo"
@@ -29,8 +29,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/ran.jpg",
       "appearanceCount": {
-        "episodeCount": 750,
-        "mentionCount": 100
+        "episodeCount": 809,
+        "mentionCount": 817
       },
       "isDualIdentity": false,
       "nameEn": "Ran Mouri"
@@ -43,8 +43,8 @@
       "subFaction": "DETECTIVE_BOYS",
       "avatar": "/avatars/conan.png",
       "appearanceCount": {
-        "episodeCount": 1100,
-        "mentionCount": 300
+        "episodeCount": 1189,
+        "mentionCount": 1140
       },
       "isDualIdentity": false,
       "nameEn": "Conan Edogawa"
@@ -57,8 +57,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/heiji.png",
       "appearanceCount": {
-        "episodeCount": 200,
-        "mentionCount": 80
+        "episodeCount": 112,
+        "mentionCount": 217
       },
       "isDualIdentity": false,
       "nameEn": "Heiji Hattori"
@@ -71,8 +71,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/kazuha.jpg",
       "appearanceCount": {
-        "episodeCount": 150,
-        "mentionCount": 50
+        "episodeCount": 94,
+        "mentionCount": 175
       },
       "isDualIdentity": false,
       "nameEn": "Kazuha Toyama"
@@ -85,8 +85,8 @@
       "subFaction": "FBI",
       "avatar": "/avatars/akai.jpg",
       "appearanceCount": {
-        "episodeCount": 180,
-        "mentionCount": 120
+        "episodeCount": 82,
+        "mentionCount": 99
       },
       "isDualIdentity": true,
       "dualIdentityInfo": {
@@ -104,8 +104,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/amuro.jpg",
       "appearanceCount": {
-        "episodeCount": 150,
-        "mentionCount": 80
+        "episodeCount": 71,
+        "mentionCount": 103
       },
       "isDualIdentity": true,
       "dualIdentityInfo": {
@@ -123,8 +123,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/gin.png",
       "appearanceCount": {
-        "episodeCount": 120,
-        "mentionCount": 150
+        "episodeCount": 70,
+        "mentionCount": 108
       },
       "isDualIdentity": false,
       "nameEn": "Gin"
@@ -137,8 +137,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/vodka.jpg",
       "appearanceCount": {
-        "episodeCount": 100,
-        "mentionCount": 80
+        "episodeCount": 65,
+        "mentionCount": 103
       },
       "isDualIdentity": false,
       "nameEn": "Vodka"
@@ -151,8 +151,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/vermouth.jpg",
       "appearanceCount": {
-        "episodeCount": 90,
-        "mentionCount": 100
+        "episodeCount": 78,
+        "mentionCount": 114
       },
       "isDualIdentity": false,
       "nameEn": "Vermouth"
@@ -165,8 +165,8 @@
       "subFaction": "DETECTIVE_BOYS",
       "avatar": "/avatars/haibara.png",
       "appearanceCount": {
-        "episodeCount": 600,
-        "mentionCount": 150
+        "episodeCount": 403,
+        "mentionCount": 412
       },
       "isDualIdentity": true,
       "dualIdentityInfo": {
@@ -184,8 +184,8 @@
       "subFaction": "FBI",
       "avatar": "/avatars/jodie.png",
       "appearanceCount": {
-        "episodeCount": 80,
-        "mentionCount": 40
+        "episodeCount": 54,
+        "mentionCount": 89
       },
       "isDualIdentity": false,
       "nameEn": "Jodie Starling"
@@ -198,8 +198,8 @@
       "subFaction": "POLICE",
       "avatar": "/avatars/sato.png",
       "appearanceCount": {
-        "episodeCount": 120,
-        "mentionCount": 60
+        "episodeCount": 137,
+        "mentionCount": 127
       },
       "isDualIdentity": false,
       "nameEn": "Miwako Sato"
@@ -212,8 +212,8 @@
       "subFaction": "POLICE",
       "avatar": "/avatars/takagi.png",
       "appearanceCount": {
-        "episodeCount": 110,
-        "mentionCount": 50
+        "episodeCount": 581,
+        "mentionCount": 339
       },
       "isDualIdentity": false,
       "nameEn": "Wataru Takagi"
@@ -226,8 +226,8 @@
       "subFaction": "BO_OUTER",
       "avatar": "/avatars/miyano_akemi.jpg",
       "appearanceCount": {
-        "episodeCount": 15,
-        "mentionCount": 40
+        "episodeCount": 23,
+        "mentionCount": 25
       },
       "isDualIdentity": false,
       "nameEn": "Akemi Miyano"
@@ -240,8 +240,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/rum.png",
       "appearanceCount": {
-        "episodeCount": 60,
-        "mentionCount": 90
+        "episodeCount": 30,
+        "mentionCount": 41
       },
       "isDualIdentity": false,
       "nameEn": "Rum"
@@ -254,8 +254,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/hakuba.jpg",
       "appearanceCount": {
-        "episodeCount": 20,
-        "mentionCount": 15
+        "episodeCount": 7,
+        "mentionCount": 13
       },
       "isDualIdentity": false,
       "nameEn": "Saguru Hakuba"
@@ -268,8 +268,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/aoko.jpg",
       "appearanceCount": {
-        "episodeCount": 15,
-        "mentionCount": 10
+        "episodeCount": 24,
+        "mentionCount": 37
       },
       "isDualIdentity": false,
       "nameEn": "Aoko Nakamori"
@@ -282,8 +282,8 @@
       "subFaction": "POLICE",
       "avatar": "/avatars/matsuda.png",
       "appearanceCount": {
-        "episodeCount": 25,
-        "mentionCount": 40
+        "episodeCount": 13,
+        "mentionCount": 22
       },
       "isDualIdentity": false,
       "nameEn": "Jinpei Matsuda"
@@ -296,8 +296,8 @@
       "subFaction": "POLICE",
       "avatar": "/avatars/hagiwara.jpg",
       "appearanceCount": {
-        "episodeCount": 15,
-        "mentionCount": 30
+        "episodeCount": 9,
+        "mentionCount": 13
       },
       "isDualIdentity": false,
       "nameEn": "Kenji Hagiwara"
@@ -310,8 +310,8 @@
       "subFaction": "POLICE",
       "avatar": "/avatars/chiba.jpg",
       "appearanceCount": {
-        "episodeCount": 60,
-        "mentionCount": 20
+        "episodeCount": 242,
+        "mentionCount": 104
       },
       "isDualIdentity": false,
       "nameEn": "Kazunobu Chiba"
@@ -324,8 +324,8 @@
       "subFaction": "POLICE",
       "avatar": "/avatars/miike.png",
       "appearanceCount": {
-        "episodeCount": 30,
-        "mentionCount": 15
+        "episodeCount": 24,
+        "mentionCount": 28
       },
       "isDualIdentity": false,
       "nameEn": "Naeko Miike"
@@ -338,8 +338,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/sera.jpg",
       "appearanceCount": {
-        "episodeCount": 100,
-        "mentionCount": 50
+        "episodeCount": 75,
+        "mentionCount": 115
       },
       "isDualIdentity": false,
       "nameEn": "Masumi Sera"
@@ -352,8 +352,8 @@
       "subFaction": "FBI",
       "avatar": "/avatars/subaru.png",
       "appearanceCount": {
-        "episodeCount": 80,
-        "mentionCount": 40
+        "episodeCount": 62,
+        "mentionCount": 78
       },
       "isDualIdentity": false,
       "nameEn": "Subaru Okiya"
@@ -367,8 +367,8 @@
       "subFaction": "DETECTIVE",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 700,
-        "mentionCount": 100
+        "episodeCount": 779,
+        "mentionCount": 626
       },
       "isDualIdentity": false
     },
@@ -381,8 +381,8 @@
       "subFaction": "DETECTIVE_BOYS",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 500,
-        "mentionCount": 80
+        "episodeCount": 265,
+        "mentionCount": 299
       },
       "isDualIdentity": false
     },
@@ -395,8 +395,8 @@
       "subFaction": "DETECTIVE_BOYS",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 400,
-        "mentionCount": 50
+        "episodeCount": 444,
+        "mentionCount": 372
       },
       "isDualIdentity": false
     },
@@ -409,8 +409,8 @@
       "subFaction": "DETECTIVE_BOYS",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 380,
-        "mentionCount": 45
+        "episodeCount": 437,
+        "mentionCount": 367
       },
       "isDualIdentity": false
     },
@@ -423,8 +423,8 @@
       "subFaction": "DETECTIVE_BOYS",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 380,
-        "mentionCount": 45
+        "episodeCount": 438,
+        "mentionCount": 367
       },
       "isDualIdentity": false
     },
@@ -437,8 +437,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 25,
-        "mentionCount": 15
+        "episodeCount": 15,
+        "mentionCount": 26
       },
       "isDualIdentity": false
     },
@@ -451,8 +451,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 25,
-        "mentionCount": 15
+        "episodeCount": 14,
+        "mentionCount": 24
       },
       "isDualIdentity": false
     },
@@ -465,8 +465,8 @@
       "subFaction": "BO_CORE",
       "avatar": "/avatars/default.png",
       "appearanceCount": {
-        "episodeCount": 50,
-        "mentionCount": 30
+        "episodeCount": 40,
+        "mentionCount": 59
       },
       "isDualIdentity": true,
       "dualIdentityInfo": {
