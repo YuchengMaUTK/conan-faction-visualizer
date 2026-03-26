@@ -167,7 +167,7 @@ describe('relationship-engine', () => {
           {
             source_persona_id: 'p_nonexistent',
             target_persona_id: 'p_ai',
-            type: 'friendship',
+            type: 'friendship' as const,
             label: { en: 'Friend' },
           },
         ],
@@ -270,7 +270,7 @@ describe('relationship-engine', () => {
             id: 're_1',
             relationshipId: 'rel_test',
             chapterIndex: 100,
-            newStatus: 'UNCONFESSED',
+            newStatus: 'UNCONFESSED' as const,
             description: 'Test event',
           },
         ],
@@ -321,7 +321,7 @@ describe('relationship-engine', () => {
           {
             id: 're_1',
             relationshipId: 'rel_test',
-            newStatus: 'UNCONFESSED',
+            newStatus: 'UNCONFESSED' as const,
             description: 'Event without time index',
           },
         ],

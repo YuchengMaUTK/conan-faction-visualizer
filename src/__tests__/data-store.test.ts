@@ -1,12 +1,11 @@
 import { describe, it, expect, vi } from 'vitest';
-import Ajv from 'ajv';
 import {
   parseDataSync,
   checkReferenceConsistency,
   generateId,
   serializeData,
 } from '../engines/data-store';
-import type { DataSet, ValidationError } from '../types';
+import type { DataSet } from '../types';
 
 describe('data-store', () => {
   // Mock schema
