@@ -35,3 +35,8 @@ Thumbs.db
 
 # Development screenshots (root level only)
 /*.png
+
+# Backup and tool artifacts
+*.bak
+.sisyphus/
+playwright-responses/
