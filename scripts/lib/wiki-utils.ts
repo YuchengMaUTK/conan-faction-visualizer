@@ -2,6 +2,8 @@ import * as cheerio from 'cheerio';
 import * as fs from 'fs';
 import * as path from 'path';
 import { fileURLToPath } from 'url';
+import { Readable } from 'stream';
+import { pipeline } from 'stream/promises';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -31,6 +33,30 @@ export function saveData(data: any): void {
   fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2) + '\n');
 }
 
+export const AVATARS_DIR = path.resolve(__dirname, '../../public/avatars');
+
+/** Download a remote URL to a local file */
+export async function downloadFile(url: string, dest: string): Promise<void> {
+  const res = await fetch(url, { redirect: 'follow' });
+  if (!res.ok || !res.body) throw new Error(`HTTP ${res.status}`);
+  await pipeline(Readable.fromWeb(res.body as any), fs.createWriteStream(dest));
+}
+
+/** Download a remote avatar to public/avatars/ and return the local path, or null on failure */
+export async function downloadAvatar(personaId: string, remoteUrl: string): Promise<string | null> {
+  if (!fs.existsSync(AVATARS_DIR)) fs.mkdirSync(AVATARS_DIR, { recursive: true });
+  const ext = path.extname(new URL(remoteUrl).pathname) || '.jpg';
+  const filename = `${personaId}${ext}`;
+  const dest = path.join(AVATARS_DIR, filename);
+  if (fs.existsSync(dest)) return `avatars/${filename}`;
+  try {
+    await downloadFile(remoteUrl, dest);
+    return `avatars/${filename}`;
+  } catch {
+    return null;
+  }
+}
+
 // Extract avatar URL from a wiki page using cheerio
 // 3-tier strategy: profile image > character-name image > first infobox image
 export function extractAvatar($: cheerio.CheerioAPI): string | null {
@@ -49,17 +75,20 @@ export function extractAvatar($: cheerio.CheerioAPI): string | null {
   return null;
 }
 
-// Extract episode and chapter appearance counts from Statistics infobox
+// Extract episode and chapter appearance counts from infobox "Appearances:" row
 export function extractAppearanceCounts($: cheerio.CheerioAPI): { episodes: number | null; chapters: number | null } {
   const result = { episodes: null as number | null, chapters: null as number | null };
-  // Look for the Statistics section in infobox or dedicated table
-  $('table.infobox th, table.wikitable th').each((_, el) => {
-    const text = $(el).text().trim();
-    const val = $(el).next('td').text().trim();
-    const num = parseInt(val, 10);
-    if (isNaN(num)) return;
-    if (/episodes/i.test(text)) result.episodes = num;
-    if (/chapters/i.test(text)) result.chapters = num;
+  $('table.infobox th').each((_, el) => {
+    if (!/appearances/i.test($(el).text())) return;
+    const td = $(el).next('td');
+    if (!td.length) return;
+    // Content is like: "Chapters: <a>344</a><br>Episodes: <a>566</a><br>..."
+    // Take the FIRST occurrence of each label (manga chapters / anime episodes)
+    const html = td.html() ?? '';
+    const chapMatch = html.match(/Chapters:\s*<a[^>]*>(\d+)<\/a>/i);
+    const epMatch = html.match(/Episodes:\s*<a[^>]*>(\d+)<\/a>/i);
+    if (chapMatch) result.chapters = parseInt(chapMatch[1], 10);
+    if (epMatch) result.episodes = parseInt(epMatch[1], 10);
   });
   return result;
 }

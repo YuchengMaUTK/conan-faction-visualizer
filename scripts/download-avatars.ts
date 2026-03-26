@@ -7,55 +7,32 @@
 
 import fs from 'fs';
 import path from 'path';
-import https from 'https';
+import { Readable } from 'stream';
+import { pipeline } from 'stream/promises';
+import pLimit from 'p-limit';
+import { loadData, saveData, delay } from './lib/wiki-utils.ts';
 
-const DATA_PATH = 'public/conan-data.json';
 const AVATARS_DIR = 'public/avatars';
 
-function downloadFile(url: string, dest: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const file = fs.createWriteStream(dest);
-    https.get(url, (res) => {
-      if (res.statusCode === 301 || res.statusCode === 302) {
-        const location = res.headers.location;
-        if (location) {
-          file.close();
-          fs.unlinkSync(dest);
-          return downloadFile(location, dest).then(resolve, reject);
-        }
-      }
-      if (res.statusCode !== 200) {
-        file.close();
-        fs.unlinkSync(dest);
-        return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
-      }
-      res.pipe(file);
-      file.on('finish', () => { file.close(); resolve(); });
-    }).on('error', (err) => {
-      file.close();
-      if (fs.existsSync(dest)) fs.unlinkSync(dest);
-      reject(err);
-    });
-  });
+async function downloadFile(url: string, dest: string): Promise<void> {
+  const res = await fetch(url, { redirect: 'follow' });
+  if (!res.ok || !res.body) throw new Error(`HTTP ${res.status} for ${url}`);
+  await pipeline(Readable.fromWeb(res.body as any), fs.createWriteStream(dest));
 }
 
 async function main() {
-  // Ensure avatars directory exists
-  if (!fs.existsSync(AVATARS_DIR)) {
-    fs.mkdirSync(AVATARS_DIR, { recursive: true });
-  }
+  if (!fs.existsSync(AVATARS_DIR)) fs.mkdirSync(AVATARS_DIR, { recursive: true });
 
-  const data = JSON.parse(fs.readFileSync(DATA_PATH, 'utf-8'));
+  const data = loadData();
+  const limit = pLimit(5);
 
   // Collect all unique avatar URLs with their persona_id
   const avatarMap = new Map<string, { url: string; ext: string }>();
-
   for (const entity of data.entities) {
     for (const persona of entity.personas) {
       if (!persona.avatar || !persona.avatar.startsWith('http')) continue;
-      const url = persona.avatar;
-      const ext = path.extname(new URL(url).pathname) || '.jpg';
-      avatarMap.set(persona.persona_id, { url, ext });
+      const ext = path.extname(new URL(persona.avatar).pathname) || '.jpg';
+      avatarMap.set(persona.persona_id, { url: persona.avatar, ext });
     }
   }
 
@@ -64,30 +41,32 @@ async function main() {
   let success = 0;
   let failed = 0;
 
-  for (const [personaId, { url, ext }] of avatarMap) {
-    const filename = `${personaId}${ext}`;
-    const dest = path.join(AVATARS_DIR, filename);
+  const tasks = [...avatarMap.entries()].map(([personaId, { url, ext }]) =>
+    limit(async () => {
+      const filename = `${personaId}${ext}`;
+      const dest = path.join(AVATARS_DIR, filename);
 
-    // Skip if already downloaded
-    if (fs.existsSync(dest)) {
-      console.log(`  ✓ ${personaId} (already exists)`);
-      success++;
-      continue;
-    }
+      if (fs.existsSync(dest)) {
+        console.log(`  ✓ ${personaId} (already exists)`);
+        success++;
+        return;
+      }
 
-    process.stdout.write(`  ↓ ${personaId}... `);
-    try {
-      await downloadFile(url, dest);
-      console.log('OK');
-      success++;
-    } catch (err: any) {
-      console.log(`FAILED: ${err.message}`);
-      failed++;
-    }
-    // Be polite
-    await new Promise(r => setTimeout(r, 300));
-  }
+      process.stdout.write(`  ↓ ${personaId}... `);
+      try {
+        await downloadFile(url, dest);
+        console.log('OK');
+        success++;
+      } catch (err: any) {
+        console.log(`FAILED: ${err.message}`);
+        failed++;
+      }
+      // Be polite
+      await delay(300);
+    })
+  );
 
+  await Promise.all(tasks);
   console.log(`\nDownloaded: ${success}, Failed: ${failed}\n`);
 
   // Update conan-data.json: replace remote URLs with local paths
@@ -97,17 +76,15 @@ async function main() {
       const info = avatarMap.get(persona.persona_id);
       if (!info) continue;
       const filename = `${persona.persona_id}${info.ext}`;
-      const localDest = path.join(AVATARS_DIR, filename);
-      if (fs.existsSync(localDest)) {
-        // Use path relative to public/ so Vite serves it correctly
+      if (fs.existsSync(path.join(AVATARS_DIR, filename))) {
         persona.avatar = `avatars/${filename}`;
         updated++;
       }
     }
   }
 
-  fs.writeFileSync(DATA_PATH, JSON.stringify(data, null, 2) + '\n', 'utf-8');
-  console.log(`Updated ${updated} avatar paths in ${DATA_PATH}`);
+  saveData(data);
+  console.log(`Updated ${updated} avatar paths in conan-data.json`);
 }
 
 main().catch(console.error);
