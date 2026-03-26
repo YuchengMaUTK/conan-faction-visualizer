@@ -104,6 +104,18 @@ export function extractCodename($: cheerio.CheerioAPI): string | null {
   return codename;
 }
 
+// Check if a character is a Black Organization member based on Occupation field
+export function isBlackOrgMember($: cheerio.CheerioAPI): boolean {
+  let result = false;
+  $('table.infobox th').each((_, el) => {
+    if (/^occupation/i.test($(el).text().trim())) {
+      const td = $(el).next('td');
+      if (/black organization/i.test(td.text())) result = true;
+    }
+  });
+  return result;
+}
+
 // Extract multilingual names from a character wiki page
 export interface I18nNames {
   ja?: string;       // Japanese name (kanji/kana)

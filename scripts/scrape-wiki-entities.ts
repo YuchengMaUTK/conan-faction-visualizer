@@ -17,6 +17,7 @@ import {
   extractAppearanceCounts,
   extractCodename,
   extractI18nNames,
+  isBlackOrgMember,
   downloadAvatar,
   slugify,
 } from './lib/wiki-utils.ts';
@@ -41,15 +42,11 @@ const CATEGORIES: CategoryDef[] = [
 const SKIP_PREFIXES = ['File:', 'Category:', 'Template:', 'Special:', 'Help:', 'Talk:', 'User:', 'index.php'];
 
 // Characters that appear on the BO page but are NOT BO members — override their faction
+// Detected automatically via infobox Occupation field (see isBlackOrgMember)
 const FACTION_OVERRIDES = new Map<string, { faction: Faction; sub_faction: SubFaction }>([
-  ['Yusaku_Kudo',          { faction: 'RED', sub_faction: 'DETECTIVE' }],
-  ['Hiroshi_Agasa',        { faction: 'RED', sub_faction: 'DETECTIVE' }],
+  // Only for characters that need manual sub_faction assignment
   ['Toichi_Kuroba',        { faction: 'OTHER', sub_faction: 'KAITOU_KID' }],
   ['Kaitou_Kid',           { faction: 'OTHER', sub_faction: 'KAITOU_KID' }],
-  ['Suguru_Itakura',       { faction: 'RED', sub_faction: 'NONE' }],
-  ['Eisuke_Hondou',        { faction: 'RED', sub_faction: 'NONE' }],
-  ['Hiromitsu_Morofushi',  { faction: 'RED', sub_faction: 'PSB' }],
-  ['Atsushi_Miyano',       { faction: 'RED', sub_faction: 'NONE' }],
 ]);
 const SKIP_PAGES = new Set([
   'Main_Page', 'Characters', 'Black_Organization', 'FBI',
@@ -120,6 +117,7 @@ interface ScrapedDetail {
   avatar: string | null;
   episodes: number | null;
   codename: string | null;
+  isBO: boolean;
   ja?: string;
   ja_romaji?: string;
   zh?: string;
@@ -214,7 +212,7 @@ async function fetchDetails(wikiPage: string): Promise<ScrapedDetail | null> {
   if (!isCharacterPage($)) return null;
   const { episodes } = extractAppearanceCounts($);
   const i18n = extractI18nNames($);
-  return { avatar: extractAvatar($), episodes, codename: extractCodename($), ...i18n };
+  return { avatar: extractAvatar($), episodes, codename: extractCodename($), isBO: isBlackOrgMember($), ...i18n };
 }
 
 /** Build a new Entity from a discovered character + scraped details */
@@ -228,8 +226,13 @@ function buildEntity(c: DiscoveredChar, d: ScrapedDetail): Entity {
 
   // Apply faction override if this character is misclassified by category page
   const override = FACTION_OVERRIDES.get(c.wikiPage);
-  const faction = override?.faction ?? c.faction;
-  const sub_faction = override?.sub_faction ?? c.sub_faction;
+  // If discovered from BO page but Occupation doesn't say "Black Organization", reclassify as RED
+  let faction = override?.faction ?? c.faction;
+  let sub_faction = override?.sub_faction ?? c.sub_faction;
+  if (!override && c.faction === 'BLACK' && !d.isBO) {
+    faction = 'RED';
+    sub_faction = 'DETECTIVE';
+  }
 
   const persona: Persona = {
     persona_id: `p_${id}`,
