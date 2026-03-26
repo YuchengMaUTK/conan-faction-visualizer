@@ -579,7 +579,7 @@
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
-          "avatar": "avatars/p_gin.png",
+          "avatar": "avatars/p_gin.jpg",
           "codename": "Gin",
           "is_default_display": true,
           "description": {
@@ -931,8 +931,8 @@
             "ja": "イーサン・本堂",
             "ja_romaji": "Īsan Hondō"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_ethan_hondou.jpg",
           "is_default_display": true
         }
@@ -1009,7 +1009,7 @@
             "zh": "本堂瑛祐"
           },
           "faction": "RED",
-          "sub_faction": "NONE",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_eisuke_hondou.jpg",
           "is_default_display": true
         }
@@ -1083,8 +1083,8 @@
             "ja": "ケイト・ローレン",
             "ja_romaji": "Keito Rōren"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_kate_lauren.jpg",
           "is_default_display": true
         }
@@ -1161,7 +1161,7 @@
             "ja_romaji": "Miyano Atsushi"
           },
           "faction": "RED",
-          "sub_faction": "NONE",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_atsushi_miyano.png",
           "is_default_display": true
         }
@@ -1265,7 +1265,7 @@
             "ja_romaji": "Itakura Suguru"
           },
           "faction": "RED",
-          "sub_faction": "NONE",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_suguru_itakura.jpg",
           "is_default_display": true
         }
@@ -1317,7 +1317,7 @@
             "zh": "苏格兰 Sūgélán  苏格兰威士忌 Sūgélán"
           },
           "faction": "RED",
-          "sub_faction": "PSB",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_hiromitsu_morofushi.jpg",
           "is_default_display": true
         }
