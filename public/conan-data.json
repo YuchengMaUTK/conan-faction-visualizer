@@ -2,7 +2,7 @@
   "$schema": "./conan-data-schema.json",
   "metadata": {
     "version": "2.0.0",
-    "lastUpdated": "2026-03-10",
+    "lastUpdated": "2026-03-26",
     "totalEpisodes": 1150,
     "totalChapters": 1130
   },
@@ -16,7 +16,7 @@
         "zh": "工藤新一"
       },
       "status": "shrunk",
-      "base_appearances": 200,
+      "base_appearances": 1191,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Shinichi_Kudo",
       "nicknames": [
         {
@@ -90,7 +90,7 @@
         "zh": "赤井秀一"
       },
       "status": "alive",
-      "base_appearances": 150,
+      "base_appearances": 82,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Shuichi_Akai",
       "nicknames": [
         {
@@ -188,7 +188,7 @@
         "zh": "降谷零"
       },
       "status": "alive",
-      "base_appearances": 103,
+      "base_appearances": 71,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Rei_Furuya",
       "nicknames": [
         {
@@ -274,7 +274,7 @@
         "zh": "宫野志保"
       },
       "status": "shrunk",
-      "base_appearances": 412,
+      "base_appearances": 404,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Shiho_Miyano",
       "nicknames": [
         {
@@ -348,7 +348,7 @@
         "zh": "本堂瑛海"
       },
       "status": "alive",
-      "base_appearances": 59,
+      "base_appearances": 40,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Hidemi_Hondou",
       "first_appearance": {
         "manga_file": 499,
@@ -409,7 +409,7 @@
         "zh": "毛利兰"
       },
       "status": "alive",
-      "base_appearances": 817,
+      "base_appearances": 810,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Ran_Mouri",
       "nicknames": [
         {
@@ -459,7 +459,7 @@
         "zh": "毛利小五郎"
       },
       "status": "alive",
-      "base_appearances": 779,
+      "base_appearances": 778,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Kogoro_Mouri",
       "nicknames": [
         {
@@ -509,7 +509,7 @@
         "zh": "服部平次"
       },
       "status": "alive",
-      "base_appearances": 217,
+      "base_appearances": 112,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Heiji_Hattori",
       "nicknames": [
         {
@@ -635,10 +635,11 @@
       "true_name": {
         "en": "Vermouth",
         "ja": "ベルモット",
-        "zh": "贝尔摩德"
+        "zh": "贝尔摩德",
+        "ja_romaji": "Berumotto"
       },
       "status": "alive",
-      "base_appearances": 114,
+      "base_appearances": 78,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Vermouth",
       "nicknames": [
         {
@@ -691,7 +692,7 @@
         "zh": "朱蒂·斯泰琳"
       },
       "status": "alive",
-      "base_appearances": 89,
+      "base_appearances": 54,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Jodie_Starling",
       "first_appearance": {
         "manga_file": 230,
@@ -775,7 +776,7 @@
         "zh": "高木涉"
       },
       "status": "alive",
-      "base_appearances": 581,
+      "base_appearances": 583,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Wataru_Takagi",
       "first_appearance": {
         "manga_file": 180,
@@ -817,7 +818,7 @@
         "zh": "宫野明美"
       },
       "status": "dead",
-      "base_appearances": 25,
+      "base_appearances": 23,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Akemi_Miyano",
       "first_appearance": {
         "manga_file": 13,
@@ -857,6 +858,3256 @@
             "zh": "组织末端成员",
             "ja": "組織の末端構成員"
           }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_renya_karasuma",
+      "true_name": {
+        "en": "Renya Karasuma",
+        "ja": "烏丸 蓮耶",
+        "ja_romaji": "Karasuma Ren'ya",
+        "zh": "乌丸莲耶"
+      },
+      "status": "alive",
+      "base_appearances": 7,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Renya_Karasuma",
+      "personas": [
+        {
+          "persona_id": "p_renya_karasuma",
+          "name": {
+            "en": "Renya Karasuma",
+            "ja": "烏丸 蓮耶",
+            "ja_romaji": "Karasuma Ren'ya",
+            "zh": "乌丸莲耶"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_renya_karasuma.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_rikumichi_kusuda",
+      "true_name": {
+        "en": "Rikumichi Kusuda",
+        "ja": "楠田 陸道",
+        "ja_romaji": "Kusuda Rikumichi"
+      },
+      "status": "alive",
+      "base_appearances": 6,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Rikumichi_Kusuda",
+      "personas": [
+        {
+          "persona_id": "p_rikumichi_kusuda",
+          "name": {
+            "en": "Rikumichi Kusuda",
+            "ja": "楠田 陸道",
+            "ja_romaji": "Kusuda Rikumichi"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_rikumichi_kusuda.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ethan_hondou",
+      "true_name": {
+        "en": "Ethan Hondou",
+        "ja": "イーサン・本堂",
+        "ja_romaji": "Īsan Hondō"
+      },
+      "status": "alive",
+      "base_appearances": 6,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ethan_Hondou",
+      "personas": [
+        {
+          "persona_id": "p_ethan_hondou",
+          "name": {
+            "en": "Ethan Hondou",
+            "ja": "イーサン・本堂",
+            "ja_romaji": "Īsan Hondō"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_ethan_hondou.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ki_ichiro_numabuchi",
+      "true_name": {
+        "en": "Ki'ichiro Numabuchi",
+        "ja": "沼淵 己一郎",
+        "ja_romaji": "Numabuchi Kiichirō"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ki'ichiro_Numabuchi",
+      "personas": [
+        {
+          "persona_id": "p_ki_ichiro_numabuchi",
+          "name": {
+            "en": "Ki'ichiro Numabuchi",
+            "ja": "沼淵 己一郎",
+            "ja_romaji": "Numabuchi Kiichirō"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_ki_ichiro_numabuchi.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kanenori_wakita",
+      "true_name": {
+        "en": "Kanenori Wakita",
+        "ja": "ラム",
+        "ja_romaji": "Ramu"
+      },
+      "status": "alive",
+      "base_appearances": 30,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kanenori_Wakita",
+      "personas": [
+        {
+          "persona_id": "p_kanenori_wakita",
+          "name": {
+            "en": "Kanenori Wakita",
+            "ja": "ラム",
+            "ja_romaji": "Ramu"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_kanenori_wakita.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_eisuke_hondou",
+      "true_name": {
+        "en": "Eisuke Hondou",
+        "ja": "本堂 瑛祐",
+        "ja_romaji": "Hondō Eisuke",
+        "zh": "本堂瑛祐"
+      },
+      "status": "alive",
+      "base_appearances": 27,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Eisuke_Hondou",
+      "personas": [
+        {
+          "persona_id": "p_eisuke_hondou",
+          "name": {
+            "en": "Eisuke Hondou",
+            "ja": "本堂 瑛祐",
+            "ja_romaji": "Hondō Eisuke",
+            "zh": "本堂瑛祐"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_eisuke_hondou.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yoshiaki_hara",
+      "true_name": {
+        "en": "Yoshiaki Hara",
+        "ja": "原 佳明",
+        "ja_romaji": "Hara Yoshiaki"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yoshiaki_Hara",
+      "personas": [
+        {
+          "persona_id": "p_yoshiaki_hara",
+          "name": {
+            "en": "Yoshiaki Hara",
+            "ja": "原 佳明",
+            "ja_romaji": "Hara Yoshiaki"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_yoshiaki_hara.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_masaaki_okakura",
+      "true_name": {
+        "en": "Masaaki Okakura",
+        "ja": "岡倉 政明",
+        "ja_romaji": "Okakura Masaaki"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Masaaki_Okakura",
+      "personas": [
+        {
+          "persona_id": "p_masaaki_okakura",
+          "name": {
+            "en": "Masaaki Okakura",
+            "ja": "岡倉 政明",
+            "ja_romaji": "Okakura Masaaki"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_masaaki_okakura.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kate_lauren",
+      "true_name": {
+        "en": "Kate Lauren",
+        "ja": "ケイト・ローレン",
+        "ja_romaji": "Keito Rōren"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kate_Lauren",
+      "personas": [
+        {
+          "persona_id": "p_kate_lauren",
+          "name": {
+            "en": "Kate Lauren",
+            "ja": "ケイト・ローレン",
+            "ja_romaji": "Keito Rōren"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_kate_lauren.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_man_in_bar_black_organization",
+      "true_name": {
+        "en": "Man in bar (Black Organization)",
+        "ja": "バーの男",
+        "ja_romaji": "Bā no otoko"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Man_in_bar_(Black_Organization)",
+      "personas": [
+        {
+          "persona_id": "p_man_in_bar_black_organization",
+          "name": {
+            "en": "Man in bar (Black Organization)",
+            "ja": "バーの男",
+            "ja_romaji": "Bā no otoko"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_man_in_bar_black_organization.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yusaku_kudo",
+      "true_name": {
+        "en": "Yusaku Kudo",
+        "ja": "工藤 優作",
+        "ja_romaji": "Kudō Yūsaku",
+        "zh": "工藤优作"
+      },
+      "status": "alive",
+      "base_appearances": 39,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yusaku_Kudo",
+      "personas": [
+        {
+          "persona_id": "p_yusaku_kudo",
+          "name": {
+            "en": "Yusaku Kudo",
+            "ja": "工藤 優作",
+            "ja_romaji": "Kudō Yūsaku",
+            "zh": "工藤优作"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_yusaku_kudo.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_atsushi_miyano",
+      "true_name": {
+        "en": "Atsushi Miyano",
+        "ja": "宮野 厚司",
+        "ja_romaji": "Miyano Atsushi"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Atsushi_Miyano",
+      "personas": [
+        {
+          "persona_id": "p_atsushi_miyano",
+          "name": {
+            "en": "Atsushi Miyano",
+            "ja": "宮野 厚司",
+            "ja_romaji": "Miyano Atsushi"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_atsushi_miyano.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_hiroshi_agasa",
+      "true_name": {
+        "en": "Hiroshi Agasa",
+        "ja": "阿笠 博士",
+        "ja_romaji": "Agasa Hiroshi",
+        "zh": "阿笠博士"
+      },
+      "status": "alive",
+      "base_appearances": 265,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Hiroshi_Agasa",
+      "personas": [
+        {
+          "persona_id": "p_hiroshi_agasa",
+          "name": {
+            "en": "Hiroshi Agasa",
+            "ja": "阿笠 博士",
+            "ja_romaji": "Agasa Hiroshi",
+            "zh": "阿笠博士"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_hiroshi_agasa.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_toichi_kuroba",
+      "true_name": {
+        "en": "Toichi Kuroba",
+        "ja": "黒羽 盗一",
+        "ja_romaji": "Kuroba Tōichi"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Toichi_Kuroba",
+      "personas": [
+        {
+          "persona_id": "p_toichi_kuroba",
+          "name": {
+            "en": "Toichi Kuroba",
+            "ja": "黒羽 盗一",
+            "ja_romaji": "Kuroba Tōichi"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_toichi_kuroba.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kaitou_kid",
+      "true_name": {
+        "en": "Kaitou Kid",
+        "ja": "怪盗キッド",
+        "ja_romaji": "Kaitō Kiddo",
+        "zh": "怪盗基德 Guàidào"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kaitou_Kid",
+      "personas": [
+        {
+          "persona_id": "p_kaitou_kid",
+          "name": {
+            "en": "Kaitou Kid",
+            "ja": "怪盗キッド",
+            "ja_romaji": "Kaitō Kiddo",
+            "zh": "怪盗基德 Guàidào"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_kaitou_kid.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_suguru_itakura",
+      "true_name": {
+        "en": "Suguru Itakura",
+        "ja": "板倉 卓",
+        "ja_romaji": "Itakura Suguru"
+      },
+      "status": "alive",
+      "base_appearances": 5,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Suguru_Itakura",
+      "personas": [
+        {
+          "persona_id": "p_suguru_itakura",
+          "name": {
+            "en": "Suguru Itakura",
+            "ja": "板倉 卓",
+            "ja_romaji": "Itakura Suguru"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_suguru_itakura.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_pisco",
+      "true_name": {
+        "en": "Pisco",
+        "ja": "ピスコ",
+        "ja_romaji": "Pisuko"
+      },
+      "status": "alive",
+      "base_appearances": 5,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Pisco",
+      "personas": [
+        {
+          "persona_id": "p_pisco",
+          "name": {
+            "en": "Pisco",
+            "ja": "ピスコ",
+            "ja_romaji": "Pisuko"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_pisco.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_hiromitsu_morofushi",
+      "true_name": {
+        "en": "Hiromitsu Morofushi",
+        "ja": "諸伏 景光",
+        "ja_romaji": "Morofushi Hiromitsu",
+        "zh": "苏格兰 Sūgélán  苏格兰威士忌 Sūgélán"
+      },
+      "status": "alive",
+      "base_appearances": 12,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Hiromitsu_Morofushi",
+      "personas": [
+        {
+          "persona_id": "p_hiromitsu_morofushi",
+          "name": {
+            "en": "Hiromitsu Morofushi",
+            "ja": "諸伏 景光",
+            "ja_romaji": "Morofushi Hiromitsu",
+            "zh": "苏格兰 Sūgélán  苏格兰威士忌 Sūgélán"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_hiromitsu_morofushi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_riesling",
+      "true_name": {
+        "en": "Riesling",
+        "ja": "リースリング (Rīsuringu)  レオナ・ブッフホルツ",
+        "ja_romaji": "Reona Buffuhorutsu"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Riesling",
+      "personas": [
+        {
+          "persona_id": "p_riesling",
+          "name": {
+            "en": "Riesling",
+            "ja": "リースリング (Rīsuringu)  レオナ・ブッフホルツ",
+            "ja_romaji": "Reona Buffuhorutsu"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_riesling.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_juzo_megure",
+      "true_name": {
+        "en": "Juzo Megure",
+        "ja": "目暮 十三",
+        "ja_romaji": "Megure Jūzō",
+        "zh": "目暮十三"
+      },
+      "status": "alive",
+      "base_appearances": 566,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Juzo_Megure",
+      "personas": [
+        {
+          "persona_id": "p_juzo_megure",
+          "name": {
+            "en": "Juzo Megure",
+            "ja": "目暮 十三",
+            "ja_romaji": "Megure Jūzō",
+            "zh": "目暮十三"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_juzo_megure.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ninzaburo_shiratori",
+      "true_name": {
+        "en": "Ninzaburo Shiratori",
+        "ja": "白鳥 任三郎",
+        "ja_romaji": "Shiratori Ninzaburō",
+        "zh": "白鸟任三郎"
+      },
+      "status": "alive",
+      "base_appearances": 57,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ninzaburo_Shiratori",
+      "personas": [
+        {
+          "persona_id": "p_ninzaburo_shiratori",
+          "name": {
+            "en": "Ninzaburo Shiratori",
+            "ja": "白鳥 任三郎",
+            "ja_romaji": "Shiratori Ninzaburō",
+            "zh": "白鸟任三郎"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_ninzaburo_shiratori.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kazunobu_chiba",
+      "true_name": {
+        "en": "Kazunobu Chiba",
+        "ja": "千葉 和伸",
+        "ja_romaji": "Chiba Kazunobu"
+      },
+      "status": "alive",
+      "base_appearances": 243,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kazunobu_Chiba",
+      "personas": [
+        {
+          "persona_id": "p_kazunobu_chiba",
+          "name": {
+            "en": "Kazunobu Chiba",
+            "ja": "千葉 和伸",
+            "ja_romaji": "Chiba Kazunobu"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_kazunobu_chiba.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kiyonaga_matsumoto",
+      "true_name": {
+        "en": "Kiyonaga Matsumoto",
+        "ja": "松本 清長",
+        "ja_romaji": "Matsumoto Kiyonaga"
+      },
+      "status": "alive",
+      "base_appearances": 16,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kiyonaga_Matsumoto",
+      "personas": [
+        {
+          "persona_id": "p_kiyonaga_matsumoto",
+          "name": {
+            "en": "Kiyonaga Matsumoto",
+            "ja": "松本 清長",
+            "ja_romaji": "Matsumoto Kiyonaga"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_kiyonaga_matsumoto.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_hyoue_kuroda",
+      "true_name": {
+        "en": "Hyoue Kuroda",
+        "ja": "黒田 兵衛",
+        "ja_romaji": "Kuroda Hyōe"
+      },
+      "status": "alive",
+      "base_appearances": 21,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Hyoue_Kuroda",
+      "personas": [
+        {
+          "persona_id": "p_hyoue_kuroda",
+          "name": {
+            "en": "Hyoue Kuroda",
+            "ja": "黒田 兵衛",
+            "ja_romaji": "Kuroda Hyōe"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_hyoue_kuroda.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_chosuke_takagi",
+      "true_name": {
+        "en": "Chosuke Takagi",
+        "ja": "高木 長介  Takagi Chōsuke)"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Chosuke_Takagi",
+      "personas": [
+        {
+          "persona_id": "p_chosuke_takagi",
+          "name": {
+            "en": "Chosuke Takagi",
+            "ja": "高木 長介  Takagi Chōsuke)"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_chosuke_takagi.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_manabu_fujimaki",
+      "true_name": {
+        "en": "Manabu Fujimaki",
+        "ja": "藤巻 学",
+        "ja_romaji": "Fujimaki Manabu"
+      },
+      "status": "alive",
+      "base_appearances": 10,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Manabu_Fujimaki",
+      "personas": [
+        {
+          "persona_id": "p_manabu_fujimaki",
+          "name": {
+            "en": "Manabu Fujimaki",
+            "ja": "藤巻 学",
+            "ja_romaji": "Fujimaki Manabu"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_manabu_fujimaki.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_toshiro_odagiri",
+      "true_name": {
+        "en": "Toshiro Odagiri",
+        "ja": "小田切 敏郎",
+        "ja_romaji": "Odagiri Toshirō"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Toshiro_Odagiri",
+      "personas": [
+        {
+          "persona_id": "p_toshiro_odagiri",
+          "name": {
+            "en": "Toshiro Odagiri",
+            "ja": "小田切 敏郎",
+            "ja_romaji": "Odagiri Toshirō"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_toshiro_odagiri.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tadayoshi_uno",
+      "true_name": {
+        "en": "Tadayoshi Uno",
+        "ja": "宇野 忠義",
+        "ja_romaji": "Uno Tadayoshi"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tadayoshi_Uno",
+      "personas": [
+        {
+          "persona_id": "p_tadayoshi_uno",
+          "name": {
+            "en": "Tadayoshi Uno",
+            "ja": "宇野 忠義",
+            "ja_romaji": "Uno Tadayoshi"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_tadayoshi_uno.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ginzo_nakamori",
+      "true_name": {
+        "en": "Ginzo Nakamori",
+        "ja": "中森 銀三",
+        "ja_romaji": "Nakamori Ginzō",
+        "zh": "中森银三"
+      },
+      "status": "alive",
+      "base_appearances": 31,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ginzo_Nakamori",
+      "personas": [
+        {
+          "persona_id": "p_ginzo_nakamori",
+          "name": {
+            "en": "Ginzo Nakamori",
+            "ja": "中森 銀三",
+            "ja_romaji": "Nakamori Ginzō",
+            "zh": "中森银三"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_ginzo_nakamori.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_shintaro_chaki",
+      "true_name": {
+        "en": "Shintaro Chaki",
+        "ja": "茶木 神太郎",
+        "ja_romaji": "Chaki Shintarō"
+      },
+      "status": "alive",
+      "base_appearances": 6,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shintaro_Chaki",
+      "personas": [
+        {
+          "persona_id": "p_shintaro_chaki",
+          "name": {
+            "en": "Shintaro Chaki",
+            "ja": "茶木 神太郎",
+            "ja_romaji": "Chaki Shintarō"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_shintaro_chaki.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yumi_miyamoto",
+      "true_name": {
+        "en": "Yumi Miyamoto",
+        "ja": "宮本 由美",
+        "ja_romaji": "Miyamoto Yumi",
+        "zh": "宫本由美"
+      },
+      "status": "alive",
+      "base_appearances": 55,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yumi_Miyamoto",
+      "personas": [
+        {
+          "persona_id": "p_yumi_miyamoto",
+          "name": {
+            "en": "Yumi Miyamoto",
+            "ja": "宮本 由美",
+            "ja_romaji": "Miyamoto Yumi",
+            "zh": "宫本由美"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_yumi_miyamoto.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_naeko_miike",
+      "true_name": {
+        "en": "Naeko Miike",
+        "ja": "三池 苗子",
+        "ja_romaji": "Miike Naeko"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Naeko_Miike",
+      "personas": [
+        {
+          "persona_id": "p_naeko_miike",
+          "name": {
+            "en": "Naeko Miike",
+            "ja": "三池 苗子",
+            "ja_romaji": "Miike Naeko"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_naeko_miike.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_officer_numata",
+      "true_name": {
+        "en": "Officer Numata",
+        "ja": "沼田",
+        "ja_romaji": "Numata"
+      },
+      "status": "alive",
+      "base_appearances": 7,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Officer_Numata",
+      "personas": [
+        {
+          "persona_id": "p_officer_numata",
+          "name": {
+            "en": "Officer Numata",
+            "ja": "沼田",
+            "ja_romaji": "Numata"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_officer_numata.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_inspector_hatori",
+      "true_name": {
+        "en": "Inspector Hatori",
+        "ja": "羽鳥",
+        "ja_romaji": "Hatori"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Inspector_Hatori",
+      "personas": [
+        {
+          "persona_id": "p_inspector_hatori",
+          "name": {
+            "en": "Inspector Hatori",
+            "ja": "羽鳥",
+            "ja_romaji": "Hatori"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_inspector_hatori.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_hachizo_onizuka",
+      "true_name": {
+        "en": "Hachizo Onizuka",
+        "ja": "鬼塚 八蔵",
+        "ja_romaji": "Onidzuka Hachizō"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Hachizo_Onizuka",
+      "personas": [
+        {
+          "persona_id": "p_hachizo_onizuka",
+          "name": {
+            "en": "Hachizo Onizuka",
+            "ja": "鬼塚 八蔵",
+            "ja_romaji": "Onidzuka Hachizō"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_hachizo_onizuka.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_officer_tome",
+      "true_name": {
+        "en": "Officer Tome",
+        "ja": "Tome",
+        "ja_romaji": "トメ ,Tome?"
+      },
+      "status": "alive",
+      "base_appearances": 41,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Officer_Tome",
+      "personas": [
+        {
+          "persona_id": "p_officer_tome",
+          "name": {
+            "en": "Officer Tome",
+            "ja": "Tome",
+            "ja_romaji": "トメ ,Tome?"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_officer_tome.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_female_forensics_member",
+      "true_name": {
+        "en": "Female forensics member",
+        "ja": "女性 鑑識員",
+        "ja_romaji": "Josei kanshiki-in"
+      },
+      "status": "alive",
+      "base_appearances": 18,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Female_forensics_member",
+      "personas": [
+        {
+          "persona_id": "p_female_forensics_member",
+          "name": {
+            "en": "Female forensics member",
+            "ja": "女性 鑑識員",
+            "ja_romaji": "Josei kanshiki-in"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_female_forensics_member.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_toshio_moroboshi",
+      "true_name": {
+        "en": "Toshio Moroboshi",
+        "ja": "諸星 登志夫",
+        "ja_romaji": "Moroboshi Toshio"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Toshio_Moroboshi",
+      "personas": [
+        {
+          "persona_id": "p_toshio_moroboshi",
+          "name": {
+            "en": "Toshio Moroboshi",
+            "ja": "諸星 登志夫",
+            "ja_romaji": "Moroboshi Toshio"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_toshio_moroboshi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_kobayashi",
+      "true_name": {
+        "en": "Detective Kobayashi",
+        "ja": "小林",
+        "ja_romaji": "Kobayashi"
+      },
+      "status": "alive",
+      "base_appearances": 12,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Kobayashi",
+      "personas": [
+        {
+          "persona_id": "p_detective_kobayashi",
+          "name": {
+            "en": "Detective Kobayashi",
+            "ja": "小林",
+            "ja_romaji": "Kobayashi"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_kobayashi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_yokoyama",
+      "true_name": {
+        "en": "Detective Yokoyama",
+        "ja": "横山",
+        "ja_romaji": "Yokoyama"
+      },
+      "status": "alive",
+      "base_appearances": 9,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Yokoyama",
+      "personas": [
+        {
+          "persona_id": "p_detective_yokoyama",
+          "name": {
+            "en": "Detective Yokoyama",
+            "ja": "横山",
+            "ja_romaji": "Yokoyama"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_yokoyama.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_takikawa",
+      "true_name": {
+        "en": "Detective Takikawa",
+        "ja": "滝川",
+        "ja_romaji": "Takikawa"
+      },
+      "status": "alive",
+      "base_appearances": 18,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Takikawa",
+      "personas": [
+        {
+          "persona_id": "p_detective_takikawa",
+          "name": {
+            "en": "Detective Takikawa",
+            "ja": "滝川",
+            "ja_romaji": "Takikawa"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_takikawa.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_nakamura",
+      "true_name": {
+        "en": "Detective Nakamura",
+        "ja": "中村",
+        "ja_romaji": "Nakamura"
+      },
+      "status": "alive",
+      "base_appearances": 20,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Nakamura",
+      "personas": [
+        {
+          "persona_id": "p_detective_nakamura",
+          "name": {
+            "en": "Detective Nakamura",
+            "ja": "中村",
+            "ja_romaji": "Nakamura"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_nakamura.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_fukui",
+      "true_name": {
+        "en": "Detective Fukui",
+        "ja": "福井",
+        "ja_romaji": "Fukui"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Fukui",
+      "personas": [
+        {
+          "persona_id": "p_detective_fukui",
+          "name": {
+            "en": "Detective Fukui",
+            "ja": "福井",
+            "ja_romaji": "Fukui"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_fukui.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_kawanaka",
+      "true_name": {
+        "en": "Detective Kawanaka",
+        "ja": "川中",
+        "ja_romaji": "Kawanaka"
+      },
+      "status": "alive",
+      "base_appearances": 10,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Kawanaka",
+      "personas": [
+        {
+          "persona_id": "p_detective_kawanaka",
+          "name": {
+            "en": "Detective Kawanaka",
+            "ja": "川中",
+            "ja_romaji": "Kawanaka"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_kawanaka.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_saitoh",
+      "true_name": {
+        "en": "Detective Saitoh",
+        "ja": "斉藤",
+        "ja_romaji": "Saitō"
+      },
+      "status": "alive",
+      "base_appearances": 17,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Saitoh",
+      "personas": [
+        {
+          "persona_id": "p_detective_saitoh",
+          "name": {
+            "en": "Detective Saitoh",
+            "ja": "斉藤",
+            "ja_romaji": "Saitō"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_saitoh.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_horita",
+      "true_name": {
+        "en": "Detective Horita",
+        "ja": "堀田",
+        "ja_romaji": "Horita"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Horita",
+      "personas": [
+        {
+          "persona_id": "p_detective_horita",
+          "name": {
+            "en": "Detective Horita",
+            "ja": "堀田",
+            "ja_romaji": "Horita"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_horita.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_takano",
+      "true_name": {
+        "en": "Detective Takano",
+        "ja": "高野",
+        "ja_romaji": "Takano"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Takano",
+      "personas": [
+        {
+          "persona_id": "p_detective_takano",
+          "name": {
+            "en": "Detective Takano",
+            "ja": "高野",
+            "ja_romaji": "Takano"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_takano.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_sogawa",
+      "true_name": {
+        "en": "Detective Sogawa",
+        "ja": "十川",
+        "ja_romaji": "Sogawa"
+      },
+      "status": "alive",
+      "base_appearances": 22,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Sogawa",
+      "personas": [
+        {
+          "persona_id": "p_detective_sogawa",
+          "name": {
+            "en": "Detective Sogawa",
+            "ja": "十川",
+            "ja_romaji": "Sogawa"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_sogawa.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_sugita",
+      "true_name": {
+        "en": "Detective Sugita",
+        "ja": "杉田",
+        "ja_romaji": "Sugita"
+      },
+      "status": "alive",
+      "base_appearances": 23,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Sugita",
+      "personas": [
+        {
+          "persona_id": "p_detective_sugita",
+          "name": {
+            "en": "Detective Sugita",
+            "ja": "杉田",
+            "ja_romaji": "Sugita"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_sugita.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_okumura",
+      "true_name": {
+        "en": "Detective Okumura",
+        "ja": "奥村",
+        "ja_romaji": "Okumura"
+      },
+      "status": "alive",
+      "base_appearances": 22,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Okumura",
+      "personas": [
+        {
+          "persona_id": "p_detective_okumura",
+          "name": {
+            "en": "Detective Okumura",
+            "ja": "奥村",
+            "ja_romaji": "Okumura"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_okumura.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_hirota",
+      "true_name": {
+        "en": "Detective Hirota",
+        "ja": "広田",
+        "ja_romaji": "Hirota"
+      },
+      "status": "alive",
+      "base_appearances": 16,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Hirota",
+      "personas": [
+        {
+          "persona_id": "p_detective_hirota",
+          "name": {
+            "en": "Detective Hirota",
+            "ja": "広田",
+            "ja_romaji": "Hirota"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_hirota.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_jinpei_matsuda",
+      "true_name": {
+        "en": "Jinpei Matsuda",
+        "ja": "松田 陣平",
+        "ja_romaji": "Matsuda Jinpei",
+        "zh": "松田阵平"
+      },
+      "status": "alive",
+      "base_appearances": 13,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Jinpei_Matsuda",
+      "personas": [
+        {
+          "persona_id": "p_jinpei_matsuda",
+          "name": {
+            "en": "Jinpei Matsuda",
+            "ja": "松田 陣平",
+            "ja_romaji": "Matsuda Jinpei",
+            "zh": "松田阵平"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_jinpei_matsuda.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kenji_hagiwara",
+      "true_name": {
+        "en": "Kenji Hagiwara",
+        "ja": "萩原 研二",
+        "ja_romaji": "Hagiwara Kenji"
+      },
+      "status": "alive",
+      "base_appearances": 9,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kenji_Hagiwara",
+      "personas": [
+        {
+          "persona_id": "p_kenji_hagiwara",
+          "name": {
+            "en": "Kenji Hagiwara",
+            "ja": "萩原 研二",
+            "ja_romaji": "Hagiwara Kenji"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_kenji_hagiwara.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_masayoshi_sato",
+      "true_name": {
+        "en": "Masayoshi Sato",
+        "ja": "佐藤 正義",
+        "ja_romaji": "Satō Masayoshi",
+        "zh": "佐藤正义"
+      },
+      "status": "alive",
+      "base_appearances": 5,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Masayoshi_Sato",
+      "personas": [
+        {
+          "persona_id": "p_masayoshi_sato",
+          "name": {
+            "en": "Masayoshi Sato",
+            "ja": "佐藤 正義",
+            "ja_romaji": "Satō Masayoshi",
+            "zh": "佐藤正义"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_masayoshi_sato.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_wataru_date",
+      "true_name": {
+        "en": "Wataru Date",
+        "ja": "伊達 航",
+        "ja_romaji": "Date Wataru"
+      },
+      "status": "alive",
+      "base_appearances": 10,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Wataru_Date",
+      "personas": [
+        {
+          "persona_id": "p_wataru_date",
+          "name": {
+            "en": "Wataru Date",
+            "ja": "伊達 航",
+            "ja_romaji": "Date Wataru"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_wataru_date.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_superintendent_general_hakuba",
+      "true_name": {
+        "en": "Superintendent General Hakuba",
+        "ja": "白馬",
+        "ja_romaji": "Hakuba"
+      },
+      "status": "alive",
+      "base_appearances": 1,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Superintendent_General_Hakuba",
+      "personas": [
+        {
+          "persona_id": "p_superintendent_general_hakuba",
+          "name": {
+            "en": "Superintendent General Hakuba",
+            "ja": "白馬",
+            "ja_romaji": "Hakuba"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_superintendent_general_hakuba.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_inspector_yuminaga",
+      "true_name": {
+        "en": "Inspector Yuminaga",
+        "ja": "弓長",
+        "ja_romaji": "Yuminaga"
+      },
+      "status": "alive",
+      "base_appearances": 13,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Inspector_Yuminaga",
+      "personas": [
+        {
+          "persona_id": "p_inspector_yuminaga",
+          "name": {
+            "en": "Inspector Yuminaga",
+            "ja": "弓長",
+            "ja_romaji": "Yuminaga"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_inspector_yuminaga.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_inspector_momose",
+      "true_name": {
+        "en": "Inspector Momose",
+        "ja": "Momose",
+        "ja_romaji": "百瀬 ,Momose?"
+      },
+      "status": "alive",
+      "base_appearances": 3,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Inspector_Momose",
+      "personas": [
+        {
+          "persona_id": "p_inspector_momose",
+          "name": {
+            "en": "Inspector Momose",
+            "ja": "Momose",
+            "ja_romaji": "百瀬 ,Momose?"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_inspector_momose.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yuya_kazami",
+      "true_name": {
+        "en": "Yuya Kazami",
+        "ja": "風見 裕也",
+        "ja_romaji": "Kazami Yūya"
+      },
+      "status": "alive",
+      "base_appearances": 7,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yuya_Kazami",
+      "personas": [
+        {
+          "persona_id": "p_yuya_kazami",
+          "name": {
+            "en": "Yuya Kazami",
+            "ja": "風見 裕也",
+            "ja_romaji": "Kazami Yūya"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_yuya_kazami.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_terashima",
+      "true_name": {
+        "en": "Detective Terashima",
+        "ja": "寺島",
+        "ja_romaji": "Terashima"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Terashima",
+      "personas": [
+        {
+          "persona_id": "p_detective_terashima",
+          "name": {
+            "en": "Detective Terashima",
+            "ja": "寺島",
+            "ja_romaji": "Terashima"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_terashima.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_kojima",
+      "true_name": {
+        "en": "Detective Kojima",
+        "ja": "小島",
+        "ja_romaji": "Kojima"
+      },
+      "status": "alive",
+      "base_appearances": 19,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Kojima",
+      "personas": [
+        {
+          "persona_id": "p_detective_kojima",
+          "name": {
+            "en": "Detective Kojima",
+            "ja": "小島",
+            "ja_romaji": "Kojima"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_kojima.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_miyazaki",
+      "true_name": {
+        "en": "Detective Miyazaki",
+        "ja": "宮崎",
+        "ja_romaji": "Miyazaki"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Miyazaki",
+      "personas": [
+        {
+          "persona_id": "p_detective_miyazaki",
+          "name": {
+            "en": "Detective Miyazaki",
+            "ja": "宮崎",
+            "ja_romaji": "Miyazaki"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_miyazaki.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_tomokawa",
+      "true_name": {
+        "en": "Detective Tomokawa",
+        "ja": "友川",
+        "ja_romaji": "Tomokawa"
+      },
+      "status": "alive",
+      "base_appearances": 1,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Tomokawa",
+      "personas": [
+        {
+          "persona_id": "p_detective_tomokawa",
+          "name": {
+            "en": "Detective Tomokawa",
+            "ja": "友川",
+            "ja_romaji": "Tomokawa"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_tomokawa.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_yama",
+      "true_name": {
+        "en": "Detective Yama",
+        "ja": "山",
+        "ja_romaji": "Yama"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Yama",
+      "personas": [
+        {
+          "persona_id": "p_detective_yama",
+          "name": {
+            "en": "Detective Yama",
+            "ja": "山",
+            "ja_romaji": "Yama"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_yama.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_inspector_yuminaga_s_assistant",
+      "true_name": {
+        "en": "Inspector Yuminaga's assistant",
+        "ja": "弓長警部の副",
+        "ja_romaji": "Yuminaga Keibu no Fuku"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Inspector_Yuminaga's_assistant",
+      "personas": [
+        {
+          "persona_id": "p_inspector_yuminaga_s_assistant",
+          "name": {
+            "en": "Inspector Yuminaga's assistant",
+            "ja": "弓長警部の副",
+            "ja_romaji": "Yuminaga Keibu no Fuku"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_inspector_yuminaga_s_assistant.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_heizo_hattori",
+      "true_name": {
+        "en": "Heizo Hattori",
+        "ja": "服部 平蔵",
+        "ja_romaji": "Hattori Heizō"
+      },
+      "status": "alive",
+      "base_appearances": 10,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Heizo_Hattori",
+      "personas": [
+        {
+          "persona_id": "p_heizo_hattori",
+          "name": {
+            "en": "Heizo Hattori",
+            "ja": "服部 平蔵",
+            "ja_romaji": "Hattori Heizō"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_heizo_hattori.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ginshiro_toyama",
+      "true_name": {
+        "en": "Ginshiro Toyama",
+        "ja": "遠山 銀司郎  (Tōyama Ginshirō)[1]",
+        "zh": "远山银司郎"
+      },
+      "status": "alive",
+      "base_appearances": 6,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ginshiro_Toyama",
+      "personas": [
+        {
+          "persona_id": "p_ginshiro_toyama",
+          "name": {
+            "en": "Ginshiro Toyama",
+            "ja": "遠山 銀司郎  (Tōyama Ginshirō)[1]",
+            "zh": "远山银司郎"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_ginshiro_toyama.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_goro_otaki",
+      "true_name": {
+        "en": "Goro Otaki",
+        "ja": "大滝 悟郎",
+        "ja_romaji": "Ōtaki Gorō",
+        "zh": "大泷悟郎"
+      },
+      "status": "alive",
+      "base_appearances": 19,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Goro_Otaki",
+      "personas": [
+        {
+          "persona_id": "p_goro_otaki",
+          "name": {
+            "en": "Goro Otaki",
+            "ja": "大滝 悟郎",
+            "ja_romaji": "Ōtaki Gorō",
+            "zh": "大泷悟郎"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_goro_otaki.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kansuke_yamato",
+      "true_name": {
+        "en": "Kansuke Yamato",
+        "ja": "大和 敢助",
+        "ja_romaji": "Yamato Kansuke"
+      },
+      "status": "alive",
+      "base_appearances": 21,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kansuke_Yamato",
+      "personas": [
+        {
+          "persona_id": "p_kansuke_yamato",
+          "name": {
+            "en": "Kansuke Yamato",
+            "ja": "大和 敢助",
+            "ja_romaji": "Yamato Kansuke"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_kansuke_yamato.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yui_uehara",
+      "true_name": {
+        "en": "Yui Uehara",
+        "ja": "上原 由衣",
+        "ja_romaji": "Uehara Yui"
+      },
+      "status": "alive",
+      "base_appearances": 22,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yui_Uehara",
+      "personas": [
+        {
+          "persona_id": "p_yui_uehara",
+          "name": {
+            "en": "Yui Uehara",
+            "ja": "上原 由衣",
+            "ja_romaji": "Uehara Yui"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_yui_uehara.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_taka_aki_morofushi",
+      "true_name": {
+        "en": "Taka'aki Morofushi",
+        "ja": "諸伏 高明",
+        "ja_romaji": "Morofushi Taka'aki",
+        "zh": "诸伏高明"
+      },
+      "status": "alive",
+      "base_appearances": 19,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Taka'aki_Morofushi",
+      "personas": [
+        {
+          "persona_id": "p_taka_aki_morofushi",
+          "name": {
+            "en": "Taka'aki Morofushi",
+            "ja": "諸伏 高明",
+            "ja_romaji": "Morofushi Taka'aki",
+            "zh": "诸伏高明"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_taka_aki_morofushi.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_jugo_yokomizo",
+      "true_name": {
+        "en": "Jugo Yokomizo",
+        "ja": "横溝 重悟",
+        "ja_romaji": "Yokomizo Jūgo"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Jugo_Yokomizo",
+      "personas": [
+        {
+          "persona_id": "p_jugo_yokomizo",
+          "name": {
+            "en": "Jugo Yokomizo",
+            "ja": "横溝 重悟",
+            "ja_romaji": "Yokomizo Jūgo"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_jugo_yokomizo.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_chihaya_hagiwara",
+      "true_name": {
+        "en": "Chihaya Hagiwara",
+        "ja": "萩原 千速",
+        "ja_romaji": "Hagiwara Chihaya"
+      },
+      "status": "alive",
+      "base_appearances": 7,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Chihaya_Hagiwara",
+      "personas": [
+        {
+          "persona_id": "p_chihaya_hagiwara",
+          "name": {
+            "en": "Chihaya Hagiwara",
+            "ja": "萩原 千速",
+            "ja_romaji": "Hagiwara Chihaya"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_chihaya_hagiwara.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kyohei_nishimura",
+      "true_name": {
+        "en": "Kyohei Nishimura",
+        "ja": "西村 京兵",
+        "ja_romaji": "Nishimura Kyōhei"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kyohei_Nishimura",
+      "personas": [
+        {
+          "persona_id": "p_kyohei_nishimura",
+          "name": {
+            "en": "Kyohei Nishimura",
+            "ja": "西村 京兵",
+            "ja_romaji": "Nishimura Kyōhei"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_kyohei_nishimura.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_tamura",
+      "true_name": {
+        "en": "Detective Tamura",
+        "ja": "田村",
+        "ja_romaji": "Tamura"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Tamura",
+      "personas": [
+        {
+          "persona_id": "p_detective_tamura",
+          "name": {
+            "en": "Detective Tamura",
+            "ja": "田村",
+            "ja_romaji": "Tamura"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_tamura.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_fumimaro_ayanokoji",
+      "true_name": {
+        "en": "Fumimaro Ayanokoji",
+        "ja": "綾小路 文麿",
+        "ja_romaji": "Ayanokōji Fumimaro"
+      },
+      "status": "alive",
+      "base_appearances": 13,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Fumimaro_Ayanokoji",
+      "personas": [
+        {
+          "persona_id": "p_fumimaro_ayanokoji",
+          "name": {
+            "en": "Fumimaro Ayanokoji",
+            "ja": "綾小路 文麿",
+            "ja_romaji": "Ayanokōji Fumimaro"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_fumimaro_ayanokoji.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_kurumazaki",
+      "true_name": {
+        "en": "Detective Kurumazaki",
+        "ja": "車折",
+        "ja_romaji": "Kurumazaki"
+      },
+      "status": "alive",
+      "base_appearances": 1,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Kurumazaki",
+      "personas": [
+        {
+          "persona_id": "p_detective_kurumazaki",
+          "name": {
+            "en": "Detective Kurumazaki",
+            "ja": "車折",
+            "ja_romaji": "Kurumazaki"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_kurumazaki.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_sango_yokomizo",
+      "true_name": {
+        "en": "Sango Yokomizo",
+        "ja": "横溝 参悟",
+        "ja_romaji": "Yokomizo Sango",
+        "zh": "横沟参悟"
+      },
+      "status": "alive",
+      "base_appearances": 46,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Sango_Yokomizo",
+      "personas": [
+        {
+          "persona_id": "p_sango_yokomizo",
+          "name": {
+            "en": "Sango Yokomizo",
+            "ja": "横溝 参悟",
+            "ja_romaji": "Yokomizo Sango",
+            "zh": "横沟参悟"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_sango_yokomizo.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tomonori_ogawara",
+      "true_name": {
+        "en": "Tomonori Ogawara",
+        "ja": "大河原 倫徳",
+        "ja_romaji": "Ōgawara Tomonori"
+      },
+      "status": "alive",
+      "base_appearances": 1,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tomonori_Ogawara",
+      "personas": [
+        {
+          "persona_id": "p_tomonori_ogawara",
+          "name": {
+            "en": "Tomonori Ogawara",
+            "ja": "大河原 倫徳",
+            "ja_romaji": "Ōgawara Tomonori"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_tomonori_ogawara.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_detective_tsukumo",
+      "true_name": {
+        "en": "Detective Tsukumo",
+        "ja": "九十九",
+        "ja_romaji": "Tsukumo"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Detective_Tsukumo",
+      "personas": [
+        {
+          "persona_id": "p_detective_tsukumo",
+          "name": {
+            "en": "Detective Tsukumo",
+            "ja": "九十九",
+            "ja_romaji": "Tsukumo"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_detective_tsukumo.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_misao_yamamura",
+      "true_name": {
+        "en": "Misao Yamamura",
+        "ja": "山村 ミサオ",
+        "ja_romaji": "Yamamura Misao",
+        "zh": "山村操"
+      },
+      "status": "alive",
+      "base_appearances": 47,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Misao_Yamamura",
+      "personas": [
+        {
+          "persona_id": "p_misao_yamamura",
+          "name": {
+            "en": "Misao Yamamura",
+            "ja": "山村 ミサオ",
+            "ja_romaji": "Yamamura Misao",
+            "zh": "山村操"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_misao_yamamura.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tsuyoshi_shikatsuno",
+      "true_name": {
+        "en": "Tsuyoshi Shikatsuno"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tsuyoshi_Shikatsuno",
+      "personas": [
+        {
+          "persona_id": "p_tsuyoshi_shikatsuno",
+          "name": {
+            "en": "Tsuyoshi Shikatsuno"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_tsuyoshi_shikatsuno.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tamekichi_matsushiro",
+      "true_name": {
+        "en": "Tamekichi Matsushiro",
+        "ja": "松代 為吉",
+        "ja_romaji": "Matsushiro Tamekichi"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tamekichi_Matsushiro",
+      "personas": [
+        {
+          "persona_id": "p_tamekichi_matsushiro",
+          "name": {
+            "en": "Tamekichi Matsushiro",
+            "ja": "松代 為吉",
+            "ja_romaji": "Matsushiro Tamekichi"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_tamekichi_matsushiro.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_shoji_terabayashi",
+      "true_name": {
+        "en": "Shoji Terabayashi",
+        "ja": "寺林 省二",
+        "ja_romaji": "Terabayashi Shōji"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shoji_Terabayashi",
+      "personas": [
+        {
+          "persona_id": "p_shoji_terabayashi",
+          "name": {
+            "en": "Shoji Terabayashi",
+            "ja": "寺林 省二",
+            "ja_romaji": "Terabayashi Shōji"
+          },
+          "faction": "RED",
+          "sub_faction": "TOKYO_MPD",
+          "avatar": "avatars/p_shoji_terabayashi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_james_black",
+      "true_name": {
+        "en": "James Black",
+        "ja": "ジェイムズ・ブラック",
+        "ja_romaji": "Jeimuzu Burakku",
+        "zh": "布莱克詹姆斯"
+      },
+      "status": "alive",
+      "base_appearances": 31,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/James_Black",
+      "personas": [
+        {
+          "persona_id": "p_james_black",
+          "name": {
+            "en": "James Black",
+            "ja": "ジェイムズ・ブラック",
+            "ja_romaji": "Jeimuzu Burakku",
+            "zh": "布莱克詹姆斯"
+          },
+          "faction": "RED",
+          "sub_faction": "FBI",
+          "avatar": "avatars/p_james_black.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_andre_camel",
+      "true_name": {
+        "en": "Andre Camel",
+        "ja": "アンドレ・キャメル",
+        "ja_romaji": "Andore Kyameru"
+      },
+      "status": "alive",
+      "base_appearances": 30,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Andre_Camel",
+      "personas": [
+        {
+          "persona_id": "p_andre_camel",
+          "name": {
+            "en": "Andre Camel",
+            "ja": "アンドレ・キャメル",
+            "ja_romaji": "Andore Kyameru"
+          },
+          "faction": "RED",
+          "sub_faction": "FBI",
+          "avatar": "avatars/p_andre_camel.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_amanda_hughes",
+      "true_name": {
+        "en": "Amanda Hughes",
+        "ja": "アマンダ・ヒューズ",
+        "ja_romaji": "Amanda Hyūzu"
+      },
+      "status": "alive",
+      "base_appearances": 6,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Amanda_Hughes",
+      "personas": [
+        {
+          "persona_id": "p_amanda_hughes",
+          "name": {
+            "en": "Amanda Hughes",
+            "ja": "アマンダ・ヒューズ",
+            "ja_romaji": "Amanda Hyūzu"
+          },
+          "faction": "RED",
+          "sub_faction": "FBI",
+          "avatar": "avatars/p_amanda_hughes.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tsutomu_akai",
+      "true_name": {
+        "en": "Tsutomu Akai",
+        "ja": "赤井 務武",
+        "ja_romaji": "Akai Tsutomu"
+      },
+      "status": "alive",
+      "base_appearances": 7,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tsutomu_Akai",
+      "personas": [
+        {
+          "persona_id": "p_tsutomu_akai",
+          "name": {
+            "en": "Tsutomu Akai",
+            "ja": "赤井 務武",
+            "ja_romaji": "Akai Tsutomu"
+          },
+          "faction": "RED",
+          "sub_faction": "FBI",
+          "avatar": "avatars/p_tsutomu_akai.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kaito_kuroba",
+      "true_name": {
+        "en": "Kaito Kuroba",
+        "ja": "黒羽 快斗",
+        "ja_romaji": "Kuroba Kaito",
+        "zh": "黑羽快斗"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kaito_Kuroba",
+      "personas": [
+        {
+          "persona_id": "p_kaito_kuroba",
+          "name": {
+            "en": "Kaito Kuroba",
+            "ja": "黒羽 快斗",
+            "ja_romaji": "Kuroba Kaito",
+            "zh": "黑羽快斗"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_kaito_kuroba.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ayumi_yoshida",
+      "true_name": {
+        "en": "Ayumi Yoshida",
+        "ja": "吉田 歩美",
+        "ja_romaji": "Yoshida Ayumi",
+        "zh": "吉田步美"
+      },
+      "status": "alive",
+      "base_appearances": 445,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ayumi_Yoshida",
+      "personas": [
+        {
+          "persona_id": "p_ayumi_yoshida",
+          "name": {
+            "en": "Ayumi Yoshida",
+            "ja": "吉田 歩美",
+            "ja_romaji": "Yoshida Ayumi",
+            "zh": "吉田步美"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_ayumi_yoshida.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_mitsuhiko_tsuburaya",
+      "true_name": {
+        "en": "Mitsuhiko Tsuburaya",
+        "ja": "円谷 光彦",
+        "ja_romaji": "Tsuburaya Mitsuhiko",
+        "zh": "圆谷光彦"
+      },
+      "status": "alive",
+      "base_appearances": 438,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Mitsuhiko_Tsuburaya",
+      "personas": [
+        {
+          "persona_id": "p_mitsuhiko_tsuburaya",
+          "name": {
+            "en": "Mitsuhiko Tsuburaya",
+            "ja": "円谷 光彦",
+            "ja_romaji": "Tsuburaya Mitsuhiko",
+            "zh": "圆谷光彦"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_mitsuhiko_tsuburaya.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_genta_kojima",
+      "true_name": {
+        "en": "Genta Kojima",
+        "ja": "小嶋 元太",
+        "ja_romaji": "Kojima Genta",
+        "zh": "小岛元太"
+      },
+      "status": "alive",
+      "base_appearances": 439,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Genta_Kojima",
+      "personas": [
+        {
+          "persona_id": "p_genta_kojima",
+          "name": {
+            "en": "Genta Kojima",
+            "ja": "小嶋 元太",
+            "ja_romaji": "Kojima Genta",
+            "zh": "小岛元太"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_genta_kojima.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_sonoko_suzuki",
+      "true_name": {
+        "en": "Sonoko Suzuki",
+        "ja": "鈴木 園子",
+        "ja_romaji": "Suzuki Sonoko",
+        "zh": "铃木园子"
+      },
+      "status": "alive",
+      "base_appearances": 224,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Sonoko_Suzuki",
+      "personas": [
+        {
+          "persona_id": "p_sonoko_suzuki",
+          "name": {
+            "en": "Sonoko Suzuki",
+            "ja": "鈴木 園子",
+            "ja_romaji": "Suzuki Sonoko",
+            "zh": "铃木园子"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_sonoko_suzuki.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_eri_kisaki",
+      "true_name": {
+        "en": "Eri Kisaki",
+        "ja": "妃 英理",
+        "ja_romaji": "Kisaki Eri",
+        "zh": "妃英理"
+      },
+      "status": "alive",
+      "base_appearances": 64,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Eri_Kisaki",
+      "personas": [
+        {
+          "persona_id": "p_eri_kisaki",
+          "name": {
+            "en": "Eri Kisaki",
+            "ja": "妃 英理",
+            "ja_romaji": "Kisaki Eri",
+            "zh": "妃英理"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_eri_kisaki.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yukiko_kudo",
+      "true_name": {
+        "en": "Yukiko Kudo",
+        "ja": "工藤 有希子",
+        "ja_romaji": "Kudō Yukiko",
+        "zh": "工藤有希子"
+      },
+      "status": "alive",
+      "base_appearances": 57,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yukiko_Kudo",
+      "personas": [
+        {
+          "persona_id": "p_yukiko_kudo",
+          "name": {
+            "en": "Yukiko Kudo",
+            "ja": "工藤 有希子",
+            "ja_romaji": "Kudō Yukiko",
+            "zh": "工藤有希子"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_yukiko_kudo.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kazuha_toyama",
+      "true_name": {
+        "en": "Kazuha Toyama",
+        "ja": "遠山 和葉",
+        "ja_romaji": "Tōyama Kazuha",
+        "zh": "远山和叶"
+      },
+      "status": "alive",
+      "base_appearances": 94,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kazuha_Toyama",
+      "personas": [
+        {
+          "persona_id": "p_kazuha_toyama",
+          "name": {
+            "en": "Kazuha Toyama",
+            "ja": "遠山 和葉",
+            "ja_romaji": "Tōyama Kazuha",
+            "zh": "远山和叶"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_kazuha_toyama.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_masumi_sera",
+      "true_name": {
+        "en": "Masumi Sera",
+        "ja": "世良 真純",
+        "ja_romaji": "Sera Masumi",
+        "zh": "世良真纯"
+      },
+      "status": "alive",
+      "base_appearances": 75,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Masumi_Sera",
+      "personas": [
+        {
+          "persona_id": "p_masumi_sera",
+          "name": {
+            "en": "Masumi Sera",
+            "ja": "世良 真純",
+            "ja_romaji": "Sera Masumi",
+            "zh": "世良真纯"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_masumi_sera.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_rumi_wakasa",
+      "true_name": {
+        "en": "Rumi Wakasa",
+        "ja": "若狭 留美",
+        "ja_romaji": "Wakasa Rumi"
+      },
+      "status": "alive",
+      "base_appearances": 26,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Rumi_Wakasa",
+      "personas": [
+        {
+          "persona_id": "p_rumi_wakasa",
+          "name": {
+            "en": "Rumi Wakasa",
+            "ja": "若狭 留美",
+            "ja_romaji": "Wakasa Rumi"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_rumi_wakasa.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_makoto_kyogoku",
+      "true_name": {
+        "en": "Makoto Kyogoku",
+        "ja": "京極 真",
+        "ja_romaji": "Kyōgoku Makoto",
+        "zh": "京极真"
+      },
+      "status": "alive",
+      "base_appearances": 33,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Makoto_Kyogoku",
+      "personas": [
+        {
+          "persona_id": "p_makoto_kyogoku",
+          "name": {
+            "en": "Makoto Kyogoku",
+            "ja": "京極 真",
+            "ja_romaji": "Kyōgoku Makoto",
+            "zh": "京极真"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_makoto_kyogoku.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_yoko_okino",
+      "true_name": {
+        "en": "Yoko Okino",
+        "ja": "沖野 ヨーコ",
+        "ja_romaji": "Okino Yōko"
+      },
+      "status": "alive",
+      "base_appearances": 59,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Yoko_Okino",
+      "personas": [
+        {
+          "persona_id": "p_yoko_okino",
+          "name": {
+            "en": "Yoko Okino",
+            "ja": "沖野 ヨーコ",
+            "ja_romaji": "Okino Yōko"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_yoko_okino.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_sumiko_kobayashi",
+      "true_name": {
+        "en": "Sumiko Kobayashi",
+        "ja": "小林 澄子",
+        "ja_romaji": "Kobayashi Sumiko"
+      },
+      "status": "alive",
+      "base_appearances": 53,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Sumiko_Kobayashi",
+      "personas": [
+        {
+          "persona_id": "p_sumiko_kobayashi",
+          "name": {
+            "en": "Sumiko Kobayashi",
+            "ja": "小林 澄子",
+            "ja_romaji": "Kobayashi Sumiko"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_sumiko_kobayashi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_jirokichi_suzuki",
+      "true_name": {
+        "en": "Jirokichi Suzuki",
+        "ja": "鈴木 次郎吉",
+        "ja_romaji": "Suzuki Jirokichi"
+      },
+      "status": "alive",
+      "base_appearances": 28,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Jirokichi_Suzuki",
+      "personas": [
+        {
+          "persona_id": "p_jirokichi_suzuki",
+          "name": {
+            "en": "Jirokichi Suzuki",
+            "ja": "鈴木 次郎吉",
+            "ja_romaji": "Suzuki Jirokichi"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_jirokichi_suzuki.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_azusa_enomoto",
+      "true_name": {
+        "en": "Azusa Enomoto",
+        "ja": "榎本 梓",
+        "ja_romaji": "Enomoto Azusa"
+      },
+      "status": "alive",
+      "base_appearances": 34,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Azusa_Enomoto",
+      "personas": [
+        {
+          "persona_id": "p_azusa_enomoto",
+          "name": {
+            "en": "Azusa Enomoto",
+            "ja": "榎本 梓",
+            "ja_romaji": "Enomoto Azusa"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_azusa_enomoto.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_shukichi_haneda",
+      "true_name": {
+        "en": "Shukichi Haneda",
+        "ja": "羽田 秀𠮷",
+        "ja_romaji": "Haneda Shūkichi"
+      },
+      "status": "alive",
+      "base_appearances": 23,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shukichi_Haneda",
+      "personas": [
+        {
+          "persona_id": "p_shukichi_haneda",
+          "name": {
+            "en": "Shukichi Haneda",
+            "ja": "羽田 秀𠮷",
+            "ja_romaji": "Haneda Shūkichi"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_shukichi_haneda.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_momiji_ooka",
+      "true_name": {
+        "en": "Momiji Ooka",
+        "ja": "大岡 紅葉",
+        "ja_romaji": "Ōoka Momiji"
+      },
+      "status": "alive",
+      "base_appearances": 15,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Momiji_Ooka",
+      "personas": [
+        {
+          "persona_id": "p_momiji_ooka",
+          "name": {
+            "en": "Momiji Ooka",
+            "ja": "大岡 紅葉",
+            "ja_romaji": "Ōoka Momiji"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_momiji_ooka.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_muga_iori",
+      "true_name": {
+        "en": "Muga Iori",
+        "ja": "伊織 無我",
+        "ja_romaji": "Iori Muga"
+      },
+      "status": "alive",
+      "base_appearances": 14,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Muga_Iori",
+      "personas": [
+        {
+          "persona_id": "p_muga_iori",
+          "name": {
+            "en": "Muga Iori",
+            "ja": "伊織 無我",
+            "ja_romaji": "Iori Muga"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_muga_iori.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tomoaki_araide",
+      "true_name": {
+        "en": "Tomoaki Araide",
+        "ja": "新出 智明",
+        "ja_romaji": "Araide Tomoaki",
+        "zh": "新出智明"
+      },
+      "status": "alive",
+      "base_appearances": 17,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tomoaki_Araide",
+      "personas": [
+        {
+          "persona_id": "p_tomoaki_araide",
+          "name": {
+            "en": "Tomoaki Araide",
+            "ja": "新出 智明",
+            "ja_romaji": "Araide Tomoaki",
+            "zh": "新出智明"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_tomoaki_araide.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_sakurako_yonehara",
+      "true_name": {
+        "en": "Sakurako Yonehara",
+        "ja": "米原 桜子",
+        "ja_romaji": "Yonehara Sakurako"
+      },
+      "status": "alive",
+      "base_appearances": 8,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Sakurako_Yonehara",
+      "personas": [
+        {
+          "persona_id": "p_sakurako_yonehara",
+          "name": {
+            "en": "Sakurako Yonehara",
+            "ja": "米原 桜子",
+            "ja_romaji": "Yonehara Sakurako"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_sakurako_yonehara.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_shizuka_hattori",
+      "true_name": {
+        "en": "Shizuka Hattori",
+        "ja": "服部 静華",
+        "ja_romaji": "Hattori Shizuka"
+      },
+      "status": "alive",
+      "base_appearances": 5,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Shizuka_Hattori",
+      "personas": [
+        {
+          "persona_id": "p_shizuka_hattori",
+          "name": {
+            "en": "Shizuka Hattori",
+            "ja": "服部 静華",
+            "ja_romaji": "Hattori Shizuka"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_shizuka_hattori.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_mary_sera",
+      "true_name": {
+        "en": "Mary Sera",
+        "ja": "メアリー 世良",
+        "ja_romaji": "Mearī Sera"
+      },
+      "status": "alive",
+      "base_appearances": 27,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Mary_Sera",
+      "personas": [
+        {
+          "persona_id": "p_mary_sera",
+          "name": {
+            "en": "Mary Sera",
+            "ja": "メアリー 世良",
+            "ja_romaji": "Mearī Sera"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_mary_sera.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_sharon_vineyard",
+      "true_name": {
+        "en": "Sharon Vineyard",
+        "ja": "ベルモット",
+        "ja_romaji": "Berumotto",
+        "zh": "温亚德克莉丝"
+      },
+      "status": "alive",
+      "base_appearances": 78,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Sharon_Vineyard",
+      "personas": [
+        {
+          "persona_id": "p_sharon_vineyard",
+          "name": {
+            "en": "Sharon Vineyard",
+            "ja": "ベルモット",
+            "ja_romaji": "Berumotto",
+            "zh": "温亚德克莉丝"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_sharon_vineyard.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_elena_miyano",
+      "true_name": {
+        "en": "Elena Miyano",
+        "ja": "宮野 エレーナ",
+        "ja_romaji": "Miyano Erēna"
+      },
+      "status": "alive",
+      "base_appearances": 8,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Elena_Miyano",
+      "personas": [
+        {
+          "persona_id": "p_elena_miyano",
+          "name": {
+            "en": "Elena Miyano",
+            "ja": "宮野 エレーナ",
+            "ja_romaji": "Miyano Erēna"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_elena_miyano.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kohji_haneda",
+      "true_name": {
+        "en": "Kohji Haneda",
+        "ja": "羽田 浩司",
+        "ja_romaji": "Haneda Kōji"
+      },
+      "status": "alive",
+      "base_appearances": 14,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kohji_Haneda",
+      "personas": [
+        {
+          "persona_id": "p_kohji_haneda",
+          "name": {
+            "en": "Kohji Haneda",
+            "ja": "羽田 浩司",
+            "ja_romaji": "Haneda Kōji"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_kohji_haneda.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_mysterious_old_man_with_bird",
+      "true_name": {
+        "en": "Mysterious Old Man with Bird",
+        "ja": "鷹を持つ老人",
+        "ja_romaji": "Taka o motsu Rōjin"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Mysterious_Old_Man_with_Bird",
+      "personas": [
+        {
+          "persona_id": "p_mysterious_old_man_with_bird",
+          "name": {
+            "en": "Mysterious Old Man with Bird",
+            "ja": "鷹を持つ老人",
+            "ja_romaji": "Taka o motsu Rōjin"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_mysterious_old_man_with_bird.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_mysterious_old_man",
+      "true_name": {
+        "en": "Mysterious Old Man",
+        "ja": "謎の老人  (Nazo no Rōjin)[1]"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Mysterious_Old_Man",
+      "personas": [
+        {
+          "persona_id": "p_mysterious_old_man",
+          "name": {
+            "en": "Mysterious Old Man",
+            "ja": "謎の老人  (Nazo no Rōjin)[1]"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_mysterious_old_man.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_mysterious_man_with_sunglasses",
+      "true_name": {
+        "en": "Mysterious man with sunglasses",
+        "ja": "運転手  (Untenshu)[1]"
+      },
+      "status": "alive",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Mysterious_man_with_sunglasses",
+      "personas": [
+        {
+          "persona_id": "p_mysterious_man_with_sunglasses",
+          "name": {
+            "en": "Mysterious man with sunglasses",
+            "ja": "運転手  (Untenshu)[1]"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_mysterious_man_with_sunglasses.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_mysterious_old_woman",
+      "true_name": {
+        "en": "Mysterious Old Woman",
+        "ja": "老人",
+        "ja_romaji": "Rōjin"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Mysterious_Old_Woman",
+      "personas": [
+        {
+          "persona_id": "p_mysterious_old_woman",
+          "name": {
+            "en": "Mysterious Old Woman",
+            "ja": "老人",
+            "ja_romaji": "Rōjin"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_mysterious_old_woman.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_ryusuke_higo",
+      "true_name": {
+        "en": "Ryusuke Higo",
+        "ja": "比護 隆佑",
+        "ja_romaji": "Higo Ryūsuke"
+      },
+      "status": "alive",
+      "base_appearances": 15,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Ryusuke_Higo",
+      "personas": [
+        {
+          "persona_id": "p_ryusuke_higo",
+          "name": {
+            "en": "Ryusuke Higo",
+            "ja": "比護 隆佑",
+            "ja_romaji": "Higo Ryūsuke"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_ryusuke_higo.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_hideo_akagi",
+      "true_name": {
+        "en": "Hideo Akagi",
+        "ja": "赤木 英雄",
+        "ja_romaji": "Akagi Hideo"
+      },
+      "status": "alive",
+      "base_appearances": 13,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Hideo_Akagi",
+      "personas": [
+        {
+          "persona_id": "p_hideo_akagi",
+          "name": {
+            "en": "Hideo Akagi",
+            "ja": "赤木 英雄",
+            "ja_romaji": "Akagi Hideo"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_hideo_akagi.png",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_aoko_nakamori",
+      "true_name": {
+        "en": "Aoko Nakamori",
+        "ja": "中森 青子",
+        "ja_romaji": "Nakamori Aoko",
+        "zh": "中森青子"
+      },
+      "status": "alive",
+      "base_appearances": 24,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Aoko_Nakamori",
+      "personas": [
+        {
+          "persona_id": "p_aoko_nakamori",
+          "name": {
+            "en": "Aoko Nakamori",
+            "ja": "中森 青子",
+            "ja_romaji": "Nakamori Aoko",
+            "zh": "中森青子"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_aoko_nakamori.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_chikage_kuroba",
+      "true_name": {
+        "en": "Chikage Kuroba",
+        "ja": "黒羽 千影",
+        "ja_romaji": "Kuroba Chikage"
+      },
+      "status": "alive",
+      "base_appearances": 1,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Chikage_Kuroba",
+      "personas": [
+        {
+          "persona_id": "p_chikage_kuroba",
+          "name": {
+            "en": "Chikage Kuroba",
+            "ja": "黒羽 千影",
+            "ja_romaji": "Kuroba Chikage"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_chikage_kuroba.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_midoriko_nakamori",
+      "true_name": {
+        "en": "Midoriko Nakamori",
+        "ja": "中森 碧子",
+        "ja_romaji": "Nakamori Midoriko"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Midoriko_Nakamori",
+      "personas": [
+        {
+          "persona_id": "p_midoriko_nakamori",
+          "name": {
+            "en": "Midoriko Nakamori",
+            "ja": "中森 碧子",
+            "ja_romaji": "Nakamori Midoriko"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_midoriko_nakamori.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_konosuke_jii",
+      "true_name": {
+        "en": "Konosuke Jii",
+        "ja": "寺井 黄之助",
+        "ja_romaji": "Jii Kōnosuke"
+      },
+      "status": "alive",
+      "base_appearances": 8,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Konosuke_Jii",
+      "personas": [
+        {
+          "persona_id": "p_konosuke_jii",
+          "name": {
+            "en": "Konosuke Jii",
+            "ja": "寺井 黄之助",
+            "ja_romaji": "Jii Kōnosuke"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_konosuke_jii.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_kaitou_corbeau",
+      "true_name": {
+        "en": "Kaitou Corbeau",
+        "ja": "怪盗コルボー",
+        "ja_romaji": "Kaitō Korubō"
+      },
+      "status": "alive",
+      "base_appearances": 0,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Kaitou_Corbeau",
+      "personas": [
+        {
+          "persona_id": "p_kaitou_corbeau",
+          "name": {
+            "en": "Kaitou Corbeau",
+            "ja": "怪盗コルボー",
+            "ja_romaji": "Kaitō Korubō"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_kaitou_corbeau.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_akako_koizumi",
+      "true_name": {
+        "en": "Akako Koizumi",
+        "ja": "小泉 紅子",
+        "ja_romaji": "Koizumi Akako"
+      },
+      "status": "alive",
+      "base_appearances": 1,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Akako_Koizumi",
+      "personas": [
+        {
+          "persona_id": "p_akako_koizumi",
+          "name": {
+            "en": "Akako Koizumi",
+            "ja": "小泉 紅子",
+            "ja_romaji": "Koizumi Akako"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_akako_koizumi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_saguru_hakuba",
+      "true_name": {
+        "en": "Saguru Hakuba",
+        "ja": "白馬 探",
+        "ja_romaji": "Hakuba Saguru"
+      },
+      "status": "alive",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Saguru_Hakuba",
+      "personas": [
+        {
+          "persona_id": "p_saguru_hakuba",
+          "name": {
+            "en": "Saguru Hakuba",
+            "ja": "白馬 探",
+            "ja_romaji": "Hakuba Saguru"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_saguru_hakuba.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_keiko_momoi",
+      "true_name": {
+        "en": "Keiko Momoi",
+        "ja": "桃井 恵子",
+        "ja_romaji": "Momoi Keiko"
+      },
+      "status": "alive",
+      "base_appearances": 11,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Keiko_Momoi",
+      "personas": [
+        {
+          "persona_id": "p_keiko_momoi",
+          "name": {
+            "en": "Keiko Momoi",
+            "ja": "桃井 恵子",
+            "ja_romaji": "Momoi Keiko"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_keiko_momoi.jpg",
+          "is_default_display": true
+        }
+      ]
+    },
+    {
+      "entity_id": "e_takahiro_sanada",
+      "true_name": {
+        "en": "Takahiro Sanada",
+        "ja": "真田 貴大",
+        "ja_romaji": "Sanada Takahiro"
+      },
+      "status": "alive",
+      "base_appearances": 6,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Takahiro_Sanada",
+      "personas": [
+        {
+          "persona_id": "p_takahiro_sanada",
+          "name": {
+            "en": "Takahiro Sanada",
+            "ja": "真田 貴大",
+            "ja_romaji": "Sanada Takahiro"
+          },
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
+          "avatar": "avatars/p_takahiro_sanada.png",
+          "is_default_display": true
         }
       ]
     }
@@ -1005,6 +4256,1030 @@
       "episodeIndex": 783,
       "chapterIndex": 898,
       "description": "降谷零的公安身份被揭露——绯色篇"
+    },
+    {
+      "id": "evt-auto-e_renya_karasuma",
+      "entity_id": "e_renya_karasuma",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Renya Karasuma first appearance"
+    },
+    {
+      "id": "evt-auto-e_rikumichi_kusuda",
+      "entity_id": "e_rikumichi_kusuda",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Rikumichi Kusuda first appearance"
+    },
+    {
+      "id": "evt-auto-e_ethan_hondou",
+      "entity_id": "e_ethan_hondou",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ethan Hondou first appearance"
+    },
+    {
+      "id": "evt-auto-e_ki_ichiro_numabuchi",
+      "entity_id": "e_ki_ichiro_numabuchi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ki'ichiro Numabuchi first appearance"
+    },
+    {
+      "id": "evt-auto-e_kanenori_wakita",
+      "entity_id": "e_kanenori_wakita",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kanenori Wakita first appearance"
+    },
+    {
+      "id": "evt-auto-e_eisuke_hondou",
+      "entity_id": "e_eisuke_hondou",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Eisuke Hondou first appearance"
+    },
+    {
+      "id": "evt-auto-e_yoshiaki_hara",
+      "entity_id": "e_yoshiaki_hara",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yoshiaki Hara first appearance"
+    },
+    {
+      "id": "evt-auto-e_masaaki_okakura",
+      "entity_id": "e_masaaki_okakura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Masaaki Okakura first appearance"
+    },
+    {
+      "id": "evt-auto-e_kate_lauren",
+      "entity_id": "e_kate_lauren",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kate Lauren first appearance"
+    },
+    {
+      "id": "evt-auto-e_man_in_bar_black_organization",
+      "entity_id": "e_man_in_bar_black_organization",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Man in bar (Black Organization) first appearance"
+    },
+    {
+      "id": "evt-auto-e_yusaku_kudo",
+      "entity_id": "e_yusaku_kudo",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yusaku Kudo first appearance"
+    },
+    {
+      "id": "evt-auto-e_atsushi_miyano",
+      "entity_id": "e_atsushi_miyano",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Atsushi Miyano first appearance"
+    },
+    {
+      "id": "evt-auto-e_hiroshi_agasa",
+      "entity_id": "e_hiroshi_agasa",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Hiroshi Agasa first appearance"
+    },
+    {
+      "id": "evt-auto-e_toichi_kuroba",
+      "entity_id": "e_toichi_kuroba",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Toichi Kuroba first appearance"
+    },
+    {
+      "id": "evt-auto-e_kaitou_kid",
+      "entity_id": "e_kaitou_kid",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kaitou Kid first appearance"
+    },
+    {
+      "id": "evt-auto-e_suguru_itakura",
+      "entity_id": "e_suguru_itakura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Suguru Itakura first appearance"
+    },
+    {
+      "id": "evt-auto-e_pisco",
+      "entity_id": "e_pisco",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Pisco first appearance"
+    },
+    {
+      "id": "evt-auto-e_hiromitsu_morofushi",
+      "entity_id": "e_hiromitsu_morofushi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Hiromitsu Morofushi first appearance"
+    },
+    {
+      "id": "evt-auto-e_riesling",
+      "entity_id": "e_riesling",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Riesling first appearance"
+    },
+    {
+      "id": "evt-auto-e_juzo_megure",
+      "entity_id": "e_juzo_megure",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Juzo Megure first appearance"
+    },
+    {
+      "id": "evt-auto-e_ninzaburo_shiratori",
+      "entity_id": "e_ninzaburo_shiratori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ninzaburo Shiratori first appearance"
+    },
+    {
+      "id": "evt-auto-e_kazunobu_chiba",
+      "entity_id": "e_kazunobu_chiba",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kazunobu Chiba first appearance"
+    },
+    {
+      "id": "evt-auto-e_kiyonaga_matsumoto",
+      "entity_id": "e_kiyonaga_matsumoto",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kiyonaga Matsumoto first appearance"
+    },
+    {
+      "id": "evt-auto-e_hyoue_kuroda",
+      "entity_id": "e_hyoue_kuroda",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Hyoue Kuroda first appearance"
+    },
+    {
+      "id": "evt-auto-e_chosuke_takagi",
+      "entity_id": "e_chosuke_takagi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Chosuke Takagi first appearance"
+    },
+    {
+      "id": "evt-auto-e_manabu_fujimaki",
+      "entity_id": "e_manabu_fujimaki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Manabu Fujimaki first appearance"
+    },
+    {
+      "id": "evt-auto-e_toshiro_odagiri",
+      "entity_id": "e_toshiro_odagiri",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Toshiro Odagiri first appearance"
+    },
+    {
+      "id": "evt-auto-e_tadayoshi_uno",
+      "entity_id": "e_tadayoshi_uno",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Tadayoshi Uno first appearance"
+    },
+    {
+      "id": "evt-auto-e_ginzo_nakamori",
+      "entity_id": "e_ginzo_nakamori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ginzo Nakamori first appearance"
+    },
+    {
+      "id": "evt-auto-e_shintaro_chaki",
+      "entity_id": "e_shintaro_chaki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Shintaro Chaki first appearance"
+    },
+    {
+      "id": "evt-auto-e_yumi_miyamoto",
+      "entity_id": "e_yumi_miyamoto",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yumi Miyamoto first appearance"
+    },
+    {
+      "id": "evt-auto-e_naeko_miike",
+      "entity_id": "e_naeko_miike",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Naeko Miike first appearance"
+    },
+    {
+      "id": "evt-auto-e_officer_numata",
+      "entity_id": "e_officer_numata",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Officer Numata first appearance"
+    },
+    {
+      "id": "evt-auto-e_inspector_hatori",
+      "entity_id": "e_inspector_hatori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Inspector Hatori first appearance"
+    },
+    {
+      "id": "evt-auto-e_hachizo_onizuka",
+      "entity_id": "e_hachizo_onizuka",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Hachizo Onizuka first appearance"
+    },
+    {
+      "id": "evt-auto-e_officer_tome",
+      "entity_id": "e_officer_tome",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Officer Tome first appearance"
+    },
+    {
+      "id": "evt-auto-e_female_forensics_member",
+      "entity_id": "e_female_forensics_member",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Female forensics member first appearance"
+    },
+    {
+      "id": "evt-auto-e_toshio_moroboshi",
+      "entity_id": "e_toshio_moroboshi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Toshio Moroboshi first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_kobayashi",
+      "entity_id": "e_detective_kobayashi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Kobayashi first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_yokoyama",
+      "entity_id": "e_detective_yokoyama",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Yokoyama first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_takikawa",
+      "entity_id": "e_detective_takikawa",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Takikawa first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_nakamura",
+      "entity_id": "e_detective_nakamura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Nakamura first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_fukui",
+      "entity_id": "e_detective_fukui",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Fukui first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_kawanaka",
+      "entity_id": "e_detective_kawanaka",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Kawanaka first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_saitoh",
+      "entity_id": "e_detective_saitoh",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Saitoh first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_horita",
+      "entity_id": "e_detective_horita",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Horita first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_takano",
+      "entity_id": "e_detective_takano",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Takano first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_sogawa",
+      "entity_id": "e_detective_sogawa",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Sogawa first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_sugita",
+      "entity_id": "e_detective_sugita",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Sugita first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_okumura",
+      "entity_id": "e_detective_okumura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Okumura first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_hirota",
+      "entity_id": "e_detective_hirota",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Hirota first appearance"
+    },
+    {
+      "id": "evt-auto-e_jinpei_matsuda",
+      "entity_id": "e_jinpei_matsuda",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Jinpei Matsuda first appearance"
+    },
+    {
+      "id": "evt-auto-e_kenji_hagiwara",
+      "entity_id": "e_kenji_hagiwara",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kenji Hagiwara first appearance"
+    },
+    {
+      "id": "evt-auto-e_masayoshi_sato",
+      "entity_id": "e_masayoshi_sato",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Masayoshi Sato first appearance"
+    },
+    {
+      "id": "evt-auto-e_wataru_date",
+      "entity_id": "e_wataru_date",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Wataru Date first appearance"
+    },
+    {
+      "id": "evt-auto-e_superintendent_general_hakuba",
+      "entity_id": "e_superintendent_general_hakuba",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Superintendent General Hakuba first appearance"
+    },
+    {
+      "id": "evt-auto-e_inspector_yuminaga",
+      "entity_id": "e_inspector_yuminaga",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Inspector Yuminaga first appearance"
+    },
+    {
+      "id": "evt-auto-e_inspector_momose",
+      "entity_id": "e_inspector_momose",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Inspector Momose first appearance"
+    },
+    {
+      "id": "evt-auto-e_yuya_kazami",
+      "entity_id": "e_yuya_kazami",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yuya Kazami first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_terashima",
+      "entity_id": "e_detective_terashima",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Terashima first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_kojima",
+      "entity_id": "e_detective_kojima",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Kojima first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_miyazaki",
+      "entity_id": "e_detective_miyazaki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Miyazaki first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_tomokawa",
+      "entity_id": "e_detective_tomokawa",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Tomokawa first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_yama",
+      "entity_id": "e_detective_yama",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Yama first appearance"
+    },
+    {
+      "id": "evt-auto-e_inspector_yuminaga_s_assistant",
+      "entity_id": "e_inspector_yuminaga_s_assistant",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Inspector Yuminaga's assistant first appearance"
+    },
+    {
+      "id": "evt-auto-e_heizo_hattori",
+      "entity_id": "e_heizo_hattori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Heizo Hattori first appearance"
+    },
+    {
+      "id": "evt-auto-e_ginshiro_toyama",
+      "entity_id": "e_ginshiro_toyama",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ginshiro Toyama first appearance"
+    },
+    {
+      "id": "evt-auto-e_goro_otaki",
+      "entity_id": "e_goro_otaki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Goro Otaki first appearance"
+    },
+    {
+      "id": "evt-auto-e_kansuke_yamato",
+      "entity_id": "e_kansuke_yamato",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kansuke Yamato first appearance"
+    },
+    {
+      "id": "evt-auto-e_yui_uehara",
+      "entity_id": "e_yui_uehara",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yui Uehara first appearance"
+    },
+    {
+      "id": "evt-auto-e_taka_aki_morofushi",
+      "entity_id": "e_taka_aki_morofushi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Taka'aki Morofushi first appearance"
+    },
+    {
+      "id": "evt-auto-e_jugo_yokomizo",
+      "entity_id": "e_jugo_yokomizo",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Jugo Yokomizo first appearance"
+    },
+    {
+      "id": "evt-auto-e_chihaya_hagiwara",
+      "entity_id": "e_chihaya_hagiwara",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Chihaya Hagiwara first appearance"
+    },
+    {
+      "id": "evt-auto-e_kyohei_nishimura",
+      "entity_id": "e_kyohei_nishimura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kyohei Nishimura first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_tamura",
+      "entity_id": "e_detective_tamura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Tamura first appearance"
+    },
+    {
+      "id": "evt-auto-e_fumimaro_ayanokoji",
+      "entity_id": "e_fumimaro_ayanokoji",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Fumimaro Ayanokoji first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_kurumazaki",
+      "entity_id": "e_detective_kurumazaki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Kurumazaki first appearance"
+    },
+    {
+      "id": "evt-auto-e_sango_yokomizo",
+      "entity_id": "e_sango_yokomizo",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Sango Yokomizo first appearance"
+    },
+    {
+      "id": "evt-auto-e_tomonori_ogawara",
+      "entity_id": "e_tomonori_ogawara",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Tomonori Ogawara first appearance"
+    },
+    {
+      "id": "evt-auto-e_detective_tsukumo",
+      "entity_id": "e_detective_tsukumo",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Detective Tsukumo first appearance"
+    },
+    {
+      "id": "evt-auto-e_misao_yamamura",
+      "entity_id": "e_misao_yamamura",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Misao Yamamura first appearance"
+    },
+    {
+      "id": "evt-auto-e_tsuyoshi_shikatsuno",
+      "entity_id": "e_tsuyoshi_shikatsuno",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Tsuyoshi Shikatsuno first appearance"
+    },
+    {
+      "id": "evt-auto-e_tamekichi_matsushiro",
+      "entity_id": "e_tamekichi_matsushiro",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Tamekichi Matsushiro first appearance"
+    },
+    {
+      "id": "evt-auto-e_shoji_terabayashi",
+      "entity_id": "e_shoji_terabayashi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Shoji Terabayashi first appearance"
+    },
+    {
+      "id": "evt-auto-e_james_black",
+      "entity_id": "e_james_black",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "James Black first appearance"
+    },
+    {
+      "id": "evt-auto-e_andre_camel",
+      "entity_id": "e_andre_camel",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Andre Camel first appearance"
+    },
+    {
+      "id": "evt-auto-e_amanda_hughes",
+      "entity_id": "e_amanda_hughes",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Amanda Hughes first appearance"
+    },
+    {
+      "id": "evt-auto-e_tsutomu_akai",
+      "entity_id": "e_tsutomu_akai",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Tsutomu Akai first appearance"
+    },
+    {
+      "id": "evt-auto-e_kaito_kuroba",
+      "entity_id": "e_kaito_kuroba",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kaito Kuroba first appearance"
+    },
+    {
+      "id": "evt-auto-e_ayumi_yoshida",
+      "entity_id": "e_ayumi_yoshida",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ayumi Yoshida first appearance"
+    },
+    {
+      "id": "evt-auto-e_mitsuhiko_tsuburaya",
+      "entity_id": "e_mitsuhiko_tsuburaya",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Mitsuhiko Tsuburaya first appearance"
+    },
+    {
+      "id": "evt-auto-e_genta_kojima",
+      "entity_id": "e_genta_kojima",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Genta Kojima first appearance"
+    },
+    {
+      "id": "evt-auto-e_sonoko_suzuki",
+      "entity_id": "e_sonoko_suzuki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Sonoko Suzuki first appearance"
+    },
+    {
+      "id": "evt-auto-e_eri_kisaki",
+      "entity_id": "e_eri_kisaki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Eri Kisaki first appearance"
+    },
+    {
+      "id": "evt-auto-e_yukiko_kudo",
+      "entity_id": "e_yukiko_kudo",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yukiko Kudo first appearance"
+    },
+    {
+      "id": "evt-auto-e_kazuha_toyama",
+      "entity_id": "e_kazuha_toyama",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kazuha Toyama first appearance"
+    },
+    {
+      "id": "evt-auto-e_masumi_sera",
+      "entity_id": "e_masumi_sera",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Masumi Sera first appearance"
+    },
+    {
+      "id": "evt-auto-e_rumi_wakasa",
+      "entity_id": "e_rumi_wakasa",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Rumi Wakasa first appearance"
+    },
+    {
+      "id": "evt-auto-e_makoto_kyogoku",
+      "entity_id": "e_makoto_kyogoku",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Makoto Kyogoku first appearance"
+    },
+    {
+      "id": "evt-auto-e_yoko_okino",
+      "entity_id": "e_yoko_okino",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Yoko Okino first appearance"
+    },
+    {
+      "id": "evt-auto-e_sumiko_kobayashi",
+      "entity_id": "e_sumiko_kobayashi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Sumiko Kobayashi first appearance"
+    },
+    {
+      "id": "evt-auto-e_jirokichi_suzuki",
+      "entity_id": "e_jirokichi_suzuki",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Jirokichi Suzuki first appearance"
+    },
+    {
+      "id": "evt-auto-e_azusa_enomoto",
+      "entity_id": "e_azusa_enomoto",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Azusa Enomoto first appearance"
+    },
+    {
+      "id": "evt-auto-e_shukichi_haneda",
+      "entity_id": "e_shukichi_haneda",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Shukichi Haneda first appearance"
+    },
+    {
+      "id": "evt-auto-e_momiji_ooka",
+      "entity_id": "e_momiji_ooka",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Momiji Ooka first appearance"
+    },
+    {
+      "id": "evt-auto-e_muga_iori",
+      "entity_id": "e_muga_iori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Muga Iori first appearance"
+    },
+    {
+      "id": "evt-auto-e_tomoaki_araide",
+      "entity_id": "e_tomoaki_araide",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Tomoaki Araide first appearance"
+    },
+    {
+      "id": "evt-auto-e_sakurako_yonehara",
+      "entity_id": "e_sakurako_yonehara",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Sakurako Yonehara first appearance"
+    },
+    {
+      "id": "evt-auto-e_shizuka_hattori",
+      "entity_id": "e_shizuka_hattori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Shizuka Hattori first appearance"
+    },
+    {
+      "id": "evt-auto-e_mary_sera",
+      "entity_id": "e_mary_sera",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Mary Sera first appearance"
+    },
+    {
+      "id": "evt-auto-e_sharon_vineyard",
+      "entity_id": "e_sharon_vineyard",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Sharon Vineyard first appearance"
+    },
+    {
+      "id": "evt-auto-e_elena_miyano",
+      "entity_id": "e_elena_miyano",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Elena Miyano first appearance"
+    },
+    {
+      "id": "evt-auto-e_kohji_haneda",
+      "entity_id": "e_kohji_haneda",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kohji Haneda first appearance"
+    },
+    {
+      "id": "evt-auto-e_mysterious_old_man_with_bird",
+      "entity_id": "e_mysterious_old_man_with_bird",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Mysterious Old Man with Bird first appearance"
+    },
+    {
+      "id": "evt-auto-e_mysterious_old_man",
+      "entity_id": "e_mysterious_old_man",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Mysterious Old Man first appearance"
+    },
+    {
+      "id": "evt-auto-e_mysterious_man_with_sunglasses",
+      "entity_id": "e_mysterious_man_with_sunglasses",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Mysterious man with sunglasses first appearance"
+    },
+    {
+      "id": "evt-auto-e_mysterious_old_woman",
+      "entity_id": "e_mysterious_old_woman",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Mysterious Old Woman first appearance"
+    },
+    {
+      "id": "evt-auto-e_ryusuke_higo",
+      "entity_id": "e_ryusuke_higo",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Ryusuke Higo first appearance"
+    },
+    {
+      "id": "evt-auto-e_hideo_akagi",
+      "entity_id": "e_hideo_akagi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Hideo Akagi first appearance"
+    },
+    {
+      "id": "evt-auto-e_aoko_nakamori",
+      "entity_id": "e_aoko_nakamori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Aoko Nakamori first appearance"
+    },
+    {
+      "id": "evt-auto-e_chikage_kuroba",
+      "entity_id": "e_chikage_kuroba",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Chikage Kuroba first appearance"
+    },
+    {
+      "id": "evt-auto-e_midoriko_nakamori",
+      "entity_id": "e_midoriko_nakamori",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Midoriko Nakamori first appearance"
+    },
+    {
+      "id": "evt-auto-e_konosuke_jii",
+      "entity_id": "e_konosuke_jii",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Konosuke Jii first appearance"
+    },
+    {
+      "id": "evt-auto-e_kaitou_corbeau",
+      "entity_id": "e_kaitou_corbeau",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Kaitou Corbeau first appearance"
+    },
+    {
+      "id": "evt-auto-e_akako_koizumi",
+      "entity_id": "e_akako_koizumi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Akako Koizumi first appearance"
+    },
+    {
+      "id": "evt-auto-e_saguru_hakuba",
+      "entity_id": "e_saguru_hakuba",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Saguru Hakuba first appearance"
+    },
+    {
+      "id": "evt-auto-e_keiko_momoi",
+      "entity_id": "e_keiko_momoi",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Keiko Momoi first appearance"
+    },
+    {
+      "id": "evt-auto-e_takahiro_sanada",
+      "entity_id": "e_takahiro_sanada",
+      "type": "JOIN",
+      "episodeIndex": 1,
+      "chapterIndex": 1,
+      "description": "Takahiro Sanada first appearance"
     }
   ],
   "links": [
