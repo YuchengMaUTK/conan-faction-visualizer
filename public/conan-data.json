@@ -1008,8 +1008,8 @@
             "ja_romaji": "Hondō Eisuke",
             "zh": "本堂瑛祐"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "NONE",
           "avatar": "avatars/p_eisuke_hondou.jpg",
           "is_default_display": true
         }
@@ -1135,8 +1135,8 @@
             "ja_romaji": "Kudō Yūsaku",
             "zh": "工藤优作"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_yusaku_kudo.png",
           "is_default_display": true
         }
@@ -1160,8 +1160,8 @@
             "ja": "宮野 厚司",
             "ja_romaji": "Miyano Atsushi"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "NONE",
           "avatar": "avatars/p_atsushi_miyano.png",
           "is_default_display": true
         }
@@ -1187,8 +1187,8 @@
             "ja_romaji": "Agasa Hiroshi",
             "zh": "阿笠博士"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "DETECTIVE",
           "avatar": "avatars/p_hiroshi_agasa.jpg",
           "is_default_display": true
         }
@@ -1212,8 +1212,8 @@
             "ja": "黒羽 盗一",
             "ja_romaji": "Kuroba Tōichi"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "OTHER",
+          "sub_faction": "KAITOU_KID",
           "avatar": "avatars/p_toichi_kuroba.jpg",
           "is_default_display": true
         }
@@ -1239,8 +1239,8 @@
             "ja_romaji": "Kaitō Kiddo",
             "zh": "怪盗基德 Guàidào"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "OTHER",
+          "sub_faction": "KAITOU_KID",
           "avatar": "avatars/p_kaitou_kid.png",
           "is_default_display": true
         }
@@ -1264,8 +1264,8 @@
             "ja": "板倉 卓",
             "ja_romaji": "Itakura Suguru"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "NONE",
           "avatar": "avatars/p_suguru_itakura.jpg",
           "is_default_display": true
         }
@@ -1316,8 +1316,8 @@
             "ja_romaji": "Morofushi Hiromitsu",
             "zh": "苏格兰 Sūgélán  苏格兰威士忌 Sūgélán"
           },
-          "faction": "BLACK",
-          "sub_faction": "BO_CORE",
+          "faction": "RED",
+          "sub_faction": "PSB",
           "avatar": "avatars/p_hiromitsu_morofushi.jpg",
           "is_default_display": true
         }
