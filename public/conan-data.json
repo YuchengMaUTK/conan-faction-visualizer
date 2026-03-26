@@ -893,7 +893,8 @@
       "true_name": {
         "en": "Rikumichi Kusuda",
         "ja": "楠田 陸道",
-        "ja_romaji": "Kusuda Rikumichi"
+        "ja_romaji": "Kusuda Rikumichi",
+        "zh": "楠田陆道"
       },
       "status": "alive",
       "base_appearances": 6,
@@ -904,7 +905,8 @@
           "name": {
             "en": "Rikumichi Kusuda",
             "ja": "楠田 陸道",
-            "ja_romaji": "Kusuda Rikumichi"
+            "ja_romaji": "Kusuda Rikumichi",
+            "zh": "楠田陆道"
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
@@ -943,7 +945,8 @@
       "true_name": {
         "en": "Ki'ichiro Numabuchi",
         "ja": "沼淵 己一郎",
-        "ja_romaji": "Numabuchi Kiichirō"
+        "ja_romaji": "Numabuchi Kiichirō",
+        "zh": "沼渊己一郎"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -954,7 +957,8 @@
           "name": {
             "en": "Ki'ichiro Numabuchi",
             "ja": "沼淵 己一郎",
-            "ja_romaji": "Numabuchi Kiichirō"
+            "ja_romaji": "Numabuchi Kiichirō",
+            "zh": "沼渊己一郎"
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
@@ -1020,7 +1024,8 @@
       "true_name": {
         "en": "Yoshiaki Hara",
         "ja": "原 佳明",
-        "ja_romaji": "Hara Yoshiaki"
+        "ja_romaji": "Hara Yoshiaki",
+        "zh": "原佳明"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -1031,7 +1036,8 @@
           "name": {
             "en": "Yoshiaki Hara",
             "ja": "原 佳明",
-            "ja_romaji": "Hara Yoshiaki"
+            "ja_romaji": "Hara Yoshiaki",
+            "zh": "原佳明"
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
@@ -1045,7 +1051,8 @@
       "true_name": {
         "en": "Masaaki Okakura",
         "ja": "岡倉 政明",
-        "ja_romaji": "Okakura Masaaki"
+        "ja_romaji": "Okakura Masaaki",
+        "zh": "岡倉政明"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -1056,7 +1063,8 @@
           "name": {
             "en": "Masaaki Okakura",
             "ja": "岡倉 政明",
-            "ja_romaji": "Okakura Masaaki"
+            "ja_romaji": "Okakura Masaaki",
+            "zh": "岡倉政明"
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
@@ -1147,7 +1155,8 @@
       "true_name": {
         "en": "Atsushi Miyano",
         "ja": "宮野 厚司",
-        "ja_romaji": "Miyano Atsushi"
+        "ja_romaji": "Miyano Atsushi",
+        "zh": "宫野厚司"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -1158,7 +1167,8 @@
           "name": {
             "en": "Atsushi Miyano",
             "ja": "宮野 厚司",
-            "ja_romaji": "Miyano Atsushi"
+            "ja_romaji": "Miyano Atsushi",
+            "zh": "宫野厚司"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -1199,7 +1209,8 @@
       "true_name": {
         "en": "Toichi Kuroba",
         "ja": "黒羽 盗一",
-        "ja_romaji": "Kuroba Tōichi"
+        "ja_romaji": "Kuroba Tōichi",
+        "zh": "黒羽盗一"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -1210,7 +1221,8 @@
           "name": {
             "en": "Toichi Kuroba",
             "ja": "黒羽 盗一",
-            "ja_romaji": "Kuroba Tōichi"
+            "ja_romaji": "Kuroba Tōichi",
+            "zh": "黒羽盗一"
           },
           "faction": "OTHER",
           "sub_faction": "KAITOU_KID",
@@ -1251,7 +1263,8 @@
       "true_name": {
         "en": "Suguru Itakura",
         "ja": "板倉 卓",
-        "ja_romaji": "Itakura Suguru"
+        "ja_romaji": "Itakura Suguru",
+        "zh": "板倉卓"
       },
       "status": "alive",
       "base_appearances": 5,
@@ -1262,7 +1275,8 @@
           "name": {
             "en": "Suguru Itakura",
             "ja": "板倉 卓",
-            "ja_romaji": "Itakura Suguru"
+            "ja_romaji": "Itakura Suguru",
+            "zh": "板倉卓"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -1407,7 +1421,8 @@
       "true_name": {
         "en": "Kazunobu Chiba",
         "ja": "千葉 和伸",
-        "ja_romaji": "Chiba Kazunobu"
+        "ja_romaji": "Chiba Kazunobu",
+        "zh": "千叶和伸"
       },
       "status": "alive",
       "base_appearances": 243,
@@ -1418,7 +1433,8 @@
           "name": {
             "en": "Kazunobu Chiba",
             "ja": "千葉 和伸",
-            "ja_romaji": "Chiba Kazunobu"
+            "ja_romaji": "Chiba Kazunobu",
+            "zh": "千叶和伸"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1432,7 +1448,8 @@
       "true_name": {
         "en": "Kiyonaga Matsumoto",
         "ja": "松本 清長",
-        "ja_romaji": "Matsumoto Kiyonaga"
+        "ja_romaji": "Matsumoto Kiyonaga",
+        "zh": "松本清长"
       },
       "status": "alive",
       "base_appearances": 16,
@@ -1443,7 +1460,8 @@
           "name": {
             "en": "Kiyonaga Matsumoto",
             "ja": "松本 清長",
-            "ja_romaji": "Matsumoto Kiyonaga"
+            "ja_romaji": "Matsumoto Kiyonaga",
+            "zh": "松本清长"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1457,7 +1475,8 @@
       "true_name": {
         "en": "Hyoue Kuroda",
         "ja": "黒田 兵衛",
-        "ja_romaji": "Kuroda Hyōe"
+        "ja_romaji": "Kuroda Hyōe",
+        "zh": "黒田兵卫"
       },
       "status": "alive",
       "base_appearances": 21,
@@ -1468,7 +1487,8 @@
           "name": {
             "en": "Hyoue Kuroda",
             "ja": "黒田 兵衛",
-            "ja_romaji": "Kuroda Hyōe"
+            "ja_romaji": "Kuroda Hyōe",
+            "zh": "黒田兵卫"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1481,7 +1501,8 @@
       "entity_id": "e_chosuke_takagi",
       "true_name": {
         "en": "Chosuke Takagi",
-        "ja": "高木 長介  Takagi Chōsuke)"
+        "ja": "高木 長介  Takagi Chōsuke)",
+        "zh": "高木长介TakagiChōsuke)"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -1491,7 +1512,8 @@
           "persona_id": "p_chosuke_takagi",
           "name": {
             "en": "Chosuke Takagi",
-            "ja": "高木 長介  Takagi Chōsuke)"
+            "ja": "高木 長介  Takagi Chōsuke)",
+            "zh": "高木长介TakagiChōsuke)"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1505,7 +1527,8 @@
       "true_name": {
         "en": "Manabu Fujimaki",
         "ja": "藤巻 学",
-        "ja_romaji": "Fujimaki Manabu"
+        "ja_romaji": "Fujimaki Manabu",
+        "zh": "藤巻学"
       },
       "status": "alive",
       "base_appearances": 10,
@@ -1516,7 +1539,8 @@
           "name": {
             "en": "Manabu Fujimaki",
             "ja": "藤巻 学",
-            "ja_romaji": "Fujimaki Manabu"
+            "ja_romaji": "Fujimaki Manabu",
+            "zh": "藤巻学"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1530,7 +1554,8 @@
       "true_name": {
         "en": "Toshiro Odagiri",
         "ja": "小田切 敏郎",
-        "ja_romaji": "Odagiri Toshirō"
+        "ja_romaji": "Odagiri Toshirō",
+        "zh": "小田切敏郎"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -1541,7 +1566,8 @@
           "name": {
             "en": "Toshiro Odagiri",
             "ja": "小田切 敏郎",
-            "ja_romaji": "Odagiri Toshirō"
+            "ja_romaji": "Odagiri Toshirō",
+            "zh": "小田切敏郎"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1555,7 +1581,8 @@
       "true_name": {
         "en": "Tadayoshi Uno",
         "ja": "宇野 忠義",
-        "ja_romaji": "Uno Tadayoshi"
+        "ja_romaji": "Uno Tadayoshi",
+        "zh": "宇野忠义"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -1566,7 +1593,8 @@
           "name": {
             "en": "Tadayoshi Uno",
             "ja": "宇野 忠義",
-            "ja_romaji": "Uno Tadayoshi"
+            "ja_romaji": "Uno Tadayoshi",
+            "zh": "宇野忠义"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1607,7 +1635,8 @@
       "true_name": {
         "en": "Shintaro Chaki",
         "ja": "茶木 神太郎",
-        "ja_romaji": "Chaki Shintarō"
+        "ja_romaji": "Chaki Shintarō",
+        "zh": "茶木神太郎"
       },
       "status": "alive",
       "base_appearances": 6,
@@ -1618,7 +1647,8 @@
           "name": {
             "en": "Shintaro Chaki",
             "ja": "茶木 神太郎",
-            "ja_romaji": "Chaki Shintarō"
+            "ja_romaji": "Chaki Shintarō",
+            "zh": "茶木神太郎"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1659,7 +1689,8 @@
       "true_name": {
         "en": "Naeko Miike",
         "ja": "三池 苗子",
-        "ja_romaji": "Miike Naeko"
+        "ja_romaji": "Miike Naeko",
+        "zh": "三池苗子"
       },
       "status": "alive",
       "base_appearances": 24,
@@ -1670,7 +1701,8 @@
           "name": {
             "en": "Naeko Miike",
             "ja": "三池 苗子",
-            "ja_romaji": "Miike Naeko"
+            "ja_romaji": "Miike Naeko",
+            "zh": "三池苗子"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1684,7 +1716,8 @@
       "true_name": {
         "en": "Officer Numata",
         "ja": "沼田",
-        "ja_romaji": "Numata"
+        "ja_romaji": "Numata",
+        "zh": "沼田"
       },
       "status": "alive",
       "base_appearances": 7,
@@ -1695,7 +1728,8 @@
           "name": {
             "en": "Officer Numata",
             "ja": "沼田",
-            "ja_romaji": "Numata"
+            "ja_romaji": "Numata",
+            "zh": "沼田"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1709,7 +1743,8 @@
       "true_name": {
         "en": "Inspector Hatori",
         "ja": "羽鳥",
-        "ja_romaji": "Hatori"
+        "ja_romaji": "Hatori",
+        "zh": "羽鸟"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -1720,7 +1755,8 @@
           "name": {
             "en": "Inspector Hatori",
             "ja": "羽鳥",
-            "ja_romaji": "Hatori"
+            "ja_romaji": "Hatori",
+            "zh": "羽鸟"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1734,7 +1770,8 @@
       "true_name": {
         "en": "Hachizo Onizuka",
         "ja": "鬼塚 八蔵",
-        "ja_romaji": "Onidzuka Hachizō"
+        "ja_romaji": "Onidzuka Hachizō",
+        "zh": "鬼冢八蔵"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -1745,7 +1782,8 @@
           "name": {
             "en": "Hachizo Onizuka",
             "ja": "鬼塚 八蔵",
-            "ja_romaji": "Onidzuka Hachizō"
+            "ja_romaji": "Onidzuka Hachizō",
+            "zh": "鬼冢八蔵"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1759,7 +1797,8 @@
       "true_name": {
         "en": "Officer Tome",
         "ja": "Tome",
-        "ja_romaji": "トメ ,Tome?"
+        "ja_romaji": "トメ ,Tome?",
+        "zh": "Tome"
       },
       "status": "alive",
       "base_appearances": 41,
@@ -1770,7 +1809,8 @@
           "name": {
             "en": "Officer Tome",
             "ja": "Tome",
-            "ja_romaji": "トメ ,Tome?"
+            "ja_romaji": "トメ ,Tome?",
+            "zh": "Tome"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1784,7 +1824,8 @@
       "true_name": {
         "en": "Female forensics member",
         "ja": "女性 鑑識員",
-        "ja_romaji": "Josei kanshiki-in"
+        "ja_romaji": "Josei kanshiki-in",
+        "zh": "女性鑑識員"
       },
       "status": "alive",
       "base_appearances": 18,
@@ -1795,7 +1836,8 @@
           "name": {
             "en": "Female forensics member",
             "ja": "女性 鑑識員",
-            "ja_romaji": "Josei kanshiki-in"
+            "ja_romaji": "Josei kanshiki-in",
+            "zh": "女性鑑識員"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1809,7 +1851,8 @@
       "true_name": {
         "en": "Toshio Moroboshi",
         "ja": "諸星 登志夫",
-        "ja_romaji": "Moroboshi Toshio"
+        "ja_romaji": "Moroboshi Toshio",
+        "zh": "諸星登志夫"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -1820,7 +1863,8 @@
           "name": {
             "en": "Toshio Moroboshi",
             "ja": "諸星 登志夫",
-            "ja_romaji": "Moroboshi Toshio"
+            "ja_romaji": "Moroboshi Toshio",
+            "zh": "諸星登志夫"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1834,7 +1878,8 @@
       "true_name": {
         "en": "Detective Kobayashi",
         "ja": "小林",
-        "ja_romaji": "Kobayashi"
+        "ja_romaji": "Kobayashi",
+        "zh": "小林"
       },
       "status": "alive",
       "base_appearances": 12,
@@ -1845,7 +1890,8 @@
           "name": {
             "en": "Detective Kobayashi",
             "ja": "小林",
-            "ja_romaji": "Kobayashi"
+            "ja_romaji": "Kobayashi",
+            "zh": "小林"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1859,7 +1905,8 @@
       "true_name": {
         "en": "Detective Yokoyama",
         "ja": "横山",
-        "ja_romaji": "Yokoyama"
+        "ja_romaji": "Yokoyama",
+        "zh": "横山"
       },
       "status": "alive",
       "base_appearances": 9,
@@ -1870,7 +1917,8 @@
           "name": {
             "en": "Detective Yokoyama",
             "ja": "横山",
-            "ja_romaji": "Yokoyama"
+            "ja_romaji": "Yokoyama",
+            "zh": "横山"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1884,7 +1932,8 @@
       "true_name": {
         "en": "Detective Takikawa",
         "ja": "滝川",
-        "ja_romaji": "Takikawa"
+        "ja_romaji": "Takikawa",
+        "zh": "滝川"
       },
       "status": "alive",
       "base_appearances": 18,
@@ -1895,7 +1944,8 @@
           "name": {
             "en": "Detective Takikawa",
             "ja": "滝川",
-            "ja_romaji": "Takikawa"
+            "ja_romaji": "Takikawa",
+            "zh": "滝川"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1909,7 +1959,8 @@
       "true_name": {
         "en": "Detective Nakamura",
         "ja": "中村",
-        "ja_romaji": "Nakamura"
+        "ja_romaji": "Nakamura",
+        "zh": "中村"
       },
       "status": "alive",
       "base_appearances": 20,
@@ -1920,7 +1971,8 @@
           "name": {
             "en": "Detective Nakamura",
             "ja": "中村",
-            "ja_romaji": "Nakamura"
+            "ja_romaji": "Nakamura",
+            "zh": "中村"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1934,7 +1986,8 @@
       "true_name": {
         "en": "Detective Fukui",
         "ja": "福井",
-        "ja_romaji": "Fukui"
+        "ja_romaji": "Fukui",
+        "zh": "福井"
       },
       "status": "alive",
       "base_appearances": 24,
@@ -1945,7 +1998,8 @@
           "name": {
             "en": "Detective Fukui",
             "ja": "福井",
-            "ja_romaji": "Fukui"
+            "ja_romaji": "Fukui",
+            "zh": "福井"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1959,7 +2013,8 @@
       "true_name": {
         "en": "Detective Kawanaka",
         "ja": "川中",
-        "ja_romaji": "Kawanaka"
+        "ja_romaji": "Kawanaka",
+        "zh": "川中"
       },
       "status": "alive",
       "base_appearances": 10,
@@ -1970,7 +2025,8 @@
           "name": {
             "en": "Detective Kawanaka",
             "ja": "川中",
-            "ja_romaji": "Kawanaka"
+            "ja_romaji": "Kawanaka",
+            "zh": "川中"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -1984,7 +2040,8 @@
       "true_name": {
         "en": "Detective Saitoh",
         "ja": "斉藤",
-        "ja_romaji": "Saitō"
+        "ja_romaji": "Saitō",
+        "zh": "斉藤"
       },
       "status": "alive",
       "base_appearances": 17,
@@ -1995,7 +2052,8 @@
           "name": {
             "en": "Detective Saitoh",
             "ja": "斉藤",
-            "ja_romaji": "Saitō"
+            "ja_romaji": "Saitō",
+            "zh": "斉藤"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2009,7 +2067,8 @@
       "true_name": {
         "en": "Detective Horita",
         "ja": "堀田",
-        "ja_romaji": "Horita"
+        "ja_romaji": "Horita",
+        "zh": "堀田"
       },
       "status": "alive",
       "base_appearances": 24,
@@ -2020,7 +2079,8 @@
           "name": {
             "en": "Detective Horita",
             "ja": "堀田",
-            "ja_romaji": "Horita"
+            "ja_romaji": "Horita",
+            "zh": "堀田"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2034,7 +2094,8 @@
       "true_name": {
         "en": "Detective Takano",
         "ja": "高野",
-        "ja_romaji": "Takano"
+        "ja_romaji": "Takano",
+        "zh": "高野"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2045,7 +2106,8 @@
           "name": {
             "en": "Detective Takano",
             "ja": "高野",
-            "ja_romaji": "Takano"
+            "ja_romaji": "Takano",
+            "zh": "高野"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2059,7 +2121,8 @@
       "true_name": {
         "en": "Detective Sogawa",
         "ja": "十川",
-        "ja_romaji": "Sogawa"
+        "ja_romaji": "Sogawa",
+        "zh": "十川"
       },
       "status": "alive",
       "base_appearances": 22,
@@ -2070,7 +2133,8 @@
           "name": {
             "en": "Detective Sogawa",
             "ja": "十川",
-            "ja_romaji": "Sogawa"
+            "ja_romaji": "Sogawa",
+            "zh": "十川"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2084,7 +2148,8 @@
       "true_name": {
         "en": "Detective Sugita",
         "ja": "杉田",
-        "ja_romaji": "Sugita"
+        "ja_romaji": "Sugita",
+        "zh": "杉田"
       },
       "status": "alive",
       "base_appearances": 23,
@@ -2095,7 +2160,8 @@
           "name": {
             "en": "Detective Sugita",
             "ja": "杉田",
-            "ja_romaji": "Sugita"
+            "ja_romaji": "Sugita",
+            "zh": "杉田"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2109,7 +2175,8 @@
       "true_name": {
         "en": "Detective Okumura",
         "ja": "奥村",
-        "ja_romaji": "Okumura"
+        "ja_romaji": "Okumura",
+        "zh": "奥村"
       },
       "status": "alive",
       "base_appearances": 22,
@@ -2120,7 +2187,8 @@
           "name": {
             "en": "Detective Okumura",
             "ja": "奥村",
-            "ja_romaji": "Okumura"
+            "ja_romaji": "Okumura",
+            "zh": "奥村"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2134,7 +2202,8 @@
       "true_name": {
         "en": "Detective Hirota",
         "ja": "広田",
-        "ja_romaji": "Hirota"
+        "ja_romaji": "Hirota",
+        "zh": "広田"
       },
       "status": "alive",
       "base_appearances": 16,
@@ -2145,7 +2214,8 @@
           "name": {
             "en": "Detective Hirota",
             "ja": "広田",
-            "ja_romaji": "Hirota"
+            "ja_romaji": "Hirota",
+            "zh": "広田"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2186,7 +2256,8 @@
       "true_name": {
         "en": "Kenji Hagiwara",
         "ja": "萩原 研二",
-        "ja_romaji": "Hagiwara Kenji"
+        "ja_romaji": "Hagiwara Kenji",
+        "zh": "萩原研二"
       },
       "status": "alive",
       "base_appearances": 9,
@@ -2197,7 +2268,8 @@
           "name": {
             "en": "Kenji Hagiwara",
             "ja": "萩原 研二",
-            "ja_romaji": "Hagiwara Kenji"
+            "ja_romaji": "Hagiwara Kenji",
+            "zh": "萩原研二"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2238,7 +2310,8 @@
       "true_name": {
         "en": "Wataru Date",
         "ja": "伊達 航",
-        "ja_romaji": "Date Wataru"
+        "ja_romaji": "Date Wataru",
+        "zh": "伊达航"
       },
       "status": "alive",
       "base_appearances": 10,
@@ -2249,7 +2322,8 @@
           "name": {
             "en": "Wataru Date",
             "ja": "伊達 航",
-            "ja_romaji": "Date Wataru"
+            "ja_romaji": "Date Wataru",
+            "zh": "伊达航"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2263,7 +2337,8 @@
       "true_name": {
         "en": "Superintendent General Hakuba",
         "ja": "白馬",
-        "ja_romaji": "Hakuba"
+        "ja_romaji": "Hakuba",
+        "zh": "白马"
       },
       "status": "alive",
       "base_appearances": 1,
@@ -2274,7 +2349,8 @@
           "name": {
             "en": "Superintendent General Hakuba",
             "ja": "白馬",
-            "ja_romaji": "Hakuba"
+            "ja_romaji": "Hakuba",
+            "zh": "白马"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2288,7 +2364,8 @@
       "true_name": {
         "en": "Inspector Yuminaga",
         "ja": "弓長",
-        "ja_romaji": "Yuminaga"
+        "ja_romaji": "Yuminaga",
+        "zh": "弓长"
       },
       "status": "alive",
       "base_appearances": 13,
@@ -2299,7 +2376,8 @@
           "name": {
             "en": "Inspector Yuminaga",
             "ja": "弓長",
-            "ja_romaji": "Yuminaga"
+            "ja_romaji": "Yuminaga",
+            "zh": "弓长"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2313,7 +2391,8 @@
       "true_name": {
         "en": "Inspector Momose",
         "ja": "Momose",
-        "ja_romaji": "百瀬 ,Momose?"
+        "ja_romaji": "百瀬 ,Momose?",
+        "zh": "Momose"
       },
       "status": "alive",
       "base_appearances": 3,
@@ -2324,7 +2403,8 @@
           "name": {
             "en": "Inspector Momose",
             "ja": "Momose",
-            "ja_romaji": "百瀬 ,Momose?"
+            "ja_romaji": "百瀬 ,Momose?",
+            "zh": "Momose"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2338,7 +2418,8 @@
       "true_name": {
         "en": "Yuya Kazami",
         "ja": "風見 裕也",
-        "ja_romaji": "Kazami Yūya"
+        "ja_romaji": "Kazami Yūya",
+        "zh": "风見裕也"
       },
       "status": "alive",
       "base_appearances": 7,
@@ -2349,7 +2430,8 @@
           "name": {
             "en": "Yuya Kazami",
             "ja": "風見 裕也",
-            "ja_romaji": "Kazami Yūya"
+            "ja_romaji": "Kazami Yūya",
+            "zh": "风見裕也"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2363,7 +2445,8 @@
       "true_name": {
         "en": "Detective Terashima",
         "ja": "寺島",
-        "ja_romaji": "Terashima"
+        "ja_romaji": "Terashima",
+        "zh": "寺岛"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -2374,7 +2457,8 @@
           "name": {
             "en": "Detective Terashima",
             "ja": "寺島",
-            "ja_romaji": "Terashima"
+            "ja_romaji": "Terashima",
+            "zh": "寺岛"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2388,7 +2472,8 @@
       "true_name": {
         "en": "Detective Kojima",
         "ja": "小島",
-        "ja_romaji": "Kojima"
+        "ja_romaji": "Kojima",
+        "zh": "小岛"
       },
       "status": "alive",
       "base_appearances": 19,
@@ -2399,7 +2484,8 @@
           "name": {
             "en": "Detective Kojima",
             "ja": "小島",
-            "ja_romaji": "Kojima"
+            "ja_romaji": "Kojima",
+            "zh": "小岛"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2413,7 +2499,8 @@
       "true_name": {
         "en": "Detective Miyazaki",
         "ja": "宮崎",
-        "ja_romaji": "Miyazaki"
+        "ja_romaji": "Miyazaki",
+        "zh": "宫崎"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2424,7 +2511,8 @@
           "name": {
             "en": "Detective Miyazaki",
             "ja": "宮崎",
-            "ja_romaji": "Miyazaki"
+            "ja_romaji": "Miyazaki",
+            "zh": "宫崎"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2438,7 +2526,8 @@
       "true_name": {
         "en": "Detective Tomokawa",
         "ja": "友川",
-        "ja_romaji": "Tomokawa"
+        "ja_romaji": "Tomokawa",
+        "zh": "友川"
       },
       "status": "alive",
       "base_appearances": 1,
@@ -2449,7 +2538,8 @@
           "name": {
             "en": "Detective Tomokawa",
             "ja": "友川",
-            "ja_romaji": "Tomokawa"
+            "ja_romaji": "Tomokawa",
+            "zh": "友川"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2463,7 +2553,8 @@
       "true_name": {
         "en": "Detective Yama",
         "ja": "山",
-        "ja_romaji": "Yama"
+        "ja_romaji": "Yama",
+        "zh": "山"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -2474,7 +2565,8 @@
           "name": {
             "en": "Detective Yama",
             "ja": "山",
-            "ja_romaji": "Yama"
+            "ja_romaji": "Yama",
+            "zh": "山"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2488,7 +2580,8 @@
       "true_name": {
         "en": "Inspector Yuminaga's assistant",
         "ja": "弓長警部の副",
-        "ja_romaji": "Yuminaga Keibu no Fuku"
+        "ja_romaji": "Yuminaga Keibu no Fuku",
+        "zh": "弓长警部の副"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -2499,7 +2592,8 @@
           "name": {
             "en": "Inspector Yuminaga's assistant",
             "ja": "弓長警部の副",
-            "ja_romaji": "Yuminaga Keibu no Fuku"
+            "ja_romaji": "Yuminaga Keibu no Fuku",
+            "zh": "弓长警部の副"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2513,7 +2607,8 @@
       "true_name": {
         "en": "Heizo Hattori",
         "ja": "服部 平蔵",
-        "ja_romaji": "Hattori Heizō"
+        "ja_romaji": "Hattori Heizō",
+        "zh": "服部平蔵"
       },
       "status": "alive",
       "base_appearances": 10,
@@ -2524,7 +2619,8 @@
           "name": {
             "en": "Heizo Hattori",
             "ja": "服部 平蔵",
-            "ja_romaji": "Hattori Heizō"
+            "ja_romaji": "Hattori Heizō",
+            "zh": "服部平蔵"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2590,7 +2686,8 @@
       "true_name": {
         "en": "Kansuke Yamato",
         "ja": "大和 敢助",
-        "ja_romaji": "Yamato Kansuke"
+        "ja_romaji": "Yamato Kansuke",
+        "zh": "大和敢助"
       },
       "status": "alive",
       "base_appearances": 21,
@@ -2601,7 +2698,8 @@
           "name": {
             "en": "Kansuke Yamato",
             "ja": "大和 敢助",
-            "ja_romaji": "Yamato Kansuke"
+            "ja_romaji": "Yamato Kansuke",
+            "zh": "大和敢助"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2615,7 +2713,8 @@
       "true_name": {
         "en": "Yui Uehara",
         "ja": "上原 由衣",
-        "ja_romaji": "Uehara Yui"
+        "ja_romaji": "Uehara Yui",
+        "zh": "上原由衣"
       },
       "status": "alive",
       "base_appearances": 22,
@@ -2626,7 +2725,8 @@
           "name": {
             "en": "Yui Uehara",
             "ja": "上原 由衣",
-            "ja_romaji": "Uehara Yui"
+            "ja_romaji": "Uehara Yui",
+            "zh": "上原由衣"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2667,7 +2767,8 @@
       "true_name": {
         "en": "Jugo Yokomizo",
         "ja": "横溝 重悟",
-        "ja_romaji": "Yokomizo Jūgo"
+        "ja_romaji": "Yokomizo Jūgo",
+        "zh": "横溝重悟"
       },
       "status": "alive",
       "base_appearances": 24,
@@ -2678,7 +2779,8 @@
           "name": {
             "en": "Jugo Yokomizo",
             "ja": "横溝 重悟",
-            "ja_romaji": "Yokomizo Jūgo"
+            "ja_romaji": "Yokomizo Jūgo",
+            "zh": "横溝重悟"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2692,7 +2794,8 @@
       "true_name": {
         "en": "Chihaya Hagiwara",
         "ja": "萩原 千速",
-        "ja_romaji": "Hagiwara Chihaya"
+        "ja_romaji": "Hagiwara Chihaya",
+        "zh": "萩原千速"
       },
       "status": "alive",
       "base_appearances": 7,
@@ -2703,7 +2806,8 @@
           "name": {
             "en": "Chihaya Hagiwara",
             "ja": "萩原 千速",
-            "ja_romaji": "Hagiwara Chihaya"
+            "ja_romaji": "Hagiwara Chihaya",
+            "zh": "萩原千速"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2717,7 +2821,8 @@
       "true_name": {
         "en": "Kyohei Nishimura",
         "ja": "西村 京兵",
-        "ja_romaji": "Nishimura Kyōhei"
+        "ja_romaji": "Nishimura Kyōhei",
+        "zh": "西村京兵"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2728,7 +2833,8 @@
           "name": {
             "en": "Kyohei Nishimura",
             "ja": "西村 京兵",
-            "ja_romaji": "Nishimura Kyōhei"
+            "ja_romaji": "Nishimura Kyōhei",
+            "zh": "西村京兵"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2742,7 +2848,8 @@
       "true_name": {
         "en": "Detective Tamura",
         "ja": "田村",
-        "ja_romaji": "Tamura"
+        "ja_romaji": "Tamura",
+        "zh": "田村"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2753,7 +2860,8 @@
           "name": {
             "en": "Detective Tamura",
             "ja": "田村",
-            "ja_romaji": "Tamura"
+            "ja_romaji": "Tamura",
+            "zh": "田村"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2767,7 +2875,8 @@
       "true_name": {
         "en": "Fumimaro Ayanokoji",
         "ja": "綾小路 文麿",
-        "ja_romaji": "Ayanokōji Fumimaro"
+        "ja_romaji": "Ayanokōji Fumimaro",
+        "zh": "綾小路文麿"
       },
       "status": "alive",
       "base_appearances": 13,
@@ -2778,7 +2887,8 @@
           "name": {
             "en": "Fumimaro Ayanokoji",
             "ja": "綾小路 文麿",
-            "ja_romaji": "Ayanokōji Fumimaro"
+            "ja_romaji": "Ayanokōji Fumimaro",
+            "zh": "綾小路文麿"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2792,7 +2902,8 @@
       "true_name": {
         "en": "Detective Kurumazaki",
         "ja": "車折",
-        "ja_romaji": "Kurumazaki"
+        "ja_romaji": "Kurumazaki",
+        "zh": "车折"
       },
       "status": "alive",
       "base_appearances": 1,
@@ -2803,7 +2914,8 @@
           "name": {
             "en": "Detective Kurumazaki",
             "ja": "車折",
-            "ja_romaji": "Kurumazaki"
+            "ja_romaji": "Kurumazaki",
+            "zh": "车折"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2844,7 +2956,8 @@
       "true_name": {
         "en": "Tomonori Ogawara",
         "ja": "大河原 倫徳",
-        "ja_romaji": "Ōgawara Tomonori"
+        "ja_romaji": "Ōgawara Tomonori",
+        "zh": "大河原倫徳"
       },
       "status": "alive",
       "base_appearances": 1,
@@ -2855,7 +2968,8 @@
           "name": {
             "en": "Tomonori Ogawara",
             "ja": "大河原 倫徳",
-            "ja_romaji": "Ōgawara Tomonori"
+            "ja_romaji": "Ōgawara Tomonori",
+            "zh": "大河原倫徳"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2869,7 +2983,8 @@
       "true_name": {
         "en": "Detective Tsukumo",
         "ja": "九十九",
-        "ja_romaji": "Tsukumo"
+        "ja_romaji": "Tsukumo",
+        "zh": "九十九"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2880,7 +2995,8 @@
           "name": {
             "en": "Detective Tsukumo",
             "ja": "九十九",
-            "ja_romaji": "Tsukumo"
+            "ja_romaji": "Tsukumo",
+            "zh": "九十九"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2942,7 +3058,8 @@
       "true_name": {
         "en": "Tamekichi Matsushiro",
         "ja": "松代 為吉",
-        "ja_romaji": "Matsushiro Tamekichi"
+        "ja_romaji": "Matsushiro Tamekichi",
+        "zh": "松代為吉"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2953,7 +3070,8 @@
           "name": {
             "en": "Tamekichi Matsushiro",
             "ja": "松代 為吉",
-            "ja_romaji": "Matsushiro Tamekichi"
+            "ja_romaji": "Matsushiro Tamekichi",
+            "zh": "松代為吉"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -2967,7 +3085,8 @@
       "true_name": {
         "en": "Shoji Terabayashi",
         "ja": "寺林 省二",
-        "ja_romaji": "Terabayashi Shōji"
+        "ja_romaji": "Terabayashi Shōji",
+        "zh": "寺林省二"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -2978,7 +3097,8 @@
           "name": {
             "en": "Shoji Terabayashi",
             "ja": "寺林 省二",
-            "ja_romaji": "Terabayashi Shōji"
+            "ja_romaji": "Terabayashi Shōji",
+            "zh": "寺林省二"
           },
           "faction": "RED",
           "sub_faction": "TOKYO_MPD",
@@ -3069,7 +3189,8 @@
       "true_name": {
         "en": "Tsutomu Akai",
         "ja": "赤井 務武",
-        "ja_romaji": "Akai Tsutomu"
+        "ja_romaji": "Akai Tsutomu",
+        "zh": "赤井务武"
       },
       "status": "alive",
       "base_appearances": 7,
@@ -3080,7 +3201,8 @@
           "name": {
             "en": "Tsutomu Akai",
             "ja": "赤井 務武",
-            "ja_romaji": "Akai Tsutomu"
+            "ja_romaji": "Akai Tsutomu",
+            "zh": "赤井务武"
           },
           "faction": "RED",
           "sub_faction": "FBI",
@@ -3337,7 +3459,8 @@
       "true_name": {
         "en": "Rumi Wakasa",
         "ja": "若狭 留美",
-        "ja_romaji": "Wakasa Rumi"
+        "ja_romaji": "Wakasa Rumi",
+        "zh": "若狭留美"
       },
       "status": "alive",
       "base_appearances": 26,
@@ -3348,7 +3471,8 @@
           "name": {
             "en": "Rumi Wakasa",
             "ja": "若狭 留美",
-            "ja_romaji": "Wakasa Rumi"
+            "ja_romaji": "Wakasa Rumi",
+            "zh": "若狭留美"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3414,7 +3538,8 @@
       "true_name": {
         "en": "Sumiko Kobayashi",
         "ja": "小林 澄子",
-        "ja_romaji": "Kobayashi Sumiko"
+        "ja_romaji": "Kobayashi Sumiko",
+        "zh": "小林澄子"
       },
       "status": "alive",
       "base_appearances": 53,
@@ -3425,7 +3550,8 @@
           "name": {
             "en": "Sumiko Kobayashi",
             "ja": "小林 澄子",
-            "ja_romaji": "Kobayashi Sumiko"
+            "ja_romaji": "Kobayashi Sumiko",
+            "zh": "小林澄子"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3439,7 +3565,8 @@
       "true_name": {
         "en": "Jirokichi Suzuki",
         "ja": "鈴木 次郎吉",
-        "ja_romaji": "Suzuki Jirokichi"
+        "ja_romaji": "Suzuki Jirokichi",
+        "zh": "鈴木次郎吉"
       },
       "status": "alive",
       "base_appearances": 28,
@@ -3450,7 +3577,8 @@
           "name": {
             "en": "Jirokichi Suzuki",
             "ja": "鈴木 次郎吉",
-            "ja_romaji": "Suzuki Jirokichi"
+            "ja_romaji": "Suzuki Jirokichi",
+            "zh": "鈴木次郎吉"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3464,7 +3592,8 @@
       "true_name": {
         "en": "Azusa Enomoto",
         "ja": "榎本 梓",
-        "ja_romaji": "Enomoto Azusa"
+        "ja_romaji": "Enomoto Azusa",
+        "zh": "榎本梓"
       },
       "status": "alive",
       "base_appearances": 34,
@@ -3475,7 +3604,8 @@
           "name": {
             "en": "Azusa Enomoto",
             "ja": "榎本 梓",
-            "ja_romaji": "Enomoto Azusa"
+            "ja_romaji": "Enomoto Azusa",
+            "zh": "榎本梓"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3489,7 +3619,8 @@
       "true_name": {
         "en": "Shukichi Haneda",
         "ja": "羽田 秀𠮷",
-        "ja_romaji": "Haneda Shūkichi"
+        "ja_romaji": "Haneda Shūkichi",
+        "zh": "羽田秀𠮷"
       },
       "status": "alive",
       "base_appearances": 23,
@@ -3500,7 +3631,8 @@
           "name": {
             "en": "Shukichi Haneda",
             "ja": "羽田 秀𠮷",
-            "ja_romaji": "Haneda Shūkichi"
+            "ja_romaji": "Haneda Shūkichi",
+            "zh": "羽田秀𠮷"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3514,7 +3646,8 @@
       "true_name": {
         "en": "Momiji Ooka",
         "ja": "大岡 紅葉",
-        "ja_romaji": "Ōoka Momiji"
+        "ja_romaji": "Ōoka Momiji",
+        "zh": "大岡红叶"
       },
       "status": "alive",
       "base_appearances": 15,
@@ -3525,7 +3658,8 @@
           "name": {
             "en": "Momiji Ooka",
             "ja": "大岡 紅葉",
-            "ja_romaji": "Ōoka Momiji"
+            "ja_romaji": "Ōoka Momiji",
+            "zh": "大岡红叶"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3539,7 +3673,8 @@
       "true_name": {
         "en": "Muga Iori",
         "ja": "伊織 無我",
-        "ja_romaji": "Iori Muga"
+        "ja_romaji": "Iori Muga",
+        "zh": "伊織無我"
       },
       "status": "alive",
       "base_appearances": 14,
@@ -3550,7 +3685,8 @@
           "name": {
             "en": "Muga Iori",
             "ja": "伊織 無我",
-            "ja_romaji": "Iori Muga"
+            "ja_romaji": "Iori Muga",
+            "zh": "伊織無我"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3591,7 +3727,8 @@
       "true_name": {
         "en": "Sakurako Yonehara",
         "ja": "米原 桜子",
-        "ja_romaji": "Yonehara Sakurako"
+        "ja_romaji": "Yonehara Sakurako",
+        "zh": "米原桜子"
       },
       "status": "alive",
       "base_appearances": 8,
@@ -3602,7 +3739,8 @@
           "name": {
             "en": "Sakurako Yonehara",
             "ja": "米原 桜子",
-            "ja_romaji": "Yonehara Sakurako"
+            "ja_romaji": "Yonehara Sakurako",
+            "zh": "米原桜子"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3616,7 +3754,8 @@
       "true_name": {
         "en": "Shizuka Hattori",
         "ja": "服部 静華",
-        "ja_romaji": "Hattori Shizuka"
+        "ja_romaji": "Hattori Shizuka",
+        "zh": "服部静华"
       },
       "status": "alive",
       "base_appearances": 5,
@@ -3627,7 +3766,8 @@
           "name": {
             "en": "Shizuka Hattori",
             "ja": "服部 静華",
-            "ja_romaji": "Hattori Shizuka"
+            "ja_romaji": "Hattori Shizuka",
+            "zh": "服部静华"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3718,7 +3858,8 @@
       "true_name": {
         "en": "Kohji Haneda",
         "ja": "羽田 浩司",
-        "ja_romaji": "Haneda Kōji"
+        "ja_romaji": "Haneda Kōji",
+        "zh": "羽田浩司"
       },
       "status": "alive",
       "base_appearances": 14,
@@ -3729,7 +3870,8 @@
           "name": {
             "en": "Kohji Haneda",
             "ja": "羽田 浩司",
-            "ja_romaji": "Haneda Kōji"
+            "ja_romaji": "Haneda Kōji",
+            "zh": "羽田浩司"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3743,7 +3885,8 @@
       "true_name": {
         "en": "Mysterious Old Man with Bird",
         "ja": "鷹を持つ老人",
-        "ja_romaji": "Taka o motsu Rōjin"
+        "ja_romaji": "Taka o motsu Rōjin",
+        "zh": "鷹を持つ老人"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -3754,7 +3897,8 @@
           "name": {
             "en": "Mysterious Old Man with Bird",
             "ja": "鷹を持つ老人",
-            "ja_romaji": "Taka o motsu Rōjin"
+            "ja_romaji": "Taka o motsu Rōjin",
+            "zh": "鷹を持つ老人"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3767,7 +3911,8 @@
       "entity_id": "e_mysterious_old_man",
       "true_name": {
         "en": "Mysterious Old Man",
-        "ja": "謎の老人  (Nazo no Rōjin)[1]"
+        "ja": "謎の老人  (Nazo no Rōjin)[1]",
+        "zh": "謎の老人(NazonoRōjin)[1]"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -3777,7 +3922,8 @@
           "persona_id": "p_mysterious_old_man",
           "name": {
             "en": "Mysterious Old Man",
-            "ja": "謎の老人  (Nazo no Rōjin)[1]"
+            "ja": "謎の老人  (Nazo no Rōjin)[1]",
+            "zh": "謎の老人(NazonoRōjin)[1]"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3790,7 +3936,8 @@
       "entity_id": "e_mysterious_man_with_sunglasses",
       "true_name": {
         "en": "Mysterious man with sunglasses",
-        "ja": "運転手  (Untenshu)[1]"
+        "ja": "運転手  (Untenshu)[1]",
+        "zh": "运転手(Untenshu)[1]"
       },
       "status": "alive",
       "base_appearances": 2,
@@ -3800,7 +3947,8 @@
           "persona_id": "p_mysterious_man_with_sunglasses",
           "name": {
             "en": "Mysterious man with sunglasses",
-            "ja": "運転手  (Untenshu)[1]"
+            "ja": "運転手  (Untenshu)[1]",
+            "zh": "运転手(Untenshu)[1]"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3814,7 +3962,8 @@
       "true_name": {
         "en": "Mysterious Old Woman",
         "ja": "老人",
-        "ja_romaji": "Rōjin"
+        "ja_romaji": "Rōjin",
+        "zh": "老人"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -3825,7 +3974,8 @@
           "name": {
             "en": "Mysterious Old Woman",
             "ja": "老人",
-            "ja_romaji": "Rōjin"
+            "ja_romaji": "Rōjin",
+            "zh": "老人"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3839,7 +3989,8 @@
       "true_name": {
         "en": "Ryusuke Higo",
         "ja": "比護 隆佑",
-        "ja_romaji": "Higo Ryūsuke"
+        "ja_romaji": "Higo Ryūsuke",
+        "zh": "比护隆佑"
       },
       "status": "alive",
       "base_appearances": 15,
@@ -3850,7 +4001,8 @@
           "name": {
             "en": "Ryusuke Higo",
             "ja": "比護 隆佑",
-            "ja_romaji": "Higo Ryūsuke"
+            "ja_romaji": "Higo Ryūsuke",
+            "zh": "比护隆佑"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3864,7 +4016,8 @@
       "true_name": {
         "en": "Hideo Akagi",
         "ja": "赤木 英雄",
-        "ja_romaji": "Akagi Hideo"
+        "ja_romaji": "Akagi Hideo",
+        "zh": "赤木英雄"
       },
       "status": "alive",
       "base_appearances": 13,
@@ -3875,7 +4028,8 @@
           "name": {
             "en": "Hideo Akagi",
             "ja": "赤木 英雄",
-            "ja_romaji": "Akagi Hideo"
+            "ja_romaji": "Akagi Hideo",
+            "zh": "赤木英雄"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3916,7 +4070,8 @@
       "true_name": {
         "en": "Chikage Kuroba",
         "ja": "黒羽 千影",
-        "ja_romaji": "Kuroba Chikage"
+        "ja_romaji": "Kuroba Chikage",
+        "zh": "黒羽千影"
       },
       "status": "alive",
       "base_appearances": 1,
@@ -3927,7 +4082,8 @@
           "name": {
             "en": "Chikage Kuroba",
             "ja": "黒羽 千影",
-            "ja_romaji": "Kuroba Chikage"
+            "ja_romaji": "Kuroba Chikage",
+            "zh": "黒羽千影"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3941,7 +4097,8 @@
       "true_name": {
         "en": "Midoriko Nakamori",
         "ja": "中森 碧子",
-        "ja_romaji": "Nakamori Midoriko"
+        "ja_romaji": "Nakamori Midoriko",
+        "zh": "中森碧子"
       },
       "status": "alive",
       "base_appearances": 0,
@@ -3952,7 +4109,8 @@
           "name": {
             "en": "Midoriko Nakamori",
             "ja": "中森 碧子",
-            "ja_romaji": "Nakamori Midoriko"
+            "ja_romaji": "Nakamori Midoriko",
+            "zh": "中森碧子"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -3966,7 +4124,8 @@
       "true_name": {
         "en": "Konosuke Jii",
         "ja": "寺井 黄之助",
-        "ja_romaji": "Jii Kōnosuke"
+        "ja_romaji": "Jii Kōnosuke",
+        "zh": "寺井黄之助"
       },
       "status": "alive",
       "base_appearances": 8,
@@ -3977,7 +4136,8 @@
           "name": {
             "en": "Konosuke Jii",
             "ja": "寺井 黄之助",
-            "ja_romaji": "Jii Kōnosuke"
+            "ja_romaji": "Jii Kōnosuke",
+            "zh": "寺井黄之助"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -4016,7 +4176,8 @@
       "true_name": {
         "en": "Akako Koizumi",
         "ja": "小泉 紅子",
-        "ja_romaji": "Koizumi Akako"
+        "ja_romaji": "Koizumi Akako",
+        "zh": "小泉红子"
       },
       "status": "alive",
       "base_appearances": 1,
@@ -4027,7 +4188,8 @@
           "name": {
             "en": "Akako Koizumi",
             "ja": "小泉 紅子",
-            "ja_romaji": "Koizumi Akako"
+            "ja_romaji": "Koizumi Akako",
+            "zh": "小泉红子"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -4041,7 +4203,8 @@
       "true_name": {
         "en": "Saguru Hakuba",
         "ja": "白馬 探",
-        "ja_romaji": "Hakuba Saguru"
+        "ja_romaji": "Hakuba Saguru",
+        "zh": "白马探"
       },
       "status": "alive",
       "base_appearances": 4,
@@ -4052,7 +4215,8 @@
           "name": {
             "en": "Saguru Hakuba",
             "ja": "白馬 探",
-            "ja_romaji": "Hakuba Saguru"
+            "ja_romaji": "Hakuba Saguru",
+            "zh": "白马探"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -4066,7 +4230,8 @@
       "true_name": {
         "en": "Keiko Momoi",
         "ja": "桃井 恵子",
-        "ja_romaji": "Momoi Keiko"
+        "ja_romaji": "Momoi Keiko",
+        "zh": "桃井恵子"
       },
       "status": "alive",
       "base_appearances": 11,
@@ -4077,7 +4242,8 @@
           "name": {
             "en": "Keiko Momoi",
             "ja": "桃井 恵子",
-            "ja_romaji": "Momoi Keiko"
+            "ja_romaji": "Momoi Keiko",
+            "zh": "桃井恵子"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",
@@ -4091,7 +4257,8 @@
       "true_name": {
         "en": "Takahiro Sanada",
         "ja": "真田 貴大",
-        "ja_romaji": "Sanada Takahiro"
+        "ja_romaji": "Sanada Takahiro",
+        "zh": "真田貴大"
       },
       "status": "alive",
       "base_appearances": 6,
@@ -4102,7 +4269,8 @@
           "name": {
             "en": "Takahiro Sanada",
             "ja": "真田 貴大",
-            "ja_romaji": "Sanada Takahiro"
+            "ja_romaji": "Sanada Takahiro",
+            "zh": "真田貴大"
           },
           "faction": "RED",
           "sub_faction": "DETECTIVE",

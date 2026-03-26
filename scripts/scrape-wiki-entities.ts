@@ -19,6 +19,7 @@ import {
   extractI18nNames,
   isBlackOrgMember,
   downloadAvatar,
+  jaToZh,
   slugify,
 } from './lib/wiki-utils.ts';
 import type { Entity, Persona, Faction, SubFaction } from '../src/types/index.ts';
@@ -223,6 +224,7 @@ function buildEntity(c: DiscoveredChar, d: ScrapedDetail): Entity {
   if (d.ja) trueName.ja = d.ja;
   if (d.ja_romaji) trueName.ja_romaji = d.ja_romaji;
   if (d.zh) trueName.zh = d.zh;
+  else if (d.ja) { const zh = jaToZh(d.ja); if (zh) trueName.zh = zh; }
 
   // Apply faction override if this character is misclassified by category page
   const override = FACTION_OVERRIDES.get(c.wikiPage);
@@ -321,6 +323,9 @@ async function main() {
       if (d.ja && !existing.true_name.ja) existing.true_name.ja = d.ja;
       if (d.ja_romaji && !existing.true_name.ja_romaji) existing.true_name.ja_romaji = d.ja_romaji;
       if (d.zh && !existing.true_name.zh) (existing.true_name as any).zh = d.zh;
+      else if (!existing.true_name.zh && d.ja) {
+        const zh = jaToZh(d.ja); if (zh) (existing.true_name as any).zh = zh;
+      }
       updated++;
     } else {
       // Check if this wiki page matches an existing persona name (alternate identity)
