@@ -1,4 +1,4 @@
-import { describe, it, expect, vi } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import {
   buildGraphData,
   computeSymbolSize,
@@ -6,7 +6,6 @@ import {
 import type { FactionSnapshot, Entity, Link } from '../types';
 
 // Mock import.meta.env
-const originalEnv = import.meta.env;
 
 beforeEach(() => {
   vi.stubGlobal('import.meta', {
