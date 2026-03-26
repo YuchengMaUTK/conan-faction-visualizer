@@ -26,7 +26,7 @@ Visit the live application: [https://yuchengmautk.github.io/conan-faction-visual
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 20+ (required for wiki scraper scripts)
 - npm or yarn
 
 ### Installation
@@ -88,7 +88,10 @@ See `public/conan-data-schema.json` for the complete data schema.
 - `npm run preview` - Preview production build
 - `npm run test` - Run tests
 - `npm run test:watch` - Run tests in watch mode
+- `npx tsx scripts/scrape-wiki-entities.ts` - Auto-discover characters from wiki, scrape details (i18n names, avatars, appearances), and merge into dataset
 - `npx tsx scripts/download-avatars.ts` - Re-download character avatars from wiki
+- `npx tsx scripts/scrape-avatars.ts` - Update avatar URLs from wiki
+- `npx tsx scripts/scrape-appearances.ts` - Update appearance counts from wiki
 
 ### Tech Stack
 
@@ -98,6 +101,7 @@ See `public/conan-data-schema.json` for the complete data schema.
 - **State Management**: Zustand
 - **Testing**: Vitest + Testing Library + fast-check
 - **Validation**: AJV (JSON Schema)
+- **Web Scraping**: Cheerio + p-limit (concurrent rate-limited wiki scraping)
 
 ### Project Structure
 
