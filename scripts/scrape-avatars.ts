@@ -6,106 +6,60 @@
  * Usage:  npx tsx scripts/scrape-avatars.ts
  */
 
-import { readFileSync, writeFileSync } from 'fs';
-import { resolve, dirname } from 'path';
-import { fileURLToPath } from 'url';
+import * as cheerio from 'cheerio';
+import pLimit from 'p-limit';
+import { fetchPage, delay, loadData, saveData, extractAvatar, WIKI_URL } from './lib/wiki-utils.ts';
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const WIKI_BASE = 'https://www.detectiveconanworld.com';
-const WIKI = `${WIKI_BASE}/wiki`;
-
-const WIKI_NAMES: Record<string, string> = {
-  shinichi: 'Shinichi_Kudo',
-  ran: 'Ran_Mouri',
-  conan: 'Conan_Edogawa',
-  heiji: 'Heiji_Hattori',
-  kazuha: 'Kazuha_Toyama',
-  akai: 'Shuichi_Akai',
-  amuro: 'Toru_Amuro',
-  gin: 'Gin',
-  vodka: 'Vodka',
-  vermouth: 'Vermouth',
-  haibara: 'Ai_Haibara',
-  jodie: 'Jodie_Starling',
-  sato: 'Miwako_Sato',
-  takagi: 'Wataru_Takagi',
-  miyano_akemi: 'Akemi_Miyano',
-  rum: 'Kanenori_Wakita',
-  hakuba: 'Saguru_Hakuba',
-  aoko: 'Aoko_Nakamori',
-  matsuda: 'Jinpei_Matsuda',
-  hagiwara: 'Kenji_Hagiwara',
-  chiba: 'Kazunobu_Chiba',
-  miike: 'Naeko_Miike',
-  sera: 'Masumi_Sera',
-  subaru: 'Subaru_Okiya',
-  kogoro: 'Kogoro_Mouri',
-  agasa: 'Hiroshi_Agasa',
-  ayumi: 'Ayumi_Yoshida',
-  mitsuhiko: 'Mitsuhiko_Tsuburaya',
-  genta: 'Genta_Kojima',
-  chianti: 'Chianti',
-  korn: 'Korn',
-  kir: 'Kir',
-};
-
-async function fetchProfileImage(wikiName: string): Promise<string | null> {
-  const url = `${WIKI}/${wikiName}`;
-  try {
-    const res = await fetch(url);
-    if (!res.ok) return null;
-    const html = await res.text();
-
-    // Match the profile image in the infobox — typically the first large image
-    // Pattern: src="/wiki/images/thumb/...Profile...(jpg|png)"
-    const profileMatch = html.match(/src="(\/wiki\/images\/thumb\/[^"]*Profile[^"]*\.(jpg|png))"/i);
-    if (profileMatch) return `${WIKI_BASE}${profileMatch[1]}`;
-
-    // Fallback: first image with character name in the infobox area
-    const namePattern = wikiName.replace(/_/g, '[_ ]');
-    const re = new RegExp(`src="(/wiki/images/thumb/[^"]*${namePattern}[^"]*\\.(jpg|png))"`, 'i');
-    const fallback = html.match(re);
-    if (fallback) return `${WIKI_BASE}${fallback[1]}`;
-
-    // Last resort: first infobox image
-    const anyMatch = html.match(/class="infobox"[\s\S]*?src="(\/wiki\/images\/thumb\/[^"]*\.(jpg|png))"/i);
-    if (anyMatch) return `${WIKI_BASE}${anyMatch[1]}`;
-
-    return null;
-  } catch {
-    console.error(`  Failed to fetch ${url}`);
-    return null;
-  }
-}
+const limit = pLimit(3);
 
 async function main() {
-  const dataPath = resolve(__dirname, '../public/conan-data.json');
-  const data = JSON.parse(readFileSync(dataPath, 'utf-8'));
-
+  const data = loadData();
   console.log('Scraping profile images from Detective Conan Wiki...\n');
 
-  for (const char of data.characters) {
-    const wikiName = WIKI_NAMES[char.id];
-    if (!wikiName) {
-      console.log(`  [SKIP] ${char.id}`);
-      continue;
-    }
+  let updated = 0;
+  let skipped = 0;
+  let failed = 0;
 
-    console.log(`  Fetching ${char.name} (${wikiName})...`);
-    const imageUrl = await fetchProfileImage(wikiName);
+  const tasks = data.entities.map((entity: any) =>
+    limit(async () => {
+      if (!entity.wiki_url) {
+        console.log(`  [SKIP] ${entity.entity_id} — no wiki_url`);
+        skipped++;
+        return;
+      }
 
-    if (imageUrl) {
-      console.log(`    ✅ ${imageUrl.slice(0, 80)}...`);
-      char.avatar = imageUrl;
-    } else {
-      console.log(`    ❌ No image found, keeping current`);
-    }
+      console.log(`  Fetching ${entity.true_name.en} ...`);
+      const html = await fetchPage(entity.wiki_url);
+      await delay(500);
 
-    await new Promise(r => setTimeout(r, 500));
-  }
+      if (!html) {
+        console.log(`    ❌ Failed to fetch page`);
+        failed++;
+        return;
+      }
 
-  writeFileSync(dataPath, JSON.stringify(data, null, 2) + '\n');
-  console.log('\n✅ Updated conan-data.json with wiki avatars');
+      const $ = cheerio.load(html);
+      const avatarUrl = extractAvatar($);
+
+      if (!avatarUrl) {
+        console.log(`    ❌ No image found`);
+        failed++;
+        return;
+      }
+
+      // Update avatar on all personas
+      for (const persona of entity.personas ?? []) {
+        persona.avatar = avatarUrl;
+      }
+      console.log(`    ✅ ${avatarUrl.slice(0, 80)}...`);
+      updated++;
+    })
+  );
+
+  await Promise.all(tasks);
+
+  saveData(data);
+  console.log(`\n✅ Done — updated: ${updated}, skipped: ${skipped}, failed: ${failed}`);
 }
 
 main();
