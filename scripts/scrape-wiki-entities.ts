@@ -39,6 +39,18 @@ const CATEGORIES: CategoryDef[] = [
 
 // Pages/prefixes that are not characters
 const SKIP_PREFIXES = ['File:', 'Category:', 'Template:', 'Special:', 'Help:', 'Talk:', 'User:', 'index.php'];
+
+// Characters that appear on the BO page but are NOT BO members — override their faction
+const FACTION_OVERRIDES = new Map<string, { faction: Faction; sub_faction: SubFaction }>([
+  ['Yusaku_Kudo',          { faction: 'RED', sub_faction: 'DETECTIVE' }],
+  ['Hiroshi_Agasa',        { faction: 'RED', sub_faction: 'DETECTIVE' }],
+  ['Toichi_Kuroba',        { faction: 'OTHER', sub_faction: 'KAITOU_KID' }],
+  ['Kaitou_Kid',           { faction: 'OTHER', sub_faction: 'KAITOU_KID' }],
+  ['Suguru_Itakura',       { faction: 'RED', sub_faction: 'NONE' }],
+  ['Eisuke_Hondou',        { faction: 'RED', sub_faction: 'NONE' }],
+  ['Hiromitsu_Morofushi',  { faction: 'RED', sub_faction: 'PSB' }],
+  ['Atsushi_Miyano',       { faction: 'RED', sub_faction: 'NONE' }],
+]);
 const SKIP_PAGES = new Set([
   'Main_Page', 'Characters', 'Black_Organization', 'FBI',
   'CIA', 'Tokyo_Metropolitan_Police', 'Detective_Conan',
@@ -214,11 +226,16 @@ function buildEntity(c: DiscoveredChar, d: ScrapedDetail): Entity {
   if (d.ja_romaji) trueName.ja_romaji = d.ja_romaji;
   if (d.zh) trueName.zh = d.zh;
 
+  // Apply faction override if this character is misclassified by category page
+  const override = FACTION_OVERRIDES.get(c.wikiPage);
+  const faction = override?.faction ?? c.faction;
+  const sub_faction = override?.sub_faction ?? c.sub_faction;
+
   const persona: Persona = {
     persona_id: `p_${id}`,
     name: { ...trueName },
-    faction: c.faction,
-    sub_faction: c.sub_faction,
+    faction,
+    sub_faction,
     avatar: d.avatar ?? '',
     codename: d.codename ?? undefined,
     is_default_display: true,
