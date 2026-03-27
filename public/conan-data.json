@@ -579,7 +579,7 @@
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
-          "avatar": "avatars/p_gin.jpg",
+          "avatar": "avatars/p_gin.png",
           "codename": "Gin",
           "is_default_display": true,
           "description": {
