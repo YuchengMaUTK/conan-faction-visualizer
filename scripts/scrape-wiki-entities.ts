@@ -18,6 +18,7 @@ import {
   extractAvatar,
   extractAppearanceCounts,
   extractCodename,
+  extractFirstAppearance,
   extractI18nNames,
   isBlackOrgMember,
   downloadAvatar,
@@ -121,6 +122,8 @@ interface ScrapedDetail {
   episodes: number | null;
   codename: string | null;
   isBO: boolean;
+  firstEpisode: number | null;
+  firstChapter: number | null;
   ja?: string;
   ja_romaji?: string;
   zh?: string;
@@ -214,8 +217,9 @@ async function fetchDetails(wikiPage: string): Promise<ScrapedDetail | null> {
   const $ = cheerio.load(html);
   if (!isCharacterPage($)) return null;
   const { episodes } = extractAppearanceCounts($);
+  const { episode: firstEpisode, chapter: firstChapter } = extractFirstAppearance($);
   const i18n = extractI18nNames($);
-  return { avatar: extractAvatar($), episodes, codename: extractCodename($), isBO: isBlackOrgMember($), ...i18n };
+  return { avatar: extractAvatar($), episodes, codename: extractCodename($), isBO: isBlackOrgMember($), firstEpisode, firstChapter, ...i18n };
 }
 
 /** Build a new Entity from a discovered character + scraped details */
@@ -375,16 +379,29 @@ async function main() {
   // 4. Generate JOIN events for entities without any characterEvents
   const events: any[] = data.characterEvents ?? [];
   const entitiesWithEvents = new Set(events.map((e: any) => e.entity_id));
+  // Build lookup: entity_id → scraped first appearance
+  const firstAppByEntity = new Map<string, { ep: number; ch: number }>();
+  for (const c of chars) {
+    const d = details.get(c.wikiPage);
+    if (!d) continue;
+    const eid = `e_${slugify(c.wikiPage)}`;
+    if (d.firstEpisode || d.firstChapter) {
+      firstAppByEntity.set(eid, { ep: d.firstEpisode ?? 1, ch: d.firstChapter ?? 1 });
+    }
+  }
   const newEvents = entities
     .filter(e => !entitiesWithEvents.has(e.entity_id))
-    .map(e => ({
-      id: `evt-auto-${e.entity_id}`,
-      entity_id: e.entity_id,
-      type: 'JOIN',
-      episodeIndex: 1,
-      chapterIndex: 1,
-      description: `${e.true_name.en} first appearance`,
-    }));
+    .map(e => {
+      const fa = firstAppByEntity.get(e.entity_id);
+      return {
+        id: `evt-auto-${e.entity_id}`,
+        entity_id: e.entity_id,
+        type: 'JOIN',
+        episodeIndex: fa?.ep ?? 1,
+        chapterIndex: fa?.ch ?? 1,
+        description: `${e.true_name.en} first appearance`,
+      };
+    });
   data.characterEvents = [...events, ...newEvents];
 
   // 5. Download remote avatars to local public/avatars/

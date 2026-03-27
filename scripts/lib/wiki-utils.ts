@@ -104,6 +104,20 @@ export function extractCodename($: cheerio.CheerioAPI): string | null {
   return codename;
 }
 
+// Extract first appearance episode and chapter from infobox
+export function extractFirstAppearance($: cheerio.CheerioAPI): { episode: number | null; chapter: number | null } {
+  const result = { episode: null as number | null, chapter: null as number | null };
+  $('table.infobox th').each((_, el) => {
+    if (!/first appearance/i.test($(el).text())) return;
+    const html = $(el).next('td').html() ?? '';
+    const epMatch = html.match(/Episode\s*(\d+)/i);
+    const chMatch = html.match(/File\s*(\d+)/i);
+    if (epMatch) result.episode = parseInt(epMatch[1], 10);
+    if (chMatch) result.chapter = parseInt(chMatch[1], 10);
+  });
+  return result;
+}
+
 // Check if a character is a Black Organization member based on Occupation field
 export function isBlackOrgMember($: cheerio.CheerioAPI): boolean {
   let result = false;

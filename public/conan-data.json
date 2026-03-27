@@ -2,7 +2,7 @@
   "$schema": "./conan-data-schema.json",
   "metadata": {
     "version": "2.0.0",
-    "lastUpdated": "2026-03-26",
+    "lastUpdated": "2026-03-27",
     "totalEpisodes": 1150,
     "totalChapters": 1130
   },
@@ -579,7 +579,7 @@
           },
           "faction": "BLACK",
           "sub_faction": "BO_CORE",
-          "avatar": "avatars/p_gin.png",
+          "avatar": "avatars/p_gin.jpg",
           "codename": "Gin",
           "is_default_display": true,
           "description": {
@@ -4429,48 +4429,48 @@
       "id": "evt-auto-e_renya_karasuma",
       "entity_id": "e_renya_karasuma",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 219,
+      "chapterIndex": 300,
       "description": "Renya Karasuma first appearance"
     },
     {
       "id": "evt-auto-e_rikumichi_kusuda",
       "entity_id": "e_rikumichi_kusuda",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 496,
+      "chapterIndex": 595,
       "description": "Rikumichi Kusuda first appearance"
     },
     {
       "id": "evt-auto-e_ethan_hondou",
       "entity_id": "e_ethan_hondou",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 485,
+      "chapterIndex": 584,
       "description": "Ethan Hondou first appearance"
     },
     {
       "id": "evt-auto-e_ki_ichiro_numabuchi",
       "entity_id": "e_ki_ichiro_numabuchi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 118,
+      "chapterIndex": 187,
       "description": "Ki'ichiro Numabuchi first appearance"
     },
     {
       "id": "evt-auto-e_kanenori_wakita",
       "entity_id": "e_kanenori_wakita",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 502,
+      "chapterIndex": 607,
       "description": "Kanenori Wakita first appearance"
     },
     {
       "id": "evt-auto-e_eisuke_hondou",
       "entity_id": "e_eisuke_hondou",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 429,
+      "chapterIndex": 508,
       "description": "Eisuke Hondou first appearance"
     },
     {
@@ -4509,16 +4509,16 @@
       "id": "evt-auto-e_yusaku_kudo",
       "entity_id": "e_yusaku_kudo",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 43,
+      "chapterIndex": 51,
       "description": "Yusaku Kudo first appearance"
     },
     {
       "id": "evt-auto-e_atsushi_miyano",
       "entity_id": "e_atsushi_miyano",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 340,
+      "chapterIndex": 1011,
       "description": "Atsushi Miyano first appearance"
     },
     {
@@ -4526,14 +4526,14 @@
       "entity_id": "e_hiroshi_agasa",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 2,
       "description": "Hiroshi Agasa first appearance"
     },
     {
       "id": "evt-auto-e_toichi_kuroba",
       "entity_id": "e_toichi_kuroba",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 219,
       "chapterIndex": 1,
       "description": "Toichi Kuroba first appearance"
     },
@@ -4541,32 +4541,32 @@
       "id": "evt-auto-e_kaitou_kid",
       "entity_id": "e_kaitou_kid",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 76,
+      "chapterIndex": 156,
       "description": "Kaitou Kid first appearance"
     },
     {
       "id": "evt-auto-e_suguru_itakura",
       "entity_id": "e_suguru_itakura",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 307,
+      "chapterIndex": 377,
       "description": "Suguru Itakura first appearance"
     },
     {
       "id": "evt-auto-e_pisco",
       "entity_id": "e_pisco",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 176,
+      "chapterIndex": 239,
       "description": "Pisco first appearance"
     },
     {
       "id": "evt-auto-e_hiromitsu_morofushi",
       "entity_id": "e_hiromitsu_morofushi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 836,
+      "chapterIndex": 937,
       "description": "Hiromitsu Morofushi first appearance"
     },
     {
@@ -4590,47 +4590,47 @@
       "entity_id": "e_ninzaburo_shiratori",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 209,
       "description": "Ninzaburo Shiratori first appearance"
     },
     {
       "id": "evt-auto-e_kazunobu_chiba",
       "entity_id": "e_kazunobu_chiba",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 138,
+      "chapterIndex": 269,
       "description": "Kazunobu Chiba first appearance"
     },
     {
       "id": "evt-auto-e_kiyonaga_matsumoto",
       "entity_id": "e_kiyonaga_matsumoto",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 18,
+      "chapterIndex": 78,
       "description": "Kiyonaga Matsumoto first appearance"
     },
     {
       "id": "evt-auto-e_hyoue_kuroda",
       "entity_id": "e_hyoue_kuroda",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 810,
+      "chapterIndex": 913,
       "description": "Hyoue Kuroda first appearance"
     },
     {
       "id": "evt-auto-e_chosuke_takagi",
       "entity_id": "e_chosuke_takagi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 390,
+      "chapterIndex": 450,
       "description": "Chosuke Takagi first appearance"
     },
     {
       "id": "evt-auto-e_manabu_fujimaki",
       "entity_id": "e_manabu_fujimaki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Manabu Fujimaki first appearance"
     },
     {
@@ -4653,63 +4653,63 @@
       "id": "evt-auto-e_ginzo_nakamori",
       "entity_id": "e_ginzo_nakamori",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 76,
+      "chapterIndex": 156,
       "description": "Ginzo Nakamori first appearance"
     },
     {
       "id": "evt-auto-e_shintaro_chaki",
       "entity_id": "e_shintaro_chaki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 76,
+      "chapterIndex": 156,
       "description": "Shintaro Chaki first appearance"
     },
     {
       "id": "evt-auto-e_yumi_miyamoto",
       "entity_id": "e_yumi_miyamoto",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 146,
+      "chapterIndex": 208,
       "description": "Yumi Miyamoto first appearance"
     },
     {
       "id": "evt-auto-e_naeko_miike",
       "entity_id": "e_naeko_miike",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 624,
+      "chapterIndex": 741,
       "description": "Naeko Miike first appearance"
     },
     {
       "id": "evt-auto-e_officer_numata",
       "entity_id": "e_officer_numata",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 350,
+      "chapterIndex": 439,
       "description": "Officer Numata first appearance"
     },
     {
       "id": "evt-auto-e_inspector_hatori",
       "entity_id": "e_inspector_hatori",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1184,
+      "chapterIndex": 1123,
       "description": "Inspector Hatori first appearance"
     },
     {
       "id": "evt-auto-e_hachizo_onizuka",
       "entity_id": "e_hachizo_onizuka",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1029,
+      "chapterIndex": 1135,
       "description": "Hachizo Onizuka first appearance"
     },
     {
       "id": "evt-auto-e_officer_tome",
       "entity_id": "e_officer_tome",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 3,
       "chapterIndex": 1,
       "description": "Officer Tome first appearance"
     },
@@ -4717,7 +4717,7 @@
       "id": "evt-auto-e_female_forensics_member",
       "entity_id": "e_female_forensics_member",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 184,
       "chapterIndex": 1,
       "description": "Female forensics member first appearance"
     },
@@ -4749,87 +4749,87 @@
       "id": "evt-auto-e_detective_takikawa",
       "entity_id": "e_detective_takikawa",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Takikawa first appearance"
     },
     {
       "id": "evt-auto-e_detective_nakamura",
       "entity_id": "e_detective_nakamura",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Nakamura first appearance"
     },
     {
       "id": "evt-auto-e_detective_fukui",
       "entity_id": "e_detective_fukui",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Fukui first appearance"
     },
     {
       "id": "evt-auto-e_detective_kawanaka",
       "entity_id": "e_detective_kawanaka",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Kawanaka first appearance"
     },
     {
       "id": "evt-auto-e_detective_saitoh",
       "entity_id": "e_detective_saitoh",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Saitoh first appearance"
     },
     {
       "id": "evt-auto-e_detective_horita",
       "entity_id": "e_detective_horita",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Horita first appearance"
     },
     {
       "id": "evt-auto-e_detective_takano",
       "entity_id": "e_detective_takano",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Takano first appearance"
     },
     {
       "id": "evt-auto-e_detective_sogawa",
       "entity_id": "e_detective_sogawa",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Sogawa first appearance"
     },
     {
       "id": "evt-auto-e_detective_sugita",
       "entity_id": "e_detective_sugita",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Sugita first appearance"
     },
     {
       "id": "evt-auto-e_detective_okumura",
       "entity_id": "e_detective_okumura",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Okumura first appearance"
     },
     {
       "id": "evt-auto-e_detective_hirota",
       "entity_id": "e_detective_hirota",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 413,
       "chapterIndex": 1,
       "description": "Detective Hirota first appearance"
     },
@@ -4837,32 +4837,32 @@
       "id": "evt-auto-e_jinpei_matsuda",
       "entity_id": "e_jinpei_matsuda",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 301,
+      "chapterIndex": 366,
       "description": "Jinpei Matsuda first appearance"
     },
     {
       "id": "evt-auto-e_kenji_hagiwara",
       "entity_id": "e_kenji_hagiwara",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 304,
+      "chapterIndex": 1021,
       "description": "Kenji Hagiwara first appearance"
     },
     {
       "id": "evt-auto-e_masayoshi_sato",
       "entity_id": "e_masayoshi_sato",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 205,
+      "chapterIndex": 267,
       "description": "Masayoshi Sato first appearance"
     },
     {
       "id": "evt-auto-e_wataru_date",
       "entity_id": "e_wataru_date",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 681,
+      "chapterIndex": 804,
       "description": "Wataru Date first appearance"
     },
     {
@@ -4877,15 +4877,15 @@
       "id": "evt-auto-e_inspector_yuminaga",
       "entity_id": "e_inspector_yuminaga",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 325,
+      "chapterIndex": 394,
       "description": "Inspector Yuminaga first appearance"
     },
     {
       "id": "evt-auto-e_inspector_momose",
       "entity_id": "e_inspector_momose",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 312,
       "chapterIndex": 1,
       "description": "Inspector Momose first appearance"
     },
@@ -4894,14 +4894,14 @@
       "entity_id": "e_yuya_kazami",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 998,
       "description": "Yuya Kazami first appearance"
     },
     {
       "id": "evt-auto-e_detective_terashima",
       "entity_id": "e_detective_terashima",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 360,
       "chapterIndex": 1,
       "description": "Detective Terashima first appearance"
     },
@@ -4917,15 +4917,15 @@
       "id": "evt-auto-e_detective_miyazaki",
       "entity_id": "e_detective_miyazaki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 358,
+      "chapterIndex": 404,
       "description": "Detective Miyazaki first appearance"
     },
     {
       "id": "evt-auto-e_detective_tomokawa",
       "entity_id": "e_detective_tomokawa",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 150,
       "chapterIndex": 1,
       "description": "Detective Tomokawa first appearance"
     },
@@ -4933,7 +4933,7 @@
       "id": "evt-auto-e_detective_yama",
       "entity_id": "e_detective_yama",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 81,
       "chapterIndex": 1,
       "description": "Detective Yama first appearance"
     },
@@ -4941,88 +4941,88 @@
       "id": "evt-auto-e_inspector_yuminaga_s_assistant",
       "entity_id": "e_inspector_yuminaga_s_assistant",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 509,
+      "chapterIndex": 622,
       "description": "Inspector Yuminaga's assistant first appearance"
     },
     {
       "id": "evt-auto-e_heizo_hattori",
       "entity_id": "e_heizo_hattori",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 48,
+      "chapterIndex": 93,
       "description": "Heizo Hattori first appearance"
     },
     {
       "id": "evt-auto-e_ginshiro_toyama",
       "entity_id": "e_ginshiro_toyama",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 118,
+      "chapterIndex": 185,
       "description": "Ginshiro Toyama first appearance"
     },
     {
       "id": "evt-auto-e_goro_otaki",
       "entity_id": "e_goro_otaki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 118,
+      "chapterIndex": 187,
       "description": "Goro Otaki first appearance"
     },
     {
       "id": "evt-auto-e_kansuke_yamato",
       "entity_id": "e_kansuke_yamato",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 516,
+      "chapterIndex": 613,
       "description": "Kansuke Yamato first appearance"
     },
     {
       "id": "evt-auto-e_yui_uehara",
       "entity_id": "e_yui_uehara",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 516,
+      "chapterIndex": 613,
       "description": "Yui Uehara first appearance"
     },
     {
       "id": "evt-auto-e_taka_aki_morofushi",
       "entity_id": "e_taka_aki_morofushi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 558,
+      "chapterIndex": 682,
       "description": "Taka'aki Morofushi first appearance"
     },
     {
       "id": "evt-auto-e_jugo_yokomizo",
       "entity_id": "e_jugo_yokomizo",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 284,
+      "chapterIndex": 348,
       "description": "Jugo Yokomizo first appearance"
     },
     {
       "id": "evt-auto-e_chihaya_hagiwara",
       "entity_id": "e_chihaya_hagiwara",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1029,
+      "chapterIndex": 1073,
       "description": "Chihaya Hagiwara first appearance"
     },
     {
       "id": "evt-auto-e_kyohei_nishimura",
       "entity_id": "e_kyohei_nishimura",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 144,
+      "chapterIndex": 216,
       "description": "Kyohei Nishimura first appearance"
     },
     {
       "id": "evt-auto-e_detective_tamura",
       "entity_id": "e_detective_tamura",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 144,
+      "chapterIndex": 216,
       "description": "Detective Tamura first appearance"
     },
     {
@@ -5030,14 +5030,14 @@
       "entity_id": "e_fumimaro_ayanokoji",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 1001,
       "description": "Fumimaro Ayanokoji first appearance"
     },
     {
       "id": "evt-auto-e_detective_kurumazaki",
       "entity_id": "e_detective_kurumazaki",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 694,
       "chapterIndex": 1,
       "description": "Detective Kurumazaki first appearance"
     },
@@ -5045,15 +5045,15 @@
       "id": "evt-auto-e_sango_yokomizo",
       "entity_id": "e_sango_yokomizo",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 9,
+      "chapterIndex": 59,
       "description": "Sango Yokomizo first appearance"
     },
     {
       "id": "evt-auto-e_tomonori_ogawara",
       "entity_id": "e_tomonori_ogawara",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 718,
       "chapterIndex": 1,
       "description": "Tomonori Ogawara first appearance"
     },
@@ -5061,16 +5061,16 @@
       "id": "evt-auto-e_detective_tsukumo",
       "entity_id": "e_detective_tsukumo",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1148,
+      "chapterIndex": 1098,
       "description": "Detective Tsukumo first appearance"
     },
     {
       "id": "evt-auto-e_misao_yamamura",
       "entity_id": "e_misao_yamamura",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 96,
+      "chapterIndex": 136,
       "description": "Misao Yamamura first appearance"
     },
     {
@@ -5085,7 +5085,7 @@
       "id": "evt-auto-e_tamekichi_matsushiro",
       "entity_id": "e_tamekichi_matsushiro",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 349,
       "chapterIndex": 1,
       "description": "Tamekichi Matsushiro first appearance"
     },
@@ -5093,48 +5093,48 @@
       "id": "evt-auto-e_shoji_terabayashi",
       "entity_id": "e_shoji_terabayashi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 153,
+      "chapterIndex": 219,
       "description": "Shoji Terabayashi first appearance"
     },
     {
       "id": "evt-auto-e_james_black",
       "entity_id": "e_james_black",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 258,
+      "chapterIndex": 325,
       "description": "James Black first appearance"
     },
     {
       "id": "evt-auto-e_andre_camel",
       "entity_id": "e_andre_camel",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 497,
+      "chapterIndex": 599,
       "description": "Andre Camel first appearance"
     },
     {
       "id": "evt-auto-e_amanda_hughes",
       "entity_id": "e_amanda_hughes",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 861,
+      "chapterIndex": 948,
       "description": "Amanda Hughes first appearance"
     },
     {
       "id": "evt-auto-e_tsutomu_akai",
       "entity_id": "e_tsutomu_akai",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 881,
+      "chapterIndex": 974,
       "description": "Tsutomu Akai first appearance"
     },
     {
       "id": "evt-auto-e_kaito_kuroba",
       "entity_id": "e_kaito_kuroba",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 76,
+      "chapterIndex": 159,
       "description": "Kaito Kuroba first appearance"
     },
     {
@@ -5142,7 +5142,7 @@
       "entity_id": "e_ayumi_yoshida",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 17,
       "description": "Ayumi Yoshida first appearance"
     },
     {
@@ -5150,7 +5150,7 @@
       "entity_id": "e_mitsuhiko_tsuburaya",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 17,
       "description": "Mitsuhiko Tsuburaya first appearance"
     },
     {
@@ -5158,103 +5158,103 @@
       "entity_id": "e_genta_kojima",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 17,
       "description": "Genta Kojima first appearance"
     },
     {
       "id": "evt-auto-e_sonoko_suzuki",
       "entity_id": "e_sonoko_suzuki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 6,
+      "chapterIndex": 40,
       "description": "Sonoko Suzuki first appearance"
     },
     {
       "id": "evt-auto-e_eri_kisaki",
       "entity_id": "e_eri_kisaki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 32,
+      "chapterIndex": 105,
       "description": "Eri Kisaki first appearance"
     },
     {
       "id": "evt-auto-e_yukiko_kudo",
       "entity_id": "e_yukiko_kudo",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 43,
+      "chapterIndex": 51,
       "description": "Yukiko Kudo first appearance"
     },
     {
       "id": "evt-auto-e_kazuha_toyama",
       "entity_id": "e_kazuha_toyama",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 118,
+      "chapterIndex": 185,
       "description": "Kazuha Toyama first appearance"
     },
     {
       "id": "evt-auto-e_masumi_sera",
       "entity_id": "e_masumi_sera",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 646,
+      "chapterIndex": 768,
       "description": "Masumi Sera first appearance"
     },
     {
       "id": "evt-auto-e_rumi_wakasa",
       "entity_id": "e_rumi_wakasa",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 889,
+      "chapterIndex": 966,
       "description": "Rumi Wakasa first appearance"
     },
     {
       "id": "evt-auto-e_makoto_kyogoku",
       "entity_id": "e_makoto_kyogoku",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 153,
+      "chapterIndex": 219,
       "description": "Makoto Kyogoku first appearance"
     },
     {
       "id": "evt-auto-e_yoko_okino",
       "entity_id": "e_yoko_okino",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 3,
+      "chapterIndex": 6,
       "description": "Yoko Okino first appearance"
     },
     {
       "id": "evt-auto-e_sumiko_kobayashi",
       "entity_id": "e_sumiko_kobayashi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 112,
+      "chapterIndex": 154,
       "description": "Sumiko Kobayashi first appearance"
     },
     {
       "id": "evt-auto-e_jirokichi_suzuki",
       "entity_id": "e_jirokichi_suzuki",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 356,
+      "chapterIndex": 453,
       "description": "Jirokichi Suzuki first appearance"
     },
     {
       "id": "evt-auto-e_azusa_enomoto",
       "entity_id": "e_azusa_enomoto",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 152,
+      "chapterIndex": 438,
       "description": "Azusa Enomoto first appearance"
     },
     {
       "id": "evt-auto-e_shukichi_haneda",
       "entity_id": "e_shukichi_haneda",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 731,
+      "chapterIndex": 847,
       "description": "Shukichi Haneda first appearance"
     },
     {
@@ -5262,7 +5262,7 @@
       "entity_id": "e_momiji_ooka",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 962,
       "description": "Momiji Ooka first appearance"
     },
     {
@@ -5270,87 +5270,87 @@
       "entity_id": "e_muga_iori",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 981,
       "description": "Muga Iori first appearance"
     },
     {
       "id": "evt-auto-e_tomoaki_araide",
       "entity_id": "e_tomoaki_araide",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 170,
+      "chapterIndex": 234,
       "description": "Tomoaki Araide first appearance"
     },
     {
       "id": "evt-auto-e_sakurako_yonehara",
       "entity_id": "e_sakurako_yonehara",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 652,
+      "chapterIndex": 781,
       "description": "Sakurako Yonehara first appearance"
     },
     {
       "id": "evt-auto-e_shizuka_hattori",
       "entity_id": "e_shizuka_hattori",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 220,
+      "chapterIndex": 276,
       "description": "Shizuka Hattori first appearance"
     },
     {
       "id": "evt-auto-e_mary_sera",
       "entity_id": "e_mary_sera",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 756,
+      "chapterIndex": 875,
       "description": "Mary Sera first appearance"
     },
     {
       "id": "evt-auto-e_sharon_vineyard",
       "entity_id": "e_sharon_vineyard",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 176,
+      "chapterIndex": 239,
       "description": "Sharon Vineyard first appearance"
     },
     {
       "id": "evt-auto-e_elena_miyano",
       "entity_id": "e_elena_miyano",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 329,
+      "chapterIndex": 398,
       "description": "Elena Miyano first appearance"
     },
     {
       "id": "evt-auto-e_kohji_haneda",
       "entity_id": "e_kohji_haneda",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 850,
+      "chapterIndex": 947,
       "description": "Kohji Haneda first appearance"
     },
     {
       "id": "evt-auto-e_mysterious_old_man_with_bird",
       "entity_id": "e_mysterious_old_man_with_bird",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1151,
+      "chapterIndex": 1102,
       "description": "Mysterious Old Man with Bird first appearance"
     },
     {
       "id": "evt-auto-e_mysterious_old_man",
       "entity_id": "e_mysterious_old_man",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1136,
+      "chapterIndex": 1090,
       "description": "Mysterious Old Man first appearance"
     },
     {
       "id": "evt-auto-e_mysterious_man_with_sunglasses",
       "entity_id": "e_mysterious_man_with_sunglasses",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 1136,
+      "chapterIndex": 1090,
       "description": "Mysterious man with sunglasses first appearance"
     },
     {
@@ -5358,38 +5358,38 @@
       "entity_id": "e_mysterious_old_woman",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 1126,
       "description": "Mysterious Old Woman first appearance"
     },
     {
       "id": "evt-auto-e_ryusuke_higo",
       "entity_id": "e_ryusuke_higo",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 279,
+      "chapterIndex": 344,
       "description": "Ryusuke Higo first appearance"
     },
     {
       "id": "evt-auto-e_hideo_akagi",
       "entity_id": "e_hideo_akagi",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 10,
+      "chapterIndex": 68,
       "description": "Hideo Akagi first appearance"
     },
     {
       "id": "evt-auto-e_aoko_nakamori",
       "entity_id": "e_aoko_nakamori",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 76,
+      "chapterIndex": 159,
       "description": "Aoko Nakamori first appearance"
     },
     {
       "id": "evt-auto-e_chikage_kuroba",
       "entity_id": "e_chikage_kuroba",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 627,
       "chapterIndex": 1,
       "description": "Chikage Kuroba first appearance"
     },
@@ -5405,15 +5405,15 @@
       "id": "evt-auto-e_konosuke_jii",
       "entity_id": "e_konosuke_jii",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 219,
+      "chapterIndex": 456,
       "description": "Konosuke Jii first appearance"
     },
     {
       "id": "evt-auto-e_kaitou_corbeau",
       "entity_id": "e_kaitou_corbeau",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 23,
       "chapterIndex": 1,
       "description": "Kaitou Corbeau first appearance"
     },
@@ -5429,15 +5429,15 @@
       "id": "evt-auto-e_saguru_hakuba",
       "entity_id": "e_saguru_hakuba",
       "type": "JOIN",
-      "episodeIndex": 1,
-      "chapterIndex": 1,
+      "episodeIndex": 219,
+      "chapterIndex": 299,
       "description": "Saguru Hakuba first appearance"
     },
     {
       "id": "evt-auto-e_keiko_momoi",
       "entity_id": "e_keiko_momoi",
       "type": "JOIN",
-      "episodeIndex": 1,
+      "episodeIndex": 219,
       "chapterIndex": 1,
       "description": "Keiko Momoi first appearance"
     },
@@ -5446,7 +5446,7 @@
       "entity_id": "e_takahiro_sanada",
       "type": "JOIN",
       "episodeIndex": 1,
-      "chapterIndex": 1,
+      "chapterIndex": 887,
       "description": "Takahiro Sanada first appearance"
     }
   ],
