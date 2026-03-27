@@ -6,6 +6,8 @@
  */
 
 import * as cheerio from 'cheerio';
+import * as fs from 'fs';
+import * as path from 'path';
 import pLimit from 'p-limit';
 import {
   WIKI_URL,
@@ -317,7 +319,9 @@ async function main() {
       if (d.episodes != null) existing.base_appearances = d.episodes;
       if (d.avatar) {
         const defPersona = existing.personas.find(p => p.is_default_display) ?? existing.personas[0];
-        if (defPersona && !defPersona.avatar) defPersona.avatar = d.avatar;
+        if (defPersona && (!defPersona.avatar || !fs.existsSync(path.join('public', defPersona.avatar)))) {
+          defPersona.avatar = d.avatar;
+        }
       }
       // Fill in missing i18n names (don't overwrite existing)
       if (d.ja && !existing.true_name.ja) existing.true_name.ja = d.ja;
