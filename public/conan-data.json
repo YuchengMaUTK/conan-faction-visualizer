@@ -4278,6 +4278,282 @@
           "is_default_display": true
         }
       ]
+    },
+    {
+      "entity_id": "e_chianti",
+      "true_name": {
+        "en": "Chianti",
+        "ja": "キャンティ",
+        "zh": "基安蒂"
+      },
+      "status": "alive",
+      "base_appearances": 25,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Chianti",
+      "first_appearance": {
+        "manga_file": 500,
+        "anime_episode": 425
+      },
+      "voice_actors": {
+        "ja": "井上喜久子",
+        "en": "Tamara Ryan"
+      },
+      "gender": "female",
+      "personas": [
+        {
+          "persona_id": "p_chianti",
+          "name": {
+            "en": "Chianti",
+            "ja": "キャンティ",
+            "zh": "基安蒂"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_chianti.jpg",
+          "codename": "Chianti",
+          "is_default_display": true,
+          "description": {
+            "en": "BO sniper",
+            "zh": "组织狙击手",
+            "ja": "組織のスナイパー"
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_korn",
+      "true_name": {
+        "en": "Korn",
+        "ja": "コルン",
+        "zh": "科恩"
+      },
+      "status": "alive",
+      "base_appearances": 25,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Korn",
+      "first_appearance": {
+        "manga_file": 500,
+        "anime_episode": 425
+      },
+      "voice_actors": {
+        "ja": "木下浩之",
+        "en": "Kaiji Tang"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_korn",
+          "name": {
+            "en": "Korn",
+            "ja": "コルン",
+            "zh": "科恩"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_korn.jpg",
+          "codename": "Korn",
+          "is_default_display": true,
+          "description": {
+            "en": "BO sniper",
+            "zh": "组织狙击手",
+            "ja": "組織のスナイパー"
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_tequila",
+      "true_name": {
+        "en": "Tequila",
+        "ja": "テキーラ",
+        "zh": "龙舌兰"
+      },
+      "status": "dead",
+      "base_appearances": 4,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Tequila",
+      "first_appearance": {
+        "manga_file": 114,
+        "anime_episode": 54
+      },
+      "voice_actors": {
+        "ja": "廣田行生",
+        "en": "Andrew T. Chandler"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_tequila",
+          "name": {
+            "en": "Tequila",
+            "ja": "テキーラ",
+            "zh": "龙舌兰"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_tequila.jpg",
+          "codename": "Tequila",
+          "is_default_display": true,
+          "description": {
+            "en": "BO member, killed in explosion",
+            "zh": "组织成员，死于爆炸",
+            "ja": "組織のメンバー、爆死"
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_calvados",
+      "true_name": {
+        "en": "Calvados",
+        "ja": "カルバドス",
+        "zh": "卡尔瓦多斯"
+      },
+      "status": "dead",
+      "base_appearances": 2,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Calvados",
+      "first_appearance": {
+        "manga_file": 433,
+        "anime_episode": 345
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_calvados",
+          "name": {
+            "en": "Calvados",
+            "ja": "カルバドス",
+            "zh": "卡尔瓦多斯"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_CORE",
+          "avatar": "avatars/p_calvados.jpg",
+          "codename": "Calvados",
+          "is_default_display": true,
+          "description": {
+            "en": "BO sniper, committed suicide",
+            "zh": "组织狙击手，自杀身亡",
+            "ja": "組織のスナイパー、自殺"
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_scotch",
+      "true_name": {
+        "en": "Hiromitsu Morofushi",
+        "ja": "諸伏景光",
+        "zh": "诸伏景光"
+      },
+      "status": "dead",
+      "base_appearances": 10,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Scotch",
+      "first_appearance": {
+        "manga_file": 937,
+        "anime_episode": 836
+      },
+      "voice_actors": {
+        "ja": "緑川光",
+        "en": "Chris Flores"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_scotch",
+          "name": {
+            "en": "Scotch",
+            "ja": "スコッチ",
+            "zh": "苏格兰威士忌"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_INFILTRATOR",
+          "avatar": "avatars/p_scotch.jpg",
+          "codename": "Scotch",
+          "is_default_display": true,
+          "description": {
+            "en": "Undercover PSB agent in the BO",
+            "zh": "潜入组织的公安警察",
+            "ja": "組織に潜入した公安警察"
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_rye",
+      "true_name": {
+        "en": "Shuichi Akai",
+        "ja": "赤井秀一",
+        "zh": "赤井秀一"
+      },
+      "status": "left",
+      "base_appearances": 5,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Rye",
+      "first_appearance": {
+        "manga_file": 287,
+        "anime_episode": 230
+      },
+      "voice_actors": {
+        "ja": "池田秀一",
+        "en": "Keith Silverstein"
+      },
+      "gender": "male",
+      "personas": [
+        {
+          "persona_id": "p_rye",
+          "name": {
+            "en": "Rye",
+            "ja": "ライ",
+            "zh": "黑麦威士忌"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_INFILTRATOR",
+          "avatar": "avatars/p_rye.jpg",
+          "codename": "Rye",
+          "is_default_display": true,
+          "description": {
+            "en": "Shuichi Akai's undercover FBI identity in the BO",
+            "zh": "赤井秀一潜入组织时的身份",
+            "ja": "赤井秀一が組織に潜入した際の身分"
+          }
+        }
+      ]
+    },
+    {
+      "entity_id": "e_sherry",
+      "true_name": {
+        "en": "Shiho Miyano",
+        "ja": "宮野志保",
+        "zh": "宫野志保"
+      },
+      "status": "left",
+      "base_appearances": 10,
+      "wiki_url": "https://www.detectiveconanworld.com/wiki/Sherry",
+      "first_appearance": {
+        "manga_file": 179,
+        "anime_episode": 129
+      },
+      "voice_actors": {
+        "ja": "林原めぐみ",
+        "en": "Brina Palencia"
+      },
+      "gender": "female",
+      "personas": [
+        {
+          "persona_id": "p_sherry",
+          "name": {
+            "en": "Sherry",
+            "ja": "シェリー",
+            "zh": "雪莉"
+          },
+          "faction": "BLACK",
+          "sub_faction": "BO_DEFECTOR",
+          "avatar": "avatars/p_sherry.jpg",
+          "codename": "Sherry",
+          "is_default_display": true,
+          "description": {
+            "en": "Former BO scientist who defected, creator of APTX-4869",
+            "zh": "脱离组织的科学家，APTX4869的开发者",
+            "ja": "組織を脱退した科学者、APTX4869の開発者"
+          }
+        }
+      ]
     }
   ],
   "characterEvents": [
