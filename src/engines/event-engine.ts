@@ -117,8 +117,10 @@ export function computeSnapshot(data: DataSet, timePoint: TimePoint): FactionSna
       )
     );
 
+    // If no events at all, entity hasn't appeared yet — skip
+    if (relevantEvents.length === 0) continue;
+
     // Compute cumulative status by applying events in order
-    // Entities with no events default to ACTIVE (they should still be displayed)
     let status: CharacterState['status'] = 'ACTIVE';
     for (const event of relevantEvents) {
       status = statusFromEventType(event.type);

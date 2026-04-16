@@ -4482,7 +4482,7 @@
         "ja": "赤井秀一",
         "zh": "赤井秀一"
       },
-      "status": "left",
+      "status": "alive",
       "base_appearances": 5,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Rye",
       "first_appearance": {
@@ -4522,11 +4522,11 @@
         "ja": "宮野志保",
         "zh": "宫野志保"
       },
-      "status": "left",
+      "status": "alive",
       "base_appearances": 10,
       "wiki_url": "https://www.detectiveconanworld.com/wiki/Sherry",
       "first_appearance": {
-        "manga_file": 179,
+        "manga_file": 176,
         "anime_episode": 129
       },
       "voice_actors": {
@@ -5724,6 +5724,62 @@
       "episodeIndex": 1,
       "chapterIndex": 887,
       "description": "Takahiro Sanada first appearance"
+    },
+    {
+      "id": "evt-auto-e_chianti",
+      "entity_id": "e_chianti",
+      "type": "JOIN",
+      "episodeIndex": 425,
+      "chapterIndex": 500,
+      "description": "基安蒂首次登场，组织狙击手"
+    },
+    {
+      "id": "evt-auto-e_korn",
+      "entity_id": "e_korn",
+      "type": "JOIN",
+      "episodeIndex": 425,
+      "chapterIndex": 500,
+      "description": "科恩首次登场，组织狙击手"
+    },
+    {
+      "id": "evt-auto-e_tequila",
+      "entity_id": "e_tequila",
+      "type": "JOIN",
+      "episodeIndex": 54,
+      "chapterIndex": 114,
+      "description": "龙舌兰首次登场"
+    },
+    {
+      "id": "evt-auto-e_calvados",
+      "entity_id": "e_calvados",
+      "type": "JOIN",
+      "episodeIndex": 345,
+      "chapterIndex": 433,
+      "description": "卡尔瓦多斯首次登场，组织狙击手"
+    },
+    {
+      "id": "evt-auto-e_scotch",
+      "entity_id": "e_scotch",
+      "type": "JOIN",
+      "episodeIndex": 836,
+      "chapterIndex": 937,
+      "description": "苏格兰威士忌首次登场，公安卧底"
+    },
+    {
+      "id": "evt-auto-e_rye",
+      "entity_id": "e_rye",
+      "type": "JOIN",
+      "episodeIndex": 230,
+      "chapterIndex": 287,
+      "description": "黑麦威士忌首次登场"
+    },
+    {
+      "id": "evt-auto-e_sherry",
+      "entity_id": "e_sherry",
+      "type": "JOIN",
+      "episodeIndex": 129,
+      "chapterIndex": 176,
+      "description": "雪莉的组织身份首次被提及"
     }
   ],
   "links": [
