@@ -10,13 +10,13 @@ interface CPPanelProps {
 }
 
 const LINK_TYPE_ICONS: Record<LinkType, string> = {
-  romantic: '❤️',
-  family: '👨‍👩‍👧',
-  master_apprentice: '🎓',
-  colleague: '🤝',
-  rivalry: '⚔️',
-  friendship: '🫂',
-  superior_subordinate: '📋',
+  romantic: '●',
+  family: '●',
+  master_apprentice: '●',
+  colleague: '●',
+  rivalry: '●',
+  friendship: '●',
+  superior_subordinate: '●',
 };
 
 const LINK_TYPE_LABELS: Record<LinkType, string> = {
@@ -27,6 +27,16 @@ const LINK_TYPE_LABELS: Record<LinkType, string> = {
   rivalry: '对手',
   friendship: '友情',
   superior_subordinate: '上下级',
+};
+
+const LINK_TYPE_COLORS: Record<LinkType, string> = {
+  romantic: '#ec4899',
+  family: '#f59e0b',
+  master_apprentice: '#5e6ad2',
+  colleague: '#22c55e',
+  rivalry: '#ef4444',
+  friendship: '#7170ff',
+  superior_subordinate: '#8a8f98',
 };
 
 /** Get display name from I18nName: prefer zh, fallback to en */
@@ -71,7 +81,7 @@ export default function CPPanel({
   if (links.length === 0) {
     return (
       <div style={styles.container} data-testid="cp-panel">
-        <div style={styles.title}>💕 关系面板</div>
+        <div style={styles.title}>关系面板</div>
         <div style={styles.empty}>暂无关系数据</div>
       </div>
     );
@@ -79,7 +89,7 @@ export default function CPPanel({
 
   return (
     <div style={styles.container} data-testid="cp-panel">
-      <div style={styles.title}>💕 关系面板</div>
+      <div style={styles.title}>关系面板</div>
       <div style={styles.list}>
         {links.map((link) => {
           const id = linkId(link);
@@ -88,7 +98,8 @@ export default function CPPanel({
           const name1 = getPersonaName(dataSet, link.source_persona_id);
           const name2 = getPersonaName(dataSet, link.target_persona_id);
           const typeLabel = LINK_TYPE_LABELS[link.type] ?? link.type;
-          const typeIcon = LINK_TYPE_ICONS[link.type] ?? '🔗';
+          const typeIcon = LINK_TYPE_ICONS[link.type] ?? '●';
+          const typeColor = LINK_TYPE_COLORS[link.type] ?? '#8a8f98';
 
           return (
             <div key={id}>
@@ -106,12 +117,12 @@ export default function CPPanel({
                 }}
               >
                 <div style={styles.cpNames}>
-                  <span style={styles.typeIcon}>{typeIcon}</span>
+                  <span style={{ ...styles.typeIcon, color: typeColor }}>{typeIcon}</span>
                   <span style={styles.nameText}>{name1}</span>
                   <span style={styles.cross}>×</span>
                   <span style={styles.nameText}>{name2}</span>
                 </div>
-                <span style={styles.typeBadge}>
+                <span style={{ ...styles.typeBadge, backgroundColor: `${typeColor}26`, color: typeColor, borderColor: 'transparent' }}>
                   {typeLabel}
                 </span>
               </div>
@@ -138,7 +149,7 @@ function CPEventHistory({ events }: { events: RelationshipEvent[] }) {
     <div style={styles.historyContainer} data-testid="cp-event-history">
       {events.map((evt) => (
         <div key={evt.id} style={styles.historyItem}>
-          <span style={styles.historyDot}>💗</span>
+          <span style={styles.historyDot}>●</span>
           <div style={styles.historyContent}>
             <div style={styles.historyDesc}>{evt.description}</div>
             <div style={styles.historyMeta}>
@@ -154,31 +165,29 @@ function CPEventHistory({ events }: { events: RelationshipEvent[] }) {
 
 const styles: Record<string, React.CSSProperties> = {
   container: {
-    padding: '16px 18px',
-    borderRadius: 16,
-    background: 'linear-gradient(135deg, #1a0a1e 0%, #2d1033 50%, #1a0a1e 100%)',
-    border: '1px solid rgba(236, 72, 153, 0.25)',
-    boxShadow: '0 4px 20px rgba(236, 72, 153, 0.1)',
+    padding: '14px 16px',
+    borderRadius: 12,
+    background: '#0f1011',
+    border: '1px solid rgba(255,255,255,0.05)',
   },
   title: {
-    fontSize: 16,
-    fontWeight: 800,
-    color: '#f9a8d4',
-    marginBottom: 14,
+    fontSize: 14,
+    fontWeight: 510,
+    color: '#d0d6e0',
+    marginBottom: 12,
     textAlign: 'center',
-    letterSpacing: 2,
-    textShadow: '0 2px 8px rgba(236, 72, 153, 0.3)',
+    letterSpacing: 0,
   },
   empty: {
     fontSize: 13,
-    color: '#6b7280',
+    color: '#62666d',
     textAlign: 'center',
     padding: 12,
   },
   list: {
     display: 'flex',
     flexDirection: 'column',
-    gap: 6,
+    gap: 0,
     maxHeight: 320,
     overflowY: 'auto',
   },
@@ -186,18 +195,15 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '10px 14px',
-    borderRadius: 12,
-    background: 'rgba(255,255,255,0.04)',
+    padding: '9px 12px',
+    borderRadius: 0,
+    background: 'transparent',
     cursor: 'pointer',
-    transition: 'all 0.2s ease',
-    border: '1px solid rgba(255,255,255,0.06)',
-    backdropFilter: 'blur(4px)',
+    transition: 'background 0.15s ease',
+    borderBottom: '1px solid rgba(255,255,255,0.03)',
   },
   cpItemSelected: {
-    borderColor: 'rgba(244, 114, 182, 0.5)',
-    background: 'rgba(236, 72, 153, 0.12)',
-    boxShadow: '0 0 0 2px rgba(249, 168, 212, 0.3), 0 4px 12px rgba(236, 72, 153, 0.15)',
+    background: 'rgba(94,106,210,0.1)',
   },
   cpNames: {
     display: 'flex',
@@ -206,65 +212,63 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: 13,
   },
   typeIcon: {
-    fontSize: 15,
+    fontSize: 6,
   },
   nameText: {
-    fontWeight: 700,
-    color: '#f1f5f9',
+    fontWeight: 510,
+    color: '#f7f8f8',
   },
   cross: {
-    color: '#d946ef',
-    fontWeight: 800,
-    fontSize: 13,
+    color: '#62666d',
+    fontWeight: 510,
+    fontSize: 12,
   },
   typeBadge: {
-    fontSize: 10,
-    padding: '3px 10px',
+    fontSize: 11,
+    padding: '2px 8px',
     borderRadius: 9999,
-    fontWeight: 700,
+    fontWeight: 510,
     whiteSpace: 'nowrap' as const,
-    border: '1px solid rgba(249, 168, 212, 0.4)',
-    backgroundColor: 'rgba(249, 168, 212, 0.15)',
-    color: '#f9a8d4',
-    letterSpacing: 0.5,
+    border: '1px solid transparent',
+    letterSpacing: 0.3,
   },
   historyContainer: {
-    padding: '10px 14px 10px 28px',
+    padding: '8px 12px 8px 24px',
     display: 'flex',
     flexDirection: 'column',
-    gap: 8,
+    gap: 6,
   },
   historyEmpty: {
-    padding: '8px 14px 8px 28px',
+    padding: '6px 12px 6px 24px',
     fontSize: 12,
-    color: '#6b7280',
+    color: '#62666d',
   },
   historyItem: {
     display: 'flex',
     gap: 8,
     alignItems: 'flex-start',
-    padding: '8px 12px',
-    borderRadius: 10,
-    background: 'rgba(255,255,255,0.03)',
-    border: '1px solid rgba(255,255,255,0.04)',
+    padding: '6px 10px',
+    borderRadius: 6,
+    background: 'rgba(255,255,255,0.02)',
   },
   historyDot: {
-    fontSize: 12,
-    marginTop: 2,
+    fontSize: 6,
+    marginTop: 5,
+    color: '#62666d',
   },
   historyContent: {
     flex: 1,
   },
   historyDesc: {
     fontSize: 12,
-    color: '#e2e8f0',
+    color: '#f7f8f8',
     lineHeight: 1.5,
   },
   historyMeta: {
     display: 'flex',
     gap: 8,
     fontSize: 11,
-    color: '#94a3b8',
+    color: '#8a8f98',
     marginTop: 3,
   },
 };

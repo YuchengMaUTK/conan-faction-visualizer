@@ -11,11 +11,19 @@ export default function SearchBar({
     <div style={styles.container} data-testid="search-bar">
       <input
         type="text"
-        placeholder="🔍 搜索角色姓名、代号或昵称..."
+        placeholder="搜索角色..."
         value={searchQuery}
         onChange={(e) => onSearchChange(e.target.value)}
         style={styles.input}
         aria-label="搜索角色"
+        onFocus={(e) => {
+          e.currentTarget.style.borderColor = '#5e6ad2';
+          e.currentTarget.style.boxShadow = '0 0 0 2px rgba(94,106,210,0.15)';
+        }}
+        onBlur={(e) => {
+          e.currentTarget.style.borderColor = 'rgba(255,255,255,0.08)';
+          e.currentTarget.style.boxShadow = 'none';
+        }}
       />
     </div>
   );
@@ -29,15 +37,15 @@ const styles: Record<string, React.CSSProperties> = {
   },
   input: {
     flex: 1,
-    padding: '10px 16px',
-    borderRadius: 12,
-    border: '1px solid rgba(201, 168, 76, 0.3)',
+    height: 36,
+    padding: '0 12px',
+    borderRadius: 6,
+    border: '1px solid rgba(255,255,255,0.08)',
     fontSize: 14,
     outline: 'none',
-    background: 'rgba(15, 23, 42, 0.8)',
-    color: '#e2e8f0',
+    background: '#191a1b',
+    color: '#f7f8f8',
     transition: 'border-color 0.2s ease, box-shadow 0.2s ease',
-    boxShadow: '0 2px 8px rgba(0,0,0,0.15)',
-    fontFamily: "'Noto Sans SC', system-ui, sans-serif",
+    fontFamily: "'Inter Variable', Inter, 'Noto Sans SC', system-ui, sans-serif",
   },
 };

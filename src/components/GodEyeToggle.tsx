@@ -13,7 +13,7 @@ export default function GodEyeToggle({ godEyeMode, onToggle }: GodEyeToggleProps
       }}
       onClick={onToggle}
     >
-      <span style={styles.icon}>{godEyeMode ? '👁' : '🌐'}</span>
+      <span style={styles.icon}>{godEyeMode ? '◆' : '●'}</span>
       <span style={styles.label}>
         {godEyeMode ? '上帝视角' : '表世界'}
       </span>
@@ -28,29 +28,29 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     alignItems: 'center',
     gap: 6,
-    padding: '8px 14px',
-    borderRadius: 10,
+    padding: '8px 16px',
+    borderRadius: 9999,
     border: '1px solid transparent',
     cursor: 'pointer',
     fontSize: 13,
-    fontWeight: 600,
-    transition: 'all 0.2s',
+    fontWeight: 510,
+    transition: 'all 0.2s ease',
     width: '100%',
     justifyContent: 'center',
   },
   active: {
-    background: 'rgba(139, 92, 246, 0.2)',
-    borderColor: '#8b5cf6',
-    color: '#c4b5fd',
-    boxShadow: '0 0 12px rgba(139, 92, 246, 0.35)',
+    background: 'rgba(94, 106, 210, 0.15)',
+    borderColor: '#5e6ad2',
+    color: '#7170ff',
+    boxShadow: '0 0 0 1px #5e6ad2',
   },
   inactive: {
-    background: '#334155',
-    borderColor: '#475569',
-    color: '#94a3b8',
+    background: 'rgba(255,255,255,0.05)',
+    borderColor: 'rgba(255,255,255,0.08)',
+    color: '#8a8f98',
   },
   icon: {
-    fontSize: 16,
+    fontSize: 12,
     lineHeight: 1,
   },
   label: {

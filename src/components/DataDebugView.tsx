@@ -45,13 +45,13 @@ export default function DataDebugView({ dataUrl }: DataDebugViewProps) {
   }, [dataUrl]);
 
   if (state.status === 'loading') {
-    return <div style={styles.container}><p>⏳ 数据加载中...</p></div>;
+    return <div style={styles.container}><p>数据加载中...</p></div>;
   }
 
   if (state.status === 'error') {
     return (
       <div style={styles.container}>
-        <h2 style={styles.errorTitle}>❌ 数据加载失败</h2>
+        <h2 style={styles.errorTitle}>数据加载失败</h2>
         <pre style={styles.errorPre}>{state.message}</pre>
       </div>
     );
@@ -61,7 +61,7 @@ export default function DataDebugView({ dataUrl }: DataDebugViewProps) {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>📊 数据层调试视图</h2>
+      <h2 style={styles.title}>数据层调试视图</h2>
 
       <p style={styles.stats} data-testid="data-stats">
         已加载 {data.entities.length} 个角色、
@@ -83,7 +83,8 @@ const styles: Record<string, React.CSSProperties> = {
     maxWidth: 800,
     margin: '0 auto',
     padding: 24,
-    fontFamily: 'system-ui, sans-serif',
+    fontFamily: "'Inter Variable', Inter, 'Noto Sans SC', system-ui, sans-serif",
+    color: '#f7f8f8',
   },
   title: {
     fontSize: 22,
@@ -91,10 +92,11 @@ const styles: Record<string, React.CSSProperties> = {
   },
   stats: {
     fontSize: 16,
-    background: '#f0f4f8',
+    background: 'rgba(255,255,255,0.02)',
     padding: '12px 16px',
     borderRadius: 8,
     lineHeight: 1.6,
+    color: '#d0d6e0',
   },
   subtitle: {
     fontSize: 16,
@@ -102,8 +104,8 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: 8,
   },
   jsonPre: {
-    background: '#1e1e2e',
-    color: '#cdd6f4',
+    background: '#191a1b',
+    color: '#d0d6e0',
     padding: 16,
     borderRadius: 8,
     overflow: 'auto',
@@ -111,11 +113,11 @@ const styles: Record<string, React.CSSProperties> = {
     maxHeight: 400,
   },
   errorTitle: {
-    color: '#dc2626',
+    color: '#f87171',
   },
   errorPre: {
-    background: '#fef2f2',
-    color: '#991b1b',
+    background: '#191a1b',
+    color: '#fca5a5',
     padding: 16,
     borderRadius: 8,
     whiteSpace: 'pre-wrap',

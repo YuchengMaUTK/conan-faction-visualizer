@@ -79,13 +79,13 @@ export default function Visualizer({ dataUrl }: VisualizerProps) {
   );
 
   if (loadingState === 'loading') {
-    return <div style={styles.center}>⏳ 数据加载中...</div>;
+    return <div style={styles.center}>数据加载中...</div>;
   }
 
   if (loadingState === 'error') {
     return (
       <div style={styles.errorBox}>
-        <p style={{ fontWeight: 600, margin: '0 0 8px' }}>❌ 数据加载失败</p>
+        <p style={{ fontWeight: 600, margin: '0 0 8px' }}>数据加载失败</p>
         <pre style={styles.errorPre}>{loadError}</pre>
         <button style={styles.retryBtn} onClick={() => loadData(dataUrl)}>
           重试
@@ -200,24 +200,24 @@ const styles: Record<string, React.CSSProperties> = {
   root: {
     display: 'flex',
     flexDirection: 'column',
-    gap: 16,
+    gap: 20,
     maxWidth: 1400,
     margin: '0 auto',
   },
   center: {
     textAlign: 'center',
     padding: 40,
-    fontSize: 18,
-    color: '#64748b',
+    fontSize: 16,
+    color: '#8a8f98',
   },
   errorBox: {
     maxWidth: 600,
     margin: '24px auto',
     padding: 20,
-    background: '#fef2f2',
-    borderRadius: 12,
-    border: '1px solid #fca5a5',
-    color: '#991b1b',
+    background: '#191a1b',
+    borderRadius: 8,
+    border: '1px solid rgba(239,68,68,0.3)',
+    color: '#f87171',
   },
   errorPre: {
     fontSize: 13,
@@ -227,11 +227,11 @@ const styles: Record<string, React.CSSProperties> = {
   retryBtn: {
     marginTop: 12,
     padding: '8px 20px',
-    borderRadius: 8,
+    borderRadius: 6,
     border: 'none',
-    background: '#dc2626',
+    background: '#5e6ad2',
     color: '#fff',
-    fontWeight: 600,
+    fontWeight: 510,
     cursor: 'pointer',
   },
   toolBar: {
@@ -253,19 +253,22 @@ const styles: Record<string, React.CSSProperties> = {
   graphArea: {
     flex: 1,
     minWidth: 0,
+    border: '1px solid rgba(255,255,255,0.05)',
+    borderRadius: 12,
+    overflow: 'hidden',
   },
   emptyState: {
     width: '100%',
     height: '100%',
     minHeight: 500,
-    background: '#0f172a',
+    background: '#0f1011',
     borderRadius: 12,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   emptyStateText: {
-    color: '#64748b',
-    fontSize: 16,
+    color: '#8a8f98',
+    fontSize: 15,
   },
 };

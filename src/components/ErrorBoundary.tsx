@@ -34,7 +34,7 @@ export default class ErrorBoundary extends React.Component<
       }
       return (
         <div style={styles.container}>
-          <p style={styles.title}>⚠️ 渲染出错</p>
+          <p style={styles.title}>渲染出错</p>
           <p style={styles.message}>{this.state.error?.message}</p>
         </div>
       );
@@ -47,20 +47,20 @@ const styles: Record<string, React.CSSProperties> = {
   container: {
     padding: 16,
     margin: 8,
-    borderRadius: 12,
-    background: '#fef2f2',
-    border: '1px solid #fca5a5',
+    borderRadius: 8,
+    background: '#191a1b',
+    border: '1px solid rgba(239,68,68,0.3)',
     textAlign: 'center',
   },
   title: {
     fontSize: 16,
-    fontWeight: 600,
-    color: '#991b1b',
+    fontWeight: 510,
+    color: '#f87171',
     margin: '0 0 8px',
   },
   message: {
     fontSize: 13,
-    color: '#b91c1c',
+    color: '#fca5a5',
     margin: 0,
   },
 };

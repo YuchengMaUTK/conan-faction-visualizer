@@ -22,21 +22,13 @@ export default function ArcBookmarkBar({
   if (storyArcs.length === 0) return null;
 
   // Classify arcs by theme for dot color
-  const getArcDotColor = (name: string): string => {
-    const orgKeywords = ['组织', '贝尔摩德', '赤与黑', '波本', '朗姆', 'FBI', '混沌'];
-    const loveKeywords = ['伦敦', '修学旅行'];
-    if (orgKeywords.some(k => name.includes(k))) return '#475569';
-    if (loveKeywords.some(k => name.includes(k))) return '#f472b6';
-    return '#ef4444';
-  };
-
   return (
     <div style={styles.root} data-testid="arc-bookmark-bar">
+      <style>{`.arc-chips::-webkit-scrollbar { display: none; } .arc-chips { -ms-overflow-style: none; scrollbar-width: none; }`}</style>
       <span style={styles.label}>主线篇章</span>
-      <div style={styles.chipContainer}>
+      <div className="arc-chips" style={styles.chipContainer}>
         {storyArcs.map((arc) => {
           const isSelected = arc.id === selectedArcId;
-          const dotColor = getArcDotColor(arc.name);
           return (
             <button
               key={arc.id}
@@ -48,7 +40,7 @@ export default function ArcBookmarkBar({
               onClick={() => handleClick(arc.id)}
               title={arc.description}
             >
-              <span style={{ ...styles.dot, background: isSelected ? '#0f172a' : dotColor }} />
+              <span style={{ ...styles.dot, background: isSelected ? 'rgba(255,255,255,0.5)' : '#62666d' }} />
               {arc.name}
             </button>
           );
@@ -62,51 +54,48 @@ const styles: Record<string, React.CSSProperties> = {
   root: {
     display: 'flex',
     alignItems: 'center',
-    gap: 12,
-    padding: '10px 16px',
-    borderRadius: 14,
-    background: 'linear-gradient(135deg, #1a1520 0%, #2d1f3d 100%)',
-    border: '1px solid rgba(201, 168, 76, 0.25)',
-    overflowX: 'auto',
-    boxShadow: '0 2px 12px rgba(0,0,0,0.2)',
+    gap: 10,
+    padding: '8px 14px',
+    borderRadius: 12,
+    background: '#0f1011',
+    border: '1px solid rgba(255,255,255,0.05)',
   },
   label: {
-    fontSize: 13,
-    fontWeight: 700,
-    color: '#f5d680',
+    fontSize: 12,
+    fontWeight: 510,
+    color: '#8a8f98',
     whiteSpace: 'nowrap',
-    letterSpacing: 1,
+    letterSpacing: 0.5,
   },
   chipContainer: {
     display: 'flex',
-    gap: 8,
-    flexWrap: 'wrap',
+    gap: 6,
+    overflowX: 'auto',
+    flexWrap: 'nowrap',
   },
   chip: {
     display: 'flex',
     alignItems: 'center',
-    gap: 6,
-    padding: '5px 14px',
-    borderRadius: 20,
-    border: '1px solid rgba(201, 168, 76, 0.4)',
-    background: 'rgba(255,255,255,0.05)',
+    gap: 5,
+    padding: '4px 12px',
+    borderRadius: 9999,
+    border: '1px solid rgba(255,255,255,0.08)',
+    background: 'transparent',
     fontSize: 12,
-    fontWeight: 600,
-    color: '#d4b96a',
+    fontWeight: 510,
+    color: '#d0d6e0',
     cursor: 'pointer',
     whiteSpace: 'nowrap',
     transition: 'all 0.2s ease',
-    backdropFilter: 'blur(4px)',
   },
   chipSelected: {
-    background: 'linear-gradient(135deg, #c9a84c, #b8942e)',
-    color: '#0f172a',
-    borderColor: '#c9a84c',
-    boxShadow: '0 2px 8px rgba(201, 168, 76, 0.4)',
+    background: '#5e6ad2',
+    color: '#ffffff',
+    borderColor: 'transparent',
   },
   dot: {
-    width: 6,
-    height: 6,
+    width: 5,
+    height: 5,
     borderRadius: '50%',
     flexShrink: 0,
   },

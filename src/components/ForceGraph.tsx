@@ -154,6 +154,9 @@ export default function ForceGraph({
     (nodes: GraphNode[]) => ({
       tooltip: {
         trigger: 'item' as const,
+        backgroundColor: '#191a1b',
+        borderColor: 'rgba(255,255,255,0.08)',
+        textStyle: { color: '#f7f8f8', fontSize: 12 },
         formatter: (params: any) => {
           if (params.dataType === 'node') {
             const displayName = params.data.label?.formatter || params.data.name;
@@ -170,6 +173,21 @@ export default function ForceGraph({
           draggable: true,
           symbolClip: true,
           categories: graphData.categories,
+          label: {
+            show: false,
+            fontSize: 10,
+            color: '#d0d6e0',
+            textBorderColor: '#08090a',
+            textBorderWidth: 2,
+            overflow: 'truncate',
+            width: 60,
+          },
+          edgeLabel: { show: false },
+          lineStyle: {
+            color: 'rgba(255,255,255,0.08)',
+            width: 1,
+            curveness: 0.3,
+          },
           force: {
             repulsion: 300,
             gravity: 0.1,
@@ -180,12 +198,12 @@ export default function ForceGraph({
             focus: 'adjacency' as const,
             blurScope: 'global' as const,
             itemStyle: { borderWidth: 4 },
-            lineStyle: { width: 3 },
-            label: { show: true },
+            lineStyle: { width: 3, color: 'rgba(255,255,255,0.25)' },
+            label: { show: true, fontSize: 10, color: '#d0d6e0', textBorderColor: '#08090a', textBorderWidth: 2 },
           },
           blur: {
             itemStyle: { opacity: 0.1 },
-            lineStyle: { opacity: 0.1 },
+            lineStyle: { opacity: 0.05 },
             label: { show: false },
           },
           data: nodes,
@@ -280,7 +298,7 @@ export default function ForceGraph({
   if (initError) {
     return (
       <div style={styles.errorContainer}>
-        <p style={styles.errorText}>❌ 图表加载失败</p>
+        <p style={styles.errorText}>图表加载失败</p>
         <p style={styles.errorDetail}>{initError}</p>
         <button
           style={styles.retryButton}
@@ -316,27 +334,30 @@ const styles: Record<string, React.CSSProperties> = {
   container: {
     width: '100%',
     height: 550,
-    background: '#0f172a',
+    background: '#08090a',
     borderRadius: 12,
+    border: '1px solid rgba(255,255,255,0.05)',
   },
   emptyContainer: {
     width: '100%',
     minHeight: 500,
-    background: '#0f172a',
+    background: '#08090a',
     borderRadius: 12,
+    border: '1px solid rgba(255,255,255,0.05)',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
   },
   emptyText: {
-    color: '#64748b',
-    fontSize: 16,
+    color: '#62666d',
+    fontSize: 13,
   },
   errorContainer: {
     width: '100%',
     minHeight: 500,
-    background: '#0f172a',
+    background: '#08090a',
     borderRadius: 12,
+    border: '1px solid rgba(255,255,255,0.05)',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
@@ -345,24 +366,24 @@ const styles: Record<string, React.CSSProperties> = {
   },
   errorText: {
     color: '#f87171',
-    fontSize: 16,
-    fontWeight: 600,
+    fontSize: 14,
+    fontWeight: 510,
     margin: 0,
   },
   errorDetail: {
-    color: '#94a3b8',
-    fontSize: 13,
+    color: '#62666d',
+    fontSize: 12,
     margin: 0,
   },
   retryButton: {
     marginTop: 8,
-    padding: '8px 20px',
-    borderRadius: 8,
+    padding: '6px 18px',
+    borderRadius: 9999,
     border: 'none',
-    background: '#3b82f6',
+    background: '#5e6ad2',
     color: '#fff',
-    fontWeight: 600,
+    fontWeight: 510,
     cursor: 'pointer',
-    fontSize: 14,
+    fontSize: 13,
   },
 };

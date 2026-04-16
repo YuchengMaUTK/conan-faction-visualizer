@@ -113,6 +113,21 @@ export default function TimelineSlider({
     return result;
   }, [keyEvents, relationshipEvents, storyArcs, mode, min, max, mappings]);
 
+  // Thin out dense markers: only show if >2% apart, always show character/relationship events
+  const visibleMarkers = useMemo(() => {
+    if (markers.length === 0) return [];
+    const sorted = [...markers].sort((a, b) => a.position - b.position);
+    const result: MarkerInfo[] = [];
+    let lastPos = -Infinity;
+    for (const m of sorted) {
+      if (m.kind !== 'arc' || m.position - lastPos >= 2) {
+        result.push(m);
+        lastPos = m.position;
+      }
+    }
+    return result;
+  }, [markers]);
+
   const handleSliderChange = useCallback(
     (e: React.ChangeEvent<HTMLInputElement>) => {
       const val = Number(e.target.value);
@@ -154,9 +169,9 @@ export default function TimelineSlider({
           -webkit-appearance: none;
           appearance: none;
           width: 100%;
-          height: 6px;
-          background: linear-gradient(90deg, rgba(201,168,76,0.2), rgba(201,168,76,0.4));
-          border-radius: 3px;
+          height: 4px;
+          background: linear-gradient(90deg, rgba(94,106,210,0.1), rgba(94,106,210,0.3));
+          border-radius: 2px;
           outline: none;
           cursor: pointer;
           margin: 6px 0;
@@ -164,15 +179,14 @@ export default function TimelineSlider({
         input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb {
           -webkit-appearance: none;
           appearance: none;
-          width: 32px;
-          height: 16px;
-          border-radius: 8px;
+          width: 28px;
+          height: 14px;
+          border-radius: 7px;
           background: linear-gradient(90deg, #dc2626 0%, #dc2626 47%, #d1d5db 50%, #ffffff 53%, #ffffff 100%);
-          border: 2px solid #374151;
+          border: 1.5px solid #374151;
           box-shadow: 
-            0 3px 8px rgba(220, 38, 38, 0.4),
-            inset 0 1px 0 rgba(255,255,255,0.3),
-            inset 14px 0 0 rgba(0,0,0,0.03);
+            0 2px 6px rgba(220, 38, 38, 0.35),
+            inset 0 1px 0 rgba(255,255,255,0.3);
           cursor: pointer;
           transition: all 0.2s ease;
           margin-top: -5px;
@@ -180,25 +194,23 @@ export default function TimelineSlider({
         input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb:hover {
           transform: scale(1.1);
           box-shadow: 
-            0 4px 12px rgba(220, 38, 38, 0.6),
-            inset 0 1px 0 rgba(255,255,255,0.4),
-            inset 14px 0 0 rgba(0,0,0,0.03);
+            0 3px 10px rgba(220, 38, 38, 0.5),
+            inset 0 1px 0 rgba(255,255,255,0.4);
         }
         input[type="range"][data-testid="timeline-range"]::-webkit-slider-thumb:active {
           transform: scale(1.05);
           box-shadow: 
-            0 2px 6px rgba(220, 38, 38, 0.8),
-            inset 0 1px 0 rgba(255,255,255,0.2),
-            inset 14px 0 0 rgba(0,0,0,0.05);
+            0 2px 6px rgba(220, 38, 38, 0.7),
+            inset 0 1px 0 rgba(255,255,255,0.2);
         }
         input[type="range"][data-testid="timeline-range"]::-moz-range-thumb {
-          width: 32px;
-          height: 16px;
-          border-radius: 8px;
+          width: 28px;
+          height: 14px;
+          border-radius: 7px;
           background: linear-gradient(90deg, #dc2626 0%, #dc2626 47%, #d1d5db 50%, #ffffff 53%, #ffffff 100%);
-          border: 2px solid #374151;
+          border: 1.5px solid #374151;
           box-shadow: 
-            0 3px 8px rgba(220, 38, 38, 0.4),
+            0 2px 6px rgba(220, 38, 38, 0.35),
             inset 0 1px 0 rgba(255,255,255,0.3);
           cursor: pointer;
           transition: all 0.2s ease;
@@ -206,21 +218,22 @@ export default function TimelineSlider({
         input[type="range"][data-testid="timeline-range"]::-moz-range-thumb:hover {
           transform: scale(1.1);
           box-shadow: 
-            0 4px 12px rgba(220, 38, 38, 0.6),
+            0 3px 10px rgba(220, 38, 38, 0.5),
             inset 0 1px 0 rgba(255,255,255,0.4);
         }
-        /* Track styling for better visual alignment */
         input[type="range"][data-testid="timeline-range"]::-webkit-slider-runnable-track {
-          background: linear-gradient(90deg, rgba(220, 38, 38, 0.1), rgba(201, 168, 76, 0.3));
-          height: 6px;
-          border-radius: 3px;
+          background: linear-gradient(90deg, rgba(220, 38, 38, 0.08), rgba(94, 106, 210, 0.25));
+          height: 4px;
+          border-radius: 2px;
         }
         input[type="range"][data-testid="timeline-range"]::-moz-range-track {
-          background: linear-gradient(90deg, rgba(220, 38, 38, 0.1), rgba(201, 168, 76, 0.3));
-          height: 6px;
-          border-radius: 3px;
+          background: linear-gradient(90deg, rgba(220, 38, 38, 0.08), rgba(94, 106, 210, 0.25));
+          height: 4px;
+          border-radius: 2px;
           border: none;
         }
+        .timeline-marker { opacity: 0.45; transition: opacity 0.15s ease; }
+        .timeline-marker:hover { opacity: 1; }
       `}</style>
       <div style={styles.modeBar}>
         {(['episode', 'chapter', 'date'] as const).map((m) => (
@@ -234,20 +247,20 @@ export default function TimelineSlider({
       </div>
       <div style={styles.trackContainer}>
         {mode === 'date' && dateTicks.map((tick, i) => (
-          <div key={i} style={{ ...styles.tick, left: `${getPositionPercent(tick.value, min, max)}%`, height: tick.isMajor ? 14 : 8, background: tick.isMajor ? '#c9a84c' : '#64748b' }}>
+          <div key={i} style={{ ...styles.tick, left: `${getPositionPercent(tick.value, min, max)}%`, height: tick.isMajor ? 14 : 8, background: tick.isMajor ? '#5e6ad2' : '#62666d' }}>
             <span style={{ ...styles.tickLabel, fontSize: tick.isMajor ? 10 : 8, fontWeight: tick.isMajor ? 700 : 400 }}>{tick.label}</span>
           </div>
         ))}
-        {markers.map((marker, i) => (
-          <div key={`marker-${i}`} style={{ ...styles.marker, left: `${Math.max(0, Math.min(100, marker.position))}%` }}
+        {visibleMarkers.map((marker, i) => (
+          <div key={`marker-${i}`} className="timeline-marker" style={{ ...styles.marker, left: `${Math.max(0, Math.min(100, marker.position))}%` }}
             onMouseEnter={() => setHoveredMarker(marker)} onMouseLeave={() => setHoveredMarker(null)}
             onClick={() => handleMarkerClick(marker)} data-testid={`marker-${marker.kind}`} title={marker.label}>
-            <span style={{ ...styles.markerIcon, color: marker.kind === 'character' ? '#f5d680' : marker.kind === 'relationship' ? '#f472b6' : '#c9a84c' }}>{marker.icon}</span>
+            <span style={{ ...styles.markerIcon, color: marker.kind === 'character' ? '#7170ff' : marker.kind === 'relationship' ? '#f472b6' : '#5e6ad2' }}>{marker.icon}</span>
           </div>
         ))}
         {hoveredMarker && (
           <div style={{ ...styles.tooltip, left: `${Math.max(5, Math.min(85, hoveredMarker.position))}%` }} data-testid="marker-tooltip">
-            <div style={styles.tooltipTitle}><span style={{ color: hoveredMarker.kind === 'character' ? '#f5d680' : hoveredMarker.kind === 'relationship' ? '#f472b6' : '#c9a84c' }}>{hoveredMarker.icon}</span> {hoveredMarker.label}</div>
+            <div style={styles.tooltipTitle}><span style={{ color: hoveredMarker.kind === 'character' ? '#7170ff' : hoveredMarker.kind === 'relationship' ? '#f472b6' : '#5e6ad2' }}>{hoveredMarker.icon}</span> {hoveredMarker.label}</div>
             <div style={styles.tooltipDesc}>{hoveredMarker.description}</div>
           </div>
         )}
@@ -301,37 +314,36 @@ function getEventValue(tp: TimePoint, mode: string, mappings: EpisodeChapterMapp
 
 const styles: Record<string, React.CSSProperties> = {
   root: {
-    padding: '14px 18px',
-    borderRadius: 14,
-    background: 'linear-gradient(135deg, #0f172a 0%, #1e293b 100%)',
-    border: '1px solid rgba(201, 168, 76, 0.2)',
-    boxShadow: '0 4px 16px rgba(0,0,0,0.25)',
+    padding: '12px 16px',
+    borderRadius: 12,
+    background: '#0f1011',
+    border: '1px solid rgba(255,255,255,0.05)',
   },
-  modeBar: { display: 'flex', alignItems: 'center', gap: 8, marginBottom: 12 },
+  modeBar: { display: 'flex', alignItems: 'center', gap: 6, marginBottom: 10 },
   modeBtn: {
-    padding: '5px 16px', borderRadius: 8, border: '1px solid #475569',
-    background: 'rgba(255,255,255,0.05)', fontSize: 13, fontWeight: 600,
-    cursor: 'pointer', color: '#94a3b8', transition: 'all 0.2s ease',
-    fontFamily: "'Noto Sans SC', system-ui, sans-serif",
+    padding: '3px 12px', borderRadius: 9999, border: '1px solid rgba(255,255,255,0.08)',
+    background: 'transparent', fontSize: 12, fontWeight: 510,
+    cursor: 'pointer', color: '#8a8f98', transition: 'all 0.2s ease',
+    fontFamily: "'Inter Variable', Inter, 'Noto Sans SC', system-ui, sans-serif",
   },
   modeBtnActive: {
-    background: 'linear-gradient(135deg, #c9a84c, #b8942e)', color: '#0f172a',
-    borderColor: '#c9a84c', boxShadow: '0 2px 8px rgba(201, 168, 76, 0.3)',
+    background: '#5e6ad2', color: '#ffffff',
+    borderColor: '#5e6ad2',
   },
-  currentValue: { marginLeft: 'auto', fontSize: 14, fontWeight: 700, color: '#f5d680', letterSpacing: 1 },
-  trackContainer: { position: 'relative', height: 80, paddingTop: 28 },
+  currentValue: { marginLeft: 'auto', fontSize: 13, fontWeight: 510, color: '#7170ff', letterSpacing: 0 },
+  trackContainer: { position: 'relative', height: 72, paddingTop: 24 },
   slider: { width: '100%', cursor: 'pointer' },
   tick: { position: 'absolute', bottom: 0, width: 1, transform: 'translateX(-50%)' },
-  tickLabel: { position: 'absolute', top: -16, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', color: '#94a3b8' },
+  tickLabel: { position: 'absolute', top: -16, left: '50%', transform: 'translateX(-50%)', whiteSpace: 'nowrap', color: '#62666d' },
   marker: { position: 'absolute', top: 4, transform: 'translateX(-50%)', cursor: 'pointer', zIndex: 2, userSelect: 'none' },
-  markerIcon: { fontSize: 14, lineHeight: 1 },
+  markerIcon: { fontSize: 8, lineHeight: 1 },
   tooltip: {
-    position: 'absolute', top: -60, transform: 'translateX(-50%)',
-    background: 'linear-gradient(135deg, #1e293b, #0f172a)', color: '#f5d680',
-    padding: '8px 12px', borderRadius: 10, fontSize: 12, zIndex: 10, maxWidth: 260,
+    position: 'absolute', top: -56, transform: 'translateX(-50%)',
+    background: '#191a1b', color: '#f7f8f8',
+    padding: '6px 10px', borderRadius: 8, fontSize: 12, zIndex: 10, maxWidth: 200,
     pointerEvents: 'none', whiteSpace: 'nowrap',
-    border: '1px solid rgba(201, 168, 76, 0.3)', boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
+    border: '1px solid rgba(255,255,255,0.08)', boxShadow: '0 4px 16px rgba(0,0,0,0.4)',
   },
-  tooltipTitle: { fontWeight: 700, marginBottom: 2 },
-  tooltipDesc: { fontWeight: 400, opacity: 0.8, whiteSpace: 'normal', color: '#e2e8f0' },
+  tooltipTitle: { fontWeight: 590, marginBottom: 2, fontSize: 12 },
+  tooltipDesc: { fontWeight: 400, opacity: 0.7, whiteSpace: 'normal', color: '#d0d6e0', fontSize: 11 },
 };

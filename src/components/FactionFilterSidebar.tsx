@@ -76,13 +76,13 @@ export default function FactionFilterSidebar({ filters, onFilterChange }: Factio
             <span
               style={{
                 ...styles.toggle,
-                background: filters[factionKey] ? (FACTION_COLORS[factionKey] ?? '#64748b') : '#334155',
+                background: filters[factionKey] ? (FACTION_COLORS[factionKey] ?? '#64748b') : '#28282c',
               }}
             >
               <span
                 style={{
                   ...styles.toggleKnob,
-                  transform: filters[factionKey] ? 'translateX(16px)' : 'translateX(0)',
+                  transform: filters[factionKey] ? 'translateX(14px)' : 'translateX(0)',
                 }}
               />
             </span>
@@ -113,27 +113,32 @@ export default function FactionFilterSidebar({ filters, onFilterChange }: Factio
 
 const styles: Record<string, React.CSSProperties> = {
   sidebar: {
-    width: 180,
-    minWidth: 180,
-    background: '#1e293b',
+    width: 200,
+    minWidth: 200,
+    background: '#0f1011',
     borderRadius: 12,
-    padding: '14px 12px',
+    padding: 16,
     display: 'flex',
     flexDirection: 'column',
-    gap: 12,
+    gap: 0,
     flexShrink: 0,
+    border: '1px solid rgba(255,255,255,0.05)',
   },
   title: {
-    fontSize: 13,
-    fontWeight: 700,
-    color: '#94a3b8',
-    letterSpacing: 1,
-    marginBottom: 2,
+    fontSize: 12,
+    fontWeight: 590,
+    color: '#8a8f98',
+    letterSpacing: 0.5,
+    marginBottom: 12,
+    textTransform: 'uppercase' as const,
   },
   factionGroup: {
     display: 'flex',
     flexDirection: 'column',
-    gap: 6,
+    gap: 8,
+    paddingTop: 12,
+    paddingBottom: 12,
+    borderBottom: '1px solid rgba(255,255,255,0.05)',
   },
   mainToggleLabel: {
     display: 'flex',
@@ -141,14 +146,15 @@ const styles: Record<string, React.CSSProperties> = {
     justifyContent: 'space-between',
     cursor: 'pointer',
     userSelect: 'none' as const,
+    padding: '2px 0',
   },
   mainToggleText: {
     display: 'flex',
     alignItems: 'center',
     gap: 6,
-    fontSize: 14,
-    fontWeight: 600,
-    color: '#e2e8f0',
+    fontSize: 13,
+    fontWeight: 510,
+    color: '#f7f8f8',
   },
   factionDot: {
     display: 'inline-block',
@@ -165,7 +171,7 @@ const styles: Record<string, React.CSSProperties> = {
   },
   toggle: {
     position: 'relative' as const,
-    width: 34,
+    width: 32,
     height: 18,
     borderRadius: 9,
     transition: 'background 0.2s',
@@ -184,7 +190,7 @@ const styles: Record<string, React.CSSProperties> = {
   subFactionList: {
     display: 'flex',
     flexDirection: 'column',
-    gap: 3,
+    gap: 2,
     paddingLeft: 16,
   },
   subFactionLabel: {
@@ -193,15 +199,17 @@ const styles: Record<string, React.CSSProperties> = {
     gap: 6,
     cursor: 'pointer',
     userSelect: 'none' as const,
+    padding: '3px 4px',
+    borderRadius: 4,
   },
   checkbox: {
-    accentColor: '#64748b',
+    accentColor: '#5e6ad2',
     width: 14,
     height: 14,
     cursor: 'pointer',
   },
   subFactionText: {
-    fontSize: 12,
-    color: '#94a3b8',
+    fontSize: 13,
+    color: '#d0d6e0',
   },
 };
